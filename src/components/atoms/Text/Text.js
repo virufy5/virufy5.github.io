@@ -1,4 +1,4 @@
-import styles from './Text.module.css'
+import { TextProps } from "../../themes";
 
 export default function Title({
   Text,
@@ -6,7 +6,7 @@ export default function Title({
   textprimary
 }) {
   return (
-    <p className={`${textprimary} ${styles?.[Style]}`}>
+    <p className={`${textprimary} ${TextProps?.[Style]}`}>
       {Text}
     </p>
   );

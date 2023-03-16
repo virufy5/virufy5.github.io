@@ -12,7 +12,6 @@ export const ButtonSize = {
 };
 
 //IMAGE THEMES
-
 export const ImageBorder = {
     radious: "rounded-2xl",
     circular: "rounded-full",
@@ -22,4 +21,18 @@ export const ImageBorder = {
 export const ImageSize = {
     medium: "w-[50%]",
     large: "w-[100%]"
+};
+
+//TITLE THEMES
+export const TitleProps = {
+    h1: "text-[2.25rem] leading-[2.5rem]",
+    h2: "text-[1.875rem] leading-[2.25rem]",
+    h3: "text-[1.5rem] leading-[2rem]",
+    h5: "text-[1.25rem] leading-[1.75rem]"
+};
+
+//TEXT THEMES
+export const TextProps = {
+    subtitle: "text-[1.125rem] leading-[1.75rem]",
+    normal: "text-[0.875rem] leading-[1.25rem]"
 };
