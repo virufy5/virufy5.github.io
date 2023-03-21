@@ -8,7 +8,8 @@ export const ButtonType = {
 export const ButtonSize = {
     small: "h-[52px] w-[86px]",
     medium: "h-[52px] w-[250px]",
-    large: "h-[52px] w-[345px]"
+    large: "h-[52px] w-[345px]",
+    auto: "h-[100%] w-[100%]"
 };
 
 //IMAGE THEMES
@@ -35,4 +36,9 @@ export const TitleProps = {
 export const TextProps = {
     subtitle: "text-[1.125rem] leading-[1.75rem]",
     normal: "text-[0.875rem] leading-[1.25rem]"
+};
+
+//LINK THEMES
+export const LinkAtomProps = {
+    link: "text-[18px] leading-[20px] mr-7 hover:font-semibold"
 };

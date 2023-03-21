@@ -2,23 +2,18 @@ import Title from "~/components/atoms/Title/Title"
 import Text from "~/components/atoms/Text/Text"
 
 
-export default function TitleText(
-  Title,
+export default function TitleText({
+  TitleSize,
   TitleLabel,
-  Text,
+  TextSize,
   TextLabel
-) {
+}) {
 
-  const options = [
-    { label: 'List 1', value: '1' },
-    { label: 'List 2', value: '2' },
-    { label: 'List 3', value: '3' },
-  ];
 
   return (
     <>
-      <Title Text={TitleLabel} H={Title} />
-      <Text Text={TextLabel} Style={Text} />
+      <Title H={TitleSize} Text={TitleLabel} />
+      <Text Style={TextSize} Text={TextLabel} />
     </>
   );
 }
