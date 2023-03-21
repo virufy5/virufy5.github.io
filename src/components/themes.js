@@ -1,5 +1,4 @@
 //BUTTON THEMES
-
 export const ButtonType = {
     primary: "bg-[#3074DC] border-solid border-2 border-[#3074DC] text-base text-white font-semibold rounded hover:bg-[#265db0] hover:border-[#265db0]",
     secondary: "bg-[#ffffff] border-solid border-2 border-[#3074DC] text-base text-[#3074DC] font-semibold rounded hover:bg-[#D7E4F8]"

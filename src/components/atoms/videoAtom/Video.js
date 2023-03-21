@@ -1,11 +1,11 @@
-import { VideoSize, VideoBorder } from "../../themes";
+import ReactPlayer from 'react-player';
 
-function Video({ size, route, width, height alt, border }) {
-
-    const classNames = VideoSize[size] + " " + VideoBorder[border];
+function Video({ width, route}) {
 
     return (
-        <video src={route} width={width}  height={height} poster={posterRoute}></video>
+        <>
+            <ReactPlayer width={width} url={route} />
+        </>
     )
 }
 export default Video;
