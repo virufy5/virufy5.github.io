@@ -2,7 +2,7 @@ import { TitleProps } from "../../themes";
 
 export default function Title({
   Text,
-  H
+  H,
 }) {
   return (
     <h1 className={TitleProps?.[H]}>

@@ -8,24 +8,28 @@ export default function TitleText({
   TitleSize,
   TitleLabel,
   TextSize,
-  TextLabel
+  TextLabel,
+  ImgSize, 
+  ImgRoute, 
+  ImgAlt, 
+  ImgBorder
 }) {
 
 
   return (
     <>
-      
+
       {Order[0] == "Title" && <Title H={TitleSize} Text={TitleLabel} />}
       {Order[0] == "Text" && <Text Style={TextSize} Text={TextLabel} />}
-      {Order[0] == "Image" && <Image size="medium" border="rounded" route="https://imagen-ai.com/wp-content/uploads/2022/07/open-graph-default.jpg" alt="imagen de algo" />}
+      {Order[0] == "Image" && <Image size={ImgSize} border={ImgBorder} route={ImgRoute} alt={ImgAlt} />}
       
       {Order[1] == "Title" && <Title H={TitleSize} Text={TitleLabel} />}
       {Order[1] == "Text" && <Text Style={TextSize} Text={TextLabel} />}
-      {Order[1] == "Image" && <Image size="medium" border="rounded" route="https://imagen-ai.com/wp-content/uploads/2022/07/open-graph-default.jpg" alt="imagen de algo" />}
+      {Order[1] == "Image" && <Image size={ImgSize} border={ImgBorder} route={ImgRoute} alt={ImgAlt} />}
 
       {Order[2] == "Title" && <Title H={TitleSize} Text={TitleLabel} />}
-      {Order[2] == "Text" && <Text Style={TextSize} Text={TextLabel} />}      
-      {Order[2] == "Image" && <Image size="medium" border="rounded" route="https://imagen-ai.com/wp-content/uploads/2022/07/open-graph-default.jpg" alt="imagen de algo" />}      
+      {Order[2] == "Text" && <Text Style={TextSize} Text={TextLabel} />}
+      {Order[2] == "Image" && <Image size={ImgSize} border={ImgBorder} route={ImgRoute} alt={ImgAlt} />}      
       
     </>
   );

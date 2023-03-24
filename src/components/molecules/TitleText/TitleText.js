@@ -6,14 +6,20 @@ export default function TitleText({
   TitleSize,
   TitleLabel,
   TextSize,
-  TextLabel
+  TextLabel,
+  ContainerTitleProps,
+  ContainerTextProps
 }) {
 
 
   return (
     <>
-      <Title H={TitleSize} Text={TitleLabel} />
-      <Text Style={TextSize} Text={TextLabel} />
+      <div className={ContainerTitleProps}>
+        <Title H={TitleSize} Text={TitleLabel} />
+      </div>
+      <div className={ContainerTextProps}>
+        <Text Style={TextSize} Text={TextLabel} />
+      </div>
     </>
   );
 }
