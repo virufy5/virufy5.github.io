@@ -13,6 +13,7 @@ export default function Section6() {
       <Title
         H="h1"
         Text="Our Supporters"
+        TitleClassProps="ml-[5vw]"      
       />
       </div>
       <div className="mr-[5vw] ml-[5vw]">

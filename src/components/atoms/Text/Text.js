@@ -3,10 +3,10 @@ import { TextProps } from "../../themes";
 export default function Title({
   Text,
   Style,
-  textprimary
+  TextClassProps
 }) {
   return (
-    <p className={`${textprimary} ${TextProps?.[Style]}`}>
+    <p className={`${TextClassProps} ${TextProps?.[Style]}`}>
       {Text}
     </p>
   );

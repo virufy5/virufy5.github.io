@@ -8,17 +8,19 @@ export default function TitleText({
   TextSize,
   TextLabel,
   ContainerTitleProps,
-  ContainerTextProps
+  ContainerTextProps,
+  TitleClassProps,
+  TextClassProps,
 }) {
 
 
   return (
     <>
       <div className={ContainerTitleProps}>
-        <Title H={TitleSize} Text={TitleLabel} />
+        <Title H={TitleSize} Text={TitleLabel} TitleClassProps={TitleClassProps} />
       </div>
       <div className={ContainerTextProps}>
-        <Text Style={TextSize} Text={TextLabel} />
+        <Text Style={TextSize} Text={TextLabel} TextClassProps={TextClassProps} />
       </div>
     </>
   );

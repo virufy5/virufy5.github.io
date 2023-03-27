@@ -20,22 +20,22 @@ export const ImageBorder = {
 export const ImageSize = {
     medium: "w-[50%]",
     large: "w-[100%]",
-    pr90: "h-[90%] w-[90%]",
-    pr100: "h-[100%] w-[100%]"
+    pr90: "w-[90%]",
+    pr100: "w-[100%]"
 };
 
 //TITLE THEMES
 export const TitleProps = {
-    h1: "text-[2.25rem] leading-[2.5rem] ml-[5vw]",
-    h2: "text-[1.875rem] leading-[2.25rem] ml-[5vw]",
-    h3: "text-[1.5rem] leading-[2rem] ml-[5vw]",
-    h5: "text-[1.25rem] leading-[1.75rem] ml-[5vw]"
+    h1: "text-[2.25rem] leading-[2.5rem]",
+    h2: "text-[1.875rem] leading-[2.25rem]",
+    h3: "text-[1.5rem] leading-[2rem]",
+    h5: "text-[1.25rem] leading-[1.75rem]"
 };
 
 //TEXT THEMES
 export const TextProps = {
-    subtitle: "text-[1.125rem] leading-[1.75rem] ml-[5vw]",
-    normal: "text-[0.875rem] leading-[1.25rem] ml-[5vw]"
+    subtitle: "text-[1.125rem] leading-[1.75rem]",
+    normal: "text-[0.875rem] leading-[1.25rem]"
 };
 
 //LINK THEMES
