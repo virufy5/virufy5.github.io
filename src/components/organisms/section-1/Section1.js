@@ -30,7 +30,7 @@ export default function Section1({
           display: "grid",
           justifyContent: "center",
           alignItems: "center",
-          flex: "1"
+          flex: "1",
         }}>
         <TitleText
           TitleSize={TitleSize}
@@ -42,17 +42,20 @@ export default function Section1({
           TitleClassProps="ml-[5vw]"
           TextClassProps="ml-[5vw]"
         />
-        <div
-          className="ml-[5vw] text-center"
-        >
-          <ButtonGroup
-            buttons={buttons}
-            label={label}
-            type={type}
-            size={sizeBtn}
-            path={path}
-          />
-        </div>
+
+        {buttons ? 
+          <div
+            className="ml-[5vw] text-start"
+          > 
+            <ButtonGroup
+              buttons={buttons}
+              label={label}
+              type={type}
+              size={sizeBtn}
+              path={path}
+            />
+          </div> : null
+        }
       </div>
       <div style={{
         width: "50%",

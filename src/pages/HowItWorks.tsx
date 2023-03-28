@@ -1,11 +1,11 @@
 
 //Organismo
 import Section1 from "~/components/organisms/section-1/Section1"
-import Section7 from "~/components/organisms/section-7/Section7"
+import Section7 from "~/components/organisms/section-8/Section8"
 
 
 
-export default function Prueba() {
+export default function HowItWorks() {
 
 	const buttons = ["SHARE YOUR COUGH"]
 	const label = ["SHARE YOUR COUGH"]
@@ -35,7 +35,7 @@ export default function Prueba() {
 				path="/"
 			/>
 
-			<p className="text-gray-300">Section - 7</p>
+			<p className="text-gray-300">Section - 8</p>
 			<Section7
 				//Image
 				sizeImg="pr90"
@@ -51,8 +51,8 @@ export default function Prueba() {
 				TitleLabel3="Results"
 				TextSize="normal"
 				TextLabel1={"Your cough helps us improve our predictive model, thus being crucial in the fight against COVID-19. Contribute to the progress we are making by sharing your cough!"}
-				TextLabel2={"Your cough helps us improve our predictive model, thus being crucial in the fight against COVID-19. Contribute to the progress we are making by sharing your cough!"}
-				TextLabel3={"Your cough helps us improve our predictive model, thus being crucial in the fight against COVID-19. Contribute to the progress we are making by sharing your cough!"}
+				TextLabel2={"Our artificial intelligence algorithm processing the recording to detect Covid-19 based on cough sounds. "}
+				TextLabel3={"Within minutes, our Artificial intelligence algorithm is able to accurately predict your test results through the app."}
 				ContainerTextProps=""				
 			/>
 

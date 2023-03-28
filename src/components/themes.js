@@ -19,9 +19,11 @@ export const ImageBorder = {
 
 export const ImageSize = {
     medium: "w-[50%]",
-    large: "w-[100%]",
+    large: "w-[100%]",    
+    pr100: "w-[100%]",
     pr90: "w-[90%]",
-    pr100: "w-[100%]"
+    pr80: "w-[80%]",
+    pr70: "w-[70%]",
 };
 
 //TITLE THEMES
