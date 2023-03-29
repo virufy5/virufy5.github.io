@@ -1,4 +1,4 @@
-import Image from "~/components/atoms/imageAtom/Image"
+import ImageAtom from "~/components/atoms/imageAtom/ImageAtom"
 import Title from "~/components/atoms/Title/Title"
 
 
@@ -17,7 +17,7 @@ export default function Section6() {
       />
       </div>
       <div className="mr-[5vw] ml-[5vw]">
-      <Image 
+      <ImageAtom 
         route="https://i.ibb.co/qxL131Z/Frame-936.png"
       />
       </div>

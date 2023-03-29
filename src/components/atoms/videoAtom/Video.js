@@ -1,6 +1,6 @@
 import ReactPlayer from 'react-player';
 
-function Video({ width, route}) {
+export default function Video({ width, route}) {
 
     return (
         <>
@@ -8,4 +8,3 @@ function Video({ width, route}) {
         </>
     )
 }
-export default Video;

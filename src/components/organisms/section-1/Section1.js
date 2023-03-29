@@ -1,5 +1,5 @@
 import TitleText from "~/components/molecules/TitleText/TitleText"
-import Image from "~/components/atoms/imageAtom/Image"
+import ImageAtom from "~/components/atoms/imageAtom/ImageAtom"
 import ButtonGroup from "~/components/molecules/ButtonGroup/ButtonGroup"
 
 export default function Section1({
@@ -64,8 +64,8 @@ export default function Section1({
         justifyContent: "flex-start",
         alignItems: "center",
       }} className="mr-[2.5vw]">
-        <Image
-          size={sizeImg}
+        <ImageAtom
+          imagesize={sizeImg}
           border={border}
           route={route}
           alt={alt}
