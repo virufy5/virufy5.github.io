@@ -1,7 +1,7 @@
 
 //Organismo
 import Section1 from "~/components/organisms/section-1/Section1"
-import Section7 from "~/components/organisms/section-8/Section8"
+import Section8 from "~/components/organisms/section-8/Section8"
 
 
 
@@ -36,7 +36,7 @@ export default function HowItWorks() {
 			/>
 
 			<p className="text-gray-300">Section - 8</p>
-			<Section7
+			<Section8
 				//Image
 				sizeImg="pr90"
 				border="none"

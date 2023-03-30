@@ -25,6 +25,10 @@ export const ImageSize = {
     pr90: "w-[90%]",
     pr80: "w-[80%]",
     pr70: "w-[70%]",
+    pr60: "w-[60%]",
+    pr50: "w-[50%]",
+    pr40: "w-[40%]",
+    pr30: "w-[30%]",     
 };
 
 //TITLE THEMES

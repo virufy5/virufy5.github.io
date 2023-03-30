@@ -11,6 +11,57 @@ export default function OuePeople1() {
   const buttons = ["Read more"]
   const label = ["Read more"]
 
+  const CardsData = [
+    {
+      route: "https://s3-alpha-sig.figma.com/img/d7a0/94d3/b581e5e4934faf791d4b4ce106904c18?Expires=1681084800&Signature=Ujf0g1qeuBQlwLDRPU57YcEHKFDD9ME4nGhunAntGfYP-nQ-dy0tQefViixa85-mg29K19H6u3sBUzKMFOtw6fRFwepJtQn4eeC7qFmOM7puYBhRh5bTT8~egVNAAfpyzI0dvCITyv5wi2w1Iwzj9GAXA6dYV9Gl0VJbN5jYK-NY8HHiszapoNzZTcmmGAkjdN1FB25TzYS3YBZzXjlNg2JByE6P2oIg5sLW4DMwtlVeMJ33qMVmKR4S5LzOq91BaJ9BRFHE7xgSZ3VF3GjToBBsqaHDjJq4UL9HkbgnVlSpkprAf8Vgsb-Tpq9bmwGJxMpfocXqgaTFd~80G4OJgQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      name: "Kara Meister, M.D.",
+      subtitle: "Clinical Advisor",
+      text: "Clinical Assistant Professor of ENT Stanford School of Medicine",
+    },
+    {
+      route: "https://s3-alpha-sig.figma.com/img/eb5a/4582/e632f4d6a37639ee7b5bc50c395e6bc6?Expires=1681084800&Signature=SdJjPP67wL0AFHvhJdBTGZenV6wtJQblGND1ssdTiRdHPS2q0Iq~ePnCCk7SbWEUvpyvDZFIWbH5dWhICtxyc7F1WCotZAV8PhHuVu0ASyM4epI5rcLkw7r4W~OJy6tGgL5LWOJcCLbfrqKpqZl8439LaZHj5vnuaglNQQAlSBZHUoeI-qUNQaqgitjb5RWZJ~j9f2tJ~Q24SFR767OtYbNXuVlDJKUsUXAgGComtunBBgvz5PcZ7O~KcVzs6kwtcqhvAWeJxvMtveoyiy5cNJwarVxzewkbvCtHM~htRiEGsTlOmtvsmiawOLCimQQTV7CMW2ruJoYMN1Y8pwZE8g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      name: "Dr. Jure Leskovec",
+      subtitle: "Artificial Intelligence Advisor",
+      text: "Chief Scientist - Pinterest Associate Professor of AI - Stanford",
+    },
+    {
+      route: "https://s3-alpha-sig.figma.com/img/45b9/c3d5/ebb22b045edb2cbea52119a5acf28533?Expires=1681084800&Signature=OYzOjw8LOUGdchgjwRtMmcs9ksHhtBWluOLUntd86mRHxmgxczhlOKrUAXalHLiCeqLmnaIOZixK6xmqkYNrpFF9J7yluZsE8BXR4voJ~gal1nr4fjIwG58lMtsXiSWF0T5FUm0PZIq8dA1zQ9AjysdvCcZFLbscEHABMvFY9h6Mg4-5-gu5~5mwsBT5eiAP9fyYZMrv3pU6VsbDdJCV-0O-3~1bskj6~VcyZy~ciq0bW9IXwg90R8957B4PTD1fBnR~fhLzCeapkBLj38yK-rgDGI3FP59WmTbLJgGX0Hw-EjQJ1inu5zJTARF7cwrbNDcHWAna6eOii3R2YC4m2w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      name: "Melissa Dyrdahl",
+      subtitle: "Executive Marketing Advisor",
+      text: "Former CMO - Adobe Board Member - CommonSpirit Health",
+    },
+    {
+      route: "https://s3-alpha-sig.figma.com/img/7049/d85b/17a7360b884265cafb3d2a11ed444722?Expires=1681084800&Signature=GbXmPqKz-43Pkh1bNmNR3gGcHqxpTPiTdFqIHrLBoMfIh1p9I-rUHcpXeHKRoL0X3mVTQxX7d-DYUH-vnK4~IsOuK20keKJj-1cWrVuhlNoGlkdSjHlOpCdvjiMTTKt3U7zbqsyZRhCeNrM3LvuGAVJiQxXFIBx8bRqW~eB~fDrY~V-uF9DWrL-L49ovU040Hjd3~jPcc9l38aCvyG9R7YxnNaDBw8YxKP1VtfKCeiRlOLeOvdILhLmVN4VldSCWiadya~dHsgTbMLuJs-X36Q3-H5wG1cEcIPUO2KZ0DVWhHvai5YBw2JQqGuzOS8Y1zsh99FfN9xPevplh2B42lQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      name: "Anaïs Rameau, M.D.",
+      subtitle: "Clinical Advisor",
+      text: "Assistant Professor of ENT - Cornell University Doctor of Medicine - McGill University",
+    },
+    {
+      route: "https://s3-alpha-sig.figma.com/img/2d52/0dd7/7f258dcbd49ee9eb116629b3c090cacc?Expires=1681084800&Signature=JMW1HsQcJJGob-~26yUJMiLR~leAIN4JBdWwMatmVCiaRly8xgpZmaVis-2JRR4xxGRhJ~996zviM3PxZe6vE94Ufo4CEmNhY~PQ8oxomRPsiiDC-a3vr7ZBJ80FtcSB3RdQ-iqkqmuuR7M756ECLxYnUxUi4mPCewAIsl~QEgDYwT5INakrygihd3PaSPDZxy~AWOSdbiFC2vUJfsk1PEGimCRbV3yAacxLjS30Gwvosa-2Igcv-lAsA6UVIclc7vEj-6ormuY~5KEkqkg5DpQV6xtZcFHFyMeYfq6~Fbz58Q5L0GtOPIphnidP0Gyh7L8mlpkauFaNilVniaov6A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      name: "Madhav Datt",
+      subtitle: "Executive Nonprofit Advisor",
+      text: "Founder - Green the Gene Former Global Representative for Youth - UN EP",
+    },
+    {
+      route: "https://s3-alpha-sig.figma.com/img/6410/33fd/aed52736739b3b15843358ba4a3cecf0?Expires=1681084800&Signature=NEs~1zUkjPbm-Sf2~vSqAKSRa7BlFNzUXthSUSC8QFwvccxcI4ofa9-5eIiHQcbUU3Zpszu6yWKviD50PjFUdkR5MSzqpaZmtfS4qQ4OMfi3xEFmGBXY7xlbLUdr8h4qmx5zJsNNFa5EGo~IYnUGHTsqxzV7NgGE-tnxvjfGZiVQPWEMlRYvj9KozCz6zx2WIyx-EW4Pgs5o8jsax5FNnB29KwiW7wLntharfZv9cPqnAUIGuf6ooqlhTr0tcUceSrueO6sNZOVejYLw9rLLPu8cBR3uv2CC~PJZzMPPAcP61gse2NM03HjkJshifQum19nVO7z1vUH86tg608SUkg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      name: "Rafi Azim-Khan",
+      subtitle: "Executive Legal Advisor",
+      text: "Partner, IP/IT & Head Data Privacy Europe Pillsbury Winthrop Shaw Pittman LLP",
+    },
+    {
+      route: "https://s3-alpha-sig.figma.com/img/d2fe/166e/17a60782646217d641e9465a433df4f5?Expires=1681084800&Signature=qWz25nNKRASDeGAaYH2fDMktLi9g5Mrl97btYdX2KW~AtlTj-uy60bPHQMiQ1oFKnKkXYLm3KxOVWfFGrFYvev0iIqag~49prBvQmQI6G5sbdbrf93zUiPLmO-8~NBs4h1b3W8h0dAtQfImK-4RNwoEv2Ci0PrOpnVaYW2ZtPJ00PpBIyIFfSRK0Icgm0XpnAvGZJikBdEdkFof9F1PEV~qt8NSW7yw8hYpvLt8aA4zwmMXaXZMVUmzU-7~je1EdJKFPdtaor8sVHje0wjgRD4zlBCEKIKZBm7Saohjgj50USjHVG3hz-vb2T5QRNVbnBVOAXzbcuvR6yHGFuZpjLQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      name: "Richard Swartzbaugh",
+      subtitle: "Executive Advisor",
+      text: "Risk Management - Curaesoft J.D. - University of Iowa",
+    },
+    {
+      route: "https://s3-alpha-sig.figma.com/img/bed8/57dd/ca516c43e2e3378248bae69ce0fd9214?Expires=1681084800&Signature=onKC~j5Z0J5ZOZCXqNkTTTRAK9oztZIJA~0rmxo79rpAkcsJste48urEAQexd8rUcD2BJ8VyeEsajGVzsbYzXNBHGtRcPDzFILYSsWs7WW6zWjr7u4EfUmRCjL7b5IIbeO7GhwABfVnC~Cu0BTeP4hqHVjHfqL7oCuWPbaqaC0m6P5FGyn6gyXhRRZJhrY2XpWfvD45WdAqzTKwVbHMCDFIQK-AqpKy2YghIBaPTZdaLmZORl5QB59GYcyG74kNarORqJQoxxMsdmD-To5B8vEhSyyZPLEfah1-PVKV1B8Bb4PR~UuWDGhNrp1~zUfuTyHczrFtZDAjggWkC9CrRaw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      name: "Ronan Dunlop",
+      subtitle: "Executive Nonprofit Advisor",
+      text: "Founder - Green the Gene Former Global Representative for Youth - UN EP",
+    }
+  ]
+
 	return (
 		<>
 			<h1 className="text-sky-600 text-3xl m-4">Our People 1</h1>
@@ -31,7 +82,7 @@ export default function OuePeople1() {
         TextLabel="Virufy is a nonprofit research organization developing artificial intelligence (AI) technology to rapidly screen for COVID-19 from cough patterns, through use of a smartphone at no cost."
         ContainerTextProps="items-start h-[100%] mr-2"
         //Image
-        sizeImg="pr80" 
+        sizeImg="pr70" 
         border="radious" 
         route="https://s3-alpha-sig.figma.com/img/f3d5/9250/e711a20452cb02cc8c355fcdfa662a16?Expires=1681084800&Signature=MWrmGju~QK9Rn8i0kySD2a~yFK4ooLvYhgLLJxxogiBiQkH4Aa6zuVraxRnUOw93EG7kvWykXl802gGf-5oe8NAR3QnvmS9bOJ22I~CEIvtMuTwuevWHtuKj2RD0VD-AgvV681hel4gdY0JEPLrej2Tz3N9zLkNc5zKHopbXF8IHyxvm0A19Bf2J8N9GC0F1WmcANSqEn8mv-AnpIAxIDOcDPr-oRxdalIH-CGfgTpIXSOTvzAhKNPexeZCp-apSIQvgn2U6RgXZYDsAVJSvODW4pCgDlnC52cHeUC9pJkSscgdI0zfMt1v1-SEIp8XMzX5W-4tiwYXBYwcTUlCUgw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" 
         alt="imagen de algo"
@@ -43,7 +94,9 @@ export default function OuePeople1() {
         path="/"
 			/>
 
-			<Card />
+			<Card 
+        CardsData={CardsData}
+      />
 
 		</>
 	);
