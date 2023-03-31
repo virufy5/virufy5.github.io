@@ -1,6 +1,6 @@
 import Title from "~/components/atoms/Title/Title"
 import Text from "~/components/atoms/Text/Text"
-import ImageAtom from "~/components/atoms/imageAtom/ImageAtom";
+import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal";
 
 
 export default function TitleText({
@@ -9,7 +9,7 @@ export default function TitleText({
   TitleLabel,
   TextSize,
   TextLabel,
-  ImgSize, 
+  imagesize,
   ImgRoute, 
   ImgAlt, 
   ImgBorder
@@ -21,15 +21,15 @@ export default function TitleText({
 
       {Order[0] == "Title" && <Title H={TitleSize} Text={TitleLabel} />}
       {Order[0] == "Text" && <Text Style={TextSize} Text={TextLabel} />}
-      {Order[0] == "Image" && <ImageAtom imagesize={ImgSize} border={ImgBorder} route={ImgRoute} alt={ImgAlt} />}
+      {Order[0] == "Image" && <ImageAtomLocal imagesize={imagesize} border={ImgBorder} src={ImgRoute} alt={ImgAlt} />}
       
       {Order[1] == "Title" && <Title H={TitleSize} Text={TitleLabel} />}
       {Order[1] == "Text" && <Text Style={TextSize} Text={TextLabel} />}
-      {Order[1] == "Image" && <ImageAtom imagesize={ImgSize} border={ImgBorder} route={ImgRoute} alt={ImgAlt} />}
+      {Order[1] == "Image" && <ImageAtomLocal imagesize={imagesize} border={ImgBorder} src={ImgRoute} alt={ImgAlt} />}
 
       {Order[2] == "Title" && <Title H={TitleSize} Text={TitleLabel} />}
       {Order[2] == "Text" && <Text Style={TextSize} Text={TextLabel} />}
-      {Order[2] == "Image" && <ImageAtom imagesize={ImgSize} border={ImgBorder} route={ImgRoute} alt={ImgAlt} />}      
+      {Order[2] == "Image" && <ImageAtomLocal imagesize={imagesize} border={ImgBorder} src={ImgRoute} alt={ImgAlt} />}      
       
     </>
   );

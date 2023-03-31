@@ -1,9 +1,11 @@
 import * as React from 'react';
 import styles from './Select.module.css'
+/* import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal"; */
 
 export default function Select({
     Text,
-    Options
+    Options,
+    flag
 }) {
 
   
@@ -19,7 +21,7 @@ export default function Select({
       <label>
         {Text}
         <select id='xyz' value={value} onChange={handleChange} className={styles.select}>
-          {Options.map((option) => (
+          {Options.map((option) => ( 
             <option value={option.value}>{option.label}</option>
           ))}
         </select>

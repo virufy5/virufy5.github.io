@@ -1,6 +1,12 @@
-import TitleText from "~/components/molecules/TitleText/TitleText"
+//Atoms
 import Button from "~/components/atoms/button/Button"
-import ImageAtom from "~/components/atoms/imageAtom/ImageAtom"
+
+//Molecules
+import TitleText from "~/components/molecules/TitleText/TitleText"
+import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal"
+
+//Assets
+import ImageSection3 from "~/assets/static/images/section3/1.jpg"
 
 export default function Section3() {
   return (
@@ -27,10 +33,10 @@ export default function Section3() {
       justifyContent: "center",
       alignItems: "center",
     }}>
-      <ImageAtom
+      <ImageAtomLocal
           imagesize="pr100" 
           border="radious" 
-          route="https://s3-alpha-sig.figma.com/img/c9cc/c34d/0d3e35cb9938eb05c69b1c012b1fa9c0?Expires=1680480000&Signature=OwrhrDVgqImxdUPNb~1Ap8FjrzG~Ehc45zjUJl2dGh5ZXu31D~Ld0DYani-aNAiAnBUcAHbcCOBS-WNEJ3NPMTfUjYJkfEwbU5uId2ypkKP3oZUCAz4H6D4V-avFU7Be8oYwiZyRrLtIo5pOQOPeyRQMSLHGerZ-58DqLXIlBdmWnKH6sXfo~watvCTVX5ZHKJ~7zRnQDhllNewH4FfMoPQI2abg84agsJ3axG1-yY~pmaCHDXPQZFNVnBmuG3KL5dOhgNfzsBvlSUWd7HgPB~FimLE~YtKQouNZA2FEkaH5NEXZICU87tGGV1EGAvWAnn-lf~vo0Xzja0fKzvVzIA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" 
+          src={ImageSection3}
           alt="imagen de algo" 
         />
       </div>

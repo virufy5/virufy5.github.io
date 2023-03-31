@@ -1,6 +1,10 @@
-import ImageAtom from "~/components/atoms/imageAtom/ImageAtom"
+//Atoms
+import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal"
 import Title from "~/components/atoms/Title/Title"
+import Button from "~/components/atoms/button/Button"
 
+//Assets
+import ImageSection6 from "~/assets/static/images/section6/1.png"
 
 export default function Section6() {
   return (
@@ -17,9 +21,10 @@ export default function Section6() {
       />
       </div>
       <div className="mr-[5vw] ml-[5vw]">
-      <ImageAtom 
-        route="https://i.ibb.co/qxL131Z/Frame-936.png"
+      <ImageAtomLocal
+        src={ImageSection6}
       />
+      <Button size="large" type="primary" path="#" label="Become  a supporter" />
       </div>
     </div>
   )

@@ -1,9 +1,9 @@
-import ImageAtom from "../../atoms/imageAtom/ImageAtom";
-import TitleText from "~/components/molecules/TitleText/TitleText"
-
+import ImageAtomLocal from "../../atoms/imageAtom/ImageAtomLocal";
+import TitleText from "~/components/molecules/TitleText/TitleText";
 
 export default function CardHome({  
-    route, 
+    src,
+    imagesize,
     alt,
     TitleSize,
     TitleLabel,
@@ -27,12 +27,13 @@ export default function CardHome({
                     display: "flex",
                     alignItems: "center"
                 }}>
-                <ImageAtom border="circular" imagesize="px100" route={route} alt={alt}></ImageAtom>
+                <ImageAtomLocal border="circular" imagesize={imagesize} src={src} alt={alt}/>
             </div>
             
                 <div
                     style={{
                         width: "100%",
+                        height: "100%",
                         display: "flex",
                         flexDirection: "column",
                         justifyContent: "space-evenly",
