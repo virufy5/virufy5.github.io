@@ -1,10 +1,15 @@
+//Assets
+import ImageSection1 from "~/assets/static/images/section1/1.jpg"
 
 //Organismo
+import Navbar from "~/components/molecules/Navbar/Navbar"
 import Section1 from "~/components/organisms/section-1/Section1"
+import Section2 from "~/components/organisms/section-2/Section2"
 import Section3 from "~/components/organisms/section-3/Section3"
+import Section4 from "~/components/organisms/section-4/Section4"
 import Section5 from "~/components/organisms/section-5/Section5"
 import Section6 from "~/components/organisms/section-6/Section6"
-
+import Section7 from "~/components/organisms/section-7/Section7"
 
 export default function Prueba() {
 
@@ -13,6 +18,8 @@ export default function Prueba() {
 
   return (
     <>
+      <Navbar/>
+
       <h1 className="text-sky-600 text-3xl m-4">HOME</h1>
       
       <p className="text-gray-300">Section - 1</p>
@@ -24,9 +31,9 @@ export default function Prueba() {
         TextLabel={"Virufy is a nonprofit research organization developing artificial intelligence (AI) technology to rapidly screen for COVID-19 from cough patterns, through use of a smartphone at no cost."}
         ContainerTextProps="items-start h-[100%] mr-2"
         //Image
-        sizeImg="pr90" 
+        sizeImg="pr90"
         border="radious" 
-        route="https://s3-alpha-sig.figma.com/img/99bb/cede/512efb42eae3a6e08942c7ea56304393?Expires=1680480000&Signature=aZcNGWBPN6Y3Ud4uOhr3r~zM0poKbcfwkkVDe73KK2yTVdD~KhQsYvaKcYsY-dz4FYuGLKHJbGr9Ag0kQaJwdNBzrNHgFmx2QCXeSEM8RuI8gxBguLPXlNGVtpbj72Nk9oRAJWEGunuoF5ld6CQIGu~s9kFWGmxp1ikj7d~92h5tBnmjcVad0aJ9U1YXgko7KHgZs0FFO8VWXOfD8Xbo1DZYr-dp0MnEj~a8Nb7M9FucyuMRuYEelj6il8VDOjFivfqDCdXRg79NeINN19yLV2-qqrScvdQqR3UVUyeUfIU5PQq4yIWlilx-uHB8CluCjMHp6S53F~E-cuSliGdGZA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" 
+        route={ImageSection1} 
         alt="imagen de algo"
         //Buttons
         buttons={buttons}
@@ -36,8 +43,14 @@ export default function Prueba() {
         path="/"
       />
 
+      <p className="text-gray-300">Section - 2</p>
+      <Section2 />
+
       <p className="text-gray-300">Section - 3</p>
       <Section3 />
+
+      <p className="text-gray-300">Section - 4</p>
+      <Section4 />
 
       <p className="text-gray-300">Section - 5</p>
       <Section5 />
@@ -45,6 +58,8 @@ export default function Prueba() {
       <p className="text-gray-300">Section - 6</p>
       <Section6 /> 
 
+      <p className="text-gray-300">Section - 7</p>
+      <Section7 /> 
     </>
   );
 }

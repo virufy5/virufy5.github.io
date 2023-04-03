@@ -1,12 +1,12 @@
 import Button from "../../atoms/button/Button";
-import ImageAtom from "../../atoms/imageAtom/ImageAtom";
+import ImageAtomLocal from "../../atoms/imageAtom/ImageAtomLocal";
 
-export default function ButtonGroup({ size, type, path, label, border, imagesize, route, alt }) {
+export default function ButtonGroup({ size, type, path, label, border, imagesize, src, alt }) {
 
     return (
         <>
             <div>
-                <ImageAtom border={border} size={imagesize} route={route} alt={alt}></ImageAtom>
+                <ImageAtomLocal border={border} imagesize={imagesize} src={src} alt={alt}/>
             </div>
             <div>
                 <Button type={type} size={size} path={path} label={label} />

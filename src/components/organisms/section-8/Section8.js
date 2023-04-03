@@ -1,5 +1,5 @@
 import Button from "~/components/atoms/button/Button"
-import ImageAtom from "~/components/atoms/imageAtom/ImageAtom"
+import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal"
 import TitleText from "~/components/molecules/TitleText/TitleText"
 
 export default function Section8({
@@ -35,10 +35,10 @@ export default function Section8({
 						alignItems: "center",
 						flex: "1"
 					}} className="ml-[5vw]">
-					<ImageAtom
+					<ImageAtomLocal
 						imagesize={sizeImg}
 						border={border}
-						route={route1}
+						src={route1}
 						alt={alt}
 					/>
 					<TitleText
@@ -56,10 +56,10 @@ export default function Section8({
 					alignItems: "center",
 					flex: "1"
 				}} className="">
-					<ImageAtom
+					<ImageAtomLocal
 						imagesize={sizeImg}
 						border={border}
-						route={route2}
+						src={route2}
 						alt={alt}
 					/>
 					<TitleText
@@ -77,10 +77,10 @@ export default function Section8({
 					alignItems: "center",
 					flex: "1"
 				}} className="mr-[2.5vw]">
-					<ImageAtom
+					<ImageAtomLocal
 						imagesize={sizeImg}
 						border={border}
-						route={route3}
+						src={route3}
 						alt={alt}
 					/>
 					<TitleText

@@ -1,5 +1,5 @@
 import TitleText from "~/components/molecules/TitleText/TitleText"
-import ImageAtom from "~/components/atoms/imageAtom/ImageAtom"
+import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal"
 import ButtonGroup from "~/components/molecules/ButtonGroup/ButtonGroup"
 
 export default function Section1({
@@ -64,10 +64,10 @@ export default function Section1({
         justifyContent: "flex-start",
         alignItems: "center",
       }} className="mr-[2.5vw]">
-        <ImageAtom
+        <ImageAtomLocal
           imagesize={sizeImg}
           border={border}
-          route={route}
+          src={route}
           alt={alt}
         />
       </div>

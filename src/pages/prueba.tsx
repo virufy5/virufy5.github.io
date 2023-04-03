@@ -51,8 +51,6 @@ export default function Prueba() {
       <Select Text="Prueba select átomo" Options={options} />
       <LinkAtom Routes={links} Style="link" />
 
-
-
       <h1 className="text-sky-600 text-3xl m-4 ">Moleculas</h1>
       <TitleText
         TitleSize="h2"
