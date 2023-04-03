@@ -5,8 +5,9 @@ import Section1 from "~/components/organisms/section-1/Section1"
 //Prueba
 import TextinsImg from "~/components/molecules/TextinsImg/TextinsImg"
 import Card from "~/components/molecules/Card/Card"
+import Title from "~/components/atoms/Title/Title"
 
-export default function OuePeople1() {
+export default function OurPeople1() {
 
   const buttons = ["Read more"]
   const label = ["Read more"]
@@ -73,13 +74,20 @@ export default function OuePeople1() {
 				altImg="Imagen cabezera"
 				Text="We unite from across the world to defeat COVID-19 one cough at a time."
 			/>
-
+<div
+  className="text-center m-7"
+>
+      <Title 
+        H="h1"
+        Text="Meet Our Founder" 
+      />
+</div>
 			<Section1 
         //TitleText
-        TitleSize="h1"
-        TitleLabel="An online Covid-19 test is possible"
+        TitleSize="h2"
+        TitleLabel="Amil Khanzada"
         TextSize="normal"
-        TextLabel="Virufy is a nonprofit research organization developing artificial intelligence (AI) technology to rapidly screen for COVID-19 from cough patterns, through use of a smartphone at no cost."
+        TextLabel="MBA Candidate, Haas School of Business Master of Engineering Candidate, Department of Electrical Engineering and Computer Sciences"
         ContainerTextProps="items-start h-[100%] mr-2"
         //Image
         sizeImg="pr70" 
