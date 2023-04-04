@@ -40,6 +40,9 @@ export default function HowItWorks() {
 
 			<p className="text-gray-300">Section - 8</p>
 			<Section8
+				TitleLabel="How our online Covid-19 test works"
+				TitleSize="h1"
+				ContainerTitleProps="text-center ml-[5vw] mr-[5vw]"
 				//Image
 				sizeImg="pr90"
 				border="none"
@@ -48,7 +51,7 @@ export default function HowItWorks() {
 				route3={howItWorksStep3}
 				alt="Section 7"
 				//TitleText
-				TitleSize="h3"
+				TitleSize1="h3"
 				TitleLabel1="Recording your cough"
 				TitleLabel2="Processing"
 				TitleLabel3="Results"
@@ -56,7 +59,7 @@ export default function HowItWorks() {
 				TextLabel1={"Your cough helps us improve our predictive model, thus being crucial in the fight against COVID-19. Contribute to the progress we are making by sharing your cough!"}
 				TextLabel2={"Our artificial intelligence algorithm processing the recording to detect Covid-19 based on cough sounds. "}
 				TextLabel3={"Within minutes, our Artificial intelligence algorithm is able to accurately predict your test results through the app."}
-				ContainerTextProps=""				
+				ContainerTextProps=""			
 			/>
 
 

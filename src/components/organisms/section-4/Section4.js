@@ -10,10 +10,9 @@ export default function Section4({
     alt,
 }) {
     return (
-        <div className="flex"
+        <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0"
             style={{
                 width: "100%",
-                flexDirection: "column",
                 textAlign: "center",
                 marginTop: "160px"
             }}>

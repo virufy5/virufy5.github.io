@@ -1,31 +1,47 @@
 import TitleText from "~/components/molecules/TitleText/TitleText"
 
-export default function Section5() {
+export default function Section5({
+  StylePropsSection,
+  TitleSize1,
+  TitleLabel1,
+  TextSize1,
+  TextLabel1,
+  ContainerTitleProps1,
+  ContainerTextProps1,
+  TitleClassProps1,
+  TextClassProps1,
+  TitleSize2,
+  TitleLabel2,
+  TextSize2,
+  TextLabel2,
+  ContainerTitleProps2,
+  ContainerTextProps2,
+  TitleClassProps2,
+  TextClassProps2,  
+}) {
   return (
     <div
-    style={{
-      width: "100%",
-      textAlign: "center",
-    }}>
+      className={StylePropsSection}
+    >
       <TitleText
-        TitleSize="h1"
-        TitleLabel="The Virufy Community"
-        TextSize="subtitle"
-        TextLabel={"Virufy was founded in March 2020. Today, Virufighters across five continents are committed to making disease screening instant and free of charge through innovative technology."}
-        ContainerTitleProps="mb-5 mr-[5vw]"
-        ContainerTextProps="mb-4 mr-[5vw]"
-        TitleClassProps="ml-[5vw]"
-        TextClassProps="ml-[5vw]"
+        TitleSize={TitleSize1}
+        TitleLabel={TitleLabel1}
+        TextSize={TextSize1}
+        TextLabel={TextLabel1}
+        ContainerTitleProps={ContainerTitleProps1}
+        ContainerTextProps={ContainerTextProps1}
+        TitleClassProps={TitleClassProps1}
+        TextClassProps={TextClassProps1}
       />
       <TitleText
-        TitleSize="h2"
-        TitleLabel="We believe that together we can help improve the world"
-        TextSize="normal"
-        TextLabel={"People all over the world support and work with us to combat this type of disease but many people like you can help us too"}
-        ContainerTitleProps="mb-5 mr-[5vw]"
-        ContainerTextProps="mb-4 mr-[5vw]"
-        TitleClassProps="ml-[5vw]"
-        TextClassProps="ml-[5vw]"
+        TitleSize={TitleSize2}
+        TitleLabel={TitleLabel2}
+        TextSize={TextSize2}
+        TextLabel={TextLabel2}
+        ContainerTitleProps={ContainerTitleProps2}
+        ContainerTextProps={ContainerTextProps2}
+        TitleClassProps={TitleClassProps2}
+        TextClassProps={TextClassProps2}
       />
     </div>
   )

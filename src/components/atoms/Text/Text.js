@@ -1,6 +1,6 @@
 import { TextProps } from "../../themes";
 
-export default function Title({
+export default function Text({
   Text,
   Style,
   TextClassProps

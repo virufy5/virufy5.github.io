@@ -30,6 +30,7 @@ import Card20 from "~/assets/static/images/ourPeople/card1.jpg"
 import Card21 from "~/assets/static/images/ourPeople/card1.jpg"
 import Card22 from "~/assets/static/images/ourPeople/card1.jpg"
 import Card23 from "~/assets/static/images/ourPeople/card1.jpg"
+import ImageAmil from "~/assets/static/images/ourPeople/Amil.png"
 
 export default function OurPeople1() {
 
@@ -38,7 +39,7 @@ export default function OurPeople1() {
 
   const CardsData = [
     {
-      route: "https://s3-alpha-sig.figma.com/img/d7a0/94d3/b581e5e4934faf791d4b4ce106904c18?Expires=1681084800&Signature=Ujf0g1qeuBQlwLDRPU57YcEHKFDD9ME4nGhunAntGfYP-nQ-dy0tQefViixa85-mg29K19H6u3sBUzKMFOtw6fRFwepJtQn4eeC7qFmOM7puYBhRh5bTT8~egVNAAfpyzI0dvCITyv5wi2w1Iwzj9GAXA6dYV9Gl0VJbN5jYK-NY8HHiszapoNzZTcmmGAkjdN1FB25TzYS3YBZzXjlNg2JByE6P2oIg5sLW4DMwtlVeMJ33qMVmKR4S5LzOq91BaJ9BRFHE7xgSZ3VF3GjToBBsqaHDjJq4UL9HkbgnVlSpkprAf8Vgsb-Tpq9bmwGJxMpfocXqgaTFd~80G4OJgQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      route: "https://s3-alpha-sig.figma.com/img/eb5a/4582/e632f4d6a37639ee7b5bc50c395e6bc6?Expires=1681084800&Signature=SdJjPP67wL0AFHvhJdBTGZenV6wtJQblGND1ssdTiRdHPS2q0Iq~ePnCCk7SbWEUvpyvDZFIWbH5dWhICtxyc7F1WCotZAV8PhHuVu0ASyM4epI5rcLkw7r4W~OJy6tGgL5LWOJcCLbfrqKpqZl8439LaZHj5vnuaglNQQAlSBZHUoeI-qUNQaqgitjb5RWZJ~j9f2tJ~Q24SFR767OtYbNXuVlDJKUsUXAgGComtunBBgvz5PcZ7O~KcVzs6kwtcqhvAWeJxvMtveoyiy5cNJwarVxzewkbvCtHM~htRiEGsTlOmtvsmiawOLCimQQTV7CMW2ruJoYMN1Y8pwZE8g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
       name: "Kara Meister, M.D.",
       subtitle: "Clinical Advisor",
       text: "Clinical Assistant Professor of ENT Stanford School of Medicine",
@@ -87,26 +88,26 @@ export default function OurPeople1() {
     }
   ]
 
-	return (
-		<>
-			<h1 className="text-sky-600 text-3xl m-4">Our People 1</h1>
+  return (
+    <>
+      <h1 className="text-sky-600 text-3xl m-4">Our People 1</h1>
 
-			<TextinsImg
-				sizeImg="auto"
-				borderImg="none"
-				routeImg="https://s3-alpha-sig.figma.com/img/598a/ee88/e2a7c1d88a487a3d3d9dd1d55f06d0d1?Expires=1681084800&Signature=JD81GZFwcnTmJNz4iCsLGf85GFLC~cN0VAN1miPhQ-ryh~0tlLTaHSpJBa4rrkoInqkE29J7a~qs5xKJxaKtAgeMvbNTDmjwcTERhimo0mNGss4XNFR9dysy5O-D69JdsITgYSi9-RPNLEkeloP~wKJoT1yvP8ir3lXABjmLL2oSb0zy~v~n5p2tZEXu2vzuHoN8bCwvUrzBK1IYDFhPpBgwEQBevwV7W8b9R~DcivedwmOpj01nQJk8vNh39LkVZbVbBhdSCIZ9j8A9tkVHkNjTIRPzgGjkdHhHVjpuFs1KfKsrPAZIvK3vCj5DiOxAZqIvXrnQa2Ypt6-qirrqjg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-				altImg="Imagen cabezera"
-				Text="We unite from across the world to defeat COVID-19 one cough at a time."
-			/>
-<div
-  className="text-center m-7"
->
-      <Title 
-        H="h1"
-        Text="Meet Our Founder" 
+      <TextinsImg
+        sizeImg="auto"
+        borderImg="none"
+        src="https://s3-alpha-sig.figma.com/img/598a/ee88/e2a7c1d88a487a3d3d9dd1d55f06d0d1?Expires=1681084800&Signature=JD81GZFwcnTmJNz4iCsLGf85GFLC~cN0VAN1miPhQ-ryh~0tlLTaHSpJBa4rrkoInqkE29J7a~qs5xKJxaKtAgeMvbNTDmjwcTERhimo0mNGss4XNFR9dysy5O-D69JdsITgYSi9-RPNLEkeloP~wKJoT1yvP8ir3lXABjmLL2oSb0zy~v~n5p2tZEXu2vzuHoN8bCwvUrzBK1IYDFhPpBgwEQBevwV7W8b9R~DcivedwmOpj01nQJk8vNh39LkVZbVbBhdSCIZ9j8A9tkVHkNjTIRPzgGjkdHhHVjpuFs1KfKsrPAZIvK3vCj5DiOxAZqIvXrnQa2Ypt6-qirrqjg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+        altImg="Imagen cabezera"
+        Text="We unite from across the world to defeat COVID-19 one cough at a time."
       />
-</div>
-			<Section1 
+      <div
+        className="text-center m-7"
+      >
+        <Title
+          H="h1"
+          Text="Meet Our Founder"
+        />
+      </div>
+      <Section1
         //TitleText
         TitleSize="h2"
         TitleLabel="Amil Khanzada"
@@ -114,9 +115,9 @@ export default function OurPeople1() {
         TextLabel="MBA Candidate, Haas School of Business Master of Engineering Candidate, Department of Electrical Engineering and Computer Sciences"
         ContainerTextProps="items-start h-[100%] mr-2"
         //Image
-        sizeImg="pr70" 
-        border="radious" 
-        route="https://s3-alpha-sig.figma.com/img/f3d5/9250/e711a20452cb02cc8c355fcdfa662a16?Expires=1681084800&Signature=MWrmGju~QK9Rn8i0kySD2a~yFK4ooLvYhgLLJxxogiBiQkH4Aa6zuVraxRnUOw93EG7kvWykXl802gGf-5oe8NAR3QnvmS9bOJ22I~CEIvtMuTwuevWHtuKj2RD0VD-AgvV681hel4gdY0JEPLrej2Tz3N9zLkNc5zKHopbXF8IHyxvm0A19Bf2J8N9GC0F1WmcANSqEn8mv-AnpIAxIDOcDPr-oRxdalIH-CGfgTpIXSOTvzAhKNPexeZCp-apSIQvgn2U6RgXZYDsAVJSvODW4pCgDlnC52cHeUC9pJkSscgdI0zfMt1v1-SEIp8XMzX5W-4tiwYXBYwcTUlCUgw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" 
+        sizeImg="pr70"
+        border="radious"
+        route={ImageAmil}
         alt="imagen de algo"
         //Buttons
         buttons={buttons}
@@ -124,12 +125,12 @@ export default function OurPeople1() {
         type="primary"
         sizeBtn="medium"
         path="/"
-			/>
+      />
 
-			<Card 
+      <Card
         CardsData={CardsData}
       />
 
-		</>
-	);
+    </>
+  );
 }
