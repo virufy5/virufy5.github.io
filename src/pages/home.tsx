@@ -2,8 +2,6 @@
 import ImageSection1 from "~/assets/static/images/section1/1.jpg"
 
 //Organismo
-import Navbar from "~/components/organisms/Navbar/Navbar"
-import Footer from "~/components/organisms/Footer/Footer"
 import Section1 from "~/components/organisms/section-1/Section1"
 import Section2 from "~/components/organisms/section-2/Section2"
 import Section3 from "~/components/organisms/section-3/Section3"
@@ -21,11 +19,9 @@ export default function Prueba() {
 
   return (
     <>
-      <Navbar/>
-
-      <h1 className="text-sky-600 text-3xl m-4">HOME</h1>
+      {/* <h1 className="text-sky-600 text-3xl m-4">HOME</h1> */}
       
-      <p className="text-gray-300">Section - 1</p>
+      {/* <p className="text-gray-300">Section - 1</p> */}
       <Section1
         //TitleText
         TitleSize="h1"
@@ -46,16 +42,16 @@ export default function Prueba() {
         path="/"
       />
 
-      <p className="text-gray-300">Section - 2</p>
+      {/* <p className="text-gray-300">Section - 2</p> */}
       <Section2 />
 
-      <p className="text-gray-300">Section - 3</p>
+      {/* <p className="text-gray-300">Section - 3</p> */}
       <Section3 />
 
-      <p className="text-gray-300">Section - 4</p>
+      {/* <p className="text-gray-300">Section - 4</p> */}
       <Section4 />
 
-      <p className="text-gray-300">Section - 5</p>
+      {/* <p className="text-gray-300">Section - 5</p> */}
       <Section5
         StylePropsSection="text-center w-[100%]"
         TitleSize1="h1"
@@ -76,16 +72,15 @@ export default function Prueba() {
         TextClassProps2="ml-[5vw]"
       />
 
-      <p className="text-gray-300">Section - Card Slider</p>
+      {/* <p className="text-gray-300">Section - Card Slider</p> */}
       <CardSlider /> 
 
 
-      <p className="text-gray-300">Section - 6</p>
+      {/* <p className="text-gray-300">Section - 6</p> */}
       <Section6 /> 
 
-      <p className="text-gray-300">Section - 7</p>
-      <Section7 /> 
-      <Footer /> 
+      {/* <p className="text-gray-300">Section - 7</p> */}
+      <Section7 TitleLabel="Let’s help the world and save many lives by recording your cough" Label1="share your cough" Label2="learn more"/> 
     </>
   );
 }

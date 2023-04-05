@@ -10,7 +10,7 @@ export default function Section4({
     alt,
 }) {
     return (
-        <div className="text-center mt-[40px] mb-[40px] flex flex-col space-y-4 space-x-4 ml-[5vw] mr-[5vw]">
+        <div className="text-center mt-[100px] mb-[40px] flex flex-col space-y-4 space-x-4 ml-[5vw] mr-[5vw]">
             <TitleText
                 TitleSize="h1"
                 TitleLabel="Meet Our Founder"

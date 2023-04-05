@@ -32,6 +32,7 @@ export default function Section1({
       md:justify-center 
       md:items-center
       md:text-center
+      mt-16
     ">
       <div className="
         text-center 

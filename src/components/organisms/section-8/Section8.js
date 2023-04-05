@@ -24,18 +24,15 @@ export default function Section8({
 
 }) {
   return (
-    <div>
+    <div className="mt-[80px] mb-[80px]">
       <TitleText
         TitleSize={TitleSize}
         TitleLabel={TitleLabel}
         ContainerTitleProps={ContainerTitleProps}
       />
-      <div className="flex flex-wrap -mb-4 text-center items-center w-[100%] justify-center mt-5"
-        style={{
-          width: "100vw",
-        }}>
+      <div className="flex flex-col lg:flex-row mb-4 text-center items-center w-[100%] justify-center mt-5 w-100">
         <div className="
-					flex flex-col text-center items-center w-[258px] sm:w-1/1 md:w-1/2 lg:w-1/3 xl:w-1/3 mt-4
+					flex flex-col text-center items-center w-[258px] sm:w-1/1 md:w-1/1 lg:w-1/3 xl:w-1/3 mt-4
 				">
           <ImageAtomLocal
             imagesize={sizeImg}
@@ -69,7 +66,7 @@ export default function Section8({
           />
         </div>
         <div className="
-					flex flex-col text-center items-center w-[258px] sm:w-1/1 md:w-1/2 lg:w-1/3 xl:w-1/3 mb-4 mt-4
+					flex flex-col text-center items-center w-[258px] sm:w-1/1 md:w-1/1 lg:w-1/3 xl:w-1/3 mb-4 mt-4
 				">
           <ImageAtomLocal
             imagesize={sizeImg}

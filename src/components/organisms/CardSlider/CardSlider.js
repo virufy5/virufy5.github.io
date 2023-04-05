@@ -32,8 +32,8 @@ export default function CardSlider() {
 
     return (
         <>
-            <div className="navigation-wrapper mt-9">
-                <div ref={sliderRef} className="keen-slider">
+            <div className="navigation-wrapper mt-0 h-72">
+                <div ref={sliderRef} className="keen-slider h-60 sm:h-72">
                     <div className="keen-slider__slide number-slide1">
                         <CardHome
                             src={Advisor1}
@@ -105,38 +105,39 @@ export default function CardSlider() {
                                 instanceRef.current.track.details.slides.length - 1
                             }
                         />
+                        {loaded && instanceRef.current && (
+                            <div className="dots">
+                                {[
+                                    ...Array(instanceRef.current.track.details.slides.length).keys(),
+                                ].map((idx) => {
+                                    return (
+                                        <button
+                                            key={idx}
+                                            onClick={() => {
+                                                instanceRef.current?.moveToIdx(idx)
+                                            }}
+                                            className={"dot" + (currentSlide === idx ? " active" : "")}
+                                        ></button>
+                                    )
+                                })}
+                            </div>
+                        )}
                     </>
                 )}
             </div>
-            {loaded && instanceRef.current && (
-                <div className="dots">
-                    {[
-                        ...Array(instanceRef.current.track.details.slides.length).keys(),
-                    ].map((idx) => {
-                        return (
-                            <button
-                                key={idx}
-                                onClick={() => {
-                                    instanceRef.current?.moveToIdx(idx)
-                                }}
-                                className={"dot" + (currentSlide === idx ? " active" : "")}
-                            ></button>
-                        )
-                    })}
-                </div>
-            )}
+
         </>
     )
 }
 
 function Arrow(props) {
-    const disabeld = props.disabled ? " arrow--disabled" : ""
+    const disabled = props.disabled ? " arrow--disabled" : ""
     return (
         <svg
 
             onClick={props.onClick}
-            className={`w-10 h-10 arrow ${props.left ? "arrow--left" : "arrow--right"
-                } ${disabeld}`}
+            className={`w-5 h-5 arrow ${props.left ? "arrow--left" : "arrow--right"
+                } ${disabled}`}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
         >
