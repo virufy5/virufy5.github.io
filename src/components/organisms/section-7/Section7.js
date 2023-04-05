@@ -8,8 +8,9 @@ export default function Section4({
     alt,
 }) {
     return (
-        <div className="flex mt-[70px] md:mt-[100px]"
+        <div className="flex"
             style={{
+                marginTop: "90px",
                 width: "70%",
                 flexDirection: "column",
                 margin: "0 auto",
