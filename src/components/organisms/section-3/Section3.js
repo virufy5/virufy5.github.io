@@ -15,6 +15,7 @@ export default function Section3() {
       width: "100%",
       textAlign: "center",
       alignItems: "center",
+      marginTop: "50px"
     }}>
       <TitleText
         TitleSize="h1"
