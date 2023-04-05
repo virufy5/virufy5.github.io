@@ -24,16 +24,13 @@ export default function Section8({
 
 }) {
   return (
-    <div>
+    <div className="mt-[80px] mb-[80px]">
       <TitleText
         TitleSize={TitleSize}
         TitleLabel={TitleLabel}
         ContainerTitleProps={ContainerTitleProps}
       />
-      <div className="flex flex-wrap -mb-4 text-center items-center w-[100%] justify-center mt-5"
-        style={{
-          width: "100vw",
-        }}>
+      <div className="flex flex-col lg:flex-row mb-4 text-center items-center w-[100%] justify-center mt-5 w-100">
         <div className="
 					flex flex-col text-center items-center w-[250px] sm:w-[250px] md:w-[250px] lg:w-[447px] xl:w-[447px] mt-0 
 				">

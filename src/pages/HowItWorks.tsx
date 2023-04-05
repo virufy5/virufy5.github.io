@@ -15,9 +15,9 @@ export default function HowItWorks() {
 
 	return (
 		<>
-			<h1 className="text-sky-600 text-3xl m-4">How it Works</h1>
+{/* 			<h1 className="text-sky-600 text-3xl m-4">How it Works</h1>
 
-			<p className="text-gray-300">Section - 1</p>
+			<p className="text-gray-300">Section - 1</p> */}
 			<Section1
 				//TitleText
 				TitleSize="h1"
@@ -38,7 +38,7 @@ export default function HowItWorks() {
 				path="/"
 			/>
 
-			<p className="text-gray-300">Section - 8</p>
+{/* 			<p className="tex		t-gray-300">Section - 8</p> */}
 			<Section8
 				TitleLabel="How our online Covid-19 test works"
 				TitleSize="h1"
