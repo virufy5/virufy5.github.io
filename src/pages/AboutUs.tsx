@@ -13,7 +13,7 @@ export default function AboutUs() {
 
   const CardsData = [
     {
-      route: {Card1},
+      route: "https://s3-alpha-sig.figma.com/img/d1d0/ab8e/7a3088f6ec7e4b6fd2e1ccc5061ec8f7?Expires=1681689600&Signature=efB3pNRUTMY~VeodfEbgzHnAAG5rckBMf4Z59HJfgmTe0GI2WALSGn0~vUn2wq-j-Uoqf6JvT2J~0Pq~Ba6ss6itQ9vae5e3pIKURx6S8Yz01fl5BxU23Q1uVJ7MePARcJaqt6yUodqcms3BusVgOV14k077d3S1QdzWNyQTbALwdp-xHmtXOijRcQAsPuexyYZUPdL8YEDjCd-5TRYjrcb3IHvIoGFvr-tGGR7eabFcxdfYOk34lRdjwtEt3kXEnVsHOo3FpAMtpI5TXgs79cTaR9DT3~5s5TuEVrH~W4yUBlqyT-GpfR0HlRCOu0kggN9H5JB4d~77eqeCJ3WsYQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
       name: "Transformation",
       text: "We aim to transform expensive healthcare systems by using technology to drive necessary changes.",
     },

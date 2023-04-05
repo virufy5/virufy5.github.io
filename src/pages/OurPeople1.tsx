@@ -39,7 +39,7 @@ export default function OurPeople1() {
 
   const CardsData = [
     {
-      route: "https://s3-alpha-sig.figma.com/img/eb5a/4582/e632f4d6a37639ee7b5bc50c395e6bc6?Expires=1681084800&Signature=SdJjPP67wL0AFHvhJdBTGZenV6wtJQblGND1ssdTiRdHPS2q0Iq~ePnCCk7SbWEUvpyvDZFIWbH5dWhICtxyc7F1WCotZAV8PhHuVu0ASyM4epI5rcLkw7r4W~OJy6tGgL5LWOJcCLbfrqKpqZl8439LaZHj5vnuaglNQQAlSBZHUoeI-qUNQaqgitjb5RWZJ~j9f2tJ~Q24SFR767OtYbNXuVlDJKUsUXAgGComtunBBgvz5PcZ7O~KcVzs6kwtcqhvAWeJxvMtveoyiy5cNJwarVxzewkbvCtHM~htRiEGsTlOmtvsmiawOLCimQQTV7CMW2ruJoYMN1Y8pwZE8g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      route: "https://s3-alpha-sig.figma.com/img/d7a0/94d3/b581e5e4934faf791d4b4ce106904c18?Expires=1681689600&Signature=ZvadWbgrGmQDT-bby-pavGucFJ3iTXjGIFWZeT6a97LRYkBQexiuDBq0EW0~sY-dUiR3j4JbeCf8xdYsKioOdEGGUvHz-0a8W9mQmsWmQlK7mfdorcOZIUAZE706PwEeqrLbminK721k8Wou~ZxdgN5huv9w5~MqJlKvARcnIYwa5LmknowBbQgkOw8evnD-cW-Um-7VGFAi028IN-4mzeAFIeSHP-eDbBBfjoZIY221j9MXyZgaXLkFv6A4hWKqo1KnjMFleckm4vxx7iIImkifZxgWhylERXQsdlhglLxSxyBBfhGshSHF2sGRPKlyYtipiYKM9UFynjxIP2gxGg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
       name: "Kara Meister, M.D.",
       subtitle: "Clinical Advisor",
       text: "Clinical Assistant Professor of ENT Stanford School of Medicine",
