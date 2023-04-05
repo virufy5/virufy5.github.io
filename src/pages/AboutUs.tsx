@@ -18,27 +18,27 @@ export default function AboutUs() {
       text: "We aim to transform expensive healthcare systems by using technology to drive necessary changes.",
     },
     {
-      route: {Card2},
+      route: "https://s3-alpha-sig.figma.com/img/edbe/c226/aa708222cd0e5cb6333d55b57bd960ad?Expires=1681689600&Signature=M8tTKNwqjucKphassOluZV3tTPi8DyFQPnwzuNW8ebYqfBZy3hyFRau3IChMSmi5XHjvY3AJpO8nfrRtrKuKLRNvB8N7nFYYPOTCZTTwKJNmANr44Fp6~xK4JJQmGUTpT74dty7gxNdQG-YACkErJg~3z5ESfYCMd3neGmYYPD6-9rBgB-eifxnKpBX9Cgoe97fQgjSpoJRphpvLksjVSTEQ4fWempDyUhV0nBxjrWaq0O1i6Ga~wWgc4xM698G8jWvCpyssaKGnInVp6EeQZfEA2NDYtFGtSSQwmOfUahvaUM7VKOJUjke2sThuMFmPD30W7YlPcrD~9TVVOnNO2g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
       name: "Collaboration",
       text: "We commit to making rapid disease detection available to every person in the world, regardless of background.",
     },
     {
-      route: {Card1},
+      route: "https://s3-alpha-sig.figma.com/img/9ca4/24b9/d0e720993584f893664d31a436b4edb4?Expires=1681689600&Signature=TqBXRxqYCi742baNIj8eqU~n090HTtGYA71rCHcHqyW8Wc1j5rNq24F6yeN8RWwJIj5sT5a1~gHax0AdAdQoWt2VkkPwS5MvowIt4c0Ht0lPn693uEjBgQ~~0yWJrzVW4zjRbxOVc9V87SFtpLJMTP1KH-3OwevP4aKynlBsMmaDO~eZkVkPq4sf8iNEP5R9yWFj4GyFrl~Z6TgIa2nsm-Qj4EolZaA3~RdcdiTOcY~25d8O5S4IkIGVQMvMNF8eG5PC8lg5Zqg0cJlLIP0S77RgZGm5OzvFv5h0FW6XAb7IgSIn-IjE9v22xWDaPqyXPx9hvGXD2XmfZBk1NawOwA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
       name: "Health",
       text: "We commit to always putting the health and well-being of all people across the globe first and foremost.",
     },
     {
-      route: {Card2},
+      route: "https://s3-alpha-sig.figma.com/img/94da/271f/984a0711b4af1d1a1567d7552af725d8?Expires=1681689600&Signature=p0iyussjkhk-5GKtTGE5oreAaI13AsQ73eEPLz~d-gqjDEWSX5VmgtMvnRuYEMUXDsGxtczQdMNbf6ublLrpq1is2WNvU96VUTnRrbvHlUqRoXrMiLLPbLVSzjjM5yCbHSF5XwTDDgFpjjbryilENMJXX-m35FU-Gh~AD-m58JSND2OrFjX8-yyS9i0i6X27lCqYub4rhpAnU9aJu6kB95hasCMxxDKlTAmSv8WWLvaVR0m6~tHSaui-iMCgAR-S0JA1gA9xk36ISPooo21OLxEHaPoe1iB-QtOQr3cKEGgMVXS-S12DTbK2xxsbZ91V7wve7opmtaHPmL8gIrqXbg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
       name: "Affordability",
       text: "We aim to use technology to make disease prevention and detection free for all people around the world.",
     },
     {
-      route: {Card1},
+      route: "https://s3-alpha-sig.figma.com/img/b434/cdeb/78927a9636fe3469ef7b3fb3ccebe325?Expires=1681689600&Signature=RmY5H0EjwX4mtHtttAbNpwuVvmcxZRcWgQAG18rKosxO8ttfZmAlGNuzVRG0nRYnxuQrml5HwUGG2p2fK6b6EinmZK8u8ab2l-yVCUrzxS1WmF6dNHECd9eN9iUEtKKdsimSDxUUKdI3MQu5vSx6UCKlh8Yvu4eFMnRT5qJGtdhSqG4CiVDCyM~1SMCI1UmeQ9swzIm-fEu3-NyWO-LipovDYDH7LGv5Gpv4H642IYDJq7auL96SXaorNXsT7VxdmtmiaOYIONRl8eaMwOluNP8tMVmq-WjdfOCxvUl99vPGLyilPIJbyg6iQE1eM05V2WlpRY8npVJOToOy46XsEQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
       name: "Efficiency",
       text: "We commit to creating intuitive technology that delivers rapid detection, stopping virus spread and saving lives.",
     },
     {
-      route: {Card2},
+      route: "https://s3-alpha-sig.figma.com/img/4292/1527/1a71c469a9606eb28c97d50a29c761b7?Expires=1681689600&Signature=BUbzv34087XVJnTdgWLzLS4AjUiD1ixPjUVIgRNA6huTq9jyHm-5fBFnw8QdXHUNJxO7lCxhr-c0p6~wv8ZvLnxVxuIx3P8yeO2jNiDH9IcSmiIEvaixhVfje5I-hbeVXiDlm5j9Zp9AeD7rYY~B3FCA16AwdpUH8PqRW47aaTLdIgA42eDST8lVb2QqkkrvP9tOTpymBYjPMubLnFUId5h2ZAQ5H8xCTLk0K~Y1Vwr-OFO8TdKOXbvG8Nd36xyNon2j~A2OLIMADSWarjdEYPxVr0sj7XyFTmTvQ-m1inbbwdSKxOwzHPtCf0~9CXKgc9JYQcWm7Iyr0Ez8QPHweg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
       name: "Innovation",
       text: "We aim to ensure rapid detection of dieseases with just one tap on a mobile device.",
     },        

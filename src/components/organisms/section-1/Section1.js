@@ -1,6 +1,7 @@
 import TitleText from "~/components/molecules/TitleText/TitleText"
 import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal"
 import ButtonGroup from "~/components/molecules/ButtonGroup/ButtonGroup"
+import Button from "~/components/atoms/button/Button"
 
 export default function Section1({
   TitleSize,
@@ -55,24 +56,20 @@ export default function Section1({
           TextClassProps="ml-[5vw]"
         />
 
-        {buttons ? 
+        {buttons ?
           <div
-            className="ml-[5vw] mt-3 md:text-left text-center"
-          > 
-            <ButtonGroup
-              buttons={buttons}
-              label={label}
-              type={type}
-              size={sizeBtn}
-              path={path}
-            />
+            className="ml-[5vw] mt-3 flex items-center flex-col md:flex-row gap-3 md:text-left text-center"
+          >
+            <Button size="medium" type="primary" path="#" label="share your cough" />
+            <Button size="medium" type="secondary" path="#" label="learn more" />
+
           </div> : null
         }
       </div>
-      <div 
-      style={{
-        flex: "1",
-      }} className="flex justify-center mr-[2.5vw] md:mr-[5vw] w-[50%] md:text-left text-center">
+      <div
+        style={{
+          flex: "1",
+        }} className="flex justify-center mr-[2.5vw] md:mr-[5vw] w-[70%] md:w-[50%] md:text-left text-center">
         <ImageAtomLocal
           imagesize={sizeImg}
           border={border}

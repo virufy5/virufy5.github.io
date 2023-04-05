@@ -8,6 +8,11 @@ import Select from "~/components/atoms/Select/Select";
 import Button from "~/components/atoms/button/Button";
 import { useState } from 'react';
 
+//Flags
+import ENG from "~/assets/static/icons/navbar/flags/Eng.png"
+import SPA from "~/assets/static/icons/navbar/flags/Spa.png"
+import JPN from "~/assets/static/icons/navbar/flags/Jpn.png"
+import POR from "~/assets/static/icons/navbar/flags/Por.png"
 
 export default function Navbar() {
 
@@ -33,6 +38,13 @@ export default function Navbar() {
         { label: 'JPN', value: '3' },
         { label: 'POR', value: '4' },
     ];
+
+    const optionsIcons = {
+        1: ENG,
+        2: SPA,
+        3: JPN,
+        4: POR,
+    }
 
     const [navbar, setNavbar] = useState(false);
 
@@ -83,7 +95,7 @@ export default function Navbar() {
                                 <LinkAtom Routes={links4} Style="linkNavbar" />
                             </li>
                             <li className="text-[#393939]">
-                                <Select Text="" Options={options} Style="selectNavbar" />
+                                <Select Text="" Options={options} Style="selectNavbar" optionsIcons={optionsIcons}/>
                             </li>
                             <li className="text-[#393939] hidden lg:flex">
                                 <Button size="small" type="secondary" path="#" label="Join us" />
