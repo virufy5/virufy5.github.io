@@ -2,7 +2,8 @@
 import ImageSection1 from "~/assets/static/images/section1/1.jpg"
 
 //Organismo
-import Navbar from "~/components/molecules/Navbar/Navbar"
+import Navbar from "~/components/organisms/Navbar/Navbar"
+import Footer from "~/components/organisms/Footer/Footer"
 import Section1 from "~/components/organisms/section-1/Section1"
 import Section2 from "~/components/organisms/section-2/Section2"
 import Section3 from "~/components/organisms/section-3/Section3"
@@ -78,6 +79,7 @@ export default function Prueba() {
 
       <p className="text-gray-300">Section - 7</p>
       <Section7 /> 
+      <Footer /> 
     </>
   );
 }

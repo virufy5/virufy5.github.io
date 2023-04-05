@@ -1,11 +1,11 @@
 import * as React from 'react';
 import styles from './Select.module.css'
+import Image from 'next/image';
 /* import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal"; */
 
 export default function Select({
     Text,
     Options,
-    flag
 }) {
 
   

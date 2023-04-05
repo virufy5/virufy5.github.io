@@ -23,6 +23,8 @@ export const ImageSize = {
     px300: "w-[300px] h-[300px]",
     px160: "w-[160px] h-[48px]",
     px30: "w-[30px] h-[18px]",
+    px20: "w-[20px] h-[20px]",
+    px30: "w-[30px] h-[30px]",
     medium: "w-[50%]",
     large: "w-[100%]",    
     pr100: "w-[100%]",
@@ -52,5 +54,6 @@ export const TextProps = {
 
 //LINK THEMES
 export const LinkAtomProps = {
-    link: "text-[18px] leading-[20px] mr-7 hover:font-semibold"
+    linkFooter: "text-[13px] lg:text-[18px] lg:leading-[20px] hover:font-semibold mx-2",
+    linkNavbar: "text-[18px] leading-[20px] hover:font-semibold"
 };
