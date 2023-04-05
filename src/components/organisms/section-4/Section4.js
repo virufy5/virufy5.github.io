@@ -10,40 +10,26 @@ export default function Section4({
     alt,
 }) {
     return (
-        <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0"
-            style={{
-                width: "100%",
-                textAlign: "center",
-                marginTop: "160px"
-            }}>
+        <div className="text-center mt-[40px] mb-[40px] flex flex-col space-y-4 space-x-4 ml-[5vw] mr-[5vw]">
             <TitleText
                 TitleSize="h1"
                 TitleLabel="Meet Our Founder"
             />
-            <div className="flex"
-                style={{
-                    width: "100%",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    flex: "1",
-                    marginTop: "80px"
-                }}>
-                <div
-                    style={{
-                        width: "30%",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        flex: "1",
-                    }}>
-                    <div style={{
-                        width: "50%",
-                        textAlign: "left",
-                        display: "flex",
-                        flexDirection: "column",
-                        gap: "20px"
-                    }}>
+            <div className="flex items-center flex-1 mt-[80px]">
+                <div className="flex sm:hidden w-2/5 items-center flex-1">
+                    <div className="w-full text-left flex flex-col gap-5">
+                        <TitleText
+                            TitleSize="h5"
+                            TitleLabel="Amil Khanzada"
+                            TextSize="normal"
+                            TextLabel="MBA Candidate, Haas School of Business Master of Engineering Candidate, Department of Electrical Engineering and Computer Sciences"
+                            ContainerTitleProps={ContainerTitleProps}
+                            ContainerTextProps={ContainerTextProps}
+                        />
+                    </div>
+                </div>
+                <div className="hidden sm:flex w-2/5 items-center flex-1">
+                    <div className="w-full text-left flex flex-col gap-5">
                         <TitleText
                             TitleSize="h2"
                             TitleLabel="Amil Khanzada"
@@ -52,23 +38,23 @@ export default function Section4({
                             ContainerTitleProps={ContainerTitleProps}
                             ContainerTextProps={ContainerTextProps}
                         />
-                    <Button size="medium" type="primary" path="#" label="read more" />
+                        <div className="hidden sm:flex flex-col justify-center">
+                            <Button size="medium" type="primary" path="#" label="read more" />
+                        </div>
                     </div>
+
                 </div>
-                <div style={{
-                    display: "flex",
-                    flex: "1",
-                    justifyContent: "start",
-                    alignItems: "center",
-                    paddingLeft: "30px"
-                }} className="mr-[2.5vw]">
+                <div className="w-1/2 flex items-center justify-end">
                     <ImageAtomLocal
-                        imagesize="pr70"
+                        imagesize="pr90"
                         border={border}
                         src={ImageSection4}
                         alt={alt}
                     />
                 </div>
+            </div>
+            <div className="flex sm:hidden justify-center">
+                <Button size="medium" type="primary" path="#" label="read more" />
             </div>
         </div >
     )

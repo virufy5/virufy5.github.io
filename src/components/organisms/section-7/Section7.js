@@ -8,12 +8,11 @@ export default function Section4({
     alt,
 }) {
     return (
-        <div className="flex"
+        <div className="flex mt-[70px] md:mt-[100px]"
             style={{
                 width: "70%",
                 flexDirection: "column",
                 margin: "0 auto",
-                marginTop: "116px",
                 textAlign: "center"
             }}>
             <div>
@@ -28,7 +27,7 @@ export default function Section4({
                         justifyContent: "center",
                         alignItems: "center",
                         flex: "1",
-                        marginTop: "80px"
+                        marginTop: "30px"
                     }}>
                     <div
                         style={{
@@ -39,10 +38,7 @@ export default function Section4({
                             flex: "1",
                             marginTop: "30px"
                         }}>
-                        <div style={{
-                            display: "flex",
-                            gap: "15%"
-                        }}>
+                        <div className="flex flex-col md:flex-row gap-5 md:gap-20 mb-28">
                             <Button size="large" type="primary" path="#" label="share your cough" />
                             <Button size="large" type="secondary" path="#" label="learn more" />
                         </div>

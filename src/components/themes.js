@@ -22,6 +22,7 @@ export const ImageSize = {
     px200: "w-[200px] h-[200px]",
     px300: "w-[300px] h-[300px]",
     px160: "w-[160px] h-[48px]",
+    px150: "w-[150px] h-[150px]",
     px100x48: "w-[100px] h-[48px]",
     px30: "w-[30px] h-[18px]",
     px20: "w-[20px] h-[20px]",
@@ -36,6 +37,7 @@ export const ImageSize = {
     pr50: "w-[50%]",
     pr40: "w-[40%]",
     pr30: "w-[30%]",
+    pr80sq: "w-[80%] h-[80%]",
 };
 
 //TITLE THEMES
