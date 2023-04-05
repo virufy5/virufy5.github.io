@@ -3,120 +3,144 @@ import Title from "~/components/atoms/Title/Title"
 import TitleText from "~/components/molecules/TitleText/TitleText"
 
 export default function Section9({
-	TitleSize,
-	TitleLabel,
-	TextSize,
-	TextLabel,
-	ContainerTitleProps,
-	ContainerTextProps,
-	TitleClassProps,
-	TextClassProps,
-	sizeBtn,
-	typeBtn,
-	labelBtn,
-	pathBtn,
+  TitleSize,
+  TitleLabel,
+  TextSize,
+  TextLabel,
+  ContainerTitleProps,
+  ContainerTextProps,
+  TitleClassProps,
+  TextClassProps,
+  sizeBtn,
+  typeBtn,
+  labelBtn,
+  pathBtn,
 }) {
-	return (
-		<div
-			style={{
-				width: "100%",
-				textAlign: "center",
-				alignItems: "center",
-			}}>
+  return (
+    <div className="
+    w-[100%] text-center items-center
+    ">
+      <Title
+        Text="Research"
+        H="h1"
+        TitleClassProps="mt-4"
+      />
 
-			<Title
-				Text="Research"
-				H="h1"
-				TitleClassProps="mt-4"
-			/>
+      <div className="
+        flex
+        flex-wrap
+        w-[100%]
+        mt-3 
+        justify-center
+      ">
+        <div className="
+          flex 
+          flex-col
+          mr-[2vw] ml-[5vw]
+          sm:w-1/1 
+          md:w-1/3
+          lg:w-1/3
+          xl:w-1/3
+        ">
 
-			<div className="flex mt-3"
-				style={{
-					width: "100%",
-				}}>
-				<div className=""
-					style={{
-						width: "50%",
-					}}>
+          <TitleText
+            TitleSize={TitleSize}
+            TitleLabel={TitleLabel[0]}
+            TextSize={TextSize}
+            TextLabel={TextLabel[0]}
+            ContainerTitleProps={ContainerTitleProps}
+            ContainerTextProps={ContainerTextProps}
+            TitleClassProps="text-left"
+            TextClassProps="mt-2 text-left"
+          />
 
-					<TitleText
-						TitleSize={TitleSize}
-						TitleLabel={TitleLabel[0]}
-						TextSize={TextSize}
-						TextLabel={TextLabel[0]}
-						ContainerTitleProps={ContainerTitleProps}
-						ContainerTextProps={ContainerTextProps}
-						TitleClassProps="ml-[5vw] text-left"
-						TextClassProps="ml-[5vw] mt-2 text-left"
-					/>
+        </div>
+        <div className="
+          flex
+          flex-col
+          ml-[2vw]
+          mr-[2.5vw]
+          sm:w-1/1 sm:ml-[5vw]
+          md:w-1/3
+          lg:w-1/3
+          xl:w-1/3
+        ">
 
-				</div>
-				<div className=""
-					style={{
-						width: "50%",
-					}}>
+          <TitleText
+            TitleSize={TitleSize}
+            TitleLabel={TitleLabel[1]}
+            TextSize={TextSize}
+            TextLabel={TextLabel[1]}
+            ContainerTitleProps={ContainerTitleProps}
+            ContainerTextProps={ContainerTextProps}
+            TitleClassProps="text-left"
+            TextClassProps="mt-2 text-left"
+          />
 
-					<TitleText
-						TitleSize={TitleSize}
-						TitleLabel={TitleLabel[1]}
-						TextSize={TextSize}
-						TextLabel={TextLabel[1]}
-						ContainerTitleProps={ContainerTitleProps}
-						ContainerTextProps={ContainerTextProps}
-						TitleClassProps="ml-[2vw] mr-[2.5vw] text-left"
-						TextClassProps="ml-[2vw] mr-[2.5vw] mt-2 text-left"
-					/>
+        </div>
+      </div>
 
-				</div>
-			</div>
+      <div className="
+        flex
+        flex-wrap
+        w-[100%]
+        mt-3 
+        justify-center
+      ">
+        <div className="
+          flex 
+          flex-col
+          mr-[2vw] ml-[5vw]
+          sm:w-1/1 
+          md:w-1/3
+          lg:w-1/3
+          xl:w-1/3
+        ">
+          <TitleText
+            TitleSize={TitleSize}
+            TitleLabel={TitleLabel[2]}
+            TextSize={TextSize}
+            TextLabel={TextLabel[2]}
+            ContainerTitleProps={ContainerTitleProps}
+            ContainerTextProps={ContainerTextProps}
+            TitleClassProps="mt-2 text-left"
+            TextClassProps="mt-2 text-left"
+          />
+        </div>
+        <div className="
+          flex
+          flex-col
+          ml-[2vw]
+          mr-[2vw]
+          sm:w-1/1 sm:ml-[5vw]
+          md:w-1/3
+          lg:w-1/3
+          xl:w-1/3
+        ">
 
-			<div className="flex"
-				style={{
-					width: "100%",
-				}}>
-				<div className=""
-					style={{
-						width: "50%",
-					}}>
-					<TitleText
-						TitleSize={TitleSize}
-						TitleLabel={TitleLabel[2]}
-						TextSize={TextSize}
-						TextLabel={TextLabel[2]}
-						ContainerTitleProps={ContainerTitleProps}
-						ContainerTextProps={ContainerTextProps}
-						TitleClassProps="ml-[5vw] mt-2 text-left"
-						TextClassProps="ml-[5vw] mt-2 text-left"
-					/>
-				</div>
-				<div className=""
-					style={{
-						width: "50%",
-					}}>
-
-					<TitleText
-						TitleSize={TitleSize}
-						TitleLabel={TitleLabel[3]}
-						TextSize={TextSize}
-						TextLabel={TextLabel[3]}
-						ContainerTitleProps={ContainerTitleProps}
-						ContainerTextProps={ContainerTextProps}
-						TitleClassProps="ml-[2vw] mr-[2.5vw] mt-2 text-left"
-						TextClassProps="ml-[2vw] mr-[2.5vw] mt-2 text-left"
-					/>
-				</div>
-			</div>
-			<Title
-				Text="Want to learn more?"
-				H="h2"
-				TitleClassProps="mt-4 mb-14"
-			/>
-			<Button 
-				size={sizeBtn}
-				type={typeBtn}
-				label={labelBtn}
-				path={pathBtn}
-			/>
-		</div>
-	)
+          <TitleText
+            TitleSize={TitleSize}
+            TitleLabel={TitleLabel[3]}
+            TextSize={TextSize}
+            TextLabel={TextLabel[3]}
+            ContainerTitleProps={ContainerTitleProps}
+            ContainerTextProps={ContainerTextProps}
+            TitleClassProps="mt-2 text-left"
+            TextClassProps="mt-2 text-left"
+          />
+        </div>
+      </div>
+      <Title
+        Text="Want to learn more?"
+        H="h2"
+        TitleClassProps="mt-4 mb-14"
+      />
+      <Button
+        size={sizeBtn}
+        type={typeBtn}
+        label={labelBtn}
+        path={pathBtn}
+      />
+    </div>
+  )
 }

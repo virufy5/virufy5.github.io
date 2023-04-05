@@ -35,7 +35,7 @@ export default function Section8({
           width: "100vw",
         }}>
         <div className="
-					flex flex-col text-center items-center w-[258px] sm:w-1/1 md:w-1/2 lg:w-1/3 xl:w-1/3 mt-4
+					flex flex-col text-center items-center w-[250px] sm:w-[250px] md:w-[250px] lg:w-[447px] xl:w-[447px] mt-0 
 				">
           <ImageAtomLocal
             imagesize={sizeImg}
@@ -52,7 +52,7 @@ export default function Section8({
           />
         </div>
         <div className="
-					flex flex-col text-center items-center w-[258px] sm:w-1/1 md:w-1/1 lg:w-1/3 xl:w-1/3 mb-4 mt-4
+					flex flex-col text-center items-center w-[250px] sm:w-[250px] md:w-[250px] lg:w-[447px] xl:w-[447px] mb-4 mt-0 ml-3 mr-3
 				">
           <ImageAtomLocal
             imagesize={sizeImg}
@@ -69,7 +69,7 @@ export default function Section8({
           />
         </div>
         <div className="
-					flex flex-col text-center items-center w-[258px] sm:w-1/1 md:w-1/2 lg:w-1/3 xl:w-1/3 mb-4 mt-4
+					flex flex-col text-center items-center w-[250px] sm:w-[250px] md:w-[250px] lg:w-[447px] xl:w-[447px] mb-4 mt-0
 				">
           <ImageAtomLocal
             imagesize={sizeImg}
