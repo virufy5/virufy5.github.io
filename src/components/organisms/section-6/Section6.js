@@ -8,7 +8,7 @@ import ImageSection6 from "~/assets/static/images/section6/1.png"
 
 export default function Section6() {
   return (
-    <div
+    <div className="mt-20"
     style={{
       width: "100%",
       textAlign: "center",

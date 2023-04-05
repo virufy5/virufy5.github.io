@@ -9,6 +9,8 @@ import Section2 from "~/components/organisms/section-2/Section2"
 import Section3 from "~/components/organisms/section-3/Section3"
 import Section4 from "~/components/organisms/section-4/Section4"
 import Section5 from "~/components/organisms/section-5/Section5"
+import CardSlider from "~/components/organisms/CardSlider/CardSlider"
+
 import Section6 from "~/components/organisms/section-6/Section6"
 import Section7 from "~/components/organisms/section-7/Section7"
 
@@ -73,6 +75,10 @@ export default function Prueba() {
         TitleClassProps2="ml-[5vw]"
         TextClassProps2="ml-[5vw]"
       />
+
+      <p className="text-gray-300">Section - Card Slider</p>
+      <CardSlider /> 
+
 
       <p className="text-gray-300">Section - 6</p>
       <Section6 /> 

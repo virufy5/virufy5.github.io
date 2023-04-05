@@ -14,11 +14,8 @@ export default function CardHome({
     
     return (
         <>
-            <div className="flex rounded-md "
+            <div className="flex rounded-md w-[350px] h-[160px] sm:w-[495px] sm:h-[211px] p-[20px] sm:p-[32px]"
                 style={{
-                    width: "495px",
-                    height: "211px",
-                    padding: "32px",
                     background: "#D9D9D9"
                 }}>
             <div style={{
