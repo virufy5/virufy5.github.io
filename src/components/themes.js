@@ -27,6 +27,7 @@ export const ImageSize = {
     px30: "w-[30px] h-[18px]",
     px20: "w-[20px] h-[20px]",
     px30: "w-[30px] h-[30px]",
+    px50: "w-[50px] h-[50px]",
     medium: "w-[50%]",
     large: "w-[100%]",    
     pr100: "w-[100%]",

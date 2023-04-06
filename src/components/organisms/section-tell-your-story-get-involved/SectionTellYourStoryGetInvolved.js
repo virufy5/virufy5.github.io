@@ -10,7 +10,7 @@ export default function SectionTellYourStoryGetInvolved({
     return (
         <div className="text-center flex flex-col md:mb-[120px]">
             <div className="flex items-center flex-col">
-                <div className="flex w-1/2 px-7 flex-col items-center justify-center gap-7">
+                <div className="flex md:w-1/2 px-7 flex-col items-center justify-center gap-7">
                     <TitleText
                         //TitleText
                         TitleSize="h1"
@@ -20,7 +20,7 @@ export default function SectionTellYourStoryGetInvolved({
                         ContainerTextProps="items-start"
                     />
                 </div>
-                <div className="flex w-1/2 px-7 pb-16 flex-col items-center justify-center gap-7">
+                <div className="flex md:w-1/2 px-7 pb-16 flex-col items-center justify-center gap-7">
                     <TitleText
                         //TitleText
                         TextSize="subtitulo"
