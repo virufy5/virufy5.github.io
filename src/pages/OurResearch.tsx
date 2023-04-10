@@ -5,6 +5,7 @@ import Section9 from "~/components/organisms/section-9/Section9"
 
 //image
 import imageOurResearch from "~/assets/static/images/OurResearch/image.png"
+import microscope from "~/assets/static/images/OurResearch/microscope.png"
 
 export default function OurResearch() {
 
@@ -23,9 +24,6 @@ export default function OurResearch() {
 
 	return (
 		<>
-			<h1 className="text-sky-600 text-3xl m-4">Our Research</h1>
-
-			<p className="text-gray-300">Section - 1</p>
 			<Section1
 				//TitleText
 				TitleSize="h1"
@@ -41,7 +39,6 @@ export default function OurResearch() {
 
 			/>
 			
-			<p className="text-gray-300">Section - 9</p>
 			<Section9
 				TitleSize="h3"
 				TitleLabel={TitleLabels}

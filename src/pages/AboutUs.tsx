@@ -8,6 +8,7 @@ import Card from "~/components/molecules/Card/Card"
 
 import Card1 from "~/assets/static/images/ourPeople/card1.jpg"
 import Card2 from "~/assets/static/images/ourPeople/card2.jpg"
+import Title from "~/components/atoms/Title/Title"
 
 export default function AboutUs() {
 
@@ -74,6 +75,11 @@ export default function AboutUs() {
         ContainerTextProps2="mb-4 mr-[15vw] text-left"
         TitleClassProps2="ml-[15vw]"
         TextClassProps2="ml-[15vw]"        
+      />
+      <Title 
+        H="h1"
+        Text="Our Values"
+        TitleClassProps="text-center mt-16 mb-4"
       />
       <Card
         CardsData={CardsData}

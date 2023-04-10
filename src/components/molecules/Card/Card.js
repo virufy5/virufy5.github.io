@@ -11,7 +11,7 @@ export default function Card({
 }) {	
 	
 	return (
-		<div className="flex flex-wrap -mb-4 text-center items-center w-[100%] justify-center mt-5">
+		<div className="flex flex-wrap mb-4 text-center items-center w-[100%] justify-center mt-5">
 
 			{CardsData?.map(({ route, name, text, subtitle }) => (
 

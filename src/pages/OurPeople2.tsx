@@ -8,6 +8,9 @@ import TextinsImg from "~/components/molecules/TextinsImg/TextinsImg"
 import Title from "~/components/atoms/Title/Title";
 import Text from "~/components/atoms/Text/Text";
 
+//Images
+import ImageinsText from "~/assets/static/images/textInImage/OurPeople.jpg"
+
 export default function OurPeople2() {
 
   const buttons = ["Read more"]
@@ -16,12 +19,10 @@ export default function OurPeople2() {
 
   return (
     <>
-      <h1 className="text-sky-600 text-3xl m-4">Our People 1</h1>
-
       <TextinsImg
         sizeImg="auto"
         borderImg="none"
-        src="https://s3-alpha-sig.figma.com/img/598a/ee88/e2a7c1d88a487a3d3d9dd1d55f06d0d1?Expires=1681084800&Signature=JD81GZFwcnTmJNz4iCsLGf85GFLC~cN0VAN1miPhQ-ryh~0tlLTaHSpJBa4rrkoInqkE29J7a~qs5xKJxaKtAgeMvbNTDmjwcTERhimo0mNGss4XNFR9dysy5O-D69JdsITgYSi9-RPNLEkeloP~wKJoT1yvP8ir3lXABjmLL2oSb0zy~v~n5p2tZEXu2vzuHoN8bCwvUrzBK1IYDFhPpBgwEQBevwV7W8b9R~DcivedwmOpj01nQJk8vNh39LkVZbVbBhdSCIZ9j8A9tkVHkNjTIRPzgGjkdHhHVjpuFs1KfKsrPAZIvK3vCj5DiOxAZqIvXrnQa2Ypt6-qirrqjg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+        src={ImageinsText}
         altImg="Imagen cabezera"
         Text="We unite from across the world to defeat COVID-19 one cough at a time."
       />
@@ -37,7 +38,7 @@ export default function OurPeople2() {
 
       <div className="ml-[5vw] mt-5 flex flex-wrap">
 
-        <div className="w-[438px] h-[] ">
+        <div className="w-[438px] h-[]">
           <ImageAtomURL
             imagesize="pr100"
             border="radious"
@@ -45,22 +46,54 @@ export default function OurPeople2() {
             alt="imagen de algo"
           />
         </div>
-        <div className="flex-1 ml-2 mr-[5vw]">
+        <div className="flex sm:flex ml-2 mr-[5vw]">
           <Text
             Style="normal"
             Text="Born and raised in the Silicon Valley, Amil has worked since his father’s untimely passing when he was 18 with his first job as a software consultant developing optical mark recognition (OMR) software for automated grading of tests in K-12 schools."
             TextClassProps=""
           />
+        </div>
+        <div className="flex sm:flex ml-2 mr-[5vw]">
           <Text
             Style="normal"
             Text="After receiving his B.A. in Computer Science from University of California, Berkeley in 2012, Amil joined Hewlett-Packard (HP) in Silicon Valley to work full-time as a software engineer developing security log standardization software for the ArcSight, Security Information and Event Management System (SIEM)."
             TextClassProps="mt-3"
           />
+        </div>
+        <div className="flex sm:flex ml-2 mr-[5vw]">
           <Text
             Style="normal"
             Text="In 2014, Amil transferred to HP’s Tokyo headquarters to take on a role as cybersecurity consultant, in which he traveled across Hong Kong, Tokyo, and Australia to deploy SIEM solutions at customer sites in the banking industry. "
             TextClassProps="mt-3"
           />
+        </div>
+        <div className="flex sm:flex ml-2 mr-[5vw]">
+        <Text
+          Style="normal"
+          Text="In 2016, Amil returned to Silicon Valley to join Pivotal Software as a software engineer working primarily on the Postgres-based open source Greenplum OLAP database. In Pivotal’s extreme programming (XP) environment, Amil practiced several software development practices, including daily pair programming, test-driven development (TDD), and weekly retroactive meetings, while rotating across several teams, including DevOps, database backend, and workload management tooling."
+          TextClassProps="mt-3"
+        />
+        </div>
+        <div className="flex sm:flex ml-2 mr-[5vw]">
+        <Text
+          Style="normal"
+          Text="In 2018, Amil took leave from work to move to the countryside of Japan. Living in Eiheiji town, the birthplace of Soto Zen, Amil meditated daily and learned Zen philosophy, while giving back teaching agile programming to young adults and children. Soon, Amil was appointed Evolution Ambassador of the town and sent to the One Young World conference in the Netherlands to represent Japan, amongst other young social impact leaders, country heads, and Nobel Laureates from 195 countries."
+          TextClassProps="mt-3"
+        />
+        </div>
+        <div className="flex-1 sm:flex ml-2 mr-[5vw]">
+        <Text
+          Style="normal"
+          Text="In early 2020, Amil left his job to pursue graduate studies in Artificial Intelligence at Stanford University, taking his first courses with Coursera founder Dr. Andrew Ng and ImageNet creator Dr. Fei-Fei Li. When the pandemic hit, Amil committed himself to pandemic relief efforts and soon founded Virufy."
+          TextClassProps="mt-3"
+        />
+        </div>
+        <div className="flex-1 sm:flex ml-2 mr-[5vw]">
+        <Text
+          Style="normal"
+          Text="Virufy is a nonprofit organization developing a smartphone app to prescreen for COVID-19 instantly through AI-powered analysis of voice and cough recordings. As of February 2022, the organization operates in a dozen countries with more than 200 volunteers and 30 partner organizations, including Amazon Web Services, Stanford COVID-19 Response Innovation Lab, and Pillsbury Winthrop Shaw Pittman Law."
+          TextClassProps="mt-3"
+        /> 
         </div>
       </div>
       <div className="ml-[5vw] mr-[5vw] mt-5">
@@ -92,8 +125,8 @@ export default function OurPeople2() {
         <Text
           Style="normal"
           Text="2020. Facial Expression Recognition with Deep Learning. arXiv: 2004.11823"
-          TextClassProps="mt-3"
-        />                          
+          TextClassProps="mt-3 mb-3"
+        />                        
       </div>
     </>
   );

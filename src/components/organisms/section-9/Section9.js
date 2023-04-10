@@ -18,7 +18,7 @@ export default function Section9({
 }) {
   return (
     <div className="
-    w-[100%] text-center items-center
+    w-[100%] text-center items-center mb-5
     ">
       <Title
         Text="Research"

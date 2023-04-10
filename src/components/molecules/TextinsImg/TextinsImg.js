@@ -1,4 +1,4 @@
-import ImageAtomURL from "~/components/atoms/imageAtom/ImageAtomURL";
+import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal";
 import Title from "~/components/atoms/Title/Title";
 
 export default function TextinsImg({
@@ -10,7 +10,7 @@ export default function TextinsImg({
 }) {
 	return (
 		<div className="over overflow-hidden relative w-[100%]">
-			<ImageAtomURL
+			<ImageAtomLocal
 				imagesize={sizeImg}
 				border={borderImg}
 				src={src}

@@ -31,6 +31,7 @@ import Card21 from "~/assets/static/images/ourPeople/card1.jpg"
 import Card22 from "~/assets/static/images/ourPeople/card1.jpg"
 import Card23 from "~/assets/static/images/ourPeople/card1.jpg"
 import ImageAmil from "~/assets/static/images/ourPeople/Amil.png"
+import ImageinsText from "~/assets/static/images/textInImage/OurPeople.jpg"
 
 export default function OurPeople1() {
 
@@ -90,12 +91,10 @@ export default function OurPeople1() {
 
   return (
     <>
-      <h1 className="text-sky-600 text-3xl m-4">Our People 1</h1>
-
       <TextinsImg
         sizeImg="auto"
         borderImg="none"
-        src="https://s3-alpha-sig.figma.com/img/598a/ee88/e2a7c1d88a487a3d3d9dd1d55f06d0d1?Expires=1681084800&Signature=JD81GZFwcnTmJNz4iCsLGf85GFLC~cN0VAN1miPhQ-ryh~0tlLTaHSpJBa4rrkoInqkE29J7a~qs5xKJxaKtAgeMvbNTDmjwcTERhimo0mNGss4XNFR9dysy5O-D69JdsITgYSi9-RPNLEkeloP~wKJoT1yvP8ir3lXABjmLL2oSb0zy~v~n5p2tZEXu2vzuHoN8bCwvUrzBK1IYDFhPpBgwEQBevwV7W8b9R~DcivedwmOpj01nQJk8vNh39LkVZbVbBhdSCIZ9j8A9tkVHkNjTIRPzgGjkdHhHVjpuFs1KfKsrPAZIvK3vCj5DiOxAZqIvXrnQa2Ypt6-qirrqjg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+        src={ImageinsText}
         altImg="Imagen cabezera"
         Text="We unite from across the world to defeat COVID-19 one cough at a time."
       />
