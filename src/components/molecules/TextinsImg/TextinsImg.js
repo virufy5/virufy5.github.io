@@ -10,13 +10,14 @@ export default function TextinsImg({
 }) {
 	return (
 		<div className="over overflow-hidden relative w-[100%]">
+			<div className=" contrast-50 brightness-50">
 			<ImageAtomLocal
 				imagesize={sizeImg}
 				border={borderImg}
 				src={src}
 				alt={altImg}
 			/>
-
+</div>
 			<Title 
 				Text={Text}
 				H="h3"

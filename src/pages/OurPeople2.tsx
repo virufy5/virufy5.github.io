@@ -36,9 +36,19 @@ export default function OurPeople2() {
         />
       </div>
 
-      <div className="ml-[5vw] mt-5 flex flex-wrap">
+      <div className="ml-[5vw] mt-5 flex flex-wrap flex-row items-start
+        sm:flex-col sm:items-center
+        md:flex-row md:items-end
+        lg:flex-row lg:items-end
+        xl:flex-row xl:items-end
+      ">
 
-        <div className="w-[438px] h-[]">
+        <div className="w-[438px] h-[] m-2
+          sm:w-[438px]
+          md:w-[310px]
+          lg:w-[250px]
+          xl:w-[200px]
+        ">
           <ImageAtomURL
             imagesize="pr100"
             border="radious"
@@ -46,21 +56,21 @@ export default function OurPeople2() {
             alt="imagen de algo"
           />
         </div>
-        <div className="flex sm:flex ml-2 mr-[5vw]">
+        <div className="flex-col flex-1 
+          ml-2 mr-[5vw]
+        ">
           <Text
             Style="normal"
             Text="Born and raised in the Silicon Valley, Amil has worked since his father’s untimely passing when he was 18 with his first job as a software consultant developing optical mark recognition (OMR) software for automated grading of tests in K-12 schools."
             TextClassProps=""
           />
-        </div>
-        <div className="flex sm:flex ml-2 mr-[5vw]">
+
           <Text
             Style="normal"
             Text="After receiving his B.A. in Computer Science from University of California, Berkeley in 2012, Amil joined Hewlett-Packard (HP) in Silicon Valley to work full-time as a software engineer developing security log standardization software for the ArcSight, Security Information and Event Management System (SIEM)."
             TextClassProps="mt-3"
           />
-        </div>
-        <div className="flex sm:flex ml-2 mr-[5vw]">
+
           <Text
             Style="normal"
             Text="In 2014, Amil transferred to HP’s Tokyo headquarters to take on a role as cybersecurity consultant, in which he traveled across Hong Kong, Tokyo, and Australia to deploy SIEM solutions at customer sites in the banking industry. "
@@ -81,14 +91,14 @@ export default function OurPeople2() {
           TextClassProps="mt-3"
         />
         </div>
-        <div className="flex-1 sm:flex ml-2 mr-[5vw]">
+        <div className="flex sm:flex ml-2 mr-[5vw]">
         <Text
           Style="normal"
           Text="In early 2020, Amil left his job to pursue graduate studies in Artificial Intelligence at Stanford University, taking his first courses with Coursera founder Dr. Andrew Ng and ImageNet creator Dr. Fei-Fei Li. When the pandemic hit, Amil committed himself to pandemic relief efforts and soon founded Virufy."
           TextClassProps="mt-3"
         />
         </div>
-        <div className="flex-1 sm:flex ml-2 mr-[5vw]">
+        <div className="flex sm:flex ml-2 mr-[5vw]">
         <Text
           Style="normal"
           Text="Virufy is a nonprofit organization developing a smartphone app to prescreen for COVID-19 instantly through AI-powered analysis of voice and cough recordings. As of February 2022, the organization operates in a dozen countries with more than 200 volunteers and 30 partner organizations, including Amazon Web Services, Stanford COVID-19 Response Innovation Lab, and Pillsbury Winthrop Shaw Pittman Law."
