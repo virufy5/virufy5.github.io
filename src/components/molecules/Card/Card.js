@@ -1,6 +1,6 @@
 import Title from "~/components/atoms/Title/Title";
 import Text from "~/components/atoms/Text/Text";
-import ImageAtomURL from "~/components/atoms/imageAtom/ImageAtomURL";
+import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal";
 
 import Card1 from "~/assets/static/images/ourPeople/card1.jpg"
 import Card3 from "../../../assets/static/images/ourPeople/card3.jpg"
@@ -16,7 +16,7 @@ export default function Card({
 			{CardsData?.map(({ route, name, text, subtitle }) => (
 
 				<div className="flex flex-col text-center items-center w-[348px] sm:w-1/1 md:w-1/2 lg:w-1/3 xl:w-1/3 mb-4 mt-4">
-					<ImageAtomURL
+					<ImageAtomLocal
 						imagesize="pr30"
 						border="circular"
 						src={route}

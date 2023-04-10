@@ -1,6 +1,6 @@
 
 //Organismo
-import ImageAtomURL from "../components/atoms/imageAtom/ImageAtomURL";
+import ImageAtomLocal from "../components/atoms/imageAtom/ImageAtomURL";
 
 
 //Prueba
@@ -10,6 +10,7 @@ import Text from "~/components/atoms/Text/Text";
 
 //Images
 import ImageinsText from "~/assets/static/images/textInImage/OurPeople.jpg"
+import Amil from "~/assets/static/images/ourPeople/Amil.png"
 
 export default function OurPeople2() {
 
@@ -49,11 +50,11 @@ export default function OurPeople2() {
           lg:w-[250px]
           xl:w-[200px]
         ">
-          <ImageAtomURL
+          <ImageAtomLocal
             imagesize="pr100"
             border="radious"
-            src="https://s3-alpha-sig.figma.com/img/4d95/5161/5e7674fee262ff5c1394ca0a8933c961?Expires=1681084800&Signature=Zrn~FNUUQMD-B9l4BJwLUa8D3ixrvvHgC5k0Rd4jdLsUrXWIDfGpedfohCQ-uv3sc4ALTVy42qjrMUzSgB5falAJ5f2e2~KTfs8JQt7BbE1~kU1lF257TozfNZtzdjWnPmCOKbYw0FjveSSMpb5vLgq27sTZ2M6pKlrsLncNoxRSf-Si1-Q~eLZlkeyW4AGhk1k32In7hj0uE3a3llqRyPRsIhP7DKOfLGIDSBp-t20Zpuq6VPOmrzqSvleZorbVfl3FnWdKig2bi9kUqmivljVB27Rmqt7yLr7fpMbEIyvmaNilWrawFXJtNQHAqQ~3CFPcHVGgGfsnlM2p72T2OQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-            alt="imagen de algo"
+            src={Amil}
+            alt="Amil"
           />
         </div>
         <div className="flex-col flex-1 

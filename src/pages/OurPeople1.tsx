@@ -8,28 +8,28 @@ import Card from "~/components/molecules/Card/Card"
 import Title from "~/components/atoms/Title/Title"
 
 import Card1 from "~/assets/static/images/ourPeople/card1.jpg"
-import Card2 from "~/assets/static/images/ourPeople/card1.jpg"
-import Card3 from "~/assets/static/images/ourPeople/card1.jpg"
-import Card4 from "~/assets/static/images/ourPeople/card1.jpg"
-import Card5 from "~/assets/static/images/ourPeople/card1.jpg"
-import Card6 from "~/assets/static/images/ourPeople/card1.jpg"
-import Card7 from "~/assets/static/images/ourPeople/card1.jpg"
-import Card8 from "~/assets/static/images/ourPeople/card1.jpg"
-import Card9 from "~/assets/static/images/ourPeople/card1.jpg"
-import Card10 from "~/assets/static/images/ourPeople/card1.jpg"
-import Card11 from "~/assets/static/images/ourPeople/card1.jpg"
-import Card12 from "~/assets/static/images/ourPeople/card1.jpg"
-import Card13 from "~/assets/static/images/ourPeople/card1.jpg"
-import Card14 from "~/assets/static/images/ourPeople/card1.jpg"
-import Card15 from "~/assets/static/images/ourPeople/card1.jpg"
-import Card16 from "~/assets/static/images/ourPeople/card1.jpg"
-import Card17 from "~/assets/static/images/ourPeople/card1.jpg"
-import Card18 from "~/assets/static/images/ourPeople/card1.jpg"
-import Card19 from "~/assets/static/images/ourPeople/card1.jpg"
-import Card20 from "~/assets/static/images/ourPeople/card1.jpg"
-import Card21 from "~/assets/static/images/ourPeople/card1.jpg"
-import Card22 from "~/assets/static/images/ourPeople/card1.jpg"
-import Card23 from "~/assets/static/images/ourPeople/card1.jpg"
+import Card2 from "~/assets/static/images/ourPeople/card2.jpg"
+import Card3 from "~/assets/static/images/ourPeople/card3.jpg"
+import Card4 from "~/assets/static/images/ourPeople/card4.jpg"
+import Card5 from "~/assets/static/images/ourPeople/card5.jpg"
+import Card6 from "~/assets/static/images/ourPeople/card6.jpg"
+import Card7 from "~/assets/static/images/ourPeople/card7.jpg"
+import Card8 from "~/assets/static/images/ourPeople/card8.jpg"
+import Card9 from "~/assets/static/images/ourPeople/card9.jpg"
+import Card10 from "~/assets/static/images/ourPeople/card10.jpg"
+import Card11 from "~/assets/static/images/ourPeople/card11.jpg"
+import Card12 from "~/assets/static/images/ourPeople/card12.jpg"
+import Card13 from "~/assets/static/images/ourPeople/card13.jpg"
+import Card14 from "~/assets/static/images/ourPeople/card14.jpg"
+import Card15 from "~/assets/static/images/ourPeople/card15.jpg"
+import Card16 from "~/assets/static/images/ourPeople/card16.jpg"
+import Card17 from "~/assets/static/images/ourPeople/card17.jpg"
+import Card18 from "~/assets/static/images/ourPeople/card18.jpg"
+import Card19 from "~/assets/static/images/ourPeople/card19.jpg"
+import Card20 from "~/assets/static/images/ourPeople/card20.jpg"
+import Card21 from "~/assets/static/images/ourPeople/card21.jpg"
+import Card22 from "~/assets/static/images/ourPeople/card22.jpg"
+import Card23 from "~/assets/static/images/ourPeople/card23.jpg"
 import ImageAmil from "~/assets/static/images/ourPeople/Amil.png"
 import ImageinsText from "~/assets/static/images/textInImage/OurPeople.jpg"
 
@@ -40,52 +40,142 @@ export default function OurPeople1() {
 
   const CardsData = [
     {
-      route: "https://s3-alpha-sig.figma.com/img/d7a0/94d3/b581e5e4934faf791d4b4ce106904c18?Expires=1681689600&Signature=ZvadWbgrGmQDT-bby-pavGucFJ3iTXjGIFWZeT6a97LRYkBQexiuDBq0EW0~sY-dUiR3j4JbeCf8xdYsKioOdEGGUvHz-0a8W9mQmsWmQlK7mfdorcOZIUAZE706PwEeqrLbminK721k8Wou~ZxdgN5huv9w5~MqJlKvARcnIYwa5LmknowBbQgkOw8evnD-cW-Um-7VGFAi028IN-4mzeAFIeSHP-eDbBBfjoZIY221j9MXyZgaXLkFv6A4hWKqo1KnjMFleckm4vxx7iIImkifZxgWhylERXQsdlhglLxSxyBBfhGshSHF2sGRPKlyYtipiYKM9UFynjxIP2gxGg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      route: Card1,
       name: "Kara Meister, M.D.",
       subtitle: "Clinical Advisor",
       text: "Clinical Assistant Professor of ENT Stanford School of Medicine",
     },
     {
-      route: "https://s3-alpha-sig.figma.com/img/eb5a/4582/e632f4d6a37639ee7b5bc50c395e6bc6?Expires=1681084800&Signature=SdJjPP67wL0AFHvhJdBTGZenV6wtJQblGND1ssdTiRdHPS2q0Iq~ePnCCk7SbWEUvpyvDZFIWbH5dWhICtxyc7F1WCotZAV8PhHuVu0ASyM4epI5rcLkw7r4W~OJy6tGgL5LWOJcCLbfrqKpqZl8439LaZHj5vnuaglNQQAlSBZHUoeI-qUNQaqgitjb5RWZJ~j9f2tJ~Q24SFR767OtYbNXuVlDJKUsUXAgGComtunBBgvz5PcZ7O~KcVzs6kwtcqhvAWeJxvMtveoyiy5cNJwarVxzewkbvCtHM~htRiEGsTlOmtvsmiawOLCimQQTV7CMW2ruJoYMN1Y8pwZE8g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      route: Card2,
       name: "Dr. Jure Leskovec",
       subtitle: "Artificial Intelligence Advisor",
       text: "Chief Scientist - Pinterest Associate Professor of AI - Stanford",
     },
     {
-      route: "https://s3-alpha-sig.figma.com/img/45b9/c3d5/ebb22b045edb2cbea52119a5acf28533?Expires=1681084800&Signature=OYzOjw8LOUGdchgjwRtMmcs9ksHhtBWluOLUntd86mRHxmgxczhlOKrUAXalHLiCeqLmnaIOZixK6xmqkYNrpFF9J7yluZsE8BXR4voJ~gal1nr4fjIwG58lMtsXiSWF0T5FUm0PZIq8dA1zQ9AjysdvCcZFLbscEHABMvFY9h6Mg4-5-gu5~5mwsBT5eiAP9fyYZMrv3pU6VsbDdJCV-0O-3~1bskj6~VcyZy~ciq0bW9IXwg90R8957B4PTD1fBnR~fhLzCeapkBLj38yK-rgDGI3FP59WmTbLJgGX0Hw-EjQJ1inu5zJTARF7cwrbNDcHWAna6eOii3R2YC4m2w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      route: Card3,
       name: "Melissa Dyrdahl",
       subtitle: "Executive Marketing Advisor",
       text: "Former CMO - Adobe Board Member - CommonSpirit Health",
     },
     {
-      route: "https://s3-alpha-sig.figma.com/img/7049/d85b/17a7360b884265cafb3d2a11ed444722?Expires=1681084800&Signature=GbXmPqKz-43Pkh1bNmNR3gGcHqxpTPiTdFqIHrLBoMfIh1p9I-rUHcpXeHKRoL0X3mVTQxX7d-DYUH-vnK4~IsOuK20keKJj-1cWrVuhlNoGlkdSjHlOpCdvjiMTTKt3U7zbqsyZRhCeNrM3LvuGAVJiQxXFIBx8bRqW~eB~fDrY~V-uF9DWrL-L49ovU040Hjd3~jPcc9l38aCvyG9R7YxnNaDBw8YxKP1VtfKCeiRlOLeOvdILhLmVN4VldSCWiadya~dHsgTbMLuJs-X36Q3-H5wG1cEcIPUO2KZ0DVWhHvai5YBw2JQqGuzOS8Y1zsh99FfN9xPevplh2B42lQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      route: Card4,
       name: "Anaïs Rameau, M.D.",
       subtitle: "Clinical Advisor",
       text: "Assistant Professor of ENT - Cornell University Doctor of Medicine - McGill University",
     },
     {
-      route: "https://s3-alpha-sig.figma.com/img/2d52/0dd7/7f258dcbd49ee9eb116629b3c090cacc?Expires=1681084800&Signature=JMW1HsQcJJGob-~26yUJMiLR~leAIN4JBdWwMatmVCiaRly8xgpZmaVis-2JRR4xxGRhJ~996zviM3PxZe6vE94Ufo4CEmNhY~PQ8oxomRPsiiDC-a3vr7ZBJ80FtcSB3RdQ-iqkqmuuR7M756ECLxYnUxUi4mPCewAIsl~QEgDYwT5INakrygihd3PaSPDZxy~AWOSdbiFC2vUJfsk1PEGimCRbV3yAacxLjS30Gwvosa-2Igcv-lAsA6UVIclc7vEj-6ormuY~5KEkqkg5DpQV6xtZcFHFyMeYfq6~Fbz58Q5L0GtOPIphnidP0Gyh7L8mlpkauFaNilVniaov6A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      route: Card5,
       name: "Madhav Datt",
       subtitle: "Executive Nonprofit Advisor",
       text: "Founder - Green the Gene Former Global Representative for Youth - UN EP",
     },
     {
-      route: "https://s3-alpha-sig.figma.com/img/6410/33fd/aed52736739b3b15843358ba4a3cecf0?Expires=1681084800&Signature=NEs~1zUkjPbm-Sf2~vSqAKSRa7BlFNzUXthSUSC8QFwvccxcI4ofa9-5eIiHQcbUU3Zpszu6yWKviD50PjFUdkR5MSzqpaZmtfS4qQ4OMfi3xEFmGBXY7xlbLUdr8h4qmx5zJsNNFa5EGo~IYnUGHTsqxzV7NgGE-tnxvjfGZiVQPWEMlRYvj9KozCz6zx2WIyx-EW4Pgs5o8jsax5FNnB29KwiW7wLntharfZv9cPqnAUIGuf6ooqlhTr0tcUceSrueO6sNZOVejYLw9rLLPu8cBR3uv2CC~PJZzMPPAcP61gse2NM03HjkJshifQum19nVO7z1vUH86tg608SUkg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      route: Card6,
       name: "Rafi Azim-Khan",
       subtitle: "Executive Legal Advisor",
       text: "Partner, IP/IT & Head Data Privacy Europe Pillsbury Winthrop Shaw Pittman LLP",
     },
     {
-      route: "https://s3-alpha-sig.figma.com/img/d2fe/166e/17a60782646217d641e9465a433df4f5?Expires=1681084800&Signature=qWz25nNKRASDeGAaYH2fDMktLi9g5Mrl97btYdX2KW~AtlTj-uy60bPHQMiQ1oFKnKkXYLm3KxOVWfFGrFYvev0iIqag~49prBvQmQI6G5sbdbrf93zUiPLmO-8~NBs4h1b3W8h0dAtQfImK-4RNwoEv2Ci0PrOpnVaYW2ZtPJ00PpBIyIFfSRK0Icgm0XpnAvGZJikBdEdkFof9F1PEV~qt8NSW7yw8hYpvLt8aA4zwmMXaXZMVUmzU-7~je1EdJKFPdtaor8sVHje0wjgRD4zlBCEKIKZBm7Saohjgj50USjHVG3hz-vb2T5QRNVbnBVOAXzbcuvR6yHGFuZpjLQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      route: Card7,
       name: "Richard Swartzbaugh",
       subtitle: "Executive Advisor",
       text: "Risk Management - Curaesoft J.D. - University of Iowa",
     },
     {
-      route: "https://s3-alpha-sig.figma.com/img/bed8/57dd/ca516c43e2e3378248bae69ce0fd9214?Expires=1681084800&Signature=onKC~j5Z0J5ZOZCXqNkTTTRAK9oztZIJA~0rmxo79rpAkcsJste48urEAQexd8rUcD2BJ8VyeEsajGVzsbYzXNBHGtRcPDzFILYSsWs7WW6zWjr7u4EfUmRCjL7b5IIbeO7GhwABfVnC~Cu0BTeP4hqHVjHfqL7oCuWPbaqaC0m6P5FGyn6gyXhRRZJhrY2XpWfvD45WdAqzTKwVbHMCDFIQK-AqpKy2YghIBaPTZdaLmZORl5QB59GYcyG74kNarORqJQoxxMsdmD-To5B8vEhSyyZPLEfah1-PVKV1B8Bb4PR~UuWDGhNrp1~zUfuTyHczrFtZDAjggWkC9CrRaw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      route: Card8,
       name: "Ronan Dunlop",
       subtitle: "Executive Nonprofit Advisor",
       text: "Founder - Green the Gene Former Global Representative for Youth - UN EP",
+    },
+    {
+      route: Card9,
+      name: "Mark Haseltine",
+      subtitle: "Executive Advisor",
+      text: "Former CTO/CPO - edX Computer Science alumnus - MIT",
+    },
+    {
+      route: Card10,
+      name: "Mansoor Ahmed",
+      subtitle: "Clinical Research Advisor",
+      text: "Founder & CEO - Cleveland Sleep Research Center                                 MBBS - King Edward Medical University",
+    },
+    {
+      route: Card11,
+      name: "Mert Pilanci",
+      subtitle: "Artificial Intelligence Advisor",
+      text: "Assistant Professor of AI Stanford University Electrical Engineering",
+    },
+    {
+      route: Card12,
+      name: "Victor Wang",
+      subtitle: "Executive Advisor",
+      text: "Founder and Chairman- China Silicon Valley                                                     MBA - Stanford Graduate School of Business",
+    },
+    {
+      route: Card13,
+      name: "Rok Sosic",
+      subtitle: "Artificial Intelligence Advisor",
+      text: "Senior Research Engineer             Stanford School of Engineering",
+    },
+    {
+      route: Card14,
+      name: "Richard Nall",
+      subtitle: "Marketing Advisor",
+      text: "CEO - The Brand Garden               Master's Organisational Leadership - Henley",
+    },
+    {
+      route: Card15,
+      name: "Mathijs De Vaan",
+      subtitle: "Assistant Professor - UC Berkeley Haas Business School",
+      text: "Management of Organizations              PhD Sociology - Columbia University",
+    },
+    {
+      route: Card16,
+      name: "Pedro Siena",
+      subtitle: "Brazil Executive Advisor",
+      text: "Founder and CEO - Siena Company                                Mentor - Stanford Lean Launchpad",
+    },
+    {
+      route: Card17,
+      name: "Khwaja Shaik",
+      subtitle: "Chief Technology Officer - IBM",
+      text: "MOSH, Vice Chair, Board Member     Board Member - University of North Florida Computing",
+    },
+    {
+      route: Card18,
+      name: "George Pegelow",
+      subtitle: "Executive Visionary Advisor",
+      text: "Martial Arts & Philosophy Professor - Stanford University",
+    },
+    {
+      route: Card19,
+      name: "Rich Walcoff",
+      subtitle: "Communications Advisor",
+      text: "Sports Director - KGO Radio",
+    },
+    {
+      route: Card20,
+      name: "Taisuke Fukuno",
+      subtitle: "Executive IT Advisor",
+      text: "Founder - Open Data Japan        Chairman - jig.jp",
+    },
+    {
+      route: Card21,
+      name: "Tsutomu Ito",
+      subtitle: "Executive Visionary Advisor",
+      text: "Founder - Tannan FM Radio                 Lead Architect, Bullet Train",
+    },
+    {
+      route: Card22,
+      name: "Manuj Aggarwal",
+      subtitle: "Executive AI, Strategy And Marketing Advisor",
+      text: "Chief Innovation Officer - TetraNoodle Technologies",
+    },
+    {
+      route: Card23,
+      name: "Dr. Les Atlas",
+      subtitle: "Audio and Machine Learning Advisor",
+      text: "Professor of Electrical and Computer Engineering - University of Washington                           Ph.D. Electrical Engineering, Stanford",
     }
   ]
 
@@ -124,6 +214,12 @@ export default function OurPeople1() {
         type="primary"
         sizeBtn="medium"
         path="/"
+      />
+
+      <Title 
+        H="h1"
+        Text="Advisors"
+        TitleClassProps="text-center m-[5vw]"
       />
 
       <Card
