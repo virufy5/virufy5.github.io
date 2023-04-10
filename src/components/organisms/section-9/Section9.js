@@ -1,6 +1,8 @@
 import Button from "~/components/atoms/button/Button"
 import Title from "~/components/atoms/Title/Title"
 import TitleText from "~/components/molecules/TitleText/TitleText"
+import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal"
+import microscope from "~/assets/static/images/OurResearch/microscope.png"
 
 export default function Section9({
   TitleSize,
@@ -42,6 +44,11 @@ export default function Section9({
           lg:w-1/3
           xl:w-1/3
         ">
+<div className="flex justify-center">
+  <ImageAtomLocal 
+src={microscope}
+alt="microscope"
+/></div>
 
           <TitleText
             TitleSize={TitleSize}
@@ -65,7 +72,11 @@ export default function Section9({
           lg:w-1/3
           xl:w-1/3
         ">
-
+<div className="flex justify-center">
+  <ImageAtomLocal 
+src={microscope}
+alt="microscope"
+/></div>
           <TitleText
             TitleSize={TitleSize}
             TitleLabel={TitleLabel[1]}
@@ -95,7 +106,11 @@ export default function Section9({
           md:w-1/3
           lg:w-1/3
           xl:w-1/3
-        ">
+        "><div className="flex justify-center">
+        <ImageAtomLocal 
+      src={microscope}
+      alt="microscope"
+      /></div>
           <TitleText
             TitleSize={TitleSize}
             TitleLabel={TitleLabel[2]}
@@ -117,7 +132,11 @@ export default function Section9({
           lg:w-1/3
           xl:w-1/3
         ">
-
+<div className="flex justify-center">
+  <ImageAtomLocal 
+src={microscope}
+alt="microscope"
+/></div>
           <TitleText
             TitleSize={TitleSize}
             TitleLabel={TitleLabel[3]}
