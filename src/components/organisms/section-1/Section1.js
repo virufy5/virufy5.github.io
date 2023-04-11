@@ -34,6 +34,7 @@ export default function Section1({
       md:items-center
       md:text-center
       mt-16
+      
     ">
       <div className="
         text-center 
@@ -54,7 +55,7 @@ export default function Section1({
           ContainerTitleProps={ContainerTitleProps}
           ContainerTextProps={ContainerTextProps}
           TitleClassProps="ml-[5vw]"
-          TextClassProps="ml-[5vw]"
+          TextClassProps="ml-[5vw] mt-4 mb-4"
         />
 
         {buttons ?
@@ -70,7 +71,12 @@ export default function Section1({
       <div
         style={{
           flex: "1",
-        }} className="flex justify-center mr-[2.5vw] md:mr-[5vw] w-[70%] md:w-[50%] md:text-left text-center">
+        }} className="flex justify-center text-center
+        w-[100%]
+        md:mr-[5vw] md:text-left
+        lg:mr-[2.5vw]
+        xl:mr-[2.5vw]
+       ">
         <ImageAtomLocal
           imagesize={sizeImg}
           border={border}

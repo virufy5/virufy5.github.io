@@ -10,7 +10,8 @@ import Text from "~/components/atoms/Text/Text";
 
 //Images
 import ImageinsText from "~/assets/static/images/textInImage/OurPeople.jpg"
-import Amil from "~/assets/static/images/ourPeople/Amil.png"
+import Amil from "~/assets/static/images/OurResearch/microscope.png"
+import ImageAtomURL from "../components/atoms/imageAtom/ImageAtomURL";
 
 export default function OurPeople2() {
 
@@ -50,10 +51,10 @@ export default function OurPeople2() {
           lg:w-[250px]
           xl:w-[200px]
         ">
-          <ImageAtomLocal
+          <ImageAtomURL
             imagesize="pr100"
             border="radious"
-            src={Amil}
+            src="https://s3-alpha-sig.figma.com/img/f3d5/9250/e711a20452cb02cc8c355fcdfa662a16?Expires=1682294400&Signature=Kr-STYMlZiTlr9KIOoc62T-cif9NGWCjpSVkclZeNo-C1UkdofbBD6LxZCFUt14ZB6rxEXRR5mTSuP0KxJdRpaZun0f64Kthpsmcq1Ad~sxxNvl~Ml9AfFg2uhp29WJ5osCtUXm79zJ9~mCizZO3YP4NDtOdg64EN5nrtIpiuKLHFPTorBtA8sHBxf-Q2QaSJSkWQblkm5ZQn0lwOxZeggLgkNn6-9NcYKmbAJYxTvQ6Ndvmf~1cwx0-KsQ0BILyJPzUjUXwF1u7RfaAUlOpWA7NTCsQZp4RnbpexbqJR1Oc8iOOI7B1wXDB2olFWJScmRbssF-TroJ4WeUShtCrBg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
             alt="Amil"
           />
         </div>
