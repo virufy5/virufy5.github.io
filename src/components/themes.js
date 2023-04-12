@@ -43,17 +43,17 @@ export const ImageSize = {
 
 //TITLE THEMES
 export const TitleProps = {
-    h1: "text-[2.25rem] leading-[2.5rem]  md:text-[2.5rem] md:leading-[2.3rem] lg:text-[2.7rem] lg:leading-[2.50rem] xl:text-[3.3rem] xl:leading-[3rem]",
-    h2: "text-[1.875rem] leading-[2.25rem]",
-    h3: "text-[1.5rem] leading-[2rem]",
-    h5: "text-[1.25rem] leading-[1.75rem]",
+    h1: "text-[2.25rem] leading-[2.5rem]   md:text-[2.5rem] md:leading-[2.3rem] lg:text-[2.7rem] lg:leading-[2.50rem] xl:text-[3.3rem] xl:leading-[3rem]",
+    h2: "text-[1.875rem] leading-[2.25rem] md:text-[2.3rem] md:leading-[2.1rem] lg:text-[2.5rem] lg:leading-[2.30rem] xl:text-[3.1rem] xl:leading-[1rem]",
+    h3: "text-[1.5rem] leading-[2rem]      md:text-[2.1rem] md:leading-[1.9rem] lg:text-[2.3rem] lg:leading-[2.10rem] xl:text-[2.9rem] xl:leading-[0.75rem]",
+    h5: "text-[1.25rem] leading-[1.75rem]  md:text-[1.9rem] md:leading-[1.7rem] lg:text-[2.1rem] lg:leading-[1.90rem] xl:text-[2.7rem] xl:leading-[0.7rem]",
     h6: "text-[1rem] leading-[1.5rem] font-semibold text-center"
 };
 
 //TEXT THEMES
 export const TextProps = {
-    subtitle: "text-[1.125rem] leading-[1.75rem]",
-    normal: "text-[0.875rem] leading-[1.25rem] md:text-[1.1rem] md:leading-[1.40rem] lg:text-[1.3rem] lg:leading-[1.50rem] xl:text-[1.5rem] xl:leading-[1.75rem]"
+    subtitle: "text-[1.125rem] leading-[1.75rem] md:text-[1.3rem] md:leading-[1.70rem] lg:text-[1.6rem] lg:leading-[1.80rem] xl:text-[1.8rem] xl:leading-[1.90rem]",
+    normal: "  text-[0.875rem] leading-[1.25rem] md:text-[1.1rem] md:leading-[1.40rem] lg:text-[1.3rem] lg:leading-[1.50rem] xl:text-[1.5rem] xl:leading-[1.75rem]"
 };
 
 //LINK THEMES
