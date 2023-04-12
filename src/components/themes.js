@@ -43,7 +43,7 @@ export const ImageSize = {
 
 //TITLE THEMES
 export const TitleProps = {
-    h1: "text-[2.25rem] leading-[2.5rem]",
+    h1: "text-[2.25rem] leading-[2.5rem]  md:text-[2.5rem] md:leading-[2.3rem] lg:text-[2.7rem] lg:leading-[2.50rem] xl:text-[3.3rem] xl:leading-[3rem]",
     h2: "text-[1.875rem] leading-[2.25rem]",
     h3: "text-[1.5rem] leading-[2rem]",
     h5: "text-[1.25rem] leading-[1.75rem]",
@@ -53,7 +53,7 @@ export const TitleProps = {
 //TEXT THEMES
 export const TextProps = {
     subtitle: "text-[1.125rem] leading-[1.75rem]",
-    normal: "text-[0.875rem] leading-[1.25rem]"
+    normal: "text-[0.875rem] leading-[1.25rem] md:text-[1.1rem] md:leading-[1.40rem] lg:text-[1.3rem] lg:leading-[1.50rem] xl:text-[1.5rem] xl:leading-[1.75rem]"
 };
 
 //LINK THEMES
