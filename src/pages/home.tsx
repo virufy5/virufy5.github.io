@@ -49,7 +49,14 @@ export default function Prueba() {
       <Section3 />
 
       {/* <p className="text-gray-300">Section - 4</p> */}
-      <Section4 />
+      <Section4 
+                    TitleSize1="h1"
+                    TitleSize2="h3"
+                    TitleLabel1="Meet Our Founder"
+                    TitleLabel2="Amil Khanzada"
+                    TextLabel="MBA Candidate, Haas School of Business Master of Engineering Candidate, Department of Electrical Engineering and Computer Sciences"
+                    labelButton="read more"
+      />
 
       {/* <p className="text-gray-300">Section - 5</p> */}
       <Section5
