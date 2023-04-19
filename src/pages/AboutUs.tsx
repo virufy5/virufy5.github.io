@@ -87,6 +87,7 @@ export default function AboutUs() {
       />
       <Card
         CardsData={CardsData}
+        CardClassProps="flex flex-col text-center items-center w-[348px] sm:w-1/1 md:w-1/2 lg:w-1/3 xl:w-1/3 mb-4 mt-4"
       />
       <Section5
         StylePropsSection="text-center w-[100%] mt-4"

@@ -5,7 +5,6 @@ import Section9 from "~/components/organisms/section-9/Section9"
 
 //image
 import imageOurResearch from "~/assets/static/images/OurResearch/image.png"
-import microscope from "~/assets/static/images/OurResearch/microscope.png"
 
 export default function OurResearch() {
 

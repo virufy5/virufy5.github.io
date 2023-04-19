@@ -1,22 +1,13 @@
 
-//Organismo
-import ImageAtomLocal from "../components/atoms/imageAtom/ImageAtomURL";
-
-
-//Prueba
 import TextinsImg from "~/components/molecules/TextinsImg/TextinsImg"
 import Title from "~/components/atoms/Title/Title";
 import Text from "~/components/atoms/Text/Text";
 
 //Images
 import ImageinsText from "~/assets/static/images/textInImage/OurPeople.jpg"
-import Amil from "~/assets/static/images/OurResearch/microscope.png"
 import ImageAtomURL from "../components/atoms/imageAtom/ImageAtomURL";
 
 export default function OurPeople2() {
-
-  const buttons = ["Read more"]
-  const label = ["Read more"]
 
 
   return (

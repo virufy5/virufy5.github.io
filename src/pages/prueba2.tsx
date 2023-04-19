@@ -13,16 +13,11 @@ import ImageButton from "../components/molecules/Image-Button/Image-Button";
 import CardHome from "../components/molecules/CardHome/CardHome"; */
 
 //ORGANISMOS
-import Section2 from "../components/organisms/section-2/Section2";
-import Section4 from "../components/organisms/section-4/Section4";
 import ImageAtomLocal from "../components/atoms/imageAtom/ImageAtomLocal";
 import ImageAtomURL from "../components/atoms/imageAtom/ImageAtomURL";
 import Advisor1 from "../assets/static/images/cards/advisor1.jpg"
 
 export default function Prueba2() {
-
-    const buttons = ["share your cough", "learn more"]
-    const label = ["share your cough", "learn more"]
 
   return (
     <div>

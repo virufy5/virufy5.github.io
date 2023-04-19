@@ -11,8 +11,6 @@ export default function Section9({
   TextLabel,
   ContainerTitleProps,
   ContainerTextProps,
-  TitleClassProps,
-  TextClassProps,
   sizeBtn,
   typeBtn,
   labelBtn,

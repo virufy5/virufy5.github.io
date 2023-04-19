@@ -1,6 +1,5 @@
 import TitleText from "~/components/molecules/TitleText/TitleText"
 import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal"
-import ButtonGroup from "~/components/molecules/ButtonGroup/ButtonGroup"
 import Button from "~/components/atoms/button/Button"
 
 export default function Section1({
@@ -15,10 +14,6 @@ export default function Section1({
   route,
   alt,
   buttons,
-  label,
-  type,
-  sizeBtn,
-  path,
 }) {
   return (
     <div className="

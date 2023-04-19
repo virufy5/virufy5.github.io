@@ -7,9 +7,9 @@ export default function LinkAtom({
 }) {
 	return (
 		<>
-			{Routes.map(({ label, route }) => (
+			{Routes.map(({ label, route, id }) => (
 
-				<Link href={route} className={`${LinkAtomProps?.[Style]}`}>
+				<Link key={id} href={route} className={`${LinkAtomProps?.[Style]}`}>
 					{label}
 				</Link>
 

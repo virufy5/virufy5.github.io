@@ -1,11 +1,11 @@
 import { ImageSize, ImageBorder } from "../../themes";
 import Image from "next/image";
 
-export default function ImageAtomLocal({ imagesize, alt, border, src }) {
+export default function ImageAtomLocal({ imagesize, alt, border, src, ImageStyleProps }) {
 
     return (
         <>
-            <Image className={`${ImageBorder?.[border]} ${ImageSize?.[imagesize]}`} src={src} alt={alt} />
+            <Image className={`${ImageBorder?.[border]} ${ImageSize?.[imagesize]} ${ImageStyleProps}`} src={src} alt={alt} />
         </>
     )
 }

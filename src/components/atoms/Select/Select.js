@@ -1,13 +1,9 @@
 import * as React from 'react';
 import styles from './Select.module.css'
-import SelectAtomProps from '../../themes'
 import ImageAtomLocal from '../imageAtom/ImageAtomLocal';
 
 //Flags
 import ENG from "~/assets/static/icons/navbar/flags/Eng.png"
-import SPA from "~/assets/static/icons/navbar/flags/Spa.png"
-import JPN from "~/assets/static/icons/navbar/flags/Jpn.png"
-import POR from "~/assets/static/icons/navbar/flags/Por.png"
 
 
 export default function Select({
@@ -30,8 +26,8 @@ export default function Select({
       <label>
         {Text}
         <select id='xyz' value={value} onChange={handleChange} className={`${styles.select} text-[18px] ml-2`}>
-          {Options.map((option) => ( 
-            <option value={option.value}>{option.label}</option>
+          {Options.map((option, id) => ( 
+            <option key={id} value={option.value}>{option.label}</option>
           ))}
         </select>
       </label>
