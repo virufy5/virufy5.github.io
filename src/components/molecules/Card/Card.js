@@ -22,17 +22,19 @@ export default function Card({
 						ImageStyleProps="mt-3"
 					/>
 					<Title
-						H="h3"
+						H="h4"
 						Text={name}
+						TitleClassProps={"mt-[24px]"}
 					/>
 					<Text
 						Style="subtitle"
 						Text={subtitle}
+						TextClassProps=""
 					/>
 					<Text
 						Style="small"
 						Text={text}
-						TextClassProps="ml-[50px] mr-[50px] mt-[1px]"
+						TextClassProps="ml-[50px] mr-[50px] mt-[16px]"
 					/>
 				</div>
 			))}

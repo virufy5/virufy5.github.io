@@ -6,7 +6,7 @@ export default function ButtonGroup({ size, type, path, label, border, imagesize
     return (
         <>
             <div>
-                <ImageAtomLocal border={border} imagesize={imagesize} src={src} alt={alt}/>
+                <ImageAtomLocal ImageStyleProps="" border={border} imagesize={imagesize} src={src} alt={alt}/>
             </div>
             <div>
                 <Button type={type} size={size} path={path} label={label} />

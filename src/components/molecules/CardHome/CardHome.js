@@ -24,7 +24,7 @@ export default function CardHome({
                     display: "flex",
                     alignItems: "center"
                 }}>
-                <ImageAtomLocal border="circular" imagesize={imagesize} src={src} alt={alt}/>
+                <ImageAtomLocal ImageStyleProps="" border="circular" imagesize={imagesize} src={src} alt={alt}/>
             </div>
             
                 <div
@@ -37,9 +37,7 @@ export default function CardHome({
                         alignItems: "center"
                     }}>
                     <TitleText 
-                        style={{
-                            textAlign: "center"
-                        }}
+                        
                     TitleSize={TitleSize}
                     TitleLabel={TitleLabel}
                     TextSize={TextSize}

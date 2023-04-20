@@ -19,7 +19,7 @@ export default function CardLarge({
             alt="Imagen card"
           />
           </div>
-          <div className="w-[362px] sm:w-[270px] md:w-[362px] lg:w-[362px] xl:w-[362px] text-left">
+          <div className="w-[403px] sm:w-[290px] md:w-[403px] lg:w-[403px] xl:w-[403px] text-left">
             <Title
               H="h4"
               Text={name}

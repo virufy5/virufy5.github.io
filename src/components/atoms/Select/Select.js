@@ -22,7 +22,7 @@ export default function Select({
 
   return (
     <div className='flex items-center content-center lg:ml-12'>
-       <ImageAtomLocal src={icon} alt="icon" imagesize="px20" border="none" />
+       <ImageAtomLocal src={icon} alt="icon" imagesize="px20" border="none" ImageStyleProps="" />
       <label>
         {Text}
         <select id='xyz' value={value} onChange={handleChange} className={`${styles.select} text-[18px] ml-2`}>
@@ -32,5 +32,5 @@ export default function Select({
         </select>
       </label>
     </div>
-  );
-};
+  )
+}

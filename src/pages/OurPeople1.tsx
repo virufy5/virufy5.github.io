@@ -181,6 +181,7 @@ export default function OurPeople1() {
 
   return (
     <>
+    <div className="w-[100vw]">
       <TextinsImg
         sizeImg="auto"
         borderImg="none"
@@ -188,6 +189,7 @@ export default function OurPeople1() {
         altImg="Imagen cabezera"
         Text="We unite from across the world to defeat COVID-19 one cough at a time."
       />
+      </div>
       <div
         className="text-center m-7"
       >
