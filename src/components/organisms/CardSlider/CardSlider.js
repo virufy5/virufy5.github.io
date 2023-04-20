@@ -35,14 +35,19 @@ export default function CardSlider() {
             <div className="navigation-wrapper mt-0 h-72">
                 <div ref={sliderRef} className="keen-slider h-60 sm:h-72">
                     <div className="keen-slider__slide number-slide1">
-                        <CardHome
+                        
+
+                        <CardHome 
                             src={Advisor1}
                             alt="imagen de algo"
                             TitleSize="h6"
                             TitleLabel="Nombre Cliente"
                             TextSize="normal"
-                            TextLabel="Director. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim ornare leo euismod ac." >
-                        </CardHome>
+                            TextLabel="Director. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim ornare leo euismod ac." 
+                            imagesize=""
+                            ContainerTitleProps=""
+                            ContainerTextProps=""
+                        />
                     </div>
                     <div className="keen-slider__slide number-slide2">
                         <CardHome
@@ -51,8 +56,12 @@ export default function CardSlider() {
                             TitleSize="h6"
                             TitleLabel="Nombre Cliente"
                             TextSize="normal"
-                            TextLabel="Director. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim ornare leo euismod ac." >
-                        </CardHome>
+                            TextLabel="Director. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim ornare leo euismod ac." 
+                            imagesize=""
+                            ContainerTitleProps=""
+                            ContainerTextProps=""
+                        />
+                        
                     </div>
                     <div className="keen-slider__slide number-slide3">
 
@@ -62,8 +71,11 @@ export default function CardSlider() {
                             TitleSize="h6"
                             TitleLabel="Nombre Cliente"
                             TextSize="normal"
-                            TextLabel="Director. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim ornare leo euismod ac." >
-                        </CardHome>
+                            TextLabel="Director. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim ornare leo euismod ac." 
+                            imagesize=""
+                            ContainerTitleProps=""
+                            ContainerTextProps=""
+                        />
                     </div>
                     <div className="keen-slider__slide number-slide4">
                         <CardHome
@@ -72,8 +84,11 @@ export default function CardSlider() {
                             TitleSize="h6"
                             TitleLabel="Nombre Cliente"
                             TextSize="normal"
-                            TextLabel="Director. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim ornare leo euismod ac." >
-                        </CardHome>
+                            TextLabel="Director. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim ornare leo euismod ac." 
+                            imagesize=""
+                            ContainerTitleProps=""
+                            ContainerTextProps=""
+                        />
                     </div>
                     <div className="keen-slider__slide number-slide2">
                         <CardHome
@@ -82,8 +97,11 @@ export default function CardSlider() {
                             TitleSize="h6"
                             TitleLabel="Nombre Cliente"
                             TextSize="normal"
-                            TextLabel="Director. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim ornare leo euismod ac." >
-                        </CardHome>
+                            TextLabel="Director. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim ornare leo euismod ac." 
+                            imagesize=""
+                            ContainerTitleProps=""
+                            ContainerTextProps=""
+                        />
                     </div>
                 </div>
                 {loaded && instanceRef.current && (

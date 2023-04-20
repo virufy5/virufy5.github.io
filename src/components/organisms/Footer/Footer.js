@@ -30,20 +30,20 @@ export default function Footer() {
 
     return (
         <>
-            <footer class="bg-gray-200">
-                <div class="w-full max-w-screen-xl mx-auto p-4 py-10 flex flex-col">
+            <footer className="bg-gray-200">
+                <div className="w-full max-w-screen-xl mx-auto p-4 py-10 flex flex-col">
                     <Link href="/" className="flex justify-center lg:hidden">
-                        <ImageAtomLocal className="lg:h-12" src={VirufyLogo} alt="Virufy Logo" />
+                        <ImageAtomLocal ImageStyleProps="lg:h-12" src={VirufyLogo} alt="Virufy Logo" imagesize="" border="" />
                     </Link>
                     <div className="flex w-full">
-                        <hr className="w-11/12 h-px mx-auto my-4 border-0 rounded my-5 bg-gray-700" />
+                        <hr className="w-11/12 h-px mx-auto my-4 border-0 rounded bg-gray-700" />
                     </div>
                     <div className="absolute mx-12 lg:flex justify-start hidden w-56 mt-12">
                         <Link href="/">
-                            <ImageAtomLocal src={VirufyLogo} imagesize="px160" alt="Virufy Logo" />
+                            <ImageAtomLocal src={VirufyLogo} imagesize="px160" alt="Virufy Logo" border="" ImageStyleProps="" />
                         </Link>
                     </div>
-                    <ul class="flex flex-wrap mb-6 text-[#393939] lg:hidden">
+                    <ul className="flex flex-wrap mb-6 text-[#393939] lg:hidden">
                         <li className="flex w-full items-center justify-center my-1 underline">
                             <LinkAtom Routes={links1} Style="linkFooter" />
                         </li>
@@ -57,7 +57,7 @@ export default function Footer() {
                             <LinkAtom Routes={links4} Style="linkFooter" />
                         </li>
                     </ul>
-                    <ul class="hidden flex-wrap mb-6 text-[#393939] lg:flex">
+                    <ul className="hidden flex-wrap mb-6 text-[#393939] lg:flex">
                         <li className="flex w-full items-center justify-center my-6 underline">
                             <LinkAtom Routes={links1} Style="linkFooter" />
                         </li>
@@ -69,16 +69,16 @@ export default function Footer() {
                     </ul>
                     <div className="flex justify-center gap-7">
                         <Link href="/" className="lg:hidden">
-                            <ImageAtomLocal src={Instagram} imagesize="px20" alt="Virufy Logo" />
+                            <ImageAtomLocal src={Instagram} imagesize="px20" alt="Virufy Logo" border="" ImageStyleProps="" />
                         </Link>
                         <Link href="/" className="lg:hidden">
-                            <ImageAtomLocal src={Linkedin} imagesize="px20" alt="Virufy Logo" />
+                            <ImageAtomLocal src={Linkedin} imagesize="px20" alt="Virufy Logo" border="" ImageStyleProps="" />
                         </Link>
                         <Link href="/" className="hidden lg:flex">
-                            <ImageAtomLocal src={Instagram} imagesize="px30" alt="Virufy Logo" />
+                            <ImageAtomLocal src={Instagram} imagesize="px30" alt="Virufy Logo" border="" ImageStyleProps="" />
                         </Link>
                         <Link href="/" className="hidden lg:flex">
-                            <ImageAtomLocal src={Linkedin} imagesize="px30" alt="Virufy Logo" />
+                            <ImageAtomLocal src={Linkedin} imagesize="px30" alt="Virufy Logo" border="" ImageStyleProps="" />
                         </Link>
                     </div>
                     <div className="flex flex-col align-center gap-7 mt-7 text-[#393939] w-full lg:hidden">
