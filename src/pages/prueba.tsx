@@ -32,7 +32,7 @@ export default function Prueba() {
 
   return (
     <>
-      <h1 className="text-sky-600 text-3xl m-4">Organismo</h1>
+     {/*  <h1 className="text-sky-600 text-3xl m-4">Organismo</h1>
       <p>Section - 1</p>
       <Section1 />
 
@@ -68,7 +68,7 @@ export default function Prueba() {
         ImgBorder="radious"
         ImgAlt={"Cualquier cosa"}
         ImgSize="auto"
-      />
+      /> */}
       {/* <ButtonGroup 
         buttons={["One", "Two"]} 
         label={["One", "Two"]} 

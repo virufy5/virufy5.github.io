@@ -98,7 +98,16 @@ export default function AboutUs() {
         ContainerTitleProps1="mb-5 mr-[15vw]"
         ContainerTextProps1="mb-4 mr-[15vw] text-center"
         TitleClassProps1="ml-[15vw]"
-        TextClassProps1="ml-[15vw]"       
+        TextClassProps1="ml-[15vw]"
+        
+        TitleSize2
+        TitleLabel2
+        TextSize2
+        TextLabel2
+        ContainerTitleProps2
+        ContainerTextProps2
+        TitleClassProps2
+        TextClassProps2 
       />      
     </>
   )

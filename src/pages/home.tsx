@@ -20,7 +20,7 @@ export default function Prueba() {
   return (
     <>
       {/* <h1 className="text-sky-600 text-3xl m-4">HOME</h1> */}
-      
+
       {/* <p className="text-gray-300">Section - 1</p> */}
       <Section1
         //TitleText
@@ -28,18 +28,15 @@ export default function Prueba() {
         TitleLabel="An online Covid-19 test is possible"
         TextSize="normal"
         TextLabel={"Virufy is a nonprofit research organization developing artificial intelligence (AI) technology to rapidly screen for COVID-19 from cough patterns, through use of a smartphone at no cost."}
+        ContainerTitleProps=""
         ContainerTextProps="items-start h-[100%] mr-2 mt-2"
         //Image
         sizeImg="pr90"
-        border="radious" 
-        route={ImageSection1} 
+        border="radious"
+        route={ImageSection1}
         alt="imagen de algo"
         //Buttons
         buttons={buttons}
-        label={label}
-        type="primary"
-        sizeBtn="medium"
-        path="/"
       />
 
       {/* <p className="text-gray-300">Section - 2</p> */}
@@ -49,13 +46,17 @@ export default function Prueba() {
       <Section3 />
 
       {/* <p className="text-gray-300">Section - 4</p> */}
-      <Section4 
-                    TitleSize1="h1"
-                    TitleSize2="h3"
-                    TitleLabel1="Meet Our Founder"
-                    TitleLabel2="Amil Khanzada"
-                    TextLabel="MBA Candidate, Haas School of Business Master of Engineering Candidate, Department of Electrical Engineering and Computer Sciences"
-                    labelButton="read more"
+      <Section4
+        TitleSize1="h1"
+        TitleSize2="h3"
+        TitleLabel1="Meet Our Founder"
+        TitleLabel2="Amil Khanzada"
+        TextLabel="MBA Candidate, Haas School of Business Master of Engineering Candidate, Department of Electrical Engineering and Computer Sciences"
+        labelButton="read more"
+        ContainerTitleProps
+        ContainerTextProps
+        border
+        alt
       />
 
       {/* <p className="text-gray-300">Section - 5</p> */}
@@ -80,14 +81,14 @@ export default function Prueba() {
       />
 
       {/* <p className="text-gray-300">Section - Card Slider</p> */}
-      <CardSlider /> 
+      <CardSlider />
 
 
       {/* <p className="text-gray-300">Section - 6</p> */}
-      <Section6 /> 
+      <Section6 />
 
       {/* <p className="text-gray-300">Section - 7</p> */}
-      <Section7 TitleLabel="Let’s help the world and save many lives by recording your cough" Label1="share your cough" Label2="learn more"/> 
+      <Section7 TitleLabel="Let’s help the world and save many lives by recording your cough" Label1="share your cough" Label2="learn more" />
     </>
   );
 }

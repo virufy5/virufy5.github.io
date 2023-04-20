@@ -23,6 +23,10 @@ export default function Section6() {
       <div className="mr-[5vw] ml-[5vw]">
       <ImageAtomLocal
         src={ImageSection6}
+        imagesize={""}
+        border={""}
+        alt={""}
+        ImageStyleProps={""}
       />
       <Button size="large" type="primary" path="#" label="Become  a supporter" />
       </div>

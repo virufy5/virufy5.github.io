@@ -196,6 +196,7 @@ export default function OurPeople1() {
         <Title
           H="h1"
           Text="Meet Our Founder"
+          TitleClassProps={""}
         />
       </div>
       <Section1
@@ -204,6 +205,7 @@ export default function OurPeople1() {
         TitleLabel="Amil Khanzada"
         TextSize="normal"
         TextLabel="MBA Candidate, Haas School of Business Master of Engineering Candidate, Department of Electrical Engineering and Computer Sciences"
+        ContainerTitleProps={""}
         ContainerTextProps="items-start h-[100%] mr-2"
         //Image
         sizeImg="pr70"
@@ -212,10 +214,6 @@ export default function OurPeople1() {
         alt="imagen de algo"
         //Buttons
         buttons={buttons}
-        label={label}
-        type="primary"
-        sizeBtn="medium"
-        path="/"
       />
 
       <Title 

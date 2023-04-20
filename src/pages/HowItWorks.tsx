@@ -15,7 +15,7 @@ export default function HowItWorks() {
 
 	return (
 		<>
-{/* 			<h1 className="text-sky-600 text-3xl m-4">How it Works</h1>
+			{/* 			<h1 className="text-sky-600 text-3xl m-4">How it Works</h1>
 
 			<p className="text-gray-300">Section - 1</p> */}
 			<Section1
@@ -24,21 +24,18 @@ export default function HowItWorks() {
 				TitleLabel="Share your cough"
 				TextSize="normal"
 				TextLabel={"Your cough helps us improve our predictive model, thus being crucial in the fight against COVID-19. Contribute to the progress we are making by sharing your cough!"}
+				ContainerTitleProps
 				ContainerTextProps="items-start h-[100%] mr-4"
 				//Image
-				size="pr90"
 				border="none"
 				route={howItWorks1}
 				alt="imagen de algo"
+				sizeImg
 				//Buttons
 				buttons={buttons}
-				label={label}
-				type="primary"
-				sizeBtn="medium"
-				path="/"
 			/>
 
-{/* 			<p className="tex		t-gray-300">Section - 8</p> */}
+			{/* 			<p className="tex		t-gray-300">Section - 8</p> */}
 			<Section8
 				TitleLabel="How our online Covid-19 test works"
 				TitleSize="h1"
@@ -59,7 +56,7 @@ export default function HowItWorks() {
 				TextLabel1={"Your cough helps us improve our predictive model, thus being crucial in the fight against COVID-19. Contribute to the progress we are making by sharing your cough!"}
 				TextLabel2={"Our artificial intelligence algorithm processing the recording to detect Covid-19 based on cough sounds. "}
 				TextLabel3={"Within minutes, our Artificial intelligence algorithm is able to accurately predict your test results through the app."}
-				ContainerTextProps=""			
+				ContainerTextProps=""
 			/>
 
 

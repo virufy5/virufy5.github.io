@@ -25,6 +25,7 @@ export default function OurPeople2() {
         <Title
           H="h1"
           Text="Amil’s Story"
+          TitleClassProps={""}
         />
       </div>
 

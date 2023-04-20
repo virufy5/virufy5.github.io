@@ -42,11 +42,14 @@ export default function Section9({
           lg:w-1/3
           xl:w-1/3
         ">
-<div className="flex justify-center">
-  <ImageAtomLocal 
-src={microscope}
-alt="microscope"
-/></div>
+          <div className="flex justify-center">
+            <ImageAtomLocal
+              src={microscope}
+              alt="microscope"
+              imagesize={""}
+              ImageStyleProps={""}
+              border={""}
+            /></div>
 
           <TitleText
             TitleSize={TitleSize}
@@ -70,11 +73,14 @@ alt="microscope"
           lg:w-1/3
           xl:w-1/3
         ">
-<div className="flex justify-center">
-  <ImageAtomLocal 
-src={microscope}
-alt="microscope"
-/></div>
+          <div className="flex justify-center">
+            <ImageAtomLocal
+              src={microscope}
+              alt="microscope"
+              imagesize={""}
+              ImageStyleProps={""}
+              border={""}
+            /></div>
           <TitleText
             TitleSize={TitleSize}
             TitleLabel={TitleLabel[1]}
@@ -105,10 +111,13 @@ alt="microscope"
           lg:w-1/3
           xl:w-1/3
         "><div className="flex justify-center">
-        <ImageAtomLocal 
-      src={microscope}
-      alt="microscope"
-      /></div>
+            <ImageAtomLocal
+              src={microscope}
+              alt="microscope"
+              imagesize={""}
+              border={""}
+              ImageStyleProps={""}
+            /></div>
           <TitleText
             TitleSize={TitleSize}
             TitleLabel={TitleLabel[2]}
@@ -130,11 +139,14 @@ alt="microscope"
           lg:w-1/3
           xl:w-1/3
         ">
-<div className="flex justify-center">
-  <ImageAtomLocal 
-src={microscope}
-alt="microscope"
-/></div>
+          <div className="flex justify-center">
+            <ImageAtomLocal
+              src={microscope}
+              alt="microscope"
+              imagesize={""}
+              ImageStyleProps={""}
+              border={""}
+            /></div>
           <TitleText
             TitleSize={TitleSize}
             TitleLabel={TitleLabel[3]}

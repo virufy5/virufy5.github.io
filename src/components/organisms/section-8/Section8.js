@@ -28,7 +28,12 @@ export default function Section8({
       <TitleText
         TitleSize={TitleSize}
         TitleLabel={TitleLabel}
+        TextSize={""}
+        TextLabel={""}
         ContainerTitleProps={ContainerTitleProps}
+        ContainerTextProps={""}
+        TitleClassProps={""}
+        TextClassProps={""}
       />
       <div className="flex flex-col lg:flex-row mb-4 text-center items-center w-[100%] justify-center mt-5 w-100">
         <div className="
@@ -39,13 +44,17 @@ export default function Section8({
             border={border}
             src={route1}
             alt={alt}
+            ImageStyleProps={""}
           />
           <TitleText
             TitleSize={TitleSize1}
             TitleLabel={TitleLabel1}
             TextSize={TextSize}
             TextLabel={TextLabel1}
+            ContainerTitleProps={""}
             ContainerTextProps={ContainerTextProps}
+            TitleClassProps={""}
+            TextClassProps={""}            
           />
         </div>
         <div className="
@@ -56,13 +65,17 @@ export default function Section8({
             border={border}
             src={route2}
             alt={alt}
+            ImageStyleProps={""}
           />
           <TitleText
             TitleSize={TitleSize1}
             TitleLabel={TitleLabel2}
             TextSize={TextSize}
             TextLabel={TextLabel2}
+            ContainerTitleProps={""}
             ContainerTextProps={ContainerTextProps}
+            TitleClassProps={""}
+            TextClassProps={""}
           />
         </div>
         <div className="
@@ -73,13 +86,17 @@ export default function Section8({
             border={border}
             src={route3}
             alt={alt}
+            ImageStyleProps={""}
           />
           <TitleText
             TitleSize={TitleSize1}
             TitleLabel={TitleLabel3}
             TextSize={TextSize}
             TextLabel={TextLabel3}
+            ContainerTitleProps={""}
             ContainerTextProps={ContainerTextProps}
+            TitleClassProps={""}
+            TextClassProps={""}
           />
         </div>
       </div>

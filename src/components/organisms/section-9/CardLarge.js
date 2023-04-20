@@ -17,12 +17,15 @@ export default function CardLarge({
             border="none"
             src={route}
             alt="Imagen card"
+            ImageStyleProps={""}
+            imagesize={""}
           />
           </div>
           <div className="w-[403px] sm:w-[290px] md:w-[403px] lg:w-[403px] xl:w-[403px] text-left">
             <Title
               H="h4"
               Text={name}
+              TitleClassProps={""}
             />
             <Text
               Style="small"
