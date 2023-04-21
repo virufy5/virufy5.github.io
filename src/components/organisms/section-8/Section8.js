@@ -29,6 +29,11 @@ export default function Section8({
         TitleSize={TitleSize}
         TitleLabel={TitleLabel}
         ContainerTitleProps={ContainerTitleProps}
+        TextClassProps=""
+        TextSize=""
+        TextLabel=""
+        TitleClassProps=""
+        ContainerTextProps=""
       />
       <div className="flex flex-col lg:flex-row mb-4 text-center items-center w-[100%] justify-center mt-5 w-100">
         <div className="
@@ -39,6 +44,7 @@ export default function Section8({
             border={border}
             src={route1}
             alt={alt}
+            ImageStyleProps=""
           />
           <TitleText
             TitleSize={TitleSize1}
@@ -46,6 +52,9 @@ export default function Section8({
             TextSize={TextSize}
             TextLabel={TextLabel1}
             ContainerTextProps={ContainerTextProps}
+            TextClassProps=""
+            TitleClassProps=""
+            ContainerTitleProps=""
           />
         </div>
         <div className="
@@ -56,6 +65,7 @@ export default function Section8({
             border={border}
             src={route2}
             alt={alt}
+            ImageStyleProps=""
           />
           <TitleText
             TitleSize={TitleSize1}
@@ -63,6 +73,9 @@ export default function Section8({
             TextSize={TextSize}
             TextLabel={TextLabel2}
             ContainerTextProps={ContainerTextProps}
+            TextClassProps=""
+            TitleClassProps=""
+            ContainerTitleProps=""
           />
         </div>
         <div className="
@@ -73,6 +86,7 @@ export default function Section8({
             border={border}
             src={route3}
             alt={alt}
+            ImageStyleProps=""
           />
           <TitleText
             TitleSize={TitleSize1}
@@ -80,6 +94,9 @@ export default function Section8({
             TextSize={TextSize}
             TextLabel={TextLabel3}
             ContainerTextProps={ContainerTextProps}
+            TextClassProps=""
+            TitleClassProps=""
+            ContainerTitleProps=""            
           />
         </div>
       </div>

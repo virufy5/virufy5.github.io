@@ -20,6 +20,12 @@ export default function Section4({
       <TitleText
         TitleSize={TitleSize1}
         TitleLabel={TitleLabel1}
+        ContainerTextProps=""
+        ContainerTitleProps=""
+        TextSize=""
+        TextLabel=""
+        TitleClassProps=""
+        TextClassProps=""
       />
       <div className="flex items-center flex-1 mt-[80px]">
         <div className="flex sm:hidden w-2/5 items-center flex-1">
@@ -31,6 +37,8 @@ export default function Section4({
               TextLabel={TextLabel}
               ContainerTitleProps={ContainerTitleProps}
               ContainerTextProps={ContainerTextProps}
+              TitleClassProps=""
+              TextClassProps=""
             />
           </div>
         </div>
@@ -43,6 +51,8 @@ export default function Section4({
               TextLabel={TextLabel}
               ContainerTitleProps={ContainerTitleProps}
               ContainerTextProps={ContainerTextProps}
+              TitleClassProps=""
+              TextClassProps=""
             />
             <div className="hidden sm:flex flex-col justify-center">
               <Button size="medium" type="primary" path="#" label={labelButton} />
@@ -56,6 +66,7 @@ export default function Section4({
             border={border}
             src={ImageSection4}
             alt={alt}
+            ImageStyleProps=""
           />
         </div>
       </div>

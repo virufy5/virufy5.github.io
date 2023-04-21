@@ -14,6 +14,7 @@ export default function Section1({
   route,
   alt,
   buttons,
+  ImageStyleProps
 }) {
   return (
     <div className="
@@ -77,6 +78,7 @@ export default function Section1({
           border={border}
           src={route}
           alt={alt}
+          ImageStyleProps={ImageStyleProps}
         />
       </div>
 

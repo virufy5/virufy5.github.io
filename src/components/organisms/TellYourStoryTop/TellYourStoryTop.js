@@ -17,6 +17,7 @@ export default function TellYourStoryTop({
                         border={border}
                         src={Image}
                         alt={alt}
+                        ImageStyleProps=""
                     />
                 </div>
                 <div className="flex mt-14 md:mt-0 md:hidden w-full md:w-2/5 px-[20px] md:px-[0px] items-center flex-1">
@@ -28,6 +29,8 @@ export default function TellYourStoryTop({
                             TextLabel="Tell us how COVID 19 has affected you or your family and how you have been able to overcome the disease, many people will find motivation in your story."
                             ContainerTitleProps={ContainerTitleProps}
                             ContainerTextProps={ContainerTextProps}
+                            TextClassProps=""
+                            TitleClassProps=""
                         />
                     </div>
                 </div>
@@ -40,6 +43,8 @@ export default function TellYourStoryTop({
                             TextLabel="Tell us how COVID 19 has affected you or your family and how you have been able to overcome the disease, many people will find motivation in your story."
                             ContainerTitleProps={ContainerTitleProps}
                             ContainerTextProps={ContainerTextProps}
+                            TextClassProps=""
+                            TitleClassProps=""
                         />
                     </div>
                 </div>

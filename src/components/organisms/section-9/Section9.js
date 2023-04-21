@@ -46,6 +46,9 @@ export default function Section9({
   <ImageAtomLocal 
 src={microscope}
 alt="microscope"
+ImageStyleProps=""
+imagesize=""
+border=""
 /></div>
 
           <TitleText
@@ -74,6 +77,9 @@ alt="microscope"
   <ImageAtomLocal 
 src={microscope}
 alt="microscope"
+ImageStyleProps=""
+imagesize=""
+border=""
 /></div>
           <TitleText
             TitleSize={TitleSize}
@@ -108,6 +114,9 @@ alt="microscope"
         <ImageAtomLocal 
       src={microscope}
       alt="microscope"
+      ImageStyleProps=""
+      imagesize=""
+      border=""      
       /></div>
           <TitleText
             TitleSize={TitleSize}
@@ -134,6 +143,9 @@ alt="microscope"
   <ImageAtomLocal 
 src={microscope}
 alt="microscope"
+ImageStyleProps=""
+imagesize=""
+border=""
 /></div>
           <TitleText
             TitleSize={TitleSize}

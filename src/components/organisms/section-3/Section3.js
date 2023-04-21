@@ -38,7 +38,8 @@ export default function Section3() {
           imagesize="pr100" 
           border="radious" 
           src={ImageSection3}
-          alt="imagen de algo" 
+          alt="imagen de algo"
+          ImageStyleProps=""
         />
       </div>
       <Button size="medium" type="primary" label="Our Data" path="/prueba" />

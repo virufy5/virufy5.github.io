@@ -11,7 +11,6 @@ import howItWorksStep3 from "~/assets/static/images/howItWorks/step3.jpg"
 export default function HowItWorks() {
 
 	const buttons = ["SHARE YOUR COUGH"]
-	const label = ["SHARE YOUR COUGH"]
 
 	return (
 		<>
@@ -26,16 +25,14 @@ export default function HowItWorks() {
 				TextLabel={"Your cough helps us improve our predictive model, thus being crucial in the fight against COVID-19. Contribute to the progress we are making by sharing your cough!"}
 				ContainerTextProps="items-start h-[100%] mr-4"
 				//Image
-				size="pr90"
+				sizeImg="pr90"
 				border="none"
 				route={howItWorks1}
 				alt="imagen de algo"
 				//Buttons
 				buttons={buttons}
-				label={label}
-				type="primary"
-				sizeBtn="medium"
-				path="/"
+				ContainerTitleProps=""
+				ImageStyleProps=""
 			/>
 
 {/* 			<p className="tex		t-gray-300">Section - 8</p> */}

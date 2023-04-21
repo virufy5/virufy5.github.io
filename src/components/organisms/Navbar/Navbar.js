@@ -54,10 +54,10 @@ export default function Navbar() {
                 <div>
                     <div className="flex items-center justify-between py-3 lg:py-5 lg:block">
                         <Link href="#" className="flex lg:hidden">
-                            <ImageAtomLocal imagesize="px100x48" border="none" src={VirufyLogo} alt="Logo Virufy" />
+                            <ImageAtomLocal imagesize="px100x48" border="none" src={VirufyLogo} alt="Logo Virufy" ImageStyleProps=""/>
                         </Link>
                         <Link href="#" className="hidden lg:flex">
-                            <ImageAtomLocal imagesize="px160" border="none" src={VirufyLogo} alt="Logo Virufy" />
+                            <ImageAtomLocal imagesize="px160" border="none" src={VirufyLogo} alt="Logo Virufy" ImageStyleProps=""/>
                         </Link>
                         <li className="text-[#393939] flex lg:hidden">
                             <Button size="small" type="primary" path="#" label="Join us" />
@@ -68,9 +68,9 @@ export default function Navbar() {
                                 onClick={() => setNavbar(!navbar)}
                             >
                                 {navbar ? (
-                                    <ImageAtomLocal imagesize="px30" border="none" src={CloseMenu} alt="bars menu" />
+                                    <ImageAtomLocal imagesize="px30" border="none" src={CloseMenu} alt="bars menu" ImageStyleProps="" />
                                 ) : (
-                                    <ImageAtomLocal imagesize="px30" border="none" src={BarsMenu} alt="bars menu" />
+                                    <ImageAtomLocal imagesize="px30" border="none" src={BarsMenu} alt="bars menu" ImageStyleProps=""/>
                                 )}
                             </button>
                         </div>
@@ -95,7 +95,7 @@ export default function Navbar() {
                                 <LinkAtom Routes={links4} Style="linkNavbar" />
                             </li>
                             <li className="text-[#393939]">
-                                <Select Text="" Options={options} Style="selectNavbar" optionsIcons={optionsIcons}/>
+                                <Select Text="" Options={options} optionsIcons={optionsIcons}/>
                             </li>
                             <li className="text-[#393939] hidden lg:flex">
                                 <Button size="small" type="secondary" path="#" label="Join us" />

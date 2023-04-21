@@ -20,6 +20,10 @@ export default function SectionJoinOurTeam({
                     TextSize="subtitulo"
                     TextLabel={"Whether you're a humanitarian, an expert, or simply want to take part in Virufy's mission, there are so many ways to help!"}
                     ContainerTextProps="items-start"
+                    TextClassProps=""
+                    TitleClassProps=""
+                    ContainerTitleProps=""
+
                 />
             </div>
             <div className="flex flex-col md:flex-row">
@@ -31,6 +35,11 @@ export default function SectionJoinOurTeam({
                                 TitleSize="h2"
                                 TitleLabel="Careers"
                                 ContainerTextProps="items-start"
+                                TextClassProps=""
+                                TitleClassProps=""
+                                ContainerTitleProps=""
+                                TextLabel=""
+                                TextSize=""
                             />
                         </div>
                         <div className="w-full flex items-center justify-end">
@@ -39,6 +48,7 @@ export default function SectionJoinOurTeam({
                                 border={border}
                                 src={CareerImage}
                                 alt={alt}
+                                ImageStyleProps=""
                             />
                         </div>
                         <div className="flex w-full px-[20px] items-center">
@@ -48,6 +58,10 @@ export default function SectionJoinOurTeam({
                                     TextLabel="Join our fast-paced, mission-driven team combining unique skills to curb the spread of the pandemic globally."
                                     ContainerTitleProps={ContainerTitleProps}
                                     ContainerTextProps={ContainerTextProps}
+                                    TextClassProps=""
+                                    TitleClassProps=""
+                                    TitleLabel=""
+                                    TitleSize=""
                                 />
                                 <div className="flex-col justify-center mb-14">
                                     <Button size="medium" type="primary" path="#" label="View available roles" />
@@ -64,6 +78,11 @@ export default function SectionJoinOurTeam({
                                 TitleSize="h2"
                                 TitleLabel="Become a partner"
                                 ContainerTextProps="items-start"
+                                TextClassProps=""
+                                TitleClassProps=""
+                                ContainerTitleProps=""
+                                TextLabel=""
+                                TextSize=""
                             />
                         </div>
                         <div className="w-full flex items-center justify-end">
@@ -72,6 +91,7 @@ export default function SectionJoinOurTeam({
                                 border={border}
                                 src={BecomeAPartner}
                                 alt={alt}
+                                ImageStyleProps=""
                             />
                         </div>
                         <div className="flex w-full px-[20px] items-center">
@@ -81,6 +101,10 @@ export default function SectionJoinOurTeam({
                                     TextLabel="We work with established medical, technology, and government organizations across the globe to shape Virufy’s mission."
                                     ContainerTitleProps={ContainerTitleProps}
                                     ContainerTextProps={ContainerTextProps}
+                                    TextClassProps=""
+                                    TitleClassProps=""
+                                    TitleLabel=""
+                                    TitleSize=""
                                 />
                                 <div className="flex-col justify-center mb-14">
                                     <Button size="medium" type="primary" path="#" label="Become a partner" />

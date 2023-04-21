@@ -36,7 +36,6 @@ import ImageinsText from "~/assets/static/images/textInImage/OurPeople.jpg"
 export default function OurPeople1() {
 
   const buttons = ["Read more"]
-  const label = ["Read more"]
 
   const CardsData = [
     {
@@ -196,7 +195,8 @@ export default function OurPeople1() {
         <Title
           H="h1"
           Text="Meet Our Founder"
-        />
+          TitleClassProps=""
+          />
       </div>
       <Section1
         //TitleText
@@ -212,11 +212,9 @@ export default function OurPeople1() {
         alt="imagen de algo"
         //Buttons
         buttons={buttons}
-        label={label}
-        type="primary"
-        sizeBtn="medium"
-        path="/"
-      />
+        ContainerTitleProps=""
+        ImageStyleProps=""
+        />
 
       <Title 
         H="h1"

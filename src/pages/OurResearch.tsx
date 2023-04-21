@@ -49,6 +49,9 @@ export default function OurResearch() {
 				border="none"
 				route={imageOurResearch}
 				alt="imagen de algo"
+				ContainerTitleProps=""
+				ImageStyleProps=""
+				buttons=""
 
 			/>
 

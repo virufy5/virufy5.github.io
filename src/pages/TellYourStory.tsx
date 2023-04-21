@@ -8,7 +8,7 @@ export default function TellYourStory() {
 
 	return (
 		<>
-            <TellYourStoryTop/>
+            <TellYourStoryTop ContainerTextProps="" ContainerTitleProps="" border="" alt="" />
             <Forms/>
 		</>
 	);

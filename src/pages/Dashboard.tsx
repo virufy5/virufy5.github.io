@@ -18,10 +18,14 @@ export default function Dashboard() {
                     TextSize="normal"
                     TextLabel={"Your cough helps us improve our predictive model, thus being crucial in the fight against COVID-19. Contribute to the progress we are making by sharing your cough!"}
                     ContainerTextProps="items-start"
+                    TextClassProps=""
+                    TitleClassProps=""
+                    ContainerTitleProps=""
+
 			    />
             </div>
             <div>
-                <ImageAtomLocal src={Map}/>
+                <ImageAtomLocal src={Map} imagesize="" ImageStyleProps="" alt="" border=""/>
             </div>
             <Section7 TitleLabel="Let’s help the world and save many lives by recording your cough" Label1="share your cough" Label2="learn more"/> 
 		</>

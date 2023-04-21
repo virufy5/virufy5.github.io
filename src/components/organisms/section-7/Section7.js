@@ -18,6 +18,12 @@ export default function Section7({
                 <TitleText
                     TitleSize="h1"
                     TitleLabel={TitleLabel}
+                    TextClassProps=""
+                    TextSize=""
+                    TextLabel=""
+                    TitleClassProps=""
+                    ContainerTextProps=""
+                    ContainerTitleProps=""
                 />
                 <div className="flex"
                     style={{

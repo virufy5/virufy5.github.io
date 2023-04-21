@@ -18,6 +18,7 @@ export default function SectionDonate({
                         border={border}
                         src={Donate}
                         alt={alt}
+                        ImageStyleProps=""
                     />
                 </div>
                 <div className="flex mt-14 md:mt-0 md:hidden w-full md:w-2/5 px-[20px] md:px-[0px] items-center flex-1">
@@ -29,6 +30,8 @@ export default function SectionDonate({
                             TextLabel="We need your contribution to be able to continue helping millions of people in the fight against Covid-19"
                             ContainerTitleProps={ContainerTitleProps}
                             ContainerTextProps={ContainerTextProps}
+                            TextClassProps=""
+                            TitleClassProps=""
                         />
                         <div className="flex md:hidden flex-col justify-center">
                             <Button size="medium" type="primary" path="#" label="DONATE" />
@@ -44,6 +47,8 @@ export default function SectionDonate({
                             TextLabel="We need your contribution to be able to continue helping millions of people in the fight against Covid-19"
                             ContainerTitleProps={ContainerTitleProps}
                             ContainerTextProps={ContainerTextProps}
+                            TextClassProps=""
+                            TitleClassProps=""
                         />
                         <div className="hidden md:flex flex-col justify-center">
                             <Button size="medium" type="primary" path="#" label="DONATE" />
