@@ -32,6 +32,7 @@ export default function HowItWorks() {
 				sizeImg
 				//Buttons
 				buttons={buttons}
+				ImageStyleProps={""}
 			/>
 
 			{/* 			<p className="tex		t-gray-300">Section - 8</p> */}

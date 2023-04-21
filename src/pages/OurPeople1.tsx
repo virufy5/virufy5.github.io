@@ -213,6 +213,7 @@ export default function OurPeople1() {
         alt="imagen de algo"
         //Buttons
         buttons={buttons}
+        ImageStyleProps={""}
       />
 
       <Title 

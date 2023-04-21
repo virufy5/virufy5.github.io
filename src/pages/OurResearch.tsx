@@ -51,6 +51,7 @@ export default function OurResearch() {
         route={imageOurResearch}
         alt="imagen de algo"
         buttons
+        ImageStyleProps={""}
       />
 
       <div className="

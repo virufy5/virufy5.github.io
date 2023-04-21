@@ -29,7 +29,6 @@ export default function Prueba() {
         TextLabel={"Virufy is a nonprofit research organization developing artificial intelligence (AI) technology to rapidly screen for COVID-19 from cough patterns, through use of a smartphone at no cost."}
         ContainerTitleProps=""
         ContainerTextProps="items-start h-[100%] mr-2 mt-2"
-        ContainerTitleProps=""
         //Image
         sizeImg="pr90"
         border="radious"

@@ -1,18 +1,18 @@
-import Title from "../components/atoms/Title/Title"
+/* import Title from "../components/atoms/Title/Title"
 import Text from "../components/atoms/Text/Text"
 import Select from "../components/atoms/Select/Select"
-import LinkAtom from "../components/atoms/LinkAtom/LinkAtom"
+import LinkAtom from "../components/atoms/LinkAtom/LinkAtom" */
 
 //Moleculas
-import TitleText from "~/components/molecules/TitleText/TitleText"
-import TitleTextImg from "~/components/molecules/TitleTextImg/TitleTextImg"
+/* import TitleText from "~/components/molecules/TitleText/TitleText"
+import TitleTextImg from "~/components/molecules/TitleTextImg/TitleTextImg" */
 //import ButtonGroup from "~/components/molecules/ButtonGroup/ButtonGroup"
 
 //Organismo
 /* import Section1 from "~/components/organisms/section-1/Section1" */
-import Section3 from "~/components/organisms/section-3/Section3"
+/* import Section3 from "~/components/organisms/section-3/Section3" */
 /* import Section5 from "~/components/organisms/section-5/Section5" */
-import Section6 from "~/components/organisms/section-6/Section6"
+/* import Section6 from "~/components/organisms/section-6/Section6" */
 
 
 export default function Prueba() {
@@ -23,12 +23,12 @@ export default function Prueba() {
     { label: 'List 3', value: '3' },
   ]; */
 
-  const links = [
+/*   const links = [
     { label: 'Home', route: '/es/prueba' }, 
     { label: 'MyApp', route: '/es/prueba'}, 
     { label: 'Posts', route: '/es/prueba'}, 
     { label: 'Graph QL', route: '/es/prueba'}
-  ]
+  ] */
 
   return (
     <>
@@ -37,19 +37,19 @@ export default function Prueba() {
 {/*       <Section1 /> */}
 
       <p className="mt-7">Section - 3</p>
-      <Section3 />
+     {/*  <Section3 /> */}
 
       <p className="mt-7">Section - 5</p>
 {/*       <Section5 /> */}
 
       <p className="mt-7">Section - 6</p>
-      <Section6 /> 
+     {/*  <Section6 />  */}
 
       <h1 className="text-sky-600 text-3xl m-4 mt-20">Átomos</h1>
       {/* <Title Text="Prueba título átomo" H="h2" />
       <Text Text="Prueba texto átomo" Style="subtitulo" />
       <Select Text="Prueba select átomo" Options={options} /> */}
-      <LinkAtom Routes={links} Style="link" />
+      {/* <LinkAtom Routes={links} Style="link" /> */}
 
       <h1 className="text-sky-600 text-3xl m-4 ">Moleculas</h1>
       {/* <TitleText
