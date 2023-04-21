@@ -179,54 +179,54 @@ export default function OurPeople1() {
   ]
 
   return (
-    <>
-    <div className="w-[100vw]">
-      <TextinsImg
-        sizeImg="auto"
-        borderImg="none"
-        src={ImageinsText}
-        altImg="Imagen cabezera"
-        Text="We unite from across the world to defeat COVID-19 one cough at a time."
-      />
-      </div>
-      <div
-        className="text-center m-7"
-      >
+    <div className="flex justify-center">
+      <div className="max-w-[1440px]">
+          <TextinsImg
+            sizeImg="auto"
+            borderImg="none"
+            src={ImageinsText}
+            altImg="Imagen cabezera"
+            Text="We unite from across the world to defeat COVID-19 one cough at a time."
+          />
+        <div
+          className="text-center m-7"
+        >
+          <Title
+            H="h1"
+            Text="Meet Our Founder"
+            TitleClassProps={""}
+          />
+        </div>
+        <Section1
+          //TitleText
+          TitleSize="h2"
+          TitleLabel="Amil Khanzada"
+          TextSize="normal"
+          TextLabel="MBA Candidate, Haas School of Business Master of Engineering Candidate, Department of Electrical Engineering and Computer Sciences"
+          ContainerTitleProps={""}
+          ContainerTextProps="items-start h-[100%] mr-2"
+          //Image
+          sizeImg="pr70"
+          border="radious"
+          route={ImageAmil}
+          alt="imagen de algo"
+          //Buttons
+          buttons={buttons}
+          ImageStyleProps={""}
+        />
+
         <Title
           H="h1"
-          Text="Meet Our Founder"
-          TitleClassProps={""}
+          Text="Advisors"
+          TitleClassProps="text-center m-[5vw]"
         />
+
+        <Card
+          CardsData={CardsData}
+          CardClassProps="flex flex-col text-center items-center w-[348px] sm:w-1/1 md:w-1/2 lg:w-1/3 xl:w-1/3 mb-4 mt-4"
+        />
+
       </div>
-      <Section1
-        //TitleText
-        TitleSize="h2"
-        TitleLabel="Amil Khanzada"
-        TextSize="normal"
-        TextLabel="MBA Candidate, Haas School of Business Master of Engineering Candidate, Department of Electrical Engineering and Computer Sciences"
-        ContainerTitleProps={""}
-        ContainerTextProps="items-start h-[100%] mr-2"
-        //Image
-        sizeImg="pr70"
-        border="radious"
-        route={ImageAmil}
-        alt="imagen de algo"
-        //Buttons
-        buttons={buttons}
-        ImageStyleProps={""}
-      />
-
-      <Title 
-        H="h1"
-        Text="Advisors"
-        TitleClassProps="text-center m-[5vw]"
-      />
-
-      <Card
-        CardsData={CardsData}
-        CardClassProps="flex flex-col text-center items-center w-[348px] sm:w-1/1 md:w-1/2 lg:w-1/3 xl:w-1/3 mb-4 mt-4"
-      />
-
-    </>
+    </div>
   );
 }

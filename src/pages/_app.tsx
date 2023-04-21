@@ -14,11 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={`${montserrat.variable} font-sans`}>
       <Navbar />
-      <div className="flex justify-center">
-        <div className="max-w-[1440px]">
           <Component {...pageProps} />
-        </div>
-      </div>
       <Footer />
     </main>
   );
