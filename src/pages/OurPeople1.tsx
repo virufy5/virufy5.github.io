@@ -36,7 +36,6 @@ import ImageinsText from "~/assets/static/images/textInImage/OurPeople.jpg"
 export default function OurPeople1() {
 
   const buttons = ["Read more"]
-  const label = ["Read more"]
 
   const CardsData = [
     {

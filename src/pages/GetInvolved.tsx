@@ -9,9 +9,9 @@ export default function GetInvolved() {
 
 	return (
 		<>
-            <SectionDonate/>
-            <SectionJoinOurTeam/>
-            <SectionTellYourStoryGetInvolved/>          
+            <SectionDonate ContainerTextProps="" ContainerTitleProps="" border="" alt=""/>
+            <SectionJoinOurTeam ContainerTextProps="" ContainerTitleProps="" border="" alt=""/>
+            <SectionTellYourStoryGetInvolved border="" alt=""/>          
 		</>
 	);
 }

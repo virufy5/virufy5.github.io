@@ -18,6 +18,10 @@ export default function SectionTellYourStoryGetInvolved({
                         TextSize="subtitulo"
                         TextLabel={"Many people will find motivation in your story."}
                         ContainerTextProps="items-start"
+                        TextClassProps=""
+                        TitleClassProps=""
+                        ContainerTitleProps=""
+
                     />
                 </div>
                 <div className="flex md:w-1/2 px-7 pb-16 flex-col items-center justify-center gap-7">
@@ -26,6 +30,11 @@ export default function SectionTellYourStoryGetInvolved({
                         TextSize="subtitulo"
                         TextLabel={"Share how COVID-19 has affected you or your loved ones, and how you have been able to overcome the disease."}
                         ContainerTextProps="items-start"
+                        TextClassProps=""
+                        TitleClassProps=""
+                        ContainerTitleProps=""
+                        TitleLabel=""
+                        TitleSize=""
                     />
                 </div>
             </div>
@@ -38,6 +47,7 @@ export default function SectionTellYourStoryGetInvolved({
                     border={border}
                     src={Image}
                     alt={alt}
+                    ImageStyleProps=""
                 />
             </div>
             <div className="hidden w-full md:flex items-center justify-center md:pt-10">
@@ -46,6 +56,7 @@ export default function SectionTellYourStoryGetInvolved({
                     border={border}
                     src={Image}
                     alt={alt}
+                    ImageStyleProps=""
                 />
             </div>
         </div>

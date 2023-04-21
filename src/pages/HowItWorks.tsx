@@ -11,7 +11,6 @@ import howItWorksStep3 from "~/assets/static/images/howItWorks/step3.jpg"
 export default function HowItWorks() {
 
 	const buttons = ["SHARE YOUR COUGH"]
-	const label = ["SHARE YOUR COUGH"]
 
 	return (
 		<>

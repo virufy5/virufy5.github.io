@@ -22,6 +22,12 @@ export default function Section2() {
                     <TitleText
                         TitleSize="h1"
                         TitleLabel="How our online Covid-19 test works"
+                        TextSize=""
+                        TextLabel=""
+                        ContainerTextProps=""
+                        ContainerTitleProps=""
+                        TitleClassProps=""
+                        TextClassProps=""
                     />
                 </div>
                 <div className="flex sm:hidden justify-evenly" >
@@ -34,6 +40,8 @@ export default function Section2() {
                             ImgBorder="circular"
                             ImgAlt="1. Record your cough"
                             imagesize="px100"
+                            TextSize=""
+                            TextLabel=""
                         />
                     </div>
                     <div className="w-[100px] flex sm:w-[200px] lg:w-[300px] flex-col gap-8 text-center">
@@ -45,6 +53,8 @@ export default function Section2() {
                             ImgBorder="circular"
                             ImgAlt="2. AI analyzed for COVID patterns"
                             imagesize="px100"
+                            TextSize=""
+                            TextLabel=""
                         />
                     </div>
                     <div className="w-[100px] flex sm:w-[200px] lg:w-[300px] flex-col gap-8 text-center">
@@ -56,6 +66,8 @@ export default function Section2() {
                             ImgBorder="circular"
                             ImgAlt="3. COVID risk status reported"
                             imagesize="px100"
+                            TextSize=""
+                            TextLabel=""
                         />
                     </div>
                 </div>
@@ -69,6 +81,8 @@ export default function Section2() {
                             ImgBorder="circular"
                             ImgAlt="1. Record your cough"
                             imagesize="px200"
+                            TextSize=""
+                            TextLabel=""
                         />
                     </div>
                     <div className="w-[100px] flex sm:w-[200px] lg:w-[300px] flex-col gap-8 text-center">
@@ -80,6 +94,8 @@ export default function Section2() {
                             ImgBorder="circular"
                             ImgAlt="2. AI analyzed for COVID patterns"
                             imagesize="px200"
+                            TextSize=""
+                            TextLabel=""
                         />
                     </div>
                     <div className="w-[100px] flex sm:w-[200px] lg:w-[300px] flex-col gap-8 text-center">
@@ -91,6 +107,8 @@ export default function Section2() {
                             ImgBorder="circular"
                             ImgAlt="3. COVID risk status reported"
                             imagesize="px200"
+                            TextSize=""
+                            TextLabel=""
                         />
                     </div>
                 </div>
@@ -104,6 +122,8 @@ export default function Section2() {
                             ImgBorder="circular"
                             ImgAlt="1. Record your cough"
                             imagesize="px300"
+                            TextSize=""
+                            TextLabel=""
                         />
                     </div>
                     <div className="w-[100px] flex sm:w-[200px] lg:w-[300px] flex-col gap-8 text-center">
@@ -115,6 +135,8 @@ export default function Section2() {
                             ImgBorder="circular"
                             ImgAlt="2. AI analyzed for COVID patterns"
                             imagesize="px300"
+                            TextSize=""
+                            TextLabel=""
                         />
                     </div>
                     <div className="w-[100px] flex sm:w-[200px] lg:w-[300px] flex-col gap-8 text-center">
@@ -126,16 +148,18 @@ export default function Section2() {
                             ImgBorder="circular"
                             ImgAlt="3. COVID risk status reported"
                             imagesize="px300"
+                            TextSize=""
+                            TextLabel=""
                         />
                     </div>
                 </div>
-                <div className="flex sm:hidden mt-[40px] flex align-center justify-center">
+                <div className="flex sm:hidden mt-[40px] align-center justify-center">
                     <Video width="370px" height="208px" url="https://youtu.be/hvJgwPNYnZo" />
                 </div>
-                <div className="hidden sm:flex md:hidden mt-[40px] flex align-center justify-center">
+                <div className="hidden sm:flex md:hidden mt-[40px] align-center justify-center">
                     <Video width="600px" height="338px" url="https://youtu.be/hvJgwPNYnZo" />
                 </div>
-                <div className="hidden md:flex xl:hidden mt-[40px] flex align-center justify-center">
+                <div className="hidden md:flex xl:hidden mt-[40px] align-center justify-center">
                     <Video width="800px" height="450px" url="https://youtu.be/hvJgwPNYnZo" />
                 </div>
                 <div className="hidden xl:flex mt-[40px] align-center justify-center">

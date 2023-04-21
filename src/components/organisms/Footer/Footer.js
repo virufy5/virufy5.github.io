@@ -83,16 +83,16 @@ export default function Footer() {
                     </div>
                     <div className="flex flex-col align-center gap-7 mt-7 text-[#393939] w-full lg:hidden">
                         <div className="max-w-4xl align-center text-center m-auto">
-                            <Text Text="Nonprofit Status" Style="normal" />
+                            <Text Text="Nonprofit Status" Style="normal" TextClassProps=""/>
                         </div>
                         <div className="max-w-4xl align-center text-center m-auto">
-                            <Text
+                            <Text TextClassProps=""
                                 Text="Virufy is a California nonprofit corporation recognized by the United States Internal Revenue Service (IRS) as a tax-exempt public charity under Section 501(c)(3) of the Internal Revenue Code."
                                 Style="normal"
                             />
                         </div>
                         <div className="max-w-4xl align-center text-center m-auto">
-                            <Text
+                            <Text TextClassProps=""
                                 Text="©2022 Virufy | VIRUFY is a trademark of The Covid Detection Foundation, a California nonprofit corporation | All rights reserved"
                                 Style="normal"
                             />
@@ -100,16 +100,16 @@ export default function Footer() {
                     </div>
                     <div className="lg:flex flex-col align-center gap-7 mt-10 text-[#393939] w-full hidden">
                         <div className="max-w-4xl align-center text-center m-auto">
-                            <Text Text="Nonprofit Status" Style="subtitle" />
+                            <Text Text="Nonprofit Status" Style="subtitle" TextClassProps="" />
                         </div>
                         <div className="max-w-4xl align-center text-center m-auto">
-                            <Text
+                            <Text TextClassProps=""
                                 Text="Virufy is a California nonprofit corporation recognized by the United States Internal Revenue Service (IRS) as a tax-exempt public charity under Section 501(c)(3) of the Internal Revenue Code."
                                 Style="subtitle"
                             />
                         </div>
                         <div className="max-w-4xl align-center text-center m-auto">
-                            <Text
+                            <Text TextClassProps=""
                                 Text="©2022 Virufy | VIRUFY is a trademark of The Covid Detection Foundation, a California nonprofit corporation | All rights reserved"
                                 Style="subtitle"
                             />

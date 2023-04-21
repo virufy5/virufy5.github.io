@@ -15,7 +15,6 @@ import Section7 from "~/components/organisms/section-7/Section7"
 export default function Prueba() {
 
   const buttons = ["share your cough", "learn more"]
-  const label = ["share your cough", "learn more"]
 
   return (
     <>
@@ -30,11 +29,13 @@ export default function Prueba() {
         TextLabel={"Virufy is a nonprofit research organization developing artificial intelligence (AI) technology to rapidly screen for COVID-19 from cough patterns, through use of a smartphone at no cost."}
         ContainerTitleProps=""
         ContainerTextProps="items-start h-[100%] mr-2 mt-2"
+        ContainerTitleProps=""
         //Image
         sizeImg="pr90"
         border="radious"
         route={ImageSection1}
         alt="imagen de algo"
+        ImageStyleProps=""
         //Buttons
         buttons={buttons}
       />
