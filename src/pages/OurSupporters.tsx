@@ -150,7 +150,7 @@ export default function OurSupporters() {
       name: "Kavya Madhavan",
       text: "Embajador OYW, EE.UU",
     },
-  ]  
+  ]
 
   return (
     <>
@@ -161,24 +161,29 @@ export default function OurSupporters() {
         altImg="Imagen cabezera"
         Text="Companies and organizations support us from their extensive knowledge and provide us with security and certainty in what we do."
       />
-      <Title 
-        H="h2"
-        Text="Why One Young World?"
-        TitleClassProps="text-center mt-4"
-      />
-      <CardLarge
-        CardsData={CardsData}
-        CardClassProps="flex flex-row text-center items-center justify-center sm:w-1/1 md:w-1/2 lg:w-1/2 xl:w-1/2 mb-4 mt-4"
-      />
-      <Title 
-        H="h2"
-        Text="Team Leads"
-        TitleClassProps="text-center mt-4"
-      />
-      <Card 
-        CardsData={CardsDataTL}
-        CardClassProps="flex flex-col text-center items-center w-[348px] sm:w-1/1 md:w-1/2 lg:w-1/3 xl:w-1/3 mb-4 mt-4"
-      />
+
+      <div className="flex justify-center">
+        <div className="max-w-[1440px]">
+          <Title
+            H="h2"
+            Text="Why One Young World?"
+            TitleClassProps="text-center mt-4"
+          />
+          <CardLarge
+            CardsData={CardsData}
+            CardClassProps="flex flex-row text-center items-center justify-center sm:w-1/1 md:w-1/2 lg:w-1/2 xl:w-1/2 mb-4 mt-4"
+          />
+          <Title
+            H="h2"
+            Text="Team Leads"
+            TitleClassProps="text-center mt-4"
+          />
+          <Card
+            CardsData={CardsDataTL}
+            CardClassProps="flex flex-col text-center items-center w-[348px] sm:w-1/1 md:w-1/2 lg:w-1/3 xl:w-1/3 mb-4 mt-4"
+          />
+        </div>
+      </div>
     </>
   )
 }

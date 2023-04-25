@@ -37,46 +37,51 @@ export default function OurResearch() {
 
   return (
     <>
-      <Section1
-        //TitleText
-        TitleSize="h1"
-        TitleLabel="The science behind Virufy"
-        TextSize="normal"
-        TextLabel={"Artificial intelligence (AI) is capable of detecting minute differences in vocal patterns to detect disease presence."}
-        ContainerTitleProps={""}
-        ContainerTextProps="items-start h-[100%] mr-4"
-        //Image
-        sizeImg="pr90"
-        border="none"
-        route={imageOurResearch}
-        alt="imagen de algo"
-        buttons
-        ImageStyleProps={""}
-      />
+      <div className="flex justify-center">
+        <div className="max-w-[1440px]">
 
-      <div className="
+          <Section1
+            //TitleText
+            TitleSize="h1"
+            TitleLabel="The science behind Virufy"
+            TextSize="normal"
+            TextLabel={"Artificial intelligence (AI) is capable of detecting minute differences in vocal patterns to detect disease presence."}
+            ContainerTitleProps={""}
+            ContainerTextProps="items-start h-[100%] mr-4"
+            //Image
+            sizeImg="pr90"
+            border="none"
+            route={imageOurResearch}
+            alt="imagen de algo"
+            buttons
+            ImageStyleProps={""}
+          />
+
+          <div className="
     w-[100%] text-center items-center mb-5
     ">
-        <Title
-          Text="Research"
-          H="h1"
-          TitleClassProps="mt-4"
-        />
-        <CardLargue
-          CardsData={CardsData}
-          CardClassProps="flex flex-row text-center items-center justify-center sm:w-1/1 md:w-1/2 lg:w-1/2 xl:w-1/2 mb-4 mt-4"
-        />
-        <Title
-          Text="Want to learn more?"
-          H="h2"
-          TitleClassProps="mt-4 mb-14"
-        />
-        <Button
-          size="medium"
-          type="primary"
-          label="Read our papers"
-          path="/about"
-        />
+            <Title
+              Text="Research"
+              H="h1"
+              TitleClassProps="mt-4"
+            />
+            <CardLargue
+              CardsData={CardsData}
+              CardClassProps="flex flex-row text-center items-center justify-center sm:w-1/1 md:w-1/2 lg:w-1/2 xl:w-1/2 mb-4 mt-4"
+            />
+            <Title
+              Text="Want to learn more?"
+              H="h2"
+              TitleClassProps="mt-4 mb-14"
+            />
+            <Button
+              size="medium"
+              type="primary"
+              label="Read our papers"
+              path="/about"
+            />
+          </div>
+        </div>
       </div>
     </>
   );

@@ -40,13 +40,17 @@ export default function FAQ() {
       route: Card7,
       name: "",
       text: "Others",
-    }, 
+    },
   ]
 
   return (
-    <Card
-        CardsData={CardsData}
-        CardClassProps="flex flex-col text-center items-center w-[197px] sm:w-1/1 md:w-[197px] lg:w-[197px] xl:w-[197px] mb-4 mt-4 bg-yellow-100 rounded-[28px] ml-4 h-[114px] bg-[#F3F4F6]"
-      />
+    <div className="flex justify-center">
+      <div className="max-w-[1440px]">
+        <Card
+          CardsData={CardsData}
+          CardClassProps="flex flex-col text-center items-center w-[197px] sm:w-1/1 md:w-[197px] lg:w-[197px] xl:w-[197px] mb-4 mt-4 rounded-[11.49px] ml-4 bg-[#F3F4F6]"
+        />
+      </div>
+    </div>
   )
 }
