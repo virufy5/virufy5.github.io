@@ -21,7 +21,7 @@ export default function Select({
   };
 
   return (
-    <div className='flex items-center content-center lg:ml-12'>
+    <div className='flex items-center content-center lg:ml-9'>
        <ImageAtomLocal src={icon} alt="icon" imagesize="px20" border="none" ImageStyleProps="" />
       <label>
         {Text}
