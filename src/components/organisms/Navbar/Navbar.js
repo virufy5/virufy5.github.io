@@ -33,14 +33,14 @@ export default function Navbar() {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <nav className="w-full bg-white shadow">
+        <nav className="w-full bg-white shadow sticky z-[100]">
             <div className="justify-between px-3 xl:mx-9 lg:mx-4 lg:max-w-8lg lg:items-center lg:flex lg:px-2">
                 <div>
                     <div className="flex items-center justify-between py-3 lg:py-5 lg:block">
-                        <Link href="#" className="flex lg:hidden">
+                        <Link href="/Home" className="flex lg:hidden">
                             <ImageAtomLocal imagesize="px100x48" border="none" src={VirufyLogo} alt="Logo Virufy" ImageStyleProps="" />
                         </Link>
-                        <Link href="#" className="hidden lg:flex">
+                        <Link href="/Home" className="hidden lg:flex">
                             <ImageAtomLocal imagesize="px160" border="none" src={VirufyLogo} alt="Logo Virufy" ImageStyleProps="" />
                         </Link>
                         <li className="text-[#393939] flex lg:hidden">

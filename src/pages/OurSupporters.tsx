@@ -28,6 +28,8 @@ import Card18TL from "~/assets/static/images/ourSupporters/card18.png"
 import Card19TL from "~/assets/static/images/ourSupporters/card19.png"
 import Card from "~/components/molecules/Card/Card"
 
+import SectionOneYoungWorld from "~/components/organisms/SectionOneYoungWorld/SectionOneYoungWorld"
+
 
 export default function OurSupporters() {
 
@@ -161,6 +163,8 @@ export default function OurSupporters() {
         altImg="Imagen cabezera"
         Text="Companies and organizations support us from their extensive knowledge and provide us with security and certainty in what we do."
       />
+
+      <SectionOneYoungWorld />
 
       <div className="flex justify-center">
         <div className="max-w-[1440px]">
