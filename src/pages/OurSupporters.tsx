@@ -27,6 +27,8 @@ import Card17TL from "~/assets/static/images/ourSupporters/card17.png"
 import Card18TL from "~/assets/static/images/ourSupporters/card18.png"
 import Card19TL from "~/assets/static/images/ourSupporters/card19.png"
 import Card from "~/components/molecules/Card/Card"
+import TitleText from "~/components/molecules/TitleText/TitleText"
+import CardSliderTall from "~/components/organisms/CardSlider/CardSliderTall"
 
 
 export default function OurSupporters() {
@@ -162,8 +164,8 @@ export default function OurSupporters() {
         Text="Companies and organizations support us from their extensive knowledge and provide us with security and certainty in what we do."
       />
 
-      <div className="flex justify-center">
-        <div className="max-w-[1440px]">
+      <div className="flex-col justify-center">
+        <div className="flex-col max-w-[1440px]"> 
           <Title
             H="h2"
             Text="Why One Young World?"
@@ -173,6 +175,22 @@ export default function OurSupporters() {
             CardsData={CardsData}
             CardClassProps="flex flex-row text-center items-center justify-center sm:w-1/1 md:w-1/2 lg:w-1/2 xl:w-1/2 mb-4 mt-4"
           />
+
+          <TitleText 
+            TitleSize={"h2"}
+            TitleLabel={"Volunteer Stories"}
+            TitleClassProps={"text-center mt-32 "}
+            TextSize={"normal"}
+            TextLabel={"Our organization structure matches One Young World with youth ambassadors leading operations in each country, with regional coordinating ambassadors."}
+            TextClassProps={"m-10 "}
+            ContainerTitleProps
+            ContainerTextProps            
+          />
+
+          <CardSliderTall
+
+          />
+
           <Title
             H="h2"
             Text="Team Leads"
@@ -182,7 +200,7 @@ export default function OurSupporters() {
             CardsData={CardsDataTL}
             CardClassProps="flex flex-col text-center items-center w-[348px] sm:w-1/1 md:w-1/2 lg:w-1/3 xl:w-1/3 mb-4 mt-4"
           />
-        </div>
+         </div>
       </div>
     </>
   )

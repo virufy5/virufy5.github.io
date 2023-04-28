@@ -14,8 +14,8 @@ export default function HowItWorks() {
 
   return (
     <>
-      <div className="flex justify-center">
-        <div className="max-w-[1440px]">
+      <div className="flex-col justify-center">
+        <div className="flex-col max-w-[1440px]">
           <Section1
             //TitleText
             TitleSize="h1"

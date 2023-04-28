@@ -59,8 +59,8 @@ export default function AboutUs() {
         Text="Transforming the world’s health, one cough at a time."
       />
 
-      <div className="flex justify-center">
-        <div className="max-w-[1440px]">
+      <div className="flex-col justify-center">
+        <div className="flex-col max-w-[1440px]">
           <Section5
             StylePropsSection="text-center w-[100%] mt-12"
             TitleSize1="h1"

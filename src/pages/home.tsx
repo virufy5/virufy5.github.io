@@ -17,8 +17,8 @@ export default function Prueba() {
   const buttons = ["share your cough", "learn more"]
 
   return (
-    <div className="flex justify-center">
-      <div className="max-w-[1440px]">
+    <div className="flex-col justify-center">
+      <div className="flex-col max-w-[1440px]">
         {/* <h1 className="text-sky-600 text-3xl m-4">HOME</h1> */}
 
         {/* <p className="text-gray-300">Section - 1</p> */}
