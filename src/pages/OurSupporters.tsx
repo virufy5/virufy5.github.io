@@ -27,6 +27,8 @@ import Card17TL from "~/assets/static/images/ourSupporters/card17.png"
 import Card18TL from "~/assets/static/images/ourSupporters/card18.png"
 import Card19TL from "~/assets/static/images/ourSupporters/card19.png"
 import Card from "~/components/molecules/Card/Card"
+
+import SectionOneYoungWorld from "~/components/organisms/SectionOneYoungWorld/SectionOneYoungWorld"
 import TitleText from "~/components/molecules/TitleText/TitleText"
 import CardSliderTall from "~/components/organisms/CardSlider/CardSliderTall"
 
@@ -163,6 +165,8 @@ export default function OurSupporters() {
         altImg="Imagen cabezera"
         Text="Companies and organizations support us from their extensive knowledge and provide us with security and certainty in what we do."
       />
+
+      <SectionOneYoungWorld />
 
       <div className="flex-col justify-center">
         <div className="flex-col max-w-[1440px]"> 
