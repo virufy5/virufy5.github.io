@@ -166,10 +166,12 @@ export default function OurSupporters() {
         Text="Companies and organizations support us from their extensive knowledge and provide us with security and certainty in what we do."
       />
 
+    <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center max-w-[1440px] ">
+        
       <SectionOneYoungWorld />
 
-      <div className="flex-col justify-center">
-        <div className="flex-col max-w-[1440px]"> 
+
           <Title
             H="h2"
             Text="Why One Young World?"

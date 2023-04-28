@@ -18,7 +18,8 @@ export default function Section1({
 }) {
   return (
     <div className="
-      w-[100%]
+      w-[100vw]
+      max-w-[1440px]
       space-y-4 
       flex 
       flex-col-reverse

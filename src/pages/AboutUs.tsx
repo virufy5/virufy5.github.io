@@ -59,10 +59,10 @@ export default function AboutUs() {
         Text="Transforming the world’s health, one cough at a time."
       />
 
-      <div className="flex-col justify-center">
-        <div className="flex-col max-w-[1440px]">
+<div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center max-w-[1440px] ">
           <Section5
-            StylePropsSection="text-center w-[100%] mt-12"
+            StylePropsSection="text-center w-[100%] mt-[80px]"
             TitleSize1="h1"
             TitleLabel1="Our Mission"
             TextSize1="normal"
@@ -78,7 +78,7 @@ export default function AboutUs() {
             TextLabel2="When the pandemic hit, Virufy’s founder, Amil Khanzada, knew smartphones were omnipresent and that COVID impacted the nose, throat, and lungs. 
         He hypothesized that breathing and cough sounds could be analyzed with machine learning to detect COVID patterns. 
         Wanting to make a positive impact, he orchestrated a clinical study with 362 patients in an esteemed university hospital. The original team of Virufy, beginning with Stanford graduate AI students, expanded to volunteers from universities globally."
-            ContainerTitleProps2="mb-5 mr-[15vw]"
+            ContainerTitleProps2="mb-5 mr-[15vw] mt-[80px]"
             ContainerTextProps2="mb-4 mr-[15vw] text-left"
             TitleClassProps2="ml-[15vw]"
             TextClassProps2="ml-[15vw]"
@@ -86,7 +86,7 @@ export default function AboutUs() {
           <Title
             H="h1"
             Text="Our Values"
-            TitleClassProps="text-center mt-16 mb-4"
+            TitleClassProps="text-center mt-[80px] mb-[40px]"
           />
           <Card
             CardsData={CardsData}

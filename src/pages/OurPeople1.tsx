@@ -187,8 +187,8 @@ export default function OurPeople1() {
         altImg="Imagen cabezera"
         Text="We unite from across the world to defeat COVID-19 one cough at a time."
       />
-      <div className="flex-col justify-center">
-        <div className="flex-col max-w-[1440px]">
+    <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center max-w-[1440px] ">
 
           <div
             className="text-center m-7"

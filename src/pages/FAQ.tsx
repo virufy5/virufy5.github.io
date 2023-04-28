@@ -44,8 +44,8 @@ export default function FAQ() {
   ]
 
   return (
-    <div className="flex-col justify-center">
-      <div className="flex-col max-w-[1440px]">
+    <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center max-w-[1440px] ">
         <Card
           CardsData={CardsData}
           CardClassProps="flex flex-col text-center items-center w-[197px] sm:w-1/1 md:w-[197px] lg:w-[197px] xl:w-[197px] mb-4 mt-4 rounded-[11.49px] ml-4 bg-[#F3F4F6]"
