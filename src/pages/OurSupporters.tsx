@@ -27,6 +27,8 @@ import Card17TL from "~/assets/static/images/ourSupporters/card17.png"
 import Card18TL from "~/assets/static/images/ourSupporters/card18.png"
 import Card19TL from "~/assets/static/images/ourSupporters/card19.png"
 import Card from "~/components/molecules/Card/Card"
+import Card1VH from "~/assets/static/images/ourSupporters/card1-VH.png"
+import Card2VH from "~/assets/static/images/ourSupporters/card2-VH.png"
 
 import SectionOneYoungWorld from "~/components/organisms/SectionOneYoungWorld/SectionOneYoungWorld"
 import TitleText from "~/components/molecules/TitleText/TitleText"
@@ -156,6 +158,21 @@ export default function OurSupporters() {
     },
   ]
 
+  const cardSliderData = [
+    {
+      route: Card1VH,
+      name: "Annelisse Torrez Daza",
+      textLabel: "“Having suffered through COVID myself along with all of my family in a underprivileged country, I knew instantly that I could make a difference and prevent others from facing my same fate by joining Virufy.”",
+      country: "Bolivia",
+    },
+    {
+      route: Card2VH,
+      name: "Sebastian Pedraza",
+      textLabel: "“Virufy unites the power of youth and technology to transform the world. We hope that this solution will reach the whole world and that it will become a support for doctors, especially in low-income countries.”",
+      country: "Columbia",
+    },
+  ]
+
   return (
     <>
       <TextinsImg
@@ -194,7 +211,7 @@ export default function OurSupporters() {
           />
 
           <CardSliderTall
-
+            cardSliderData={cardSliderData}
           />
 
           <Title

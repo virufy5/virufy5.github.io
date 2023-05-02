@@ -1,54 +1,41 @@
+import Text from "~/components/atoms/Text/Text";
 import ImageAtomLocal from "../../atoms/imageAtom/ImageAtomLocal";
-import TitleText from "~/components/molecules/TitleText/TitleText";
+import Advisor1 from "../../../assets/static/images/cards/advisor1.jpg"
 
-export default function CardHomeTall({  
-    src,
-    imagesize,
-    alt,
-    TitleSize,
-    TitleLabel,
-    TextSize,
-    TextLabel,
-    ContainerTitleProps,
-    ContainerTextProps,}) {
-    
-    return (
-        <>
-            <div className="flex rounded-md w-[350px] h-[160px] sm:w-[495px] sm:h-[211px] p-[20px] sm:p-[32px]"
-                style={{
-                    background: "#D9D9D9"
-                }}>
-            <div style={{
-                    width: "30%",
-                    margin: "0 10px",
-                    display: "flex",
-                    alignItems: "center"
-                }}>
-                <ImageAtomLocal ImageStyleProps="" border="circular" imagesize={imagesize} src={src} alt={alt}/>
-            </div>
-            
-                <div
-                    style={{
-                        width: "100%",
-                        height: "100%",
-                        display: "flex",
-                        flexDirection: "column",
-                        justifyContent: "space-evenly",
-                        alignItems: "center"
-                    }}>
-                    <TitleText 
-                        
-                    TitleSize={TitleSize}
-                    TitleLabel={TitleLabel}
-                    TextSize={TextSize}
-                    TextLabel={TextLabel}
-                    ContainerTitleProps={ContainerTitleProps}
-                    ContainerTextProps={ContainerTextProps}
-                    TitleClassProps="ml-[2vw]"
-                    TextClassProps="ml-[2vw]"
-                    />
-                </div>
-            </div>
-        </>
-    );
+
+export default function CardHomeTall({
+	src,
+	alt,
+	textLabel,
+	name,
+	country,}) {
+
+	return (
+		<>
+			<div className="bg-[#F3F4F6] flex flex-col items-center text-center rounded-[6px] w-[394px] h-[448px] sm:w-[294px] sm:h-[348px] p-[10px] sm:p-[20px]">
+				<Text
+					TextClassProps
+					Text={textLabel}
+					Style="small"
+				/>
+				<ImageAtomLocal 
+					imagesize="px64"
+					border="circular"
+					src={src}
+					ImageStyleProps="mt-3"
+					alt={alt}
+				/>
+				<Text
+					TextClassProps="mt-4"
+					Text={name}
+					Style="small"
+				/>
+				<Text
+					TextClassProps="mt-2"
+					Text={country}
+					Style="small"
+				/>
+			</div>
+		</>
+	);
 }

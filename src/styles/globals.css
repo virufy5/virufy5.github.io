@@ -20,6 +20,17 @@ body {
   max-height: 100vh;
 }
 
+[class^="number-slideTall"],
+[class*=" number-slideTall"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 500;
+  height: auto;
+  max-height: 100vh;
+}
+
 .navigation-wrapper {
   position: relative;
 }
