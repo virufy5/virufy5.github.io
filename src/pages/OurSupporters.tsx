@@ -27,10 +27,10 @@ import Card17TL from "~/assets/static/images/ourSupporters/card17.png"
 import Card18TL from "~/assets/static/images/ourSupporters/card18.png"
 import Card19TL from "~/assets/static/images/ourSupporters/card19.png"
 import Card from "~/components/molecules/Card/Card"
-
 import SectionOneYoungWorld from "~/components/organisms/SectionOneYoungWorld/SectionOneYoungWorld"
 import TitleText from "~/components/molecules/TitleText/TitleText"
 import CardSliderTall from "~/components/organisms/CardSlider/CardSliderTall"
+import OurSupportersSection from "~/components/organisms/OurSupportersSection/OurSupportersSection"
 
 
 export default function OurSupporters() {
@@ -168,8 +168,11 @@ export default function OurSupporters() {
 
     <div className="flex flex-col justify-center items-center">
       <div className="flex flex-col justify-center items-center max-w-[1440px] ">
+
+      <OurSupportersSection/>
         
       <SectionOneYoungWorld />
+
 
 
           <Title
