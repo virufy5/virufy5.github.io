@@ -1,37 +1,74 @@
-import { useState } from "react";
+import Title from "~/components/atoms/Title/Title";
 
 export default function AcordeonQuestions() {
 
-  const [expanded, setExpanded] = useState(false);
-
   return (
     <>
-      <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
-        <h2 onClick={() => setExpanded(!expanded)} id="accordion-flush-heading-1">
-          <button type="button" className="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
-            <span>What is Flowbite?</span>
-            <svg data-accordion-icon className="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-          </button>
-        </h2>
-        <div id="accordion-flush-body-1" className={`transition-max-height duration-700 ease-in-out overflow-hidden ${expanded ? "max-h-20" : "max-h-0"}`}>
-          <div className="py-5 border-b border-gray-200 dark:border-gray-700">
-            <p className="mb-2 text-gray-500 dark:text-gray-400">Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.</p>
-            <p className="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" className="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p>
-          </div>
-        </div>
-        <h2 onClick={() => setExpanded(!expanded)} id="accordion-flush-heading-2">
-          <button type="button" className="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="true" aria-controls="accordion-flush-body-2">
-            <span>What is Flowbite?</span>
-            <svg data-accordion-icon className="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-          </button>
-        </h2>
-        <div id="accordion-flush-body-2" className={`transition-max-height duration-700 ease-in-out overflow-hidden ${expanded ? "max-h-20" : "max-h-0"}`}>
-          <div className="py-5 border-b border-gray-200 dark:border-gray-700">
-            <p className="mb-2 text-gray-500 dark:text-gray-400">Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons, dropdowns, modals, navbars, and more.</p>
-            <p className="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" className="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p>
-          </div>
-        </div>
+      <Title
+        H="h5"
+        Text="Virufy App"
+        TitleClassProps={"mt-[70px] mb-[40px]"}
+      />
 
+      <div className='w-full max-w-7xl flex items-center justify-center mb-[70px]'>
+        <div className='w-full max-w-[1440px] px-0 py-8'>
+          <details className="w-full max-w-[1440px] bg-white cursor-pointer mb-3">
+            <summary className="bg-white text-dark flex justify-between px-4 py-3 max-w-[1440px] after:content-['+'] mt-3 font-bold">When and how will the app give COVID-19 prediction results?</summary>
+            <hr className="border-1 border-gray-400 mt-3" />
+            <p className="px-4 py-3 max-w-[1440px] mt-3">
+              Our app is currently for data collection only. We cannot release a COVID-19 prediction app without public health department approvals in each country and clinical studies to validate the AI technology in local conditions. This process can take some weeks or months depending on the speed of the government partner. Virufy welcomes partnerships from health officials and hospitals to bring the technology for free use to the people and to optimize usage of costly PCR tests only when necessary.
+            </p>
+          </details>
+          <hr className="border-1 border-gray-400" />
+          <details className="w-full max-w-[1440px] bg-white cursor-pointer mb-3">
+            <summary className="bg-white text-dark flex justify-between px-4 py-3 max-w-[1440px] after:content-['+'] mt-3 font-bold">Where can I download the app? Will it be available for iOS and Android?</summary>
+            <hr className="border-1 border-gray-400 mt-3" />
+            <p className="px-4 py-3 max-w-[1440px] mt-3">
+              Our app is currently for data collection only. We cannot release a COVID-19 prediction app without public health department approvals in each country and clinical studies to validate the AI technology in local conditions. This process can take some weeks or months depending on the speed of the government partner. Virufy welcomes partnerships from health officials and hospitals to bring the technology for free use to the people and to optimize usage of costly PCR tests only when necessary.
+            </p>
+          </details>
+          <hr className="border-1 border-gray-400" />
+          <details className="w-full max-w-[1440px] bg-white cursor-pointer mb-3">
+            <summary className="bg-white text-dark flex justify-between px-4 py-3 max-w-[1440px] after:content-['+'] mt-3 font-bold">Will the application be available for free and worldwide?</summary>
+            <hr className="border-1 border-gray-400 mt-3" />
+            <p className="px-4 py-3 max-w-[1440px] mt-3">
+              Our app is currently for data collection only. We cannot release a COVID-19 prediction app without public health department approvals in each country and clinical studies to validate the AI technology in local conditions. This process can take some weeks or months depending on the speed of the government partner. Virufy welcomes partnerships from health officials and hospitals to bring the technology for free use to the people and to optimize usage of costly PCR tests only when necessary.
+            </p>
+          </details>
+          <hr className="border-1 border-gray-400" />
+          <details className="w-full max-w-[1440px] bg-white cursor-pointer mb-3">
+            <summary className="bg-white text-dark flex justify-between px-4 py-3 max-w-[1440px] after:content-['+'] mt-3 font-bold">Do you plan to extend this app in a startup?</summary>
+            <hr className="border-1 border-gray-400 mt-3" />
+            <p className="px-4 py-3 max-w-[1440px] mt-3">
+              Our app is currently for data collection only. We cannot release a COVID-19 prediction app without public health department approvals in each country and clinical studies to validate the AI technology in local conditions. This process can take some weeks or months depending on the speed of the government partner. Virufy welcomes partnerships from health officials and hospitals to bring the technology for free use to the people and to optimize usage of costly PCR tests only when necessary.
+            </p>
+          </details>
+          <hr className="border-1 border-gray-400" />
+          <details className="w-full max-w-[1440px] bg-white cursor-pointer mb-3">
+            <summary className="bg-white text-dark flex justify-between px-4 py-3 max-w-[1440px] after:content-['+'] mt-3 font-bold">When will the app be available for my country?</summary>
+            <hr className="border-1 border-gray-400 mt-3" />
+            <p className="px-4 py-3 max-w-[1440px] mt-3">
+              Our app is currently for data collection only. We cannot release a COVID-19 prediction app without public health department approvals in each country and clinical studies to validate the AI technology in local conditions. This process can take some weeks or months depending on the speed of the government partner. Virufy welcomes partnerships from health officials and hospitals to bring the technology for free use to the people and to optimize usage of costly PCR tests only when necessary.
+            </p>
+          </details>
+          <hr className="border-1 border-gray-400" />
+          <details className="w-full max-w-[1440px] bg-white cursor-pointer mb-3">
+            <summary className="bg-white text-dark flex justify-between px-4 py-3 max-w-[1440px] after:content-['+'] mt-3 font-bold">What is the vision for the Virufy app?</summary>
+            <hr className="border-1 border-gray-400 mt-3" />
+            <p className="px-4 py-3 max-w-[1440px] mt-3">
+              Our app is currently for data collection only. We cannot release a COVID-19 prediction app without public health department approvals in each country and clinical studies to validate the AI technology in local conditions. This process can take some weeks or months depending on the speed of the government partner. Virufy welcomes partnerships from health officials and hospitals to bring the technology for free use to the people and to optimize usage of costly PCR tests only when necessary.
+            </p>
+          </details>
+          <hr className="border-1 border-gray-400" />
+          <details className="w-full max-w-[1440px] bg-white cursor-pointer mb-3">
+            <summary className="bg-white text-dark flex justify-between px-4 py-3 max-w-[1440px] after:content-['+'] mt-3 font-bold">Who can access the test results? How does the organization try to regulate the range of accessibility? Where are the test results stored?</summary>
+            <hr className="border-1 border-gray-400 mt-3" />
+            <p className="px-4 py-3 max-w-[1440px] mt-3">
+              Our app is currently for data collection only. We cannot release a COVID-19 prediction app without public health department approvals in each country and clinical studies to validate the AI technology in local conditions. This process can take some weeks or months depending on the speed of the government partner. Virufy welcomes partnerships from health officials and hospitals to bring the technology for free use to the people and to optimize usage of costly PCR tests only when necessary.
+            </p>
+          </details>
+          <hr className="border-1 border-gray-400" />
+        </div>
       </div>
     </>
   );
