@@ -24,14 +24,14 @@ export default function Section1({
       flex 
       flex-col-reverse
       items-center
-      md:flex-row 
-      md:space-x-4 
-      md:space-y-0 
-      md:justify-center 
-      md:items-center
-      md:text-center
-      mt-16
-      
+      lg:flex-row 
+      lg:space-x-4 
+      lg:space-y-0 
+      lg:justify-center 
+      lg:items-center
+      lg:text-center
+      lg:mt-16
+      xl:mt-16
     ">
       <div className="
         text-center 
@@ -40,9 +40,12 @@ export default function Section1({
         mr-[5vw]
         items-center 
         justify-center
-        md:items-center 
-        md:text-left
-        md:w-[100%] 
+        lg:items-center 
+        lg:text-left
+        lg:w-[100%]
+        lg:mt-6
+        md:mt-6
+        sm:mt-6
       ">
         <TitleText
           TitleSize={TitleSize}
@@ -57,7 +60,7 @@ export default function Section1({
 
         {buttons ?
           <div
-            className="ml-[5vw] mt-3 flex items-center flex-col md:flex-row gap-3 md:text-left text-center"
+            className="ml-[5vw] mt-3 flex items-center flex-col lg:flex-row gap-3 lg:text-left text-center"
           >
             <Button size="medium" type="primary" path="#" label="share your cough" />
             <Button size="medium" type="secondary" path="#" label="learn more" />
@@ -66,13 +69,12 @@ export default function Section1({
         }
       </div>
       <div
-        style={{
-          flex: "1",
-        }} className="flex justify-center text-center
+        className="flex justify-center text-center
         w-[100%]
-        md:mr-[5vw] md:text-left
-        lg:mr-[2.5vw]
-        xl:mr-[2.5vw]
+        flex-1 
+        lg:mr-[5vw] md:text-left
+        lg:mx-[2.5vw]
+        xl:mx-[2.5vw]
        ">
         <ImageAtomLocal
           imagesize={sizeImg}
