@@ -225,7 +225,7 @@ export default function OurPeople1() {
 
           <Card
             CardsData={CardsData}
-            CardClassProps="flex flex-col text-center items-center w-[348px] sm:w-1/1 md:w-1/2 lg:w-1/3 xl:w-1/3 mb-4 mt-4"
+            CardClassProps="flex flex-col text-center items-center w-[348px] sm:w-1/1 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-4 mt-4 rounded-[20px] m-[5px] h-[370px] shadow-xl min-w-[330px]"
           />
 
         </div>

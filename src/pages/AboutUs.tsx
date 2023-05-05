@@ -86,14 +86,14 @@ export default function AboutUs() {
           <Title
             H="h1"
             Text="Our Values"
-            TitleClassProps="text-center mt-[80px] mb-[40px]"
+            TitleClassProps="text-center mt-[100px] mb-[60px]"
           />
           <Card
             CardsData={CardsData}
-            CardClassProps="flex flex-col text-center items-center w-[348px] sm:w-1/1 md:w-1/2 lg:w-1/3 xl:w-1/3 mb-4 mt-4"
+            CardClassProps="flex flex-col text-center items-center w-[348px] sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-4 mt-4 rounded-[20px] m-[5px] h-[350px] shadow-xl"
           />
           <Section5
-            StylePropsSection="text-center w-[100%] mt-4"
+            StylePropsSection="text-center w-[100%] mt-[160px] mb-[160px]"
             TitleSize1="h1"
             TitleLabel1="Our Commitment to Privacy"
             TextSize1="normal"
