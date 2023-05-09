@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from "~/components/molecules/Card/Card"
+import Card from "~/components/molecules/Card/CardButton"
 
 import Card1 from "~/assets/static/images/aboutUs/card1.png"
 import Card2 from "~/assets/static/images/aboutUs/card2.png"
@@ -12,6 +12,13 @@ import AcordeonQuestions from '~/components/organisms/AccordeonQuestions/Acordeo
 import Title from '~/components/atoms/Title/Title'
 
 export default function FAQ() {
+
+  function handleAction(event) {
+    console.log('Child did:', event);
+    setCategory(event)
+  }
+
+  const [Category, setCategory] = React.useState ("Virufy App")
 
   const CardsData = [
     {
@@ -57,7 +64,9 @@ export default function FAQ() {
         <Card
           CardsData={CardsData}
           CardClassProps="flex flex-col text-center items-center justify-center w-[197px] sm:w-1/1 md:w-[197px] lg:w-[197px] xl:w-[197px] mb-4 mt-4 rounded-[11.49px] ml-4 bg-[#F3F4F6] h-[150px]"
+          handleAction={handleAction}
         />
+        {Category}
         <AcordeonQuestions/>
       </div>
     </div>
