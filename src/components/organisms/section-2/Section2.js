@@ -11,6 +11,7 @@ export default function Section2() {
         <div className="flex"
             style={{
                 width: "100vw",
+                maxWidth: "1440px"
             }}>
             <div style={{
                 width: "100vw",
@@ -30,7 +31,7 @@ export default function Section2() {
                         TextClassProps=""
                     />
                 </div>
-                <div className="flex sm:hidden justify-evenly" >
+                <div className="flex sm:hidden justify-evenly items-start" >
                     <div className="w-[100px] flex sm:w-[200px] lg:w-[300px] flex-col gap-8 text-center">
                         <TitleTextImg
                             Order={["Image", "Title"]}
@@ -39,7 +40,7 @@ export default function Section2() {
                             ImgRoute={Step1}
                             ImgBorder="circular"
                             ImgAlt="1. Record your cough"
-                            imagesize="px100"
+                            imagesize="px80"
                             TextSize=""
                             TextLabel=""
                         />
@@ -52,7 +53,7 @@ export default function Section2() {
                             ImgRoute={Step2}
                             ImgBorder="circular"
                             ImgAlt="2. AI analyzed for COVID patterns"
-                            imagesize="px100"
+                            imagesize="px80"
                             TextSize=""
                             TextLabel=""
                         />
@@ -65,14 +66,14 @@ export default function Section2() {
                             ImgRoute={Step3}
                             ImgBorder="circular"
                             ImgAlt="3. COVID risk status reported"
-                            imagesize="px100"
+                            imagesize="px80"
                             TextSize=""
                             TextLabel=""
                         />
                     </div>
                 </div>
                 <div className="hidden sm:flex lg:hidden justify-evenly" >
-                    <div className="w-[100px] flex sm:w-[200px] lg:w-[300px] flex-col gap-8 text-center">
+                    <div className="w-[100px] flex items-center sm:w-[150px] lg:w-[300px] flex-col gap-8 text-center">
                         <TitleTextImg
                             Order={["Image", "Title"]}
                             TitleSize="h6"
@@ -80,12 +81,12 @@ export default function Section2() {
                             ImgRoute={Step1}
                             ImgBorder="circular"
                             ImgAlt="1. Record your cough"
-                            imagesize="px200"
+                            imagesize="px120"
                             TextSize=""
                             TextLabel=""
                         />
                     </div>
-                    <div className="w-[100px] flex sm:w-[200px] lg:w-[300px] flex-col gap-8 text-center">
+                    <div className="w-[100px] flex items-center sm:w-[150px] lg:w-[300px] flex-col gap-8 text-center">
                         <TitleTextImg
                             Order={["Image", "Title"]}
                             TitleSize="h6"
@@ -93,12 +94,12 @@ export default function Section2() {
                             ImgRoute={Step2}
                             ImgBorder="circular"
                             ImgAlt="2. AI analyzed for COVID patterns"
-                            imagesize="px200"
+                            imagesize="px120"
                             TextSize=""
                             TextLabel=""
                         />
                     </div>
-                    <div className="w-[100px] flex sm:w-[200px] lg:w-[300px] flex-col gap-8 text-center">
+                    <div className="w-[100px] flex items-center sm:w-[150px] lg:w-[300px] flex-col gap-8 text-center">
                         <TitleTextImg
                             Order={["Image", "Title"]}
                             TitleSize="h6"
@@ -106,17 +107,17 @@ export default function Section2() {
                             ImgRoute={Step3}
                             ImgBorder="circular"
                             ImgAlt="3. COVID risk status reported"
-                            imagesize="px200"
+                            imagesize="px120"
                             TextSize=""
                             TextLabel=""
                         />
                     </div>
                 </div>
                 <div className="hidden lg:flex justify-evenly" >
-                    <div className="w-[100px] flex sm:w-[200px] lg:w-[300px] flex-col gap-8 text-center">
+                    <div className="w-[100px] flex lg:w-[300px] flex-col gap-8 text-center">
                         <TitleTextImg
                             Order={["Image", "Title"]}
-                            TitleSize="h3"
+                            TitleSize="h5tepsHome"
                             TitleLabel="1. Record your cough"
                             ImgRoute={Step1}
                             ImgBorder="circular"
@@ -126,10 +127,10 @@ export default function Section2() {
                             TextLabel=""
                         />
                     </div>
-                    <div className="w-[100px] flex sm:w-[200px] lg:w-[300px] flex-col gap-8 text-center">
+                    <div className="w-[100px] flex lg:w-[300px] flex-col gap-8 text-center">
                         <TitleTextImg
                             Order={["Image", "Title"]}
-                            TitleSize="h3"
+                            TitleSize="h5tepsHome"
                             TitleLabel="2. AI analyzed for COVID patterns"
                             ImgRoute={Step2}
                             ImgBorder="circular"
@@ -139,10 +140,10 @@ export default function Section2() {
                             TextLabel=""
                         />
                     </div>
-                    <div className="w-[100px] flex sm:w-[200px] lg:w-[300px] flex-col gap-8 text-center">
+                    <div className="w-[100px] flex lg:w-[300px] flex-col gap-8 text-center">
                         <TitleTextImg
                             Order={["Image", "Title"]}
-                            TitleSize="h3"
+                            TitleSize="h5tepsHome"
                             TitleLabel="3. COVID risk status reported"
                             ImgRoute={Step3}
                             ImgBorder="circular"

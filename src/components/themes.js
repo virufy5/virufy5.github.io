@@ -22,6 +22,7 @@ export const ImageSize = {
     px200: "w-[200px] h-[200px]",
     px300: "w-[300px] h-[300px]",
     px160: "w-[160px] h-[48px]",
+    px120: "w-[120px] h-[120px]",
     px150: "w-[150px] h-[150px]",
     px100x48: "w-[100px] h-[48px]",
     px30: "w-[30px] h-[18px]",
@@ -48,13 +49,15 @@ export const TitleProps = {
     h3: "text-[1.5rem] leading-[2rem]      md:text-[2.1rem] md:leading-[1.9rem] lg:text-[2.3rem] lg:leading-[2.10rem] xl:text-[2.9rem] xl:leading-[2.75rem]",
     h4: "text-[1.4rem] leading-[1.7rem]    md:text-[1.8rem] md:leading-[1.9rem] lg:text-[2.1rem] lg:leading-[2.30rem] xl:text-[2.4rem] xl:leading-[2.6rem]",
     h5: "text-[1.25rem] leading-[1.75rem]  md:text-[1.9rem] md:leading-[1.7rem] lg:text-[2.1rem] lg:leading-[1.90rem] xl:text-[2.7rem] xl:leading-[0.7rem]",
-    h6: "text-[1rem] leading-[1.5rem] font-semibold text-center"
+    h6: "text-[1rem] leading-[1.5rem] font-semibold text-center",
+    h5tepsHome: "text-[1.25rem] leading-[1.75rem] md:text-[1.9rem] md:leading-[2.5rem]"
 };
 
 //TEXT THEMES
 export const TextProps = {
     subtitle: "text-[1.125rem] leading-[1.75rem] md:text-[1.3rem] md:leading-[1.70rem] lg:text-[1.6rem] lg:leading-[1.80rem] xl:text-[1.8rem] xl:leading-[1.90rem]",
     normal: "  text-[0.875rem] leading-[1.25rem] md:text-[1.1rem] md:leading-[1.40rem] lg:text-[1.3rem] lg:leading-[1.50rem] xl:text-[1.5rem] xl:leading-[1.75rem]",
+    normalCardHome: "  text-[0.875rem] leading-[1.25rem] md:text-[1.1rem]",
     small: "   text-[1rem] leading-[1.25rem] md:text-[1.1rem] md:leading-[1.25rem] lg:text-[1.1rem] lg:leading-[1.25rem] xl:text-[1.1rem] xl:leading-[1.25rem]"
 };
 

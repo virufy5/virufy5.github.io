@@ -33,7 +33,7 @@ export default function CardSliderTall({
 
   return (
     <>
-      <div className="navigation-wrapper mt-0">
+      <div className="navigation-wrapper mt-0 max-w-[1300px] w-[100vw]">
         <div ref={sliderRef} className="keen-slider  ">
           <div className="keen-slider__slide number-slideTall1">
             <CardHome

@@ -23,133 +23,276 @@ import logo19 from "~/assets/static/images/OurSupportersLogos/logo19.png"
 export default function OurSupportersSection() {
 
   return (
-    <div className="w-full" >
-      <div className="mb-40">
-        <Title
-          H="h1"
-          Text="Our Supporters"
-          TitleClassProps="text-center mt-16 mb-4"
-        />
-      </div>
-      <div>
-        <Title
-          H="h3"
-          Text="Transformers ($1M +)"
-          TitleClassProps="text-center mt-16 mb-4"
-        />
-        <div className="w-full flex justify-center my-14" >
-          <div className="flex mx-10">
-            <ImageAtomLocal imagesize="" alt="" border="" src={logo1} ImageStyleProps="" />
+    <>
+      <div className="max-w-[1440px] w-[100vw] md:hidden" >
+        <div className="mb-40">
+          <Title
+            H="h1"
+            Text="Our Supporters"
+            TitleClassProps="text-center mt-16 mb-4"
+          />
+        </div>
+        <div>
+          <Title
+            H="h3"
+            Text="Transformers ($1M +)"
+            TitleClassProps="text-center mt-16 mb-4"
+          />
+          <div className="w-full flex justify-center my-14" >
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo1} ImageStyleProps="" />
+            </div>
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo2} ImageStyleProps="" />
+            </div>
           </div>
-          <div className="flex mx-10">
-            <ImageAtomLocal imagesize="" alt="" border="" src={logo2} ImageStyleProps="" />
+          <hr className="h-[3px] bg-[#828282]" />
+        </div>
+        <div>
+          <Title
+            H="h3"
+            Text="Innovators ($500K +)"
+            TitleClassProps="text-center mt-16 mb-4"
+          />
+          <div className="w-full flex justify-center my-14" >
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo3} ImageStyleProps="" />
+            </div>
+          </div>
+          <hr className="h-[3px] bg-[#828282]" />
+        </div>
+        <div>
+          <Title
+            H="h3"
+            Text="Creators ($100K +)"
+            TitleClassProps="text-center mt-16 mb-4"
+          />
+          <div className="w-full flex justify-center my-14" >
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo4} ImageStyleProps="" />
+            </div>
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo5} ImageStyleProps="" />
+            </div>
+          </div>
+          <hr className="h-[3px] bg-[#828282]" />
+        </div>
+        <div>
+          <Title
+            H="h3"
+            Text="Collaborators ($50K +)"
+            TitleClassProps="text-center mt-16 mb-4"
+          />
+          <div className="w-full flex justify-center my-14" >
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo6} ImageStyleProps="" />
+            </div>
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo7} ImageStyleProps="" />
+            </div>
+          </div>
+          <div className="w-full flex justify-center my-14" >
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo8} ImageStyleProps="" />
+            </div>
+          </div>
+
+          <hr className="h-[3px] bg-[#828282]" />
+        </div>
+        <div>
+          <Title
+            H="h3"
+            Text="Drivers ($10K +)"
+            TitleClassProps="text-center mt-16 mb-4"
+          />
+          <div className="w-full flex justify-center my-14" >
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo9} ImageStyleProps="" />
+            </div>
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo10} ImageStyleProps="" />
+            </div>
+          </div>
+          <div className="w-full flex justify-center my-14" >
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo11} ImageStyleProps="" />
+            </div>
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo12} ImageStyleProps="" />
+            </div>
+          </div>
+          <hr className="h-[3px] bg-[#828282]" />
+        </div>
+        <div>
+          <Title
+            H="h3"
+            Text="Boosters (< $10K)"
+            TitleClassProps="text-center mt-16 mb-4"
+          />
+          <div className="w-full flex justify-center my-14" >
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo13} ImageStyleProps="" />
+            </div>
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo14} ImageStyleProps="" />
+            </div>
+          </div>
+          <div className="w-full flex justify-center my-14" >
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo15} ImageStyleProps="" />
+            </div>
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo16} ImageStyleProps="" />
+            </div>
+          </div>
+
+          <div className="w-full flex justify-center my-14" >
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo17} ImageStyleProps="" />
+            </div>
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo18} ImageStyleProps="" />
+            </div>
+          </div>
+          <div className="w-full flex justify-center my-14" >
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo19} ImageStyleProps="" />
+            </div>
           </div>
         </div>
         <hr className="h-[3px] bg-[#828282]" />
       </div>
-      <div>
-        <Title
-          H="h3"
-          Text="Innovators ($500K +)"
-          TitleClassProps="text-center mt-16 mb-4"
-        />
-        <div className="w-full flex justify-center my-14" >
-          <div className="flex mx-10">
-            <ImageAtomLocal imagesize="" alt="" border="" src={logo3} ImageStyleProps="" />
-          </div>
+
+
+
+      <div className="max-w-[1440px] w-[100vw] hidden md:block" >
+        <div className="mb-40">
+          <Title
+            H="h1"
+            Text="Our Supporters"
+            TitleClassProps="text-center mt-16 mb-4"
+          />
         </div>
-        <hr className="h-[3px] bg-[#828282]" />
+        <div>
+          <Title
+            H="h3"
+            Text="Transformers ($1M +)"
+            TitleClassProps="text-center mt-16 mb-4"
+          />
+          <div className="w-full flex justify-center my-14" >
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo1} ImageStyleProps="" />
+            </div>
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo2} ImageStyleProps="" />
+            </div>
+          </div>
+          <hr className="h-[3px] bg-[#828282]" />
+        </div>
+        <div>
+          <Title
+            H="h3"
+            Text="Innovators ($500K +)"
+            TitleClassProps="text-center mt-16 mb-4"
+          />
+          <div className="w-full flex justify-center my-14" >
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo3} ImageStyleProps="" />
+            </div>
+          </div>
+          <hr className="h-[3px] bg-[#828282]" />
+        </div>
+        <div>
+          <Title
+            H="h3"
+            Text="Creators ($100K +)"
+            TitleClassProps="text-center mt-16 mb-4"
+          />
+          <div className="w-full flex justify-center my-14" >
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo4} ImageStyleProps="" />
+            </div>
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo5} ImageStyleProps="" />
+            </div>
+          </div>
+          <hr className="h-[3px] bg-[#828282]" />
+        </div>
+        <div>
+          <Title
+            H="h3"
+            Text="Collaborators ($50K +)"
+            TitleClassProps="text-center mt-16 mb-4"
+          />
+          <div className="w-full flex justify-center my-14" >
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo6} ImageStyleProps="" />
+            </div>
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo7} ImageStyleProps="" />
+            </div>
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo8} ImageStyleProps="" />
+            </div>
+          </div>
+          <hr className="h-[3px] bg-[#828282]" />
+        </div>
+        <div>
+          <Title
+            H="h3"
+            Text="Drivers ($10K +)"
+            TitleClassProps="text-center mt-16 mb-4"
+          />
+          <div className="w-full flex justify-center my-14" >
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo9} ImageStyleProps="" />
+            </div>
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo10} ImageStyleProps="" />
+            </div>
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo11} ImageStyleProps="" />
+            </div>
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo12} ImageStyleProps="" />
+            </div>
+          </div>
+          <hr className="h-[3px] bg-[#828282]" />
+        </div>
+        <div>
+          <Title
+            H="h3"
+            Text="Boosters (< $10K)"
+            TitleClassProps="text-center mt-16 mb-4"
+          />
+          <div className="w-full flex justify-center my-14" >
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo13} ImageStyleProps="" />
+            </div>
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo14} ImageStyleProps="" />
+            </div>
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo15} ImageStyleProps="" />
+            </div>
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo16} ImageStyleProps="" />
+            </div>
+          </div>
+          <div className="w-full flex justify-center my-14" >
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo17} ImageStyleProps="" />
+            </div>
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo18} ImageStyleProps="" />
+            </div>
+            <div className="flex mx-10">
+              <ImageAtomLocal imagesize="" alt="" border="" src={logo19} ImageStyleProps="" />
+            </div>
+          </div>
+          <hr className="h-[3px] bg-[#828282]" />
+        </div>
       </div>
-      <div>
-        <Title
-          H="h3"
-          Text="Creators ($100K +)"
-          TitleClassProps="text-center mt-16 mb-4"
-        />
-        <div className="w-full flex justify-center my-14" >
-          <div className="flex mx-10">
-            <ImageAtomLocal imagesize="" alt="" border="" src={logo4} ImageStyleProps="" />
-          </div>
-          <div className="flex mx-10">
-            <ImageAtomLocal imagesize="" alt="" border="" src={logo5} ImageStyleProps="" />
-          </div>
-        </div>
-        <hr className="h-[3px] bg-[#828282]" />
-      </div>
-      <div>
-        <Title
-          H="h3"
-          Text="Collaborators ($50K +)"
-          TitleClassProps="text-center mt-16 mb-4"
-        />
-        <div className="w-full flex justify-center my-14" >
-          <div className="flex mx-10">
-            <ImageAtomLocal imagesize="" alt="" border="" src={logo6} ImageStyleProps="" />
-          </div>
-          <div className="flex mx-10">
-            <ImageAtomLocal imagesize="" alt="" border="" src={logo7} ImageStyleProps="" />
-          </div>
-          <div className="flex mx-10">
-            <ImageAtomLocal imagesize="" alt="" border="" src={logo8} ImageStyleProps="" />
-          </div>
-        </div>
-        <hr className="h-[3px] bg-[#828282]" />
-      </div>
-      <div>
-        <Title
-          H="h3"
-          Text="Drivers ($10K +)"
-          TitleClassProps="text-center mt-16 mb-4"
-        />
-        <div className="w-full flex justify-center my-14" >
-          <div className="flex mx-10">
-            <ImageAtomLocal imagesize="" alt="" border="" src={logo9} ImageStyleProps="" />
-          </div>
-          <div className="flex mx-10">
-            <ImageAtomLocal imagesize="" alt="" border="" src={logo10} ImageStyleProps="" />
-          </div>
-          <div className="flex mx-10">
-            <ImageAtomLocal imagesize="" alt="" border="" src={logo11} ImageStyleProps="" />
-          </div>
-          <div className="flex mx-10">
-            <ImageAtomLocal imagesize="" alt="" border="" src={logo12} ImageStyleProps="" />
-          </div>
-        </div>
-        <hr className="h-[3px] bg-[#828282]" />
-      </div>
-      <div>
-        <Title
-          H="h3"
-          Text="Boosters (< $10K)"
-          TitleClassProps="text-center mt-16 mb-4"
-        />
-        <div className="w-full flex justify-center my-14" >
-          <div className="flex mx-10">
-            <ImageAtomLocal imagesize="" alt="" border="" src={logo13} ImageStyleProps="" />
-          </div>
-          <div className="flex mx-10">
-            <ImageAtomLocal imagesize="" alt="" border="" src={logo14} ImageStyleProps="" />
-          </div>
-          <div className="flex mx-10">
-            <ImageAtomLocal imagesize="" alt="" border="" src={logo15} ImageStyleProps="" />
-          </div>
-          <div className="flex mx-10">
-            <ImageAtomLocal imagesize="" alt="" border="" src={logo16} ImageStyleProps="" />
-          </div>
-        </div>
-        <div className="w-full flex justify-center my-14" >
-          <div className="flex mx-10">
-            <ImageAtomLocal imagesize="" alt="" border="" src={logo17} ImageStyleProps="" />
-          </div>
-          <div className="flex mx-10">
-            <ImageAtomLocal imagesize="" alt="" border="" src={logo18} ImageStyleProps="" />
-          </div>
-          <div className="flex mx-10">
-            <ImageAtomLocal imagesize="" alt="" border="" src={logo19} ImageStyleProps="" />
-          </div>
-        </div>
-        <hr className="h-[3px] bg-[#828282]" />
-      </div>
-    </div>
+    </>
   );
 }

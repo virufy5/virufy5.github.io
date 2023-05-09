@@ -12,7 +12,8 @@ export default function Section3() {
   return (
     <div
     style={{
-      width: "100%",
+      width: "w-[100vw]",
+      maxWidth: "1440px",
       textAlign: "center",
       alignItems: "center",
       marginTop: "90px"

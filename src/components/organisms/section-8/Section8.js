@@ -24,7 +24,7 @@ export default function Section8({
 
 }) {
   return (
-    <div className="mt-[80px] mb-[80px]">
+    <div className="mt-[80px] mb-[80px] flex flex-col">
       <TitleText
         TitleSize={TitleSize}
         TitleLabel={TitleLabel}
@@ -35,7 +35,7 @@ export default function Section8({
         TitleClassProps={""}
         TextClassProps={""}
       />
-      <div className="flex flex-col lg:flex-row mb-4 text-center items-center w-[100%] justify-center mt-5 w-100">
+      <div className="flex flex-col xl:flex-row mb-4 text-center items-center w-[100%] justify-center mt-5 w-100">
         <div className="
 					flex flex-col text-center items-center w-[250px] sm:w-[250px] md:w-[250px] lg:w-[447px] xl:w-[447px] mt-0 
 				">
