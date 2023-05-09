@@ -67,7 +67,7 @@ export default function OurResearch() {
             />
             <CardLargue
               CardsData={CardsData}
-              CardClassProps="flex flex-row text-center items-center justify-center sm:w-1/1 md:w-1/2 lg:w-1/2 xl:w-1/2 mb-4 mt-4"
+              CardClassProps="flex flex-row text-center items-center justify-center sm:w-1/1 md:w-1/1 lg:w-1/2 xl:w-1/2 mb-4 mt-4 px-5"
             />
             <Title
               Text="Want to learn more?"

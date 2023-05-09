@@ -23,27 +23,24 @@ export default function CardSlider() {
             "(min-width: 1024px)": {
                 slides: { perView: 2, spacing: 5 },
             },
-            "(min-width: 1600px)": {
-                slides: { perView: 3, spacing: 5 },
-            },
         },
         slides: { perView: 1 },
     })
 
     return (
         <>
-            <div className="navigation-wrapper mt-0 h-72">
-                <div ref={sliderRef} className="keen-slider h-60 sm:h-72">
+            <div className="navigation-wrapper mt-0 h-80 max-w-[1300px] w-[100vw]">
+                <div ref={sliderRef} className="keen-slider h-72 ">
                     <div className="keen-slider__slide number-slide1">
-                        
 
-                        <CardHome 
+
+                        <CardHome
                             src={Advisor1}
                             alt="imagen de algo"
                             TitleSize="h6"
                             TitleLabel="Nombre Cliente"
-                            TextSize="normal"
-                            TextLabel="Director. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim ornare leo euismod ac." 
+                            TextSize="normalCardHome"
+                            TextLabel="Director. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim ornare leo euismod ac."
                             imagesize=""
                             ContainerTitleProps=""
                             ContainerTextProps=""
@@ -55,13 +52,13 @@ export default function CardSlider() {
                             alt="imagen de algo"
                             TitleSize="h6"
                             TitleLabel="Nombre Cliente"
-                            TextSize="normal"
-                            TextLabel="Director. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim ornare leo euismod ac." 
+                            TextSize="normalCardHome"
+                            TextLabel="Director. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim ornare leo euismod ac."
                             imagesize=""
                             ContainerTitleProps=""
                             ContainerTextProps=""
                         />
-                        
+
                     </div>
                     <div className="keen-slider__slide number-slide3">
 
@@ -70,8 +67,8 @@ export default function CardSlider() {
                             alt="imagen de algo"
                             TitleSize="h6"
                             TitleLabel="Nombre Cliente"
-                            TextSize="normal"
-                            TextLabel="Director. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim ornare leo euismod ac." 
+                            TextSize="normalCardHome"
+                            TextLabel="Director. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim ornare leo euismod ac."
                             imagesize=""
                             ContainerTitleProps=""
                             ContainerTextProps=""
@@ -83,8 +80,8 @@ export default function CardSlider() {
                             alt="imagen de algo"
                             TitleSize="h6"
                             TitleLabel="Nombre Cliente"
-                            TextSize="normal"
-                            TextLabel="Director. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim ornare leo euismod ac." 
+                            TextSize="normalCardHome"
+                            TextLabel="Director. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim ornare leo euismod ac."
                             imagesize=""
                             ContainerTitleProps=""
                             ContainerTextProps=""
@@ -97,7 +94,7 @@ export default function CardSlider() {
                             TitleSize="h6"
                             TitleLabel="Nombre Cliente"
                             TextSize="normal"
-                            TextLabel="Director. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim ornare leo euismod ac." 
+                            TextLabel="Director. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim ornare leo euismod ac."
                             imagesize=""
                             ContainerTitleProps=""
                             ContainerTextProps=""

@@ -4,7 +4,7 @@ import Video from "../../atoms/videoAtom/Video"
 export default function SectionTellYourStoryGetInvolved() {
     return (
         <div className="text-center flex flex-col md:mb-[70px] md:mt-[70px]">
-            <div className="flex items-center flex-col">
+            <div className="flex items-center flex-col max-w-[1200px] w-[100vw]">
                 <div className="flex md:w-1/2 px-7 flex-col items-center justify-center gap-11 mb-10">
                     <TitleText
                         //TitleText
@@ -43,11 +43,8 @@ export default function SectionTellYourStoryGetInvolved() {
                         TitleSize=""
                     />
                 </div>
-                <div className="flex sm:hidden mt-[40px] align-center justify-center">
+                <div className="flex md:hidden mt-[40px] align-center justify-center">
                     <Video width="370px" height="208px" url="https://youtu.be/hvJgwPNYnZo" />
-                </div>
-                <div className="hidden sm:flex md:hidden mt-[40px] align-center justify-center">
-                    <Video width="600px" height="338px" url="https://youtu.be/hvJgwPNYnZo" />
                 </div>
                 <div className="hidden md:flex xl:hidden mt-[40px] align-center justify-center">
                     <Video width="800px" height="450px" url="https://youtu.be/hvJgwPNYnZo" />
