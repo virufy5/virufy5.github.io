@@ -26,8 +26,8 @@ export default function SectionJoinOurTeam({
 
                 />
             </div>
-            <div className="flex flex-col md:flex-row">
-                <div className="flex w-full md:w-1/2 md:px-5">
+            <div className="flex flex-col lg:flex-row">
+                <div className="flex w-full lg:w-1/2 lg:px-5">
                     <div className="flex flex-col items-center">
                         <div className="w-full px-7 flex flex-col items-center justify-center gap-7">
                             <TitleText
@@ -42,7 +42,7 @@ export default function SectionJoinOurTeam({
                                 TextSize=""
                             />
                         </div>
-                        <div className="w-full flex items-center justify-end">
+                        <div className="w-full flex items-center mx-[auto]">
                             <ImageAtomLocal
                                 imagesize="pr100"
                                 border={border}
@@ -70,7 +70,7 @@ export default function SectionJoinOurTeam({
                         </div>
                     </div>
                 </div>
-                <div className="flex w-full md:w-1/2 md:px-5">
+                <div className="flex w-full lg:w-1/2 lg:px-5">
                     <div className="flex flex-col items-center">
                         <div className="w-full px-7 flex flex-col items-center justify-center gap-7">
                             <TitleText

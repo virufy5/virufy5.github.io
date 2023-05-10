@@ -1,15 +1,7 @@
-import Title from "~/components/atoms/Title/Title";
-
 export default function AcordeonQuestions() {
 
   return (
-    <>
-      <Title
-        H="h5"
-        Text="Virufy App"
-        TitleClassProps={"mt-[70px] mb-[40px]"}
-      />
-
+    <div className="px-12">
       <div className='w-full max-w-7xl flex items-center justify-center mb-[70px]'>
         <div className='w-full max-w-[1440px] px-0 py-8'>
           <details className="w-full max-w-[1440px] bg-white cursor-pointer mb-3">
@@ -70,7 +62,7 @@ export default function AcordeonQuestions() {
           <hr className="border-1 border-gray-400" />
         </div>
       </div>
-    </>
+    </div>
   );
 
 }
