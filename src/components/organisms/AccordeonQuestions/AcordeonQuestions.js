@@ -1,9 +1,12 @@
 import Title from "~/components/atoms/Title/Title";
 
-export default function AcordeonQuestions() {
+export default function AcordeonQuestions({
+  Category
+}) {
 
   return (
     <>
+    {Category}
       <Title
         H="h5"
         Text="Virufy App"
