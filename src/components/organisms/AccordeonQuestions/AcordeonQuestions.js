@@ -73,7 +73,7 @@ export default function AcordeonQuestions({
           <hr className="border-1 border-gray-400" />
         </div>
       </div>
-    </>
+    </div>
   );
 
 }

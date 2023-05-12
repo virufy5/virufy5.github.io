@@ -8,8 +8,8 @@ import Section7 from "~/components/organisms/section-7/Section7"
 export default function Dashboard() {
 
 
-	return (
-		<>
+    return (
+        <div>
             <div className="w-full h-[300px] bg-slate-100 px-[7%] flex flex-col items-start justify-center gap-5">
                 <TitleText
                     //TitleText
@@ -22,12 +22,14 @@ export default function Dashboard() {
                     TitleClassProps=""
                     ContainerTitleProps=""
 
-			    />
+                />
             </div>
-            <div>
-                <ImageAtomLocal src={Map} imagesize="" ImageStyleProps="" alt="" border=""/>
+            <div className="max-w-[1440px] 100vw flex flex-col mx-[auto]">
+                <div>
+                    <ImageAtomLocal src={Map} imagesize="" ImageStyleProps="" alt="" border="" />
+                </div>
+                <Section7 TitleLabel="Let’s help the world and save many lives by recording your cough" Label1="share your cough" Label2="learn more" />
             </div>
-            <Section7 TitleLabel="Let’s help the world and save many lives by recording your cough" Label1="share your cough" Label2="learn more"/> 
-		</>
-	);
+        </div>
+    );
 }

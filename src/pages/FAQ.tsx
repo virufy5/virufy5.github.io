@@ -66,11 +66,18 @@ export default function FAQ() {
           CardClassProps="active:border active:border-[#30DA74] hover:border hover:border-[#30DA74] focus:border focus:border-[#30DA74] flex flex-col text-center items-center justify-center w-[197px] sm:w-1/1 md:w-[197px] lg:w-[197px] xl:w-[197px] mb-4 mt-4 rounded-[11.49px] ml-4 bg-[#F3F4F6] h-[150px]"
           handleAction={handleAction}
         />
-        
+        <Title
+          Text={Category}
+          H={"h1"}
+          TitleClassProps={"w-[100%] mt-8 ml-[20px] sm:w-auto md:w-auto lg:w-auto xl:w-[100%]"}
+        />    
+            
         <AcordeonQuestions
           Category={Category}
         />
         
+
+
       </div>
     </div>
   )
