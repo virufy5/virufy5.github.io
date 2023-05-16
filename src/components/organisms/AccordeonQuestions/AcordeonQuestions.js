@@ -1,12 +1,14 @@
 import Title from "~/components/atoms/Title/Title";
 
 export default function AcordeonQuestions({
-  Category
+  Category,
+  TextSearch
 }) {
 
   return (
     <>
-    {Category}
+      <p className="text-2xl"> Prop desde cards:  {Category} </p>
+      <p className="text-2xl"> Prop desde buscador: {TextSearch} </p>
       <Title
         H="h5"
         Text="Virufy App"
@@ -73,7 +75,6 @@ export default function AcordeonQuestions({
           <hr className="border-1 border-gray-400" />
         </div>
       </div>
-    </div>
+    </>
   );
-
 }

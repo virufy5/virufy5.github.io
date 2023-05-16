@@ -10,15 +10,22 @@ import Card7 from "~/assets/static/images/aboutUs/card7.png"
 
 import AcordeonQuestions from '~/components/organisms/AccordeonQuestions/AcordeonQuestions'
 import Title from '~/components/atoms/Title/Title'
+import Input from '~/components/atoms/Title/InputText'
 
 export default function FAQ() {
 
-  function handleAction(event) {
+  function sendCategory(event) {
     console.log('Child did:', event);
     setCategory(event)
   }
 
+  function textSearch(event) {
+    console.log('Child did:', event);
+    setText(event)
+  }  
+
   const [Category, setCategory] = React.useState ("Virufy App")
+  const [text, setText] = React.useState ("")
 
   const CardsData = [
     {
@@ -56,6 +63,9 @@ export default function FAQ() {
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="flex flex-col justify-center items-center max-w-[1440px] ">
+        <Input
+          handleAction={textSearch}
+        />
         <Title
           Text={"FAQ TOPICS"}
           H={"h1"}
@@ -64,7 +74,7 @@ export default function FAQ() {
         <Card
           CardsData={CardsData}
           CardClassProps="active:border active:border-[#30DA74] hover:border hover:border-[#30DA74] focus:border focus:border-[#30DA74] flex flex-col text-center items-center justify-center w-[197px] sm:w-1/1 md:w-[197px] lg:w-[197px] xl:w-[197px] mb-4 mt-4 rounded-[11.49px] ml-4 bg-[#F3F4F6] h-[150px]"
-          handleAction={handleAction}
+          handleAction={sendCategory}
         />
         <Title
           Text={Category}
@@ -74,6 +84,7 @@ export default function FAQ() {
             
         <AcordeonQuestions
           Category={Category}
+          TextSearch={text}
         />
         
 
