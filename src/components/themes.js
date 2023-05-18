@@ -64,5 +64,6 @@ export const TextProps = {
 //LINK THEMES
 export const LinkAtomProps = {
     linkFooter: "text-[13px] lg:text-[18px] lg:leading-[20px] hover:font-semibold mx-2",
-    linkNavbar: "text-[18px] leading-[20px] hover:font-semibold"
+    linkNavbar: "text-[18px] leading-[20px] hover:font-semibold",
+    linkBlog: " flex justify-start w-full text-[13px] lg:text-[20px] hover:font-semibold text-[#3074DC] text-start"
 };
