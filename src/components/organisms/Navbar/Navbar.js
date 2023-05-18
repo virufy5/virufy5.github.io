@@ -68,7 +68,7 @@ export default function Navbar() {
                         <ul className="items-center justify-center space-y-8 lg:flex lg:space-x-5 xl:space-x-9 lg:space-y-0">
                             <li className="text-[#393939]">
                                 <div>
-                                    <button className="peer py-2 text-[#393939]">Our Technology</button>
+                                    <a className="peer py-2 text-[#393939]" href="/es/OurTechnology">Our Technology</a>
                                     <div className="hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg fixed">
                                         <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/HowItWorks">How It Works</a>
                                         <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="https://virufy.org/study/welcome">Share Your Cough</a>
@@ -79,7 +79,7 @@ export default function Navbar() {
                             </li>
                             <li className="text-[#393939]">
                                 <div>
-                                    <button className="peer py-2 text-[#393939]">Get Involved</button>
+                                    <a className="peer py-2 text-[#393939]" href="/es/GetInvolved">Get Involved</a>
                                     <div className="hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg fixed">
                                         <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/Home">Donate</a>
                                         <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/Home">Join Our Team</a>
@@ -89,11 +89,11 @@ export default function Navbar() {
                             </li>
                             <li className="text-[#393939]">
                                 <div>
-                                    <button className="peer py-2 text-[#393939]">About Us</button>
+                                    <a className="peer py-2 text-[#393939]" href="/es/AboutUs">About Us</a>
                                     <div className="hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg fixed">
                                         <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/OurPeople1">Our people</a>
                                         <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/OurSupporters">Our Supporters</a>
-                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/Home">Blog</a>
+                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/Blog">Blog</a>
                                         <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/Home">Publications</a>
                                     </div>
                                 </div>
