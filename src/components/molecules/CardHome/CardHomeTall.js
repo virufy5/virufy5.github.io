@@ -1,6 +1,5 @@
 import Text from "~/components/atoms/Text/Text";
 import ImageAtomLocal from "../../atoms/imageAtom/ImageAtomLocal";
-import Advisor1 from "../../../assets/static/images/cards/advisor1.jpg"
 
 
 export default function CardHomeTall({

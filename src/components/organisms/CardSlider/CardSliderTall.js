@@ -6,9 +6,7 @@ import Advisor1 from "../../../assets/static/images/ourSupporters/card1-VH.png"
 import Advisor2 from "../../../assets/static/images/ourSupporters/card2-VH.png"
 import { useState } from "react";
 
-export default function CardSliderTall({
-  cardSliderData
-}) {
+export default function CardSliderTall() {
 
   const [currentSlide, setCurrentSlide] = useState(0)
   const [loaded, setLoaded] = useState(false)

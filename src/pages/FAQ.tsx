@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react'
 import Card from "~/components/molecules/Card/CardButton"
 
 import Card1 from "~/assets/static/images/aboutUs/card1.png"
@@ -14,18 +15,18 @@ import Input from '~/components/atoms/Title/InputText'
 
 export default function FAQ() {
 
-  function sendCategory(event) {
+  function sendCategory(event: string) {
     console.log('Child did:', event);
     setCategory(event)
   }
 
-  function textSearch(event) {
+  function textSearch(event: string) {
     console.log('Child did:', event);
     setText(event)
   }  
 
-  const [Category, setCategory] = React.useState ("Virufy App")
-  const [text, setText] = React.useState ("")
+  const [Category, setCategory] = useState<string>("Virufy App")
+  const [text, setText] = useState<string>("")
 
   const CardsData = [
     {

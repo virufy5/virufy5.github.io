@@ -3,7 +3,6 @@ import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal";
 import VirufyLogo from "~/assets/static/images/logo/virufy.svg";
 import BarsMenu from "~/assets/static/icons/navbar/barsIconMenu.svg";
 import CloseMenu from "~/assets/static/icons/navbar/closeIconMenu.svg";
-import LinkAtom from "~/components/atoms/LinkAtom/LinkAtom";
 import Select from "~/components/atoms/Select/Select";
 import Button from "~/components/atoms/button/Button";
 import { useState } from 'react';

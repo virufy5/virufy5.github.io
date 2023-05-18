@@ -71,9 +71,8 @@ export default function JobList() {
 
       {List.map(({ name, jobVacancys, id }) => (
 
-        <div className='w-[100%] '>
+        <div key={id} className='w-[100%] '>
           <Title
-            key={id}
             TitleClassProps={"text-[#3074DC] my-[40px]"}
             Text={name}
             H={"h4"}
@@ -82,7 +81,7 @@ export default function JobList() {
           {jobVacancys.map(({ title, id }) => (
             <>
               <div className='flex w-[100%] mb-[37px]'>
-                <div className='flex flex-1 justify-start'>
+                <div className='flex flex-1 justify-start items-center'>
                   <Text
                     key={id}
                     TextClassProps={""}
@@ -104,8 +103,6 @@ export default function JobList() {
               <hr className="flex w-[100%] h-px mx-auto my-4 border-0 rounded bg-[#BBBBBB]" />
             </>
           ))}
-
-
 
         </div>
       ))}
