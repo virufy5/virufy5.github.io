@@ -11,7 +11,7 @@ export default function JobList() {
       jobVacancys: [
         {
           title: "Engineering Manager",
-          link: "www.google.com"
+          link: "1"
         },
       ]
     },
@@ -20,19 +20,19 @@ export default function JobList() {
       jobVacancys: [
         {
           title: "Data Privacy Intern",
-          link: "www.google.com"
+          link: "2"
         },
         {
           title: "Data Privacy Manager",
-          link: "www.google.com"
+          link: "3"
         },
         {
           title: "Director of Data Science",
-          link: "www.google.com"
+          link: "4"
         },
         {
           title: "Data Visualization Engineer",
-          link: "www.google.com"
+          link: "5"
         },
       ]
     },
@@ -41,11 +41,11 @@ export default function JobList() {
       jobVacancys: [
         {
           title: "Business Manager",
-          link: "www.google.com"
+          link: "6"
         },
         {
           title: "Project Manager",
-          link: "www.google.com"
+          link: "7"
         },
       ]
     },
@@ -54,17 +54,64 @@ export default function JobList() {
       jobVacancys: [
         {
           title: "Human Resources Partner",
-          link: "www.google.com"
+          link: "8"
         },
         {
           title: "Technical Recruiter",
-          link: "www.google.com"
+          link: "9"
         },
       ]
     },
   ]
 
 
+  const positions = [
+    {
+      id: 1,
+      title: "Engineering Manager",
+      category: "Engineering",
+    },
+    {
+      id: 2,
+      title: "Data Privacy Intern",
+      category: "Data",
+    },
+    {
+      id: 3,
+      title: "Data Privacy Manager",
+      category: "Data",
+    },
+    {
+      id: 4,
+      title: "Director of Data Science",
+      category: "Data",
+    },
+    {
+      id: 5,
+      title: "Data Visualization Engineer",
+      category: "Data",
+    },
+    {
+      id: 6,
+      title: "Business Manager",
+      category: "Management",
+    },
+    {
+      id: 7,
+      title: "Project Manager",
+      category: "Management",
+    }  
+  ];
+
+  function formatPositions(positions){
+    const categories = [...new Set(positions.map(position=> position.category))]
+     return categories.reduce((acc, category)=> {
+       const _positions = positions.filter(position=> position.category === category)
+      return [...acc, {category: category, positions: _positions}]
+    }, [])
+  }
+  
+  console.log(formatPositions(positions))
 
   return (
     <div className='my-12 w-11/12 mx-8'>
@@ -78,7 +125,7 @@ export default function JobList() {
             H={"h4"}
           />
 
-          {jobVacancys.map(({ title, id }) => (
+          {jobVacancys.map(({ title, link, id }) => (
             <>
               <div className='flex w-[100%] mb-[37px]'>
                 <div className='flex flex-1 justify-start items-center'>
@@ -94,7 +141,7 @@ export default function JobList() {
                   <Button
                     size="medium"
                     type="primary"
-                    path="#"
+                    path={`/JobListing/${link}`}
                     label="APPLY"
                   />
                 </div>
