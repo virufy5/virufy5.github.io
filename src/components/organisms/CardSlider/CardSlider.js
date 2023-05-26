@@ -93,12 +93,13 @@ export default function CardSlider() {
                             alt="imagen de algo"
                             TitleSize="h6"
                             TitleLabel="Nombre Cliente"
-                            TextSize="normal"
+                            TextSize="normalCardHome"
                             TextLabel="Director. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim ornare leo euismod ac."
                             imagesize=""
                             ContainerTitleProps=""
                             ContainerTextProps=""
                         />
+
                     </div>
                 </div>
                 {loaded && instanceRef.current && (

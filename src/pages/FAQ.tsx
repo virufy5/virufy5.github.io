@@ -23,7 +23,7 @@ export default function FAQ() {
   function textSearch(event: string) {
     console.log('Child did:', event);
     setText(event)
-  }  
+  }
 
   const [Category, setCategory] = useState<string>("Virufy App")
   const [text, setText] = useState<string>("")
@@ -63,10 +63,10 @@ export default function FAQ() {
 
   return (
     <div className="flex flex-col justify-center items-center">
+      <Input
+        handleAction={textSearch}
+      />
       <div className="flex flex-col justify-center items-center max-w-[1440px] ">
-        <Input
-          handleAction={textSearch}
-        />
         <Title
           Text={"FAQ TOPICS"}
           H={"h1"}
@@ -81,13 +81,13 @@ export default function FAQ() {
           Text={Category}
           H={"h1"}
           TitleClassProps={"w-[100%] mt-8 ml-[20px] sm:w-auto md:w-auto lg:w-auto xl:w-[100%]"}
-        />    
-            
+        />
+
         <AcordeonQuestions
           Category={Category}
           TextSearch={text}
         />
-        
+
 
 
       </div>

@@ -67,7 +67,7 @@ export default function Navbar() {
                         <ul className="items-center justify-center space-y-8 lg:flex lg:space-x-5 xl:space-x-9 lg:space-y-0">
                             <li className="text-[#393939]">
                                 <div>
-                                    <a className="peer py-2 text-[#393939]" href="/es/OurTechnology">Our Technology</a>
+                                    <a className="peer py-2 text-[#393939]" href="#">Our Technology</a>
                                     <div className="hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg fixed">
                                         <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/HowItWorks">How It Works</a>
                                         <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="https://virufy.org/study/welcome">Share Your Cough</a>
