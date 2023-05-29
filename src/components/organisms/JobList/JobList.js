@@ -17,7 +17,7 @@ export default function JobList() {
 
     async function fetchData() {
       try {
-        const res = await fetch('https://scidroidgames-gmailcom-cms.payloadcms.app/api/positions');
+        const res = await fetch('/api/positions');
         console.log(res);
       } catch (err) {
         console.log(err);
