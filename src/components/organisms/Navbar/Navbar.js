@@ -81,7 +81,7 @@ export default function Navbar() {
                                     <a className="peer py-2 text-[#393939]" href="/es/GetInvolved">Get Involved</a>
                                     <div className="hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg fixed">
                                         <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/Home">Donate</a>
-                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/JobListing">Join Our Team</a>
+                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/JobListing">Join Our Team</a>
                                         <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/TellYourStory">Tell Your Story</a>
                                     </div>
                                 </div>
