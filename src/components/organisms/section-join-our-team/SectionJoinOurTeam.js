@@ -64,7 +64,7 @@ export default function SectionJoinOurTeam({
                                     TitleSize=""
                                 />
                                 <div className="flex-col justify-center mb-14">
-                                    <Button size="medium" type="primary" path="#" label="View available roles" />
+                                    <Button size="medium" type="primary" path="/JobListing" label="View available roles" />
                                 </div>
                             </div>
                         </div>

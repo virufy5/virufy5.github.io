@@ -14,7 +14,9 @@ export default function Section4({
   TitleLabel2,
   TextLabel,
   labelButton,
-}) {
+  buttonRoute
+}) 
+{ console.log(buttonRoute)
   return (
     <div className="text-center mt-[100px] mb-[40px] flex flex-col space-y-4 space-x-4 ml-[5vw] mr-[5vw]">
       <TitleText
@@ -55,7 +57,7 @@ export default function Section4({
               TextClassProps={""}
             />
             <div className="hidden sm:flex flex-col justify-center">
-              <Button size="medium" type="primary" path="#" label={labelButton} />
+              <Button size="medium" type="primary" path={buttonRoute} label={labelButton} />
             </div>
           </div>
 
@@ -71,7 +73,7 @@ export default function Section4({
         </div>
       </div>
       <div className="flex sm:hidden justify-center">
-        <Button size="medium" type="primary" path="#" label={labelButton} />
+        <Button size="medium" type="primary" path={buttonRoute} label={labelButton} />
       </div>
     </div >
   )

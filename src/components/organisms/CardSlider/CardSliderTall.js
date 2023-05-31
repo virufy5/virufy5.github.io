@@ -4,10 +4,12 @@ import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 import Advisor1 from "../../../assets/static/images/ourSupporters/card1-VH.png"
 import Advisor2 from "../../../assets/static/images/ourSupporters/card2-VH.png"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function CardSliderTall() {
 
+  const [data, setData] = useState([]);
+  const [isLoading, setLoading] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0)
   const [loaded, setLoaded] = useState(false)
   const [sliderRef, instanceRef] = useKeenSlider({
@@ -29,55 +31,102 @@ export default function CardSliderTall() {
     slides: { perView: 1 },
   })
 
+  useEffect(() => {
+    setLoading(true);
+    fetch('/api/testimonials')
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data.docs);
+        setLoading(false);
+      }).catch((e) => console.log(e))
+  }, []);
+
+  useEffect(() => {
+    console.log("Response API:", data);
+  }, [data])
+
+  useEffect(() => {
+    console.log("re")
+  })
+
+/*   const [Listing, setListing] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch('/api/testimonials');
+      const json = await response.json();
+      setListing(json.docs);
+    };
+
+    fetchData();
+  }, []); */
+  
+
   return (
     <>
       <div className="navigation-wrapper mt-0 max-w-[1300px] w-[100vw]">
         <div ref={sliderRef} className="keen-slider  ">
+
+        {isLoading ? <p className="text-center text-2xl">Loading...</p> : null}
+        {!data ? <p>No data</p> : null}
+
+          {data.map(({ name, testimonial, id, picture }, index) =>
+            <div key={id} className={`keen-slider__slide number-slideTall${index+1}`}>
+              <CardHome
+                src={picture.url}
+                alt={name}
+                textLabel={testimonial}
+                name={name}
+                country={"Bolivia"} //hace falta el país en el response del API
+              />
+            </div>
+          )}
+
           <div className="keen-slider__slide number-slideTall1">
             <CardHome
               src={Advisor1}
-              alt="Annelisse Torrez Daza"
+              alt="Annelisse Torrez Daza1"
               textLabel="“Having suffered through COVID myself along with all of my family in a underprivileged country, I knew instantly that I could make a difference and prevent others from facing my same fate by joining Virufy.”"
-              name="Annelisse Torrez Daza"
+              name="Annelisse Torrez Daza1"
               country={"Bolivia"}
             />
           </div>
           <div className="keen-slider__slide number-slideTall2">
             <CardHome
               src={Advisor2}
-              alt="Annelisse Torrez Daza"
+              alt="Annelisse Torrez Daza2"
               textLabel="“Having suffered through COVID myself along with all of my family in a underprivileged country, I knew instantly that I could make a difference and prevent others from facing my same fate by joining Virufy.”"
-              name="Annelisse Torrez Daza"
+              name="Annelisse Torrez Daza2"
               country={"Bolivia"}
             />
           </div>
           <div className="keen-slider__slide number-slideTall3">
             <CardHome
               src={Advisor1}
-              alt="Annelisse Torrez Daza"
+              alt="Annelisse Torrez Daza3"
               textLabel="“Having suffered through COVID myself along with all of my family in a underprivileged country, I knew instantly that I could make a difference and prevent others from facing my same fate by joining Virufy.”"
-              name="Annelisse Torrez Daza"
+              name="Annelisse Torrez Daza3"
               country={"Bolivia"}
             />
           </div>
           <div className="keen-slider__slide number-slideTall4">
             <CardHome
               src={Advisor1}
-              alt="Annelisse Torrez Daza"
+              alt="Annelisse Torrez Daza4"
               textLabel="“Having suffered through COVID myself along with all of my family in a underprivileged country, I knew instantly that I could make a difference and prevent others from facing my same fate by joining Virufy.”"
-              name="Annelisse Torrez Daza"
+              name="Annelisse Torrez Daza4"
               country={"Bolivia"}
             />
           </div>
-          <div className="keen-slider__slide number-slideTall2">
+          <div className="keen-slider__slide number-slideTall5">
             <CardHome
               src={Advisor1}
-              alt="Annelisse Torrez Daza"
+              alt="Annelisse Torrez Daza5"
               textLabel="“Having suffered through COVID myself along with all of my family in a underprivileged country, I knew instantly that I could make a difference and prevent others from facing my same fate by joining Virufy.”"
-              name="Annelisse Torrez Daza"
+              name="Annelisse Torrez Daza5"
               country={"Bolivia"}
             />
           </div>
+
         </div>
         {loaded && instanceRef.current && (
           <>

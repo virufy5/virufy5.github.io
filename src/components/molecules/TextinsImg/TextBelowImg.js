@@ -23,6 +23,7 @@ export default function TextBelowImg({
           H="h2"
           TitleClassProps="
             flex
+            justify-center
             items-center
             h-[188px]
             bg-[#3074DC]

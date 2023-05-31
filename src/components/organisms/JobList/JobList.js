@@ -34,7 +34,7 @@ export default function JobList() {
 
   return (
     <div className='my-12 w-11/12 mx-8'>
-      {isLoading ? <p>Loading...</p> : null}
+      {isLoading ? <p className="text-center text-2xl">Loading...</p> : null}
       {!data ? <p>No data</p> : null}
 
       {data.map(({ category, positions, id }) => (

@@ -19,6 +19,10 @@ export default {
         source: '/api/:path*', // automatically handles all locales
         destination: 'https://scidroidgames-gmailcom-cms.payloadcms.app/api/:path*', // automatically passes the locale on
       },
+      {
+        source: '/media/:path*', // automatically handles all locales
+        destination: 'https://scidroidgames-gmailcom-cms.payloadcms.app/media/:path*', // automatically passes the locale on
+      },
     ]
 
   }
