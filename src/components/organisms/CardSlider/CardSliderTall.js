@@ -1,3 +1,4 @@
+'use client'
 
 import CardHome from "../../molecules/CardHome/CardHomeTall";
 import { useKeenSlider } from "keen-slider/react"
@@ -40,7 +41,7 @@ export default function CardSliderTall() {
       .then((res) => res.json())
       .then((data) => {
         setData(data.docs);
-        console.log("si se sube pinche feo")
+        console.log("si se sube pinche feo - use-client")
         setLoading(false);
         instanceRef?.current?.update();
       }).catch((e) => console.log(e))
