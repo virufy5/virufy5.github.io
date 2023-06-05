@@ -22,10 +22,10 @@ export default function CardSliderTall() {
     },
     breakpoints: {
       "(min-width: 1024px)": {
-        slides: { perView: 2, spacing: 5 },
+        slides: { perView: 2, spacing: 1 },
       },
       "(min-width: 1600px)": {
-        slides: { perView: 3, spacing: 5 },
+        slides: { perView: 2, spacing: 1 },
       },
     },
     slides: { perView: 1 },
@@ -38,6 +38,7 @@ export default function CardSliderTall() {
       .then((data) => {
         setData(data.docs);
         setLoading(false);
+        instanceRef?.current?.update();
       }).catch((e) => console.log(e))
   }, []);
 
