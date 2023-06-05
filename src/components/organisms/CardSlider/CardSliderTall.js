@@ -41,7 +41,7 @@ export default function CardSliderTall() {
       .then((res) => res.json())
       .then((data) => {
         setData(data.docs);
-        console.log("si se sube pinche feo - use-client")
+        console.log("si se sube pinche feo - use-client - 2")
         setLoading(false);
         
       }).catch((e) => console.log(e))
