@@ -43,7 +43,7 @@ export default function CardSliderTall() {
         setData(data.docs);
         console.log("si se sube pinche feo - use-client")
         setLoading(false);
-        instanceRef?.current?.update();
+        
       }).catch((e) => console.log(e))
   }, []);
 
@@ -52,6 +52,7 @@ export default function CardSliderTall() {
   }, [data])
 
   useEffect(() => {
+    instanceRef?.current?.update();
     console.log("re")
   })
 
