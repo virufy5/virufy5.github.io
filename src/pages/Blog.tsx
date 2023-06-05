@@ -5,7 +5,17 @@ import GetTheLatestVirufyBlog from "~/components/organisms/GetTheLatestVirufyBlo
 
 export default function Blog() {
 
-    const [data, setData] = useState([]);
+    interface IData {
+        title: string
+        id: string
+        summary: string
+        picture: {
+            url: string
+        }
+    }
+
+    const initialData: IData[] = []
+    const [data, setData] = useState(initialData);
     const [isLoading, setLoading] = useState(false);
 
     //Función para dar formato optimo al response del API
@@ -29,20 +39,20 @@ export default function Blog() {
             <VirufyHealtSection />
             {isLoading ? <p>Loading...</p> : null}
             {!data ? <p>No data</p> : null}
-            {data.map(({ title, id, summary, picture.url }) => (
-            <div key={id}>
-                <BlogCard
-                    TitleSize="h3"
-                    TitleLabel={title}
-                    TextLabel={summary}
-                    labelButton="read more"
-                    ContainerTitleProps=""
-                    ContainerTextProps=""
-                    border=""
-                    alt=""
-                    Image={picture.url}
-                />
-            </div>
+            {data.map(({ title, id, summary, picture }) => (
+                <div key={id}>
+                    <BlogCard
+                        TitleSize="h3"
+                        TitleLabel={title}
+                        TextLabel={summary}
+                        labelButton="read more"
+                        ContainerTitleProps=""
+                        ContainerTextProps=""
+                        border=""
+                        alt=""
+                        Image={picture.url}
+                    />
+                </div>
             ))}
             <GetTheLatestVirufyBlog />
         </div>
