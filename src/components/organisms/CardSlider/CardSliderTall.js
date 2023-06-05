@@ -21,11 +21,14 @@ export default function CardSliderTall() {
       setLoaded(true)
     },
     breakpoints: {
-      "(min-width: 1024px)": {
+      "(min-width: 740px)": {
         slides: { perView: 2, spacing: 1 },
       },
+      "(min-width: 1084px)": {
+        slides: { perView: 3, spacing: 1 },
+      },
       "(min-width: 1600px)": {
-        slides: { perView: 2, spacing: 1 },
+        slides: { perView: 3, spacing: 1 },
       },
     },
     slides: { perView: 1 },
@@ -37,6 +40,7 @@ export default function CardSliderTall() {
       .then((res) => res.json())
       .then((data) => {
         setData(data.docs);
+        console.log("si se sube pinche feo")
         setLoading(false);
         instanceRef?.current?.update();
       }).catch((e) => console.log(e))
@@ -64,14 +68,14 @@ export default function CardSliderTall() {
 
   return (
     <>
-      <div className="navigation-wrapper mt-0 max-w-[1300px] w-[100vw]">
+      <div className="navigation-wrapper mt-0 max-w-[1100px] w-[100vw]">
         <div ref={sliderRef} className="keen-slider  ">
 
         {isLoading ? <p className="text-center text-2xl">Loading...</p> : null}
         {!data ? <p>No data</p> : null}
 
           {data.map(({ name, testimonial, id, picture }, index) =>
-            <div key={id} className={`keen-slider__slide number-slideTall${index+1}`}>
+            <div key={id} className={`keen-slider__slide max-w-[348px] number-slideTall${index+1}`}>
               <CardHome
                 src={picture.url}
                 alt={name}
