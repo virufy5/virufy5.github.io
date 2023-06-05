@@ -1,9 +1,18 @@
 import TitleText from "~/components/molecules/TitleText/TitleText"
 import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal"
-import Image1 from "~/assets/static/images/Blog Cards Images/1.jpg"
 import LinkAtom from "~/components/atoms/LinkAtom/LinkAtom"
 
-export default function blogCard() {
+export default function blogCard(
+        TitleSize,
+        TitleLabel,
+        TextSize,
+        TextLabel,
+        ContainerTitleProps,
+        ContainerTextProps,
+        TitleClassProps,
+        TextClassProps,
+        Image
+    ) {
 
     const link1 = [
         { label: 'Read Here', route: '/es/Home' }
@@ -16,7 +25,7 @@ export default function blogCard() {
                     <ImageAtomLocal
                         imagesize="pr100"
                         border=""
-                        src={Image1}
+                        src={Image}
                         alt=""
                         ImageStyleProps=""
                     />
@@ -24,14 +33,14 @@ export default function blogCard() {
                 <div className="flex mt-2 lg:mt-0 w-full lg:w-2/5 px-[20px] lg:px-[0px] items-center flex-1">
                     <div className="w-full lg:items-start text-start flex flex-col gap-5 md:pl-7">
                         <TitleText
-                            TitleSize="h3"
-                            TitleLabel="How Do We Ensure that Healthcare AI is Useful?"
-                            TextSize="normal"
-                            TextLabel="In healthcare, predictive models need to be more than good predictors. Stanford scholars suggest a framework for determining a model’s worth."
+                            TitleSize={TitleSize}
+                            TitleLabel={TitleLabel}
+                            TextSize={TextSize}
+                            TextLabel={TextLabel}
                             ContainerTitleProps=""
                             ContainerTextProps=""
-                            TextClassProps=""
                             TitleClassProps=""
+                            TextClassProps=""
                         />
                         <LinkAtom Routes={link1} Style="linkBlog" />
                     </div>

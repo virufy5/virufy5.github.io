@@ -88,7 +88,7 @@ export default function Prueba() {
         <Section6 />
 
         {/* <p className="text-gray-300">Section - 7</p> */}
-        <Section7 TitleLabel="Let’s help the world and save many lives by recording your cough" Label1="share your cough" Label2="learn more" />
+        <Section7 TitleLabel="Let’s help the world and save many lives by recording your cough" Label1="share your cough" Label2="learn more" Url1="https://virufy.org/study/welcome" Url2="/OurTechnology" />
       </div>
     </div>
   );

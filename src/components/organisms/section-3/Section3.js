@@ -43,7 +43,7 @@ export default function Section3() {
           ImageStyleProps={""}
         />
       </div>
-      <Button size="medium" type="primary" label="Our Data" path="/prueba" />
+      <Button size="medium" type="primary" label="Our Data" path="/Dashboard" />
     </div>
   )
 }

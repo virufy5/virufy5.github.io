@@ -28,7 +28,7 @@ export default function Dashboard() {
                 <div>
                     <ImageAtomLocal src={Map} imagesize="" ImageStyleProps="" alt="" border="" />
                 </div>
-                <Section7 TitleLabel="Let’s help the world and save many lives by recording your cough" Label1="share your cough" Label2="learn more" />
+                <Section7 TitleLabel="Let’s help the world and save many lives by recording your cough" Label1="share your cough" Label2="learn more" Url1="https://virufy.org/study/welcome" Url2="/OurTechnology" />
             </div>
         </div>
     );
