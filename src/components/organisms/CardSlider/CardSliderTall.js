@@ -1,5 +1,3 @@
-'use client'
-
 import CardHome from "../../molecules/CardHome/CardHomeTall";
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
@@ -41,19 +39,18 @@ export default function CardSliderTall() {
       .then((res) => res.json())
       .then((data) => {
         setData(data.docs);
-        console.log("si se sube pinche feo - use-client - 2")
         setLoading(false);
         
       }).catch((e) => console.log(e))
   }, []);
 
   useEffect(() => {
-    console.log("Response API:", data);
+    instanceRef?.current?.update();
+    console.log("Response API: REvisarasrar", data);
   }, [data])
 
   useEffect(() => {
-    instanceRef?.current?.update();
-    console.log("re")
+    
   })
 
 /*   const [Listing, setListing] = useState([]);
