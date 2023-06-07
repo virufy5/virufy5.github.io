@@ -18,6 +18,11 @@ export const ImageBorder = {
 };
 
 export const ImageSize = {
+    px30: "w-[30px] h-[18px]",
+    px20: "w-[20px] h-[20px]",
+    px50: "w-[50px] h-[50px]",
+    px64: "w-[64px] h-[64px]",
+    px90: "w-[90px] h-[90px]",
     px100: "w-[100px] h-[100px]",
     px200: "w-[200px] h-[200px]",
     px300: "w-[300px] h-[300px]",
@@ -27,10 +32,6 @@ export const ImageSize = {
     px100x48: "w-[100px] h-[48px]",
     px110x27: "w-[110px] h-[27px]",
     px103x30: "w-[103px] h-[30px]",
-    px30: "w-[30px] h-[18px]",
-    px20: "w-[20px] h-[20px]",
-    px50: "w-[50px] h-[50px]",
-    px64: "w-[64px] h-[64px]",
     medium: "w-[50%]",
     large: "w-[100%]",    
     pr100: "w-[100%]",

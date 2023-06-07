@@ -160,20 +160,20 @@ export default function OurSupporters() {
     },
   ]
 
-/*   const cardSliderData = [
-    {
-      route: Card1VH,
-      name: "Annelisse Torrez Daza",
-      textLabel: "“Having suffered through COVID myself along with all of my family in a underprivileged country, I knew instantly that I could make a difference and prevent others from facing my same fate by joining Virufy.”",
-      country: "Bolivia",
-    },
-    {
-      route: Card2VH,
-      name: "Sebastian Pedraza",
-      textLabel: "“Virufy unites the power of youth and technology to transform the world. We hope that this solution will reach the whole world and that it will become a support for doctors, especially in low-income countries.”",
-      country: "Columbia",
-    },
-  ] */
+  /*   const cardSliderData = [
+      {
+        route: Card1VH,
+        name: "Annelisse Torrez Daza",
+        textLabel: "“Having suffered through COVID myself along with all of my family in a underprivileged country, I knew instantly that I could make a difference and prevent others from facing my same fate by joining Virufy.”",
+        country: "Bolivia",
+      },
+      {
+        route: Card2VH,
+        name: "Sebastian Pedraza",
+        textLabel: "“Virufy unites the power of youth and technology to transform the world. We hope that this solution will reach the whole world and that it will become a support for doctors, especially in low-income countries.”",
+        country: "Columbia",
+      },
+    ] */
 
   return (
     <>
@@ -185,26 +185,26 @@ export default function OurSupporters() {
         Text="Companies and organizations support us from their extensive knowledge and provide us with security and certainty in what we do."
       />
 
-    <div className="flex flex-col justify-center items-center">
-      <div className="flex flex-col justify-center items-center max-w-[1440px] ">
+      <div className="flex flex-col justify-center items-center">
 
-      <OurSupportersSection/>
-        
-      <SectionOneYoungWorld />
-
-
+        <div className="flex flex-col justify-center items-center max-w-[1440px] ">
+          <OurSupportersSection />
+        </div>
+        <div className="flex flex-col justify-center items-center w-[100%] bg-[#F9FAFB]">
+        <div className="flex flex-col justify-center items-center max-w-[1440px] bg-[#F9FAFB] mt-[190px] pb-[362px]">
+          <SectionOneYoungWorld />
 
           <Title
             H="h2"
             Text="Why One Young World?"
-            TitleClassProps="text-center mt-4"
+            TitleClassProps="text-center mt-4 mb-[48px]"
           />
           <CardLarge
             CardsData={CardsData}
             CardClassProps="flex flex-row text-center items-center justify-center sm:w-1/1 md:w-1/2 lg:w-1/2 xl:w-1/2 mb-4 mt-4"
           />
 
-          <TitleText 
+          <TitleText
             TitleSize={"h2"}
             TitleLabel={"Volunteer Stories"}
             TitleClassProps={"text-center mt-32 "}
@@ -212,21 +212,23 @@ export default function OurSupporters() {
             TextLabel={"Our organization structure matches One Young World with youth ambassadors leading operations in each country, with regional coordinating ambassadors."}
             TextClassProps={"m-10 "}
             ContainerTitleProps
-            ContainerTextProps            
+            ContainerTextProps="max-w-[800px] mb-[80px]"
           />
 
           <CardSliderTall />
-
+        </div>
+        </div>
+        <div className="flex flex-col justify-center items-center max-w-[1440px] my-[80px]">
           <Title
             H="h2"
             Text="Team Leads"
-            TitleClassProps="text-center mt-4"
+            TitleClassProps="text-center mt-[80px]"
           />
           <Card
             CardsData={CardsDataTL}
-            CardClassProps="flex flex-col text-center items-center w-[348px] sm:w-1/1 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-4 mt-4 rounded-[20px] m-[5px] h-[350px] shadow-xl"
+            CardClassProps="flex flex-col text-center items-center w-[348px] sm:w-1/1 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-4 mt-4 rounded-[20px] m-[15px] h-[350px] shadow-xl"
           />
-         </div>
+        </div>
       </div>
     </>
   )

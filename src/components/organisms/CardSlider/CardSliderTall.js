@@ -46,12 +46,8 @@ export default function CardSliderTall() {
 
   useEffect(() => {
     instanceRef?.current?.update();
-    console.log("Response API: REvisarasrar", data);
+    //console.log("Response API: ", data);
   }, [data])
-
-  useEffect(() => {
-    
-  })
 
 /*   const [Listing, setListing] = useState([]);
   useEffect(() => {
