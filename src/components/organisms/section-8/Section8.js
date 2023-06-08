@@ -35,10 +35,8 @@ export default function Section8({
         TitleClassProps={""}
         TextClassProps={""}
       />
-      <div className="flex flex-col xl:flex-row mb-4 text-center items-center w-[100%] justify-center mt-5 w-100">
-        <div className="
-					flex flex-col text-center items-center w-[250px] sm:w-[250px] md:w-[250px] lg:w-[447px] xl:w-[447px] mt-0 
-				">
+      <div className="flex flex-col xl:flex-row mb-4 text-center xl:items-start items-center w-[100%] justify-center mt-[80px] w-100">
+        <div className="flex flex-col text-center items-center w-[250px] sm:w-[250px] md:w-[250px] lg:w-[447px] xl:w-[447px] mt-0">
           <ImageAtomLocal
             imagesize={sizeImg}
             border={border}
@@ -51,15 +49,13 @@ export default function Section8({
             TitleLabel={TitleLabel1}
             TextSize={TextSize}
             TextLabel={TextLabel1}
-            ContainerTitleProps={""}
-            ContainerTextProps={ContainerTextProps}
+            ContainerTitleProps={"mt-[32px]"}
+            ContainerTextProps={`mt-[16px] mb-[40px] ${ContainerTextProps}`}
             TitleClassProps={""}
-            TextClassProps={""}            
+            TextClassProps={"text-[#6D7280]"}            
           />
         </div>
-        <div className="
-					flex flex-col text-center items-center w-[250px] sm:w-[250px] md:w-[250px] lg:w-[447px] xl:w-[447px] mb-4 mt-0 ml-3 mr-3
-				">
+        <div className="flex flex-col text-center items-center w-[250px] sm:w-[250px] md:w-[250px] lg:w-[447px] xl:w-[447px] mb-4 mt-0 ml-3 mr-3">
           <ImageAtomLocal
             imagesize={sizeImg}
             border={border}
@@ -72,15 +68,13 @@ export default function Section8({
             TitleLabel={TitleLabel2}
             TextSize={TextSize}
             TextLabel={TextLabel2}
-            ContainerTitleProps={""}
-            ContainerTextProps={ContainerTextProps}
+            ContainerTitleProps={"mt-[32px]"}
+            ContainerTextProps={` mt-[16px] mb-[40px] ${ContainerTextProps}`}
             TitleClassProps={""}
-            TextClassProps={""}
+            TextClassProps={"text-[#6D7280]"}
           />
         </div>
-        <div className="
-					flex flex-col text-center items-center w-[250px] sm:w-[250px] md:w-[250px] lg:w-[447px] xl:w-[447px] mb-4 mt-0
-				">
+        <div className="flex flex-col text-center items-center w-[250px] sm:w-[250px] md:w-[250px] lg:w-[447px] xl:w-[447px] mb-4 mt-0">
           <ImageAtomLocal
             imagesize={sizeImg}
             border={border}
@@ -93,14 +87,14 @@ export default function Section8({
             TitleLabel={TitleLabel3}
             TextSize={TextSize}
             TextLabel={TextLabel3}
-            ContainerTitleProps={""}
-            ContainerTextProps={ContainerTextProps}
+            ContainerTitleProps={"mt-[32px]"}
+            ContainerTextProps={`mt-[16px] mb-[40px] ${ContainerTextProps}`}
             TitleClassProps={""}
-            TextClassProps={""}
+            TextClassProps={"text-[#6D7280]"}
           />
         </div>
       </div>
-      <div className="ml-[5vw] mr-[2.5vw] mt-5 pt-5 text-center">
+      <div className="pt-5 text-center">
         <Button
           size="medium"
           type="primary"
