@@ -107,7 +107,7 @@ export default function SectionJoinOurTeam({
                                     TitleSize=""
                                 />
                                 <div className="flex-col justify-center mb-14">
-                                    <Button size="medium" type="primary" path="#" label="Become a partner" />
+                                    <Button size="medium" type="primary" path="/OurPeople1" label="Become a partner" />
                                 </div>
                             </div>
                         </div>

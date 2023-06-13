@@ -39,7 +39,7 @@ export default function SectionTellYourStoryGetInvolved({
                 </div>
             </div>
             <div className="flex-col justify-center mb-14">
-                <Button size="medium" type="primary" path="#" label="Tell us your story" />
+                <Button size="medium" type="primary" path="/TellYourStory" label="Tell us your story" />
             </div>
             <div className="w-full md:hidden flex items-center justify-end">
                 <ImageAtomLocal
