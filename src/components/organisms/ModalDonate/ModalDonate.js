@@ -11,7 +11,7 @@ const [showModal, setShowModal] = React.useState(false);
 
     return (
 
-<div onClick={() => setShowModal(false)}>
+<div >
                 {showModal ? (
                     <>
                         <div data-controls-modal="your_div_id" data-backdrop="static" data-keyboard="true"
