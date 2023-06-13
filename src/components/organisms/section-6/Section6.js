@@ -28,7 +28,7 @@ export default function Section6() {
         alt={""}
         ImageStyleProps={""}
       />
-      <Button size="large" type="primary" path="#" label="Become  a supporter" />
+      <Button size="large" type="primary" path="/GetInvolved" label="Become  a supporter" />
       </div>
     </div>
   )

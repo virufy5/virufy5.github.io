@@ -54,6 +54,13 @@ export default function Navbar() {
                                     <div className="flex w-full border-b border-solid border-slate-200 rounded-t">
 
                                         <ImageAtomLocal imagesize="pr100" border="none" src={DonateModalImg} alt="Logo Virufy" ImageStyleProps="" />
+                                        <div className="absolute p-6 flex flex-col items-end w-full">
+                                            <button
+                                                className="bg-white rounded-full text-black px-1 py-2 hover:bg-gray-300 outline-none ease-linear transition-all duration-150 w-[35px] h-[35px] flex justify-center shadow-xl font-bold"
+                                                type="button"
+                                                onClick={() => setShowModal(false)}
+                                            >X                                            </button>
+                                        </div>
 
                                     </div>
                                     {/*body*/}
@@ -92,10 +99,10 @@ export default function Navbar() {
             <div className="justify-between px-3 xl:mx-9 lg:mx-4 lg:max-w-8lg lg:items-center lg:flex lg:px-2">
                 <div>
                     <div className="flex items-center justify-between py-3 lg:py-5 lg:block">
-                        <Link href="/Home" className="flex lg:hidden">
+                        <Link href="/home" className="flex lg:hidden">
                             <ImageAtomLocal imagesize="px100x48" border="none" src={VirufyLogo} alt="Logo Virufy" ImageStyleProps="" />
                         </Link>
-                        <Link href="/Home" className="hidden lg:flex">
+                        <Link href="/home" className="hidden lg:flex">
                             <ImageAtomLocal imagesize="px160" border="none" src={VirufyLogo} alt="Logo Virufy" ImageStyleProps="" />
                         </Link>
                         <li className="text-[#393939] flex lg:hidden">
@@ -123,22 +130,22 @@ export default function Navbar() {
                         <ul className="items-center justify-center space-y-8 lg:flex lg:space-x-5 xl:space-x-9 lg:space-y-0">
                             <li className="text-[#393939]">
                                 <div>
-                                    <a className="peer py-2 text-[#393939]" href="#">Our Technology</a>
+                                    <Link className="peer py-2 text-[#393939]" href="/OurTechnology">Our Technology</Link>
                                     <div className="hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg fixed">
-                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/HowItWorks">How It Works</a>
-                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="https://virufy.org/study/welcome">Share Your Cough</a>
-                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/Home">Our Data</a>
-                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/OurResearch">Our Research</a>
+                                        <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/HowItWorks">How It Works</Link>
+                                        <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="https://virufy.org/study/welcome">Share Your Cough</Link>
+                                        <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/Dashboard">Our Data</Link>
+                                        <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/OurResearch">Our Research</Link>
                                     </div>
                                 </div>
                             </li>
                             <li className="text-[#393939]">
                                 <div>
-                                    <a className="peer py-2 text-[#393939]" href="/es/GetInvolved">Get Involved</a>
+                                    <Link className="peer py-2 text-[#393939]" href="/GetInvolved">Get Involved</Link>
                                     <div className="hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg fixed">
-                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/Home">Donate</a>
-                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/JobListing">Join Our Team</a>
-                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/TellYourStory">Tell Your Story</a>
+                                        <Link onClick={() => setShowModal(true)} className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="#">Donate</Link>
+                                        <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/JobListing">Join Our Team</Link>
+                                        <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/TellYourStory">Tell Your Story</Link>
                                     </div>
                                 </div>
                             </li>
@@ -163,7 +170,7 @@ export default function Navbar() {
                                 <Select Text="" Options={options} optionsIcons={optionsIcons} />
                             </li>
                             <li className="text-[#393939] hidden lg:flex">
-                                <Button size="small" type="secondary" path="#" label="Join us" />
+                                <Button size="small" type="secondary" path="/JobListing" label="Join us" />
                             </li>
                             <li className="text-[#393939]">
                                 <a onClick={() => setShowModal(true)} ><Button size="small" type="primary" path="#" label="Donate" /></a>

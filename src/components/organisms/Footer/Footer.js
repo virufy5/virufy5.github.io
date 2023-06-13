@@ -9,10 +9,10 @@ import Text from "~/components/atoms/Text/Text";
 export default function Footer() {
 
     const links1 = [
-        { label: 'Our Technology', route: '/es/Home' },
-        { label: 'Get Involved', route: '/es/Home' },
-        { label: 'About', route: '/es/Home' },
-        { label: 'FAQ', route: '/es/Home' }
+        { label: 'Our Technology', route: '/OurTechnology' },
+        { label: 'Get Involved', route: '/GetInvolved' },
+        { label: 'About', route: '/AboutUs' },
+        { label: 'FAQ', route: '/FAQ' }
     ]
 
     const links2 = [
@@ -68,16 +68,16 @@ export default function Footer() {
                         </li>
                     </ul>
                     <div className="flex justify-center gap-7">
-                        <Link href="/" className="lg:hidden">
+                        <Link href="https://www.instagram.com/virufy/" className="lg:hidden">
                             <ImageAtomLocal src={Instagram} imagesize="px20" alt="Virufy Logo" border="" ImageStyleProps="" />
                         </Link>
-                        <Link href="/" className="lg:hidden">
+                        <Link href="https://www.linkedin.com/company/virufy/" className="lg:hidden">
                             <ImageAtomLocal src={Linkedin} imagesize="px20" alt="Virufy Logo" border="" ImageStyleProps="" />
                         </Link>
-                        <Link href="/" className="hidden lg:flex">
+                        <Link href="https://www.instagram.com/virufy/" className="hidden lg:flex">
                             <ImageAtomLocal src={Instagram} imagesize="px30" alt="Virufy Logo" border="" ImageStyleProps="" />
                         </Link>
-                        <Link href="/" className="hidden lg:flex">
+                        <Link href="https://www.linkedin.com/company/virufy/" className="hidden lg:flex">
                             <ImageAtomLocal src={Linkedin} imagesize="px30" alt="Virufy Logo" border="" ImageStyleProps="" />
                         </Link>
                     </div>

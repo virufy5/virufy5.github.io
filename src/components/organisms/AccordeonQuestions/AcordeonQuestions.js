@@ -32,6 +32,9 @@ export default function AcordeonQuestions({
     console.log("Response API:", data);
   }, [data])
 
+  /* const filteredData = data.filter (faqs => faqs.category === Category);
+  setData(filteredData) */
+
   return (
     <div className="mb-32">
 
