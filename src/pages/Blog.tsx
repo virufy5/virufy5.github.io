@@ -1,6 +1,6 @@
 import VirufyHealtSection from "~/components/organisms/virufyHealthSection/VirufyHealtSection";
 import GetTheLatestVirufyBlog from "~/components/organisms/GetTheLatestVirufyBlog/GetTheLatestVirufyBlog";
-import BlogCard from "../components/organisms/BlogCard/BlogCard";
+import BlogCard from "../components/organisms/BlogCard/blogCard";
 
 export default function Blog() {
 
