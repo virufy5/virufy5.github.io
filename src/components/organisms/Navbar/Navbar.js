@@ -156,7 +156,7 @@ export default function Navbar() {
                                         <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/OurPeople1">Our people</a>
                                         <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/OurSupporters">Our Supporters</a>
                                         <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/Blog">Blog</a>
-                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/Home">Publications</a>
+                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/OurPublications">Publications</a>
                                     </div>
                                 </div>
                             </li>

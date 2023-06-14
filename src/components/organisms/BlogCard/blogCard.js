@@ -6,7 +6,7 @@ import LinkAtom from "~/components/atoms/LinkAtom/LinkAtom"
 export default function BlogCard() {
 
     const link1 = [
-        { label: 'Read Here', route: '/es/Home' }
+        { label: 'Read Here', route: '/es/DetailBlog' }
     ]
 
     const [data, setData] = useState([]);
