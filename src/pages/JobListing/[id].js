@@ -1,7 +1,6 @@
 import { useRouter } from "next/router"
 import React, { useEffect, useState } from 'react'
 import Title from '~/components/atoms/Title/Title'
-import Text from "~/components/atoms/Text/Text";
 import Button from '~/components/atoms/button/Button';
 
 const IdJob = () => {
@@ -108,6 +107,7 @@ const IdJob = () => {
 
   return (
     <>
+      {isLoading ? <p className="text-center text-2xl">Loading...</p> : null}
       <div className='max-w-[1440px] mx-auto flex'>
         <div className="flex flex-col max-w-[1100px] items-center">
           <div className="flex mt-10 lg:mt-20 w-full px-2 items-center flex-1">
