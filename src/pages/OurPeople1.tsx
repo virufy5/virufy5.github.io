@@ -207,7 +207,7 @@ export default function OurPeople1() {
             TitleLabel2="Amil Khanzada"
             TextLabel="MBA Candidate, Haas School of Business Master of Engineering Candidate, Department of Electrical Engineering and Computer Sciences"
             labelButton="read more"
-            buttonRoute="/OurPeople1"
+            buttonRoute="/OurPeople2"
             ContainerTitleProps
             ContainerTextProps
             border
