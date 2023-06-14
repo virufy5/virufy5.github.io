@@ -32,6 +32,7 @@ import Card22 from "~/assets/static/images/ourPeople/card22.jpg"
 import Card23 from "~/assets/static/images/ourPeople/card23.jpg"
 import ImageAmil from "~/assets/static/images/ourPeople/Amil.png"
 import ImageinsText from "~/assets/static/images/textInImage/OurPeople.jpg"
+import Section4 from "~/components/organisms/section-4/Section4"
 
 export default function OurPeople1() {
 
@@ -199,23 +200,19 @@ export default function OurPeople1() {
               TitleClassProps={""}
             />
           </div>
-          <Section1
-            //TitleText
-            TitleSize="h2"
-            TitleLabel="Amil Khanzada"
-            TextSize="normal"
+          <Section4
+            TitleSize1="h1"
+            TitleSize2="h3"
+            TitleLabel1="Meet Our Founder"
+            TitleLabel2="Amil Khanzada"
             TextLabel="MBA Candidate, Haas School of Business Master of Engineering Candidate, Department of Electrical Engineering and Computer Sciences"
-            ContainerTitleProps={""}
-            ContainerTextProps="items-start h-[100%] mr-2"
-            //Image
-            sizeImg="pr70"
-            border="radious"
-            route={ImageAmil}
-            alt="imagen de algo"
-            //Buttons
-            buttons={buttons}
-            ImageStyleProps={""}
-          />
+            labelButton="read more"
+            buttonRoute="/OurPeople1"
+            ContainerTitleProps
+            ContainerTextProps
+            border
+          alt
+        />
 
           <Title
             H="h1"
