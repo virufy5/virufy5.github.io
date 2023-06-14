@@ -1,6 +1,6 @@
-import VirufyHealtSection from "~/components/organisms/virufyHealthSection/VirufyHealtSection"
-import BlogCard from "~/components/organisms/BlogCard/blogCard"
+import VirufyHealtSection from "~/components/organisms/virufyHealthSection/VirufyHealtSection";
 import GetTheLatestVirufyBlog from "~/components/organisms/GetTheLatestVirufyBlog/GetTheLatestVirufyBlog";
+import BlogCard from "../components/organisms/BlogCard/BlogCard";
 
 export default function Blog() {
 
@@ -9,7 +9,7 @@ export default function Blog() {
             <VirufyHealtSection />
             
                 <div>
-                    <BlogCard />
+                    <BlogCard/>
                 </div>
 
             <GetTheLatestVirufyBlog />

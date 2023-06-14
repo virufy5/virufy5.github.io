@@ -37,6 +37,8 @@ export default function Footer() {
         { label: 'Code of Conduct', route: '#' },
     ]
 
+    const [showModalCookiesSetting, setShowModalCookiesSetting] = React.useState(false);
+
     const [showModalCookiesPolicy, setShowModalCookiesPolicy] = React.useState(false);
 
     const [showModalMyInformation, setShowModalMyInformation] = React.useState(false);
@@ -45,6 +47,154 @@ export default function Footer() {
 
     return (
         <>
+
+            <div>
+                {showModalCookiesSetting ? (
+                    <>
+                        <div
+                            className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+                        >
+                            <div className="relative mx-auto md:w-[500px] h-[500px] w-[300px] lg:w-[1000px]">
+                                {/*content*/}
+                                <div className="border-0 rounded-xl shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                                    {/*header*/}
+                                    <div className="flex w-full border-b border-solid border-slate-200 rounded-t">
+                                        <Title
+                                            H="h5Modals"
+                                            Text=""
+                                            TitleClassProps={"mt-[30px] mx-auto mb-[30px]"}
+                                        />
+                                        <div className="absolute p-6 flex flex-col items-end w-full">
+
+                                            <button
+                                                className="bg-gray-300 rounded-full text-black px-1 py-2 hover:bg-gray-400 outline-none ease-linear transition-all duration-150 w-[35px] h-[35px] flex justify-center shadow-xl font-bold"
+                                                type="button"
+                                                onClick={() => setShowModalCookiesSetting(false)}
+                                            >X</button>
+                                        </div>
+
+                                    </div>
+                                    {/*body*/}
+
+                                    <div className='w-full flex items-center justify-center'>
+
+                                        <div className='w-full px-0 '>
+                                            <div>
+                                                <details className="w-full  bg-white cursor-pointer mb-3">
+                                                    <summary className="bg-white text-dark flex justify-between px-4 py-3 after:content-['+'] mt-3 font-bold">Argentina</summary>
+                                                    <hr className="border-1 border-gray-400 mt-3" />
+                                                    <p className="px-4 py-3  mt-3">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elit ipsum, fermentum a risus at, varius luctus nisl. Curabitur semper.
+                                                    </p>
+                                                </details>
+
+                                                <hr className="border-1 border-gray-400" />
+                                                <details className="w-full  bg-white cursor-pointer mb-3">
+                                                    <summary className="bg-white text-dark flex justify-between px-4 py-3 after:content-['+'] mt-3 font-bold">Bolivia</summary>
+                                                    <hr className="border-1 border-gray-400 mt-3" />
+                                                    <p className="px-4 py-3  mt-3">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elit ipsum, fermentum a risus at, varius luctus nisl. Curabitur semper.
+                                                    </p>
+                                                </details>
+
+                                                <hr className="border-1 border-gray-400" />
+                                                <details className="w-full  bg-white cursor-pointer mb-3">
+                                                    <summary className="bg-white text-dark flex justify-between px-4 py-3 after:content-['+'] mt-3 font-bold">Brazil</summary>
+                                                    <hr className="border-1 border-gray-400 mt-3" />
+                                                    <p className="px-4 py-3  mt-3">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elit ipsum, fermentum a risus at, varius luctus nisl. Curabitur semper.
+                                                    </p>
+                                                </details>
+
+                                                <hr className="border-1 border-gray-400" />
+                                                <details className="w-full  bg-white cursor-pointer mb-3">
+                                                    <summary className="bg-white text-dark flex justify-between px-4 py-3 after:content-['+'] mt-3 font-bold">Columbia</summary>
+                                                    <hr className="border-1 border-gray-400 mt-3" />
+                                                    <p className="px-4 py-3  mt-3">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elit ipsum, fermentum a risus at, varius luctus nisl. Curabitur semper.
+                                                    </p>
+                                                </details>
+
+                                                <hr className="border-1 border-gray-400" />
+                                                <details className="w-full  bg-white cursor-pointer mb-3">
+                                                    <summary className="bg-white text-dark flex justify-between px-4 py-3 after:content-['+'] mt-3 font-bold">Greece</summary>
+                                                    <hr className="border-1 border-gray-400 mt-3" />
+                                                    <p className="px-4 py-3  mt-3">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elit ipsum, fermentum a risus at, varius luctus nisl. Curabitur semper.
+                                                    </p>
+                                                </details>
+
+                                                <hr className="border-1 border-gray-400" />
+                                                <details className="w-full  bg-white cursor-pointer mb-3">
+                                                    <summary className="bg-white text-dark flex justify-between px-4 py-3 after:content-['+'] mt-3 font-bold">Mexico</summary>
+                                                    <hr className="border-1 border-gray-400 mt-3" />
+                                                    <p className="px-4 py-3  mt-3">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elit ipsum, fermentum a risus at, varius luctus nisl. Curabitur semper.
+                                                    </p>
+                                                </details>
+
+                                                <hr className="border-1 border-gray-400" />
+                                                <details className="w-full  bg-white cursor-pointer mb-3">
+                                                    <summary className="bg-white text-dark flex justify-between px-4 py-3 after:content-['+'] mt-3 font-bold">Peru</summary>
+                                                    <hr className="border-1 border-gray-400 mt-3" />
+                                                    <p className="px-4 py-3  mt-3">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elit ipsum, fermentum a risus at, varius luctus nisl. Curabitur semper.
+                                                    </p>
+                                                </details>
+
+                                                <hr className="border-1 border-gray-400" />
+                                                <details className="w-full  bg-white cursor-pointer mb-3">
+                                                    <summary className="bg-white text-dark flex justify-between px-4 py-3 after:content-['+'] mt-3 font-bold">United States</summary>
+                                                    <hr className="border-1 border-gray-400 mt-3" />
+                                                    <p className="px-4 py-3  mt-3">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elit ipsum, fermentum a risus at, varius luctus nisl. Curabitur semper.
+                                                    </p>
+                                                </details>
+
+                                                <hr className="border-1 border-gray-400" />
+                                                <details className="w-full  bg-white cursor-pointer mb-3">
+                                                    <summary className="bg-white text-dark flex justify-between px-4 py-3 after:content-['+'] mt-3 font-bold">Europe</summary>
+                                                    <hr className="border-1 border-gray-400 mt-3" />
+                                                    <p className="px-4 py-3  mt-3">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elit ipsum, fermentum a risus at, varius luctus nisl. Curabitur semper.
+                                                    </p>
+                                                </details>
+
+                                                <hr className="border-1 border-gray-400" />
+                                                <details className="w-full  bg-white cursor-pointer mb-3">
+                                                    <summary className="bg-white text-dark flex justify-between px-4 py-3 after:content-['+'] mt-3 font-bold">Japan</summary>
+                                                    <hr className="border-1 border-gray-400 mt-3" />
+                                                    <p className="px-4 py-3  mt-3">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elit ipsum, fermentum a risus at, varius luctus nisl. Curabitur semper.
+                                                    </p>
+                                                </details>
+
+                                                <hr className="border-1 border-gray-400" />
+                                                <details className="w-full  bg-white cursor-pointer mb-3">
+                                                    <summary className="bg-white text-dark flex justify-between px-4 py-3 after:content-['+'] mt-3 font-bold">Other Countries</summary>
+                                                    <hr className="border-1 border-gray-400 mt-3" />
+                                                    <p className="px-4 py-3  mt-3">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse elit ipsum, fermentum a risus at, varius luctus nisl. Curabitur semper.
+                                                    </p>
+                                                </details>
+
+                                                <hr className="border-1 border-gray-400" />
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {/*footer*/}
+
+                                </div>
+                            </div>
+                        </div>
+                        <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+                    </>
+                ) : null}
+            </div>
+
+            {/* _____________________ */}
+
             <div>
                 {showModalPrivacyPolicy ? (
                     <>
@@ -336,7 +486,7 @@ export default function Footer() {
                                                         For users located in Colombia:
                                                         - This cookie policy will be treated under Colombian law 1581 of 2012.
                                                         For users located in the United Mexican States:
-                                                        - This cookie policy will be considered part of the Virufy Privacy Notice and will be treated under the Federal Law on Protection of Personal Data Held by Private Parties. Whenever reference is made to "Privacy Policy" in the present, the term "Privacy Notice" is understood interchangeably.
+                                                        - This cookie policy will be considered part of the Virufy Privacy Notice and will be treated under the Federal Law on Protection of Personal Data Held by Private Parties. Whenever reference is made to  in the present, the term  is understood interchangeably.
                                                         For users located in Bolivia:
                                                         - This cookie policy will be treated under Bolivian Law
                                                         For users located in Peru:
@@ -364,7 +514,7 @@ export default function Footer() {
                                                         For users located in Colombia:
                                                         - This cookie policy will be treated under Colombian law 1581 of 2012.
                                                         For users located in the United Mexican States:
-                                                        - This cookie policy will be considered part of the Virufy Privacy Notice and will be treated under the Federal Law on Protection of Personal Data Held by Private Parties. Whenever reference is made to "Privacy Policy" in the present, the term "Privacy Notice" is understood interchangeably.
+                                                        - This cookie policy will be considered part of the Virufy Privacy Notice and will be treated under the Federal Law on Protection of Personal Data Held by Private Parties. Whenever reference is made to  in the present, the term  is understood interchangeably.
                                                         For users located in Bolivia:
                                                         - This cookie policy will be treated under Bolivian Law
                                                         For users located in Peru:
@@ -392,7 +542,7 @@ export default function Footer() {
                                                         For users located in Colombia:
                                                         - This cookie policy will be treated under Colombian law 1581 of 2012.
                                                         For users located in the United Mexican States:
-                                                        - This cookie policy will be considered part of the Virufy Privacy Notice and will be treated under the Federal Law on Protection of Personal Data Held by Private Parties. Whenever reference is made to "Privacy Policy" in the present, the term "Privacy Notice" is understood interchangeably.
+                                                        - This cookie policy will be considered part of the Virufy Privacy Notice and will be treated under the Federal Law on Protection of Personal Data Held by Private Parties. Whenever reference is made to  in the present, the term  is understood interchangeably.
                                                         For users located in Bolivia:
                                                         - This cookie policy will be treated under Bolivian Law
                                                         For users located in Peru:
@@ -421,7 +571,7 @@ export default function Footer() {
                                                         For users located in Colombia:
                                                         - This cookie policy will be treated under Colombian law 1581 of 2012.
                                                         For users located in the United Mexican States:
-                                                        - This cookie policy will be considered part of the Virufy Privacy Notice and will be treated under the Federal Law on Protection of Personal Data Held by Private Parties. Whenever reference is made to "Privacy Policy" in the present, the term "Privacy Notice" is understood interchangeably.
+                                                        - This cookie policy will be considered part of the Virufy Privacy Notice and will be treated under the Federal Law on Protection of Personal Data Held by Private Parties. Whenever reference is made to  in the present, the term  is understood interchangeably.
                                                         For users located in Bolivia:
                                                         - This cookie policy will be treated under Bolivian Law
                                                         For users located in Peru:
@@ -451,7 +601,7 @@ export default function Footer() {
                                                         For users located in Colombia:
                                                         - This cookie policy will be treated under Colombian law 1581 of 2012.
                                                         For users located in the United Mexican States:
-                                                        - This cookie policy will be considered part of the Virufy Privacy Notice and will be treated under the Federal Law on Protection of Personal Data Held by Private Parties. Whenever reference is made to "Privacy Policy" in the present, the term "Privacy Notice" is understood interchangeably.
+                                                        - This cookie policy will be considered part of the Virufy Privacy Notice and will be treated under the Federal Law on Protection of Personal Data Held by Private Parties. Whenever reference is made to  in the present, the term  is understood interchangeably.
                                                         For users located in Bolivia:
                                                         - This cookie policy will be treated under Bolivian Law
                                                         For users located in Peru:
@@ -481,7 +631,7 @@ export default function Footer() {
                                                         For users located in Colombia:
                                                         - This cookie policy will be treated under Colombian law 1581 of 2012.
                                                         For users located in the United Mexican States:
-                                                        - This cookie policy will be considered part of the Virufy Privacy Notice and will be treated under the Federal Law on Protection of Personal Data Held by Private Parties. Whenever reference is made to "Privacy Policy" in the present, the term "Privacy Notice" is understood interchangeably.
+                                                        - This cookie policy will be considered part of the Virufy Privacy Notice and will be treated under the Federal Law on Protection of Personal Data Held by Private Parties. Whenever reference is made to in the present, the term  is understood interchangeably.
                                                         For users located in Bolivia:
                                                         - This cookie policy will be treated under Bolivian Law
                                                         For users located in Peru:
@@ -556,13 +706,11 @@ export default function Footer() {
                         <li className="flex w-full items-center justify-center my-6 underline">
                             <LinkAtom Routes={links1} Style="linkFooter" />
                         </li>
+
                         <li className="flex w-full items-center justify-center my-6 underline">
                             <Link onClick={() => setShowModalCookiesPolicy(true)} href="">
                                 <LinkAtom Routes={links2} Style="linkFooter" />
                             </Link>
-
-                            <LinkAtom Routes={links3} Style="linkFooter" />
-
                             <Link onClick={() => setShowModalPrivacyPolicy(true)} href="">
                                 <LinkAtom Routes={links4} Style="linkFooter" />
                             </Link>
@@ -570,6 +718,7 @@ export default function Footer() {
                             <Link onClick={() => setShowModalMyInformation(true)} href="">
                                 <LinkAtom Routes={links5} Style="linkFooter" />
                             </Link>
+
                             <LinkAtom Routes={links6} Style="linkFooter" />
                         </li>
                     </ul>
