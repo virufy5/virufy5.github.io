@@ -46,9 +46,9 @@ export default function JobList() {
             H={"h4"}
           />
 
-          {positions.map(({ title, category }) => (
+          {positions.map(({ title, id }) => (
             <>
-              <div key={category.id} className='flex w-[100%] mb-[37px]'>
+              <div key={id} className='flex w-[100%] mb-[37px]'>
                 <div className='flex flex-1 justify-start items-center'>
                   <Text
                     TextClassProps={""}
@@ -61,7 +61,7 @@ export default function JobList() {
                   <Button
                     size="medium"
                     type="primary"
-                    path={`/JobListing/${category.id}`}
+                    path={`/JobListing/${id}`}
                     label="APPLY"
                   />
                 </div>

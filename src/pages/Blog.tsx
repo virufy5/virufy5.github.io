@@ -1,5 +1,5 @@
 import VirufyHealtSection from "~/components/organisms/virufyHealthSection/VirufyHealtSection"
-import BlogCard from "~/components/organisms/BlogCard/BlogCard"
+import BlogCard from "~/components/organisms/BlogCard/blogCard"
 import GetTheLatestVirufyBlog from "~/components/organisms/GetTheLatestVirufyBlog/GetTheLatestVirufyBlog";
 
 export default function Blog() {
