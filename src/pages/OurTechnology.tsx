@@ -31,7 +31,7 @@ export default function OurTechnology() {
             border="none"
             route={imageOurResearch}
             alt="imagen de algo"
-            buttons
+            buttons={false}
             ImageStyleProps={""}
           />
 

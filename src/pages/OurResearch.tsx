@@ -52,8 +52,8 @@ export default function OurResearch() {
             sizeImg="pr90"
             border="none"
             route={imageOurResearch}
+            buttons={false}
             alt="imagen de algo"
-            buttons
             ImageStyleProps={""}
           />
 
