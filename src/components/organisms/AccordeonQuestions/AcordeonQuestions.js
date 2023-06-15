@@ -64,9 +64,6 @@ export default function AcordeonQuestions({
   return (
     <div className="mb-32">
 
-      <p className="text-2xl"> Prop desde cards:  {Category} </p>
-      <p className="text-2xl"> Prop desde buscador: {TextSearch} </p>
-
       {data.map(({ category, faqs, id }) => (
         <div key={id}>
 
