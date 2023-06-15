@@ -97,7 +97,6 @@ const IdJob = () => {
       .then((data) => {
         setData(data);
         setLoading(false);
-
       }).catch((e) => console.log(e))
   }, []);
 
@@ -171,7 +170,7 @@ const IdJob = () => {
           </div>
           <div className="px-12 w-full flex flex-col mb-[30px] text-start m-0">
 
-          {data?.desiredSkills[0]?.children?.map(({ children }, index) => (
+            {data?.desiredSkills[0]?.children?.map(({ children }, index) => (
               <li key={index}>
                 {children[0].text}
               </li>
@@ -189,13 +188,13 @@ const IdJob = () => {
           </div>
           <div className="px-12 w-full flex flex-col mb-[30px] text-start m-0">
 
-          {data?.hours[0]?.children?.map(({ children }, index) => (
+            {data?.hours[0]?.children?.map(({ children }, index) => (
               <li key={index}>
                 {children[0].text}
               </li>
             ))}
 
-          </div>          
+          </div>
           <div className="flex mt-10 lg:mt-10 w-full px-2 items-center flex-1">
             <div className="px-10 w-full lg:items-start text-start flex flex-col gap-5">
               <Title

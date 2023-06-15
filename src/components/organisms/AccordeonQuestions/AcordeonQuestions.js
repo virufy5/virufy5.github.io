@@ -29,20 +29,43 @@ export default function AcordeonQuestions({
   }, []);
 
   useEffect(() => {
+    setLoading(true);
+    fetch(`/api/faqs?where[category.title][contains]=${Category}`)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data)
+        setData(_formatPositions(data.docs));
+        setLoading(false);
+      }).catch((e) => console.log(e))
+  }, [Category]);
+
+  useEffect(() => {
+    setLoading(true);
+    fetch(`/api/faqs?where[title][contains]=${TextSearch}`)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data)
+        setData(_formatPositions(data.docs));
+        setLoading(false);
+      }).catch((e) => console.log(e))
+  }, [TextSearch]);
+
+
+  useEffect(() => {
     console.log("Response API:", data);
   }, [data])
 
   /* const filteredData = data.filter (faqs => faqs.category === Category);
   setData(filteredData) */
 
+  //    <p className="text-2xl"> Prop desde cards:  {Category} </p>
+  //    <p className="text-2xl"> Prop desde buscador: {TextSearch} </p>
+
   return (
     <div className="mb-32">
 
       <p className="text-2xl"> Prop desde cards:  {Category} </p>
       <p className="text-2xl"> Prop desde buscador: {TextSearch} </p>
-
-      {isLoading ? <p>Loading...</p> : null}
-      {!data ? <p>No data</p> : null}
 
       {data.map(({ category, faqs, id }) => (
         <div key={id}>

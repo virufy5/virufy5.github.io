@@ -88,8 +88,6 @@ export default function FAQ() {
           TextSearch={text}
         />
 
-
-
       </div>
     </div>
   )
