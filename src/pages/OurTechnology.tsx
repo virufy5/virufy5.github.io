@@ -33,6 +33,7 @@ export default function OurTechnology() {
             alt="imagen de algo"
             buttons={false}
             ImageStyleProps={""}
+            buttonTechnology={true}
           />
 
           <Section8

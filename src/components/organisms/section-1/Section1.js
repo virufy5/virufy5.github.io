@@ -14,6 +14,7 @@ export default function Section1({
   route,
   alt,
   buttons,
+  buttonTechnology,
   ImageStyleProps
 }) {
   return (
@@ -67,6 +68,15 @@ export default function Section1({
 
           </div> : null
         }
+
+        {buttonTechnology ?
+          <div
+            className="ml-[5vw] mt-3 flex items-center flex-col lg:flex-row gap-3 lg:text-left text-center"
+          >
+            <Button size="medium" type="primary" path="/OurResearch" label="SEE OUR RESEARCH" />
+
+          </div> : null
+        }        
       </div>
       <div
         className="flex justify-center text-center

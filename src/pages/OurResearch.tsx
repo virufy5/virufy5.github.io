@@ -53,6 +53,7 @@ export default function OurResearch() {
             border="none"
             route={imageOurResearch}
             buttons={false}
+            buttonTechnology={false}
             alt="imagen de algo"
             ImageStyleProps={""}
           />

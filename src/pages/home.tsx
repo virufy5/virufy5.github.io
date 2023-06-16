@@ -36,6 +36,7 @@ export default function Prueba() {
           ImageStyleProps=""
           //Buttons
           buttons={buttons}
+          buttonTechnology={false}
         />
 
         {/* <p className="text-gray-300">Section - 2</p> */}
