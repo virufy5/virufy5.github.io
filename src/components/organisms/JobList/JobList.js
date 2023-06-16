@@ -24,7 +24,7 @@ export default function JobList() {
       .then((data) => {
         setData(_formatPositions(data.docs));
         setLoading(false);
-      }).catch((e) => console.log(e))
+      }).catch((e) => {console.log(e), setLoading(false)})
   }, []);
 
   useEffect(() => {

@@ -8,8 +8,23 @@ export default function AcordeonQuestions({
 
   const [data, setData] = useState([]);
   const [isLoading, setLoading] = useState(false);
+  const [objects, setObjects] = useState([]);
 
-  //Función para dar formato optimo al response del API
+ useEffect(() => {
+    setData(filterObjectCategory(objects, Category))
+  }, [Category]);
+
+  useEffect(() => {
+    setData(filterObject(objects, TextSearch))
+  }, [TextSearch]);
+
+
+/*   useEffect(() => {
+    console.log("Response API:", data);
+  }, [data]) */
+
+
+  //Función para dar formato necesario al response del API
   function _formatPositions(API) {
     const categories = [...new Set(API.map(faqs => faqs.category.title))]
     return categories.reduce((acc, category) => {
@@ -24,55 +39,47 @@ export default function AcordeonQuestions({
       .then((res) => res.json())
       .then((data) => {
         setData(_formatPositions(data.docs));
+        setObjects(_formatPositions(data.docs))
         setLoading(false);
-      }).catch((e) => console.log(e))
+      }).catch((e) => {console.log(e), setLoading(false)})
   }, []);
 
-  useEffect(() => {
-    setLoading(true);
-    fetch(`/api/faqs?where[category.title][contains]=${Category}`)
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data)
-        setData(_formatPositions(data.docs));
-        setLoading(false);
-      }).catch((e) => console.log(e))
-  }, [Category]);
+  function filterObjectCategory(objects, category) {
+    return objects.filter(object => object.category === category);
+  }
 
-  useEffect(() => {
-    setLoading(true);
-    fetch(`/api/faqs?where[title][contains]=${TextSearch}`)
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data)
-        setData(_formatPositions(data.docs));
-        setLoading(false);
-      }).catch((e) => console.log(e))
-  }, [TextSearch]);
-
-
-  useEffect(() => {
-    console.log("Response API:", data);
-  }, [data])
-
-  /* const filteredData = data.filter (faqs => faqs.category === Category);
-  setData(filteredData) */
-
-  //    <p className="text-2xl"> Prop desde cards:  {Category} </p>
-  //    <p className="text-2xl"> Prop desde buscador: {TextSearch} </p>
+  function filterObject(objects, variable1) {
+    const result = [];
+  
+    objects.forEach(object => {
+      const faqs = object.faqs || [];
+  
+      const faqsFilter = faqs.filter(faq => {
+        return faq.title.includes(variable1) || faq.text.includes(variable1);
+      });
+  
+      if (faqsFilter.length > 0) {
+        const objectFiltered = { ...object, faqs: faqsFilter };
+        result.push(objectFiltered);
+      }
+    });
+  
+    return result;
+  }
 
   return (
     <div className="mb-32">
 
+      {isLoading ? <p className="text-center text-2xl">Loading...</p> : null}
+
       {data.map(({ category, faqs, id }) => (
         <div key={id}>
 
-          <Title
+         <Title
             H="h5"
             Text={category}
             TitleClassProps={"mt-[70px] mb-[40px]"}
           />
-
 
           <div className='w-full max-w-7xl flex items-center justify-center'>
 
