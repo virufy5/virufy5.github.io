@@ -6,7 +6,8 @@ import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal";
 export default function CardButton({
   CardsData,
   CardClassProps,
-  handleAction
+  handleAction,
+  Category
 }) {
 
   return (
@@ -14,7 +15,7 @@ export default function CardButton({
 
       {CardsData?.map(({ route, name, text, subtitle, id }) => (
 
-        <div className={CardClassProps} key={id} onClick={() => handleAction(text)}>
+        <div className={`${CardClassProps} ${text === Category ? 'border border-[#30DA74]' : null}`} key={id} onClick={() => handleAction(text)}>
           <ImageAtomLocal
             imagesize="pr30"
             border="circular"

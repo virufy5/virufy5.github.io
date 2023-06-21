@@ -11,7 +11,7 @@ export default function AcordeonQuestions({
   const [objects, setObjects] = useState([]);
 
  useEffect(() => {
-    setData(filterObjectCategory(objects, Category))
+    setData(filterObjectCategory(objects, Category, TextSearch))
   }, [Category]);
 
   useEffect(() => {
@@ -44,18 +44,27 @@ export default function AcordeonQuestions({
       }).catch((e) => {console.log(e), setLoading(false)})
   }, []);
 
-  function filterObjectCategory(objects, category) {
-    return objects.filter(object => object.category === category);
+  function filterObjectCategory(objects, category, textSearch) {
+
+    if (textSearch === '') {
+      return objects.filter(object => object.category === category);
+    } else {
+      return objects.map(objeto => ({
+        ...objeto,
+        faqs: objeto.faqs.filter(faq => faq.title.includes(textSearch) || faq.text.includes(textSearch))
+      }))
+      .filter(objeto => objeto.category === category && objeto.faqs.length > 0);
+    }
   }
 
-  function filterObject(objects, variable1) {
+  function filterObject(objects, textSearch) {
     const result = [];
   
     objects.forEach(object => {
       const faqs = object.faqs || [];
   
       const faqsFilter = faqs.filter(faq => {
-        return faq.title.includes(variable1) || faq.text.includes(variable1);
+        return faq.title.includes(textSearch) || faq.text.includes(textSearch);
       });
   
       if (faqsFilter.length > 0) {
