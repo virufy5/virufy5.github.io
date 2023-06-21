@@ -3,11 +3,11 @@
 import CardLargue from "~/components/organisms/section-9/CardLarge"
 
 //image
-import notebook from "~/assets/static/images/OurPublications/notebook 1.png"
+import notebook from "~/assets/static/images/OurPublications/notebook1.png"
 import Title from "~/components/atoms/Title/Title"
 import Button from "~/components/atoms/button/Button"
 
-export default function OurResearch() {
+export default function OurPublications() {
 
     const CardsData = [
         {

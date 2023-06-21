@@ -148,17 +148,17 @@ const IdBlog = () => {
               H={"h4"}
               TitleClassProps={"w-[97%] lg:mb-3 text-start "}
             />
-            <div className="flex gap-2">
+            <div className="flex gap-2 items-center">
               <Text
                 Text={data.publishedDate.slice(0, 10)}
                 Style="subtitle"
-                TextClassProps={"lg:mb-7 text-start text-blue-600"}
+                TextClassProps={"text-start text-blue-600"}
               />
-              <p className="text-blue-600">|</p>
+              <p className="text-blue-600 text-[2rem]">|</p>
               <Text
                 Text={data.slug}
                 Style="subtitle"
-                TextClassProps={"lg:mb-7 text-start text-blue-600"}
+                TextClassProps={"text-start text-blue-600"}
               />
             </div>
 
@@ -178,7 +178,7 @@ const IdBlog = () => {
         <div className="flex flex-col ml-2 max-w-[1440px] mb-[30px]">
           {data?.content.map(({ children }, index) => (
             <Text key={index}
-              Style="subtitle"
+              Style="normal"
               Text={children[0].text}
               TextClassProps="w-[97%] lg:mb-3 text-start "
             />
