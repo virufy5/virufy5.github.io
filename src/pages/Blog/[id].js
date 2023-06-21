@@ -176,13 +176,13 @@ const IdBlog = () => {
           </div>
         </div>
         <div className="flex flex-col ml-2 max-w-[1440px] mb-[30px]">
-          {/* {data?.content[0]?.children[0]?.map(({ children }, index) => (
+          {data?.content.map(({ children }, index) => (
             <Text key={index}
               Style="subtitle"
-              Text={children.text}
+              Text={children[0].text}
               TextClassProps="w-[97%] lg:mb-3 text-start "
             />
-          ))} */}
+          ))}
         </div>
 
         <Title
