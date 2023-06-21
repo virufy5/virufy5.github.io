@@ -191,15 +191,6 @@ export default function OurPeople1() {
     <div className="flex flex-col justify-center items-center">
       <div className="flex flex-col justify-center items-center max-w-[1440px] ">
 
-          <div
-            className="text-center m-7"
-          >
-            <Title
-              H="h1"
-              Text="Meet Our Founder"
-              TitleClassProps={""}
-            />
-          </div>
           <Section4
             TitleSize1="h1"
             TitleSize2="h3"
