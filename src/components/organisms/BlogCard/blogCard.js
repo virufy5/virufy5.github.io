@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import TitleText from "~/components/molecules/TitleText/TitleText"
 import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal"
-import LinkAtom from "~/components/atoms/LinkAtom/LinkAtom"
+import Link from "next/link";
 
 export default function BlogCard() {
 
@@ -54,7 +54,7 @@ export default function BlogCard() {
                                 TitleClassProps=""
                                 TextClassProps=""
                             />
-                            <LinkAtom Routes={link1} Style="linkBlog" />
+                            <Link href={`/Blog/${id}`}>Read More</Link>
                         </div>
                     </div>
                 </div>

@@ -55,6 +55,7 @@ export const TitleProps = {
     h6: "text-[1rem] leading-[1.5rem] font-semibold text-center",
     h5tepsHome: "text-[1.25rem] leading-[1.75rem] md:text-[1.9rem] md:leading-[2.5rem]",
     h5Modals: "text-[1.25rem] leading-[1.8rem]  md:text-[1.9rem] md:leading-[2.4rem]",
+    h5Modals2: "text-[1rem] leading-[1.8rem]  md:text-[1.4rem] md:leading-[2rem] text-center",
 };
 
 //TEXT THEMES

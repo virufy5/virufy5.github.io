@@ -107,7 +107,7 @@ const IdJob = () => {
   return (
     <>
       {isLoading ? <p className="text-center text-2xl">Loading...</p> : null}
-      <div className='max-w-[1440px] mx-auto flex'>
+      <div className='max-w-[1440px] mx-auto flex justify-center'>
         <div className="flex flex-col max-w-[1100px] items-center">
           <div className="flex mt-10 lg:mt-20 w-full px-2 items-center flex-1">
             <div className="px-10 w-full lg:items-start text-start flex flex-col gap-5">
