@@ -99,7 +99,7 @@ export default function Section8({
           size="medium"
           type="primary"
           label="Share your cough"
-          path="/HowItWorks"
+          path="https://virufy.org/study/welcome"
         />
       </div>
     </div>
