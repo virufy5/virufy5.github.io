@@ -52,8 +52,8 @@ export default function OurPublications() {
                         <Button
                             size="medium"
                             type="primary"
-                            label="Read our papers"
-                            path="/about"
+                            label="share your cough"
+                            path="https://virufy.org/study/welcome"
                         />
                     </div>
                 </div>
