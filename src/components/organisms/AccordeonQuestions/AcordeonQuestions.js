@@ -46,12 +46,12 @@ export default function AcordeonQuestions({
 
   function filterObjectCategory(objects, category, textSearch) {
 
-    if (textSearch === '') {
+    if (textSearch.trim() === '') {
       return objects.filter(object => object.category === category);
     } else {
       return objects.map(objeto => ({
         ...objeto,
-        faqs: objeto.faqs.filter(faq => faq.title.includes(textSearch) || faq.text.includes(textSearch))
+        faqs: objeto.faqs.filter(faq => faq.title.toLowerCase().includes(textSearch.toLowerCase()) || faq.text.toLowerCase().includes(textSearch.toLowerCase()))
       }))
       .filter(objeto => objeto.category === category && objeto.faqs.length > 0);
     }
@@ -64,7 +64,7 @@ export default function AcordeonQuestions({
       const faqs = object.faqs || [];
   
       const faqsFilter = faqs.filter(faq => {
-        return faq.title.includes(textSearch) || faq.text.includes(textSearch);
+        return faq.title.toLowerCase().includes(textSearch.toLowerCase()) || faq.text.toLowerCase().includes(textSearch.toLowerCase());
       });
   
       if (faqsFilter.length > 0) {
