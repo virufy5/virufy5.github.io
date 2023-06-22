@@ -79,7 +79,7 @@ export default function OurResearch() {
               size="medium"
               type="primary"
               label="Read our papers"
-              path="/about"
+              path="/OurPublications"
             />
           </div>
         </div>
