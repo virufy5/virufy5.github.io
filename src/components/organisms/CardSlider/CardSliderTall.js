@@ -40,7 +40,6 @@ export default function CardSliderTall() {
       .then((data) => {
         setData(data.docs);
         setLoading(false);
-        
       }).catch((e) => console.log(e))
   }, []);
 
@@ -80,52 +79,6 @@ export default function CardSliderTall() {
               />
             </div>
           )}
-
-          <div className="keen-slider__slide number-slideTall1">
-            <CardHome
-              src={Advisor1}
-              alt="Annelisse Torrez Daza1"
-              textLabel="“Having suffered through COVID myself along with all of my family in a underprivileged country, I knew instantly that I could make a difference and prevent others from facing my same fate by joining Virufy.”"
-              name="Annelisse Torrez Daza1"
-              country={"Bolivia"}
-            />
-          </div>
-          <div className="keen-slider__slide number-slideTall2">
-            <CardHome
-              src={Advisor2}
-              alt="Annelisse Torrez Daza2"
-              textLabel="“Having suffered through COVID myself along with all of my family in a underprivileged country, I knew instantly that I could make a difference and prevent others from facing my same fate by joining Virufy.”"
-              name="Annelisse Torrez Daza2"
-              country={"Bolivia"}
-            />
-          </div>
-          <div className="keen-slider__slide number-slideTall3">
-            <CardHome
-              src={Advisor1}
-              alt="Annelisse Torrez Daza3"
-              textLabel="“Having suffered through COVID myself along with all of my family in a underprivileged country, I knew instantly that I could make a difference and prevent others from facing my same fate by joining Virufy.”"
-              name="Annelisse Torrez Daza3"
-              country={"Bolivia"}
-            />
-          </div>
-          <div className="keen-slider__slide number-slideTall4">
-            <CardHome
-              src={Advisor1}
-              alt="Annelisse Torrez Daza4"
-              textLabel="“Having suffered through COVID myself along with all of my family in a underprivileged country, I knew instantly that I could make a difference and prevent others from facing my same fate by joining Virufy.”"
-              name="Annelisse Torrez Daza4"
-              country={"Bolivia"}
-            />
-          </div>
-          <div className="keen-slider__slide number-slideTall5">
-            <CardHome
-              src={Advisor1}
-              alt="Annelisse Torrez Daza5"
-              textLabel="“Having suffered through COVID myself along with all of my family in a underprivileged country, I knew instantly that I could make a difference and prevent others from facing my same fate by joining Virufy.”"
-              name="Annelisse Torrez Daza5"
-              country={"Bolivia"}
-            />
-          </div>
 
         </div>
         {loaded && instanceRef.current && (

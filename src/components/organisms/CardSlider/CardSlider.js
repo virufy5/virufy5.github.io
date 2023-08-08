@@ -2,9 +2,6 @@
 import CardHome from "../../molecules/CardHome/CardHome";
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
-import Advisor1 from "../../../assets/static/images/cards/advisor1.jpg"
-import Advisor2 from "../../../assets/static/images/cards/advisor2.jpg"
-import Advisor3 from "../../../assets/static/images/cards/advisor3.jpg"
 import { useEffect, useState } from "react";
 
 export default function CardSlider() {
@@ -69,76 +66,6 @@ export default function CardSlider() {
             </div>
           )}
 
-
-          <div className="keen-slider__slide number-slide1">
-            <CardHome
-              src={Advisor1}
-              alt="imagen de algo"
-              TitleSize="h6"
-              TitleLabel="Nombre Cliente"
-              TextSize="normalCardHome"
-              TextLabel="Director. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim ornare leo euismod ac."
-              imagesize=""
-              ContainerTitleProps=""
-              ContainerTextProps=""
-            />
-          </div>
-
-          <div className="keen-slider__slide number-slide2">
-            <CardHome
-              src={Advisor2}
-              alt="imagen de algo"
-              TitleSize="h6"
-              TitleLabel="Nombre Cliente"
-              TextSize="normalCardHome"
-              TextLabel="Director. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim ornare leo euismod ac."
-              imagesize=""
-              ContainerTitleProps=""
-              ContainerTextProps=""
-            />
-
-          </div>
-          <div className="keen-slider__slide number-slide3">
-
-            <CardHome
-              src={Advisor3}
-              alt="imagen de algo"
-              TitleSize="h6"
-              TitleLabel="Nombre Cliente"
-              TextSize="normalCardHome"
-              TextLabel="Director. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim ornare leo euismod ac."
-              imagesize=""
-              ContainerTitleProps=""
-              ContainerTextProps=""
-            />
-          </div>
-          <div className="keen-slider__slide number-slide4">
-            <CardHome
-              src={Advisor1}
-              alt="imagen de algo"
-              TitleSize="h6"
-              TitleLabel="Nombre Cliente"
-              TextSize="normalCardHome"
-              TextLabel="Director. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim ornare leo euismod ac."
-              imagesize=""
-              ContainerTitleProps=""
-              ContainerTextProps=""
-            />
-          </div>
-          <div className="keen-slider__slide number-slide2">
-            <CardHome
-              src={Advisor2}
-              alt="imagen de algo"
-              TitleSize="h6"
-              TitleLabel="Nombre Cliente"
-              TextSize="normalCardHome"
-              TextLabel="Director. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dis turpis nisi, justo, integer dignissim ornare leo euismod ac."
-              imagesize=""
-              ContainerTitleProps=""
-              ContainerTextProps=""
-            />
-
-          </div>
         </div>
         {loaded && instanceRef.current && (
           <>
