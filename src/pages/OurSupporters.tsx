@@ -215,7 +215,8 @@ export default function OurSupporters() {
             ContainerTextProps="max-w-[800px] mb-[80px]"
           />
 
-          <CardSliderTall />
+          {/* DESCOMENTAR CUANDO FUNCIONE EL CMS ////////////////////////////*/}{/* <CardSliderTall /> */}
+
         </div>
         </div>
         <div className="flex flex-col justify-center items-center max-w-[1440px] my-[80px]">
