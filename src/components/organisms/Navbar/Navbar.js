@@ -59,7 +59,8 @@ export default function Navbar() {
                                                 className="bg-white rounded-full text-black px-1 py-2 hover:bg-gray-300 outline-none ease-linear transition-all duration-150 w-[35px] h-[35px] flex justify-center shadow-xl font-bold"
                                                 type="button"
                                                 onClick={() => setShowModal(false)}
-                                            >X                                            </button>
+                                            >X
+                                            </button>
                                         </div>
 
                                     </div>
@@ -72,20 +73,24 @@ export default function Navbar() {
                                                 TitleClassProps={"text-center color-black"}
                                             />
                                         </p>
-                                        <button
-                                            className="bg-gray-200 px-6 py-2 rounded hover:bg-gray-300 outline-none mr-1 ease-linear transition-all duration-150 w-[270px] md:w-[450px] flex justify-center mb-3"
-                                            type="button"
-                                            onClick={() => setShowModal(false)}
-                                        >
-                                            <ImageAtomLocal imagesize="px110x27" border="none" src={Paypal} alt="Logo Virufy" ImageStyleProps="" />
-                                        </button>
-                                        <button
-                                            className="bg-gray-200 px-6 py-2 rounded hover:bg-gray-300 outline-none mr-1 mb-1 ease-linear transition-all duration-150 w-[270px] md:w-[450px] flex justify-center"
-                                            type="button"
-                                            onClick={() => setShowModal(false)}
-                                        >
-                                            <ImageAtomLocal imagesize="px103x30" border="none" src={Gofoundme} alt="Logo Virufy" ImageStyleProps="" />
-                                        </button>
+                                        <a href="https://www.paypal.com/us/fundraiser/charity/4348461" target="_blank">
+                                            <button
+                                                className="bg-gray-200 px-6 py-2 rounded hover:bg-gray-300 outline-none mr-1 ease-linear transition-all duration-150 w-[270px] md:w-[450px] flex justify-center mb-3"
+                                                type="button"
+                                                onClick={() => setShowModal(false)}
+                                            >
+                                                <ImageAtomLocal imagesize="px110x27" border="none" src={Paypal} alt="Logo Virufy" ImageStyleProps="" />
+                                            </button>
+                                        </a>
+                                        <a href="https://www.gofundme.com/f/virufy-covid19" target="_blank">
+                                            <button
+                                                className="bg-gray-200 px-6 py-2 rounded hover:bg-gray-300 outline-none mr-1 mb-1 ease-linear transition-all duration-150 w-[270px] md:w-[450px] flex justify-center"
+                                                type="button"
+                                                onClick={() => setShowModal(false)}
+                                            >
+                                                <ImageAtomLocal imagesize="px103x30" border="none" src={Gofoundme} alt="Logo Virufy" ImageStyleProps="" />
+                                            </button>
+                                        </a>
                                     </div>
                                     {/*footer*/}
 
@@ -179,6 +184,6 @@ export default function Navbar() {
                     </div>
                 </div>
             </div>
-        </nav>
+        </nav >
     );
 }

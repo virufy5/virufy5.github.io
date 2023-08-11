@@ -471,144 +471,129 @@ export default function Footer() {
                                         <div className='w-full px-0 '>
                                             <div>
                                                 <details className="w-full  bg-white cursor-pointer mb-3">
-                                                    <summary className="bg-white text-dark flex justify-between px-4 py-3 after:content-['+'] mt-3 font-bold">General</summary>
+                                                    <summary className="bg-white text-dark flex justify-between px-4 py-3 after:content-['+'] mt-3 font-bold">1. General</summary>
                                                     <hr className="border-1 border-gray-400 mt-3" />
                                                     <p className="px-4 py-3  mt-3">
                                                         The Covid Detection Foundation (“Virufy”, “we”, “us” or “our”), a California nonprofit corporation located at 4546, El Camino Real, B10 #614, Los Altos, código postal 94022, United States of America respects your privacy and is committed to processing your personal information in accordance with the law. This Cookie Policy (“Policy”) explains how Virufy uses cookies and similar technologies to process your personal information that you provide to us when you visit our website (www.virufy.org) (“Website”) or participate in our research survey for the compilation of a dataset needed for the development of artificial intelligence (AI) algorithms for device-based COVID-19 detection.
                                                         For users located in Europe:
-                                                        - This cookie policy will be treated under Recital 30 of the European General Data Protection Regulation 2016/679 (the “GDPR”)
-                                                        For users located in Spain:
-                                                        - This cookie policy will be treated under Recital 30 of the European General Data Protection Regulation 2016/679 (the “GDPR”) and under Article 22 of Law 34/2002, of July 11, on information society services and electronic commerce (LSSICE).
-                                                        For users located in Argentina:
-                                                        - This cookie policy will be treated under Argentinian Law 25.326 on Protection of Personal Data.
-                                                        For users located in Brazil:
-                                                        - This cookie policy will be treated under the General Personal Data Protection Law, number 13.709 / 2018 of Brazil (the “LGPD”).
-                                                        For users located in Colombia:
-                                                        - This cookie policy will be treated under Colombian law 1581 of 2012.
-                                                        For users located in the United Mexican States:
-                                                        - This cookie policy will be considered part of the Virufy Privacy Notice and will be treated under the Federal Law on Protection of Personal Data Held by Private Parties. Whenever reference is made to  in the present, the term  is understood interchangeably.
-                                                        For users located in Bolivia:
-                                                        - This cookie policy will be treated under Bolivian Law
-                                                        For users located in Peru:
-                                                        - This cookie policy will be treated under Peruvian Law.
-                                                        Virufy is the “data controller” of, and responsible for, your personal information collected in accordance with this Cookie Policy. For further information about how we use, store, disclose and process personal data that we obtain through or in connection with the use of our Website, please visit our Privacy Policy.
-                                                        When you first access our Website, you will receive a message advising you that cookies and similar technologies are in use. By clicking “Use necessary cookies only” or “Allow all cookies”, you signify that you understand and agree to the use of these technologies, as described in this Cookie Policy
-                                                        If you have any inquiries or complaints regarding our Cookie Policy, please contact us by email at study@virufy.org Our team will reply you within 30 business days upon receipt of your request.
+                                                        <div className="mt-4">
+                                                            <li> This cookie policy will be treated under Recital 30 of the European General Data Protection Regulation 2016/679 (the “GDPR”)
+                                                                For users located in Spain:
+                                                            </li>
+                                                            <li>
+                                                                This cookie policy will be treated under Recital 30 of the European General Data Protection Regulation 2016/679 (the “GDPR”) and under Article 22 of Law 34/2002, of July 11, on information society services and electronic commerce (LSSICE).
+                                                                For users located in Argentina:
+                                                            </li>
+                                                            <li>
+                                                                This cookie policy will be treated under Argentinian Law 25.326 on Protection of Personal Data.
+                                                                For users located in Brazil:
+                                                            </li>
+                                                            <li>
+                                                                This cookie policy will be treated under the General Personal Data Protection Law, number 13.709 / 2018 of Brazil (the “LGPD”).
+                                                                For users located in Colombia:
+                                                            </li>
+                                                            <li>
+                                                                This cookie policy will be treated under Colombian law 1581 of 2012.
+                                                                For users located in the United Mexican States:
+                                                            </li>
+                                                            <li>
+                                                                This cookie policy will be considered part of the Virufy Privacy Notice and will be treated under the Federal Law on Protection of Personal Data Held by Private Parties. Whenever reference is made to “Privacy Policy” in the present, the term “Privacy Notice” is understood interchangeably.
+                                                                For users located in Bolivia:
+                                                            </li>
+                                                            <li>
+                                                                This cookie policy will be treated under Bolivian Law
+                                                                For users located in Peru:
+                                                            </li>
+                                                            <li>
+                                                                This cookie policy will be treated under Peruvian Law.
+                                                                Virufy is the “data controller” of, and responsible for, your personal information collected in accordance with this Cookie Policy. For further information about how we use, store, disclose and process personal data that we obtain through or in connection with the use of our Website, please visit our Privacy Policy.
+                                                            </li>
+                                                            <li>
+                                                                When you first access our Website, you will receive a message advising you that cookies and similar technologies are in use. By clicking “Use necessary cookies only” or “Allow all cookies”, you signify that you understand and agree to the use of these technologies, as described in this Cookie Policy
+                                                            </li>
+                                                            <li>
+                                                                If you have any inquiries or complaints regarding our Cookie Policy, please contact us by email at study@virufy.org Our team will reply you within 30 business days upon receipt of your request.
+                                                            </li>
+                                                        </div>
                                                     </p>
                                                 </details>
 
                                                 <hr className="border-1 border-gray-400" />
                                                 <details className="w-full  bg-white cursor-pointer mb-3">
-                                                    <summary className="bg-white text-dark flex justify-between px-4 py-3 after:content-['+'] mt-3 font-bold">What are cookies?</summary>
+                                                    <summary className="bg-white text-dark flex justify-between px-4 py-3 after:content-['+'] mt-3 font-bold">2. What are Cookies?</summary>
                                                     <hr className="border-1 border-gray-400 mt-3" />
                                                     <p className="px-4 py-3  mt-3">
-                                                        The Covid Detection Foundation (“Virufy”, “we”, “us” or “our”), a California nonprofit corporation located at 4546, El Camino Real, B10 #614, Los Altos, código postal 94022, United States of America respects your privacy and is committed to processing your personal information in accordance with the law. This Cookie Policy (“Policy”) explains how Virufy uses cookies and similar technologies to process your personal information that you provide to us when you visit our website (www.virufy.org) (“Website”) or participate in our research survey for the compilation of a dataset needed for the development of artificial intelligence (AI) algorithms for device-based COVID-19 detection.
-                                                        For users located in Europe:
-                                                        - This cookie policy will be treated under Recital 30 of the European General Data Protection Regulation 2016/679 (the “GDPR”)
-                                                        For users located in Spain:
-                                                        - This cookie policy will be treated under Recital 30 of the European General Data Protection Regulation 2016/679 (the “GDPR”) and under Article 22 of Law 34/2002, of July 11, on information society services and electronic commerce (LSSICE).
-                                                        For users located in Argentina:
-                                                        - This cookie policy will be treated under Argentinian Law 25.326 on Protection of Personal Data.
-                                                        For users located in Brazil:
-                                                        - This cookie policy will be treated under the General Personal Data Protection Law, number 13.709 / 2018 of Brazil (the “LGPD”).
-                                                        For users located in Colombia:
-                                                        - This cookie policy will be treated under Colombian law 1581 of 2012.
-                                                        For users located in the United Mexican States:
-                                                        - This cookie policy will be considered part of the Virufy Privacy Notice and will be treated under the Federal Law on Protection of Personal Data Held by Private Parties. Whenever reference is made to  in the present, the term  is understood interchangeably.
-                                                        For users located in Bolivia:
-                                                        - This cookie policy will be treated under Bolivian Law
-                                                        For users located in Peru:
-                                                        - This cookie policy will be treated under Peruvian Law.
-                                                        Virufy is the “data controller” of, and responsible for, your personal information collected in accordance with this Cookie Policy. For further information about how we use, store, disclose and process personal data that we obtain through or in connection with the use of our Website, please visit our Privacy Policy.
-                                                        When you first access our Website, you will receive a message advising you that cookies and similar technologies are in use. By clicking “Use necessary cookies only” or “Allow all cookies”, you signify that you understand and agree to the use of these technologies, as described in this Cookie Policy
-                                                        If you have any inquiries or complaints regarding our Cookie Policy, please contact us by email at study@virufy.org Our team will reply you within 30 business days upon receipt of your request.
+                                                        Cookies are text files containing small pieces of data that are stored on your computer or mobile device whenever you access a website. They are used to make websites operate or function more efficiently, as well as to provide information to the owners of the website. Cookies enhance user experience by allowing websites to read and write them, enabling them to recognize visitors and remember important information that makes the visitor’s use of the website more convenient.
+                                                        <div className="mt-4">
+                                                            Cookies set by a website owner (in this case, Virufy) are called “first party cookies”. Cookies set by parties other than the website owner are called “third party cookies”. Third party cookies enable third party features or functionality to be provided on or through the Website (e.g. analytics).
+                                                        </div>
                                                     </p>
                                                 </details>
 
                                                 <hr className="border-1 border-gray-400" />
                                                 <details className="w-full  bg-white cursor-pointer mb-3">
-                                                    <summary className="bg-white text-dark flex justify-between px-4 py-3 after:content-['+'] mt-3 font-bold">How do we use cookies?</summary>
+                                                    <summary className="bg-white text-dark flex justify-between px-4 py-3 after:content-['+'] mt-3 font-bold">3. How do we use Cookies</summary>
                                                     <hr className="border-1 border-gray-400 mt-3" />
                                                     <p className="px-4 py-3  mt-3">
-                                                        The Covid Detection Foundation (“Virufy”, “we”, “us” or “our”), a California nonprofit corporation located at 4546, El Camino Real, B10 #614, Los Altos, código postal 94022, United States of America respects your privacy and is committed to processing your personal information in accordance with the law. This Cookie Policy (“Policy”) explains how Virufy uses cookies and similar technologies to process your personal information that you provide to us when you visit our website (www.virufy.org) (“Website”) or participate in our research survey for the compilation of a dataset needed for the development of artificial intelligence (AI) algorithms for device-based COVID-19 detection.
-                                                        For users located in Europe:
-                                                        - This cookie policy will be treated under Recital 30 of the European General Data Protection Regulation 2016/679 (the “GDPR”)
-                                                        For users located in Spain:
-                                                        - This cookie policy will be treated under Recital 30 of the European General Data Protection Regulation 2016/679 (the “GDPR”) and under Article 22 of Law 34/2002, of July 11, on information society services and electronic commerce (LSSICE).
-                                                        For users located in Argentina:
-                                                        - This cookie policy will be treated under Argentinian Law 25.326 on Protection of Personal Data.
-                                                        For users located in Brazil:
-                                                        - This cookie policy will be treated under the General Personal Data Protection Law, number 13.709 / 2018 of Brazil (the “LGPD”).
-                                                        For users located in Colombia:
-                                                        - This cookie policy will be treated under Colombian law 1581 of 2012.
-                                                        For users located in the United Mexican States:
-                                                        - This cookie policy will be considered part of the Virufy Privacy Notice and will be treated under the Federal Law on Protection of Personal Data Held by Private Parties. Whenever reference is made to  in the present, the term  is understood interchangeably.
-                                                        For users located in Bolivia:
-                                                        - This cookie policy will be treated under Bolivian Law
-                                                        For users located in Peru:
-                                                        - This cookie policy will be treated under Peruvian Law.
-                                                        Virufy is the “data controller” of, and responsible for, your personal information collected in accordance with this Cookie Policy. For further information about how we use, store, disclose and process personal data that we obtain through or in connection with the use of our Website, please visit our Privacy Policy.
-                                                        When you first access our Website, you will receive a message advising you that cookies and similar technologies are in use. By clicking “Use necessary cookies only” or “Allow all cookies”, you signify that you understand and agree to the use of these technologies, as described in this Cookie Policy
-                                                        If you have any inquiries or complaints regarding our Cookie Policy, please contact us by email at study@virufy.org Our team will reply you within 30 business days upon receipt of your request.
+                                                        Cookies are messages that web servers pass to web browsers when you visit websites. Cookies are most commonly used to track website activity, to track online shopping, remembering your preferences, and improving your user experience through personalized web pages.
+                                                        <div className="mt-4">
+                                                            We may use the following types of Cookies* to make the website user-friendly:
+                                                        </div>
+                                                        <div className="mt-4"><li>
+                                                            Essential Cookies
+                                                        </li>
+                                                            The Website may use technical cookies to carry out activities that are strictly necessary for the operation or delivery of services. They include, for example, cookies that allow you to access secure areas of the website. We use this cookie to obtain the required consent to process data.
+                                                        </div>
+                                                        <div className="mt-4"><li>
+                                                            Preference Cookies
+                                                        </li>
+                                                            These cookies enable a website to remember information that changes the way the website behaves or looks, like preferred language or the region that you are in.
+                                                        </div>
+                                                        <div className="mt-4"><li>
+                                                            Performance Cookies
+                                                        </li>
+                                                            Also known as analytics cookies, these cookies may be used to collect information about your use of the Website and make the Website more user-friendly. Usage of analytic cookies includes but is not limited to distinguishing users and understanding overall patterns of usage of the Website. We use this information in aggregate form to improve the way our Website works.                                                        </div>
+                                                        <div className="mt-4">
+                                                            <li>
+                                                                Marketing Cookies
+                                                            </li>
+                                                            These cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.
+                                                            <hr className="border-0" />
+                                                            These cookies can be deleted or blocked by adjusting your browser settings (see Section 4, How can you control Cookies, below).
+                                                            Alternatively, please follow the links below to opt-out: Google Analytics: https://tools.google.com/dlpage/gaoptout
+                                                        </div>
                                                     </p>
                                                 </details>
 
                                                 <hr className="border-1 border-gray-400" />
 
                                                 <details className="w-full  bg-white cursor-pointer mb-3">
-                                                    <summary className="bg-white text-dark flex justify-between px-4 py-3 after:content-['+'] mt-3 font-bold">How can you control cookies?</summary>
+                                                    <summary className="bg-white text-dark flex justify-between px-4 py-3 after:content-['+'] mt-3 font-bold">4. How can you control Cookies?</summary>
                                                     <hr className="border-1 border-gray-400 mt-3" />
                                                     <p className="px-4 py-3  mt-3">
-                                                        The Covid Detection Foundation (“Virufy”, “we”, “us” or “our”), a California nonprofit corporation located at 4546, El Camino Real, B10 #614, Los Altos, código postal 94022, United States of America respects your privacy and is committed to processing your personal information in accordance with the law. This Cookie Policy (“Policy”) explains how Virufy uses cookies and similar technologies to process your personal information that you provide to us when you visit our website (www.virufy.org) (“Website”) or participate in our research survey for the compilation of a dataset needed for the development of artificial intelligence (AI) algorithms for device-based COVID-19 detection.
-                                                        For users located in Europe:
-                                                        - This cookie policy will be treated under Recital 30 of the European General Data Protection Regulation 2016/679 (the “GDPR”)
-                                                        For users located in Spain:
-                                                        - This cookie policy will be treated under Recital 30 of the European General Data Protection Regulation 2016/679 (the “GDPR”) and under Article 22 of Law 34/2002, of July 11, on information society services and electronic commerce (LSSICE).
-                                                        For users located in Argentina:
-                                                        - This cookie policy will be treated under Argentinian Law 25.326 on Protection of Personal Data.
-                                                        For users located in Brazil:
-                                                        - This cookie policy will be treated under the General Personal Data Protection Law, number 13.709 / 2018 of Brazil (the “LGPD”).
-                                                        For users located in Colombia:
-                                                        - This cookie policy will be treated under Colombian law 1581 of 2012.
-                                                        For users located in the United Mexican States:
-                                                        - This cookie policy will be considered part of the Virufy Privacy Notice and will be treated under the Federal Law on Protection of Personal Data Held by Private Parties. Whenever reference is made to  in the present, the term  is understood interchangeably.
-                                                        For users located in Bolivia:
-                                                        - This cookie policy will be treated under Bolivian Law
-                                                        For users located in Peru:
-                                                        - This cookie policy will be treated under Peruvian Law.
-                                                        Virufy is the “data controller” of, and responsible for, your personal information collected in accordance with this Cookie Policy. For further information about how we use, store, disclose and process personal data that we obtain through or in connection with the use of our Website, please visit our Privacy Policy.
-                                                        When you first access our Website, you will receive a message advising you that cookies and similar technologies are in use. By clicking “Use necessary cookies only” or “Allow all cookies”, you signify that you understand and agree to the use of these technologies, as described in this Cookie Policy
-                                                        If you have any inquiries or complaints regarding our Cookie Policy, please contact us by email at study@virufy.org Our team will reply you within 30 business days upon receipt of your request.
-                                                    </p>
-                                                </details>
-
-                                                <hr className="border-1 border-gray-400" />
-
-
-                                                <details className="w-full  bg-white cursor-pointer mb-3">
-                                                    <summary className="bg-white text-dark flex justify-between px-4 py-3 after:content-['+'] mt-3 font-bold">Amendments to this cookie policy?</summary>
-                                                    <hr className="border-1 border-gray-400 mt-3" />
-                                                    <p className="px-4 py-3  mt-3">
-                                                        The Covid Detection Foundation (“Virufy”, “we”, “us” or “our”), a California nonprofit corporation located at 4546, El Camino Real, B10 #614, Los Altos, código postal 94022, United States of America respects your privacy and is committed to processing your personal information in accordance with the law. This Cookie Policy (“Policy”) explains how Virufy uses cookies and similar technologies to process your personal information that you provide to us when you visit our website (www.virufy.org) (“Website”) or participate in our research survey for the compilation of a dataset needed for the development of artificial intelligence (AI) algorithms for device-based COVID-19 detection.
-                                                        For users located in Europe:
-                                                        - This cookie policy will be treated under Recital 30 of the European General Data Protection Regulation 2016/679 (the “GDPR”)
-                                                        For users located in Spain:
-                                                        - This cookie policy will be treated under Recital 30 of the European General Data Protection Regulation 2016/679 (the “GDPR”) and under Article 22 of Law 34/2002, of July 11, on information society services and electronic commerce (LSSICE).
-                                                        For users located in Argentina:
-                                                        - This cookie policy will be treated under Argentinian Law 25.326 on Protection of Personal Data.
-                                                        For users located in Brazil:
-                                                        - This cookie policy will be treated under the General Personal Data Protection Law, number 13.709 / 2018 of Brazil (the “LGPD”).
-                                                        For users located in Colombia:
-                                                        - This cookie policy will be treated under Colombian law 1581 of 2012.
-                                                        For users located in the United Mexican States:
-                                                        - This cookie policy will be considered part of the Virufy Privacy Notice and will be treated under the Federal Law on Protection of Personal Data Held by Private Parties. Whenever reference is made to  in the present, the term  is understood interchangeably.
-                                                        For users located in Bolivia:
-                                                        - This cookie policy will be treated under Bolivian Law
-                                                        For users located in Peru:
-                                                        - This cookie policy will be treated under Peruvian Law.
-                                                        Virufy is the “data controller” of, and responsible for, your personal information collected in accordance with this Cookie Policy. For further information about how we use, store, disclose and process personal data that we obtain through or in connection with the use of our Website, please visit our Privacy Policy.
-                                                        When you first access our Website, you will receive a message advising you that cookies and similar technologies are in use. By clicking “Use necessary cookies only” or “Allow all cookies”, you signify that you understand and agree to the use of these technologies, as described in this Cookie Policy
-                                                        If you have any inquiries or complaints regarding our Cookie Policy, please contact us by email at study@virufy.org Our team will reply you within 30 business days upon receipt of your request.
+                                                        You have the right to decide whether to accept or reject cookies. You do not have to accept cookies and consent can be withdrawn at any time. Please note that essential cookies cannot be rejected as they are strictly necessary to provide you with services of our Website.
+                                                        <div className="mt-4">
+                                                            By using our Cookie Consent Banner, you can select the categories of cookies which you choose to accept or reject. The Cookie Consent Banner can be found in the notification banner and on our Website. You can change or revoke consent for your cookie policies directly from the website by clicking “Cookie settings” at the bottom of the page.
+                                                        </div>
+                                                        <div className="mt-4">
+                                                            If you choose not to click on “Got it!”, or do not close the message, you may still use our Website. You may also refuse to accept cookies from this Website at any time by activating the setting on your browser which allows you to refuse cookies.
+                                                        </div>
+                                                        <div className="mt-4">
+                                                            Please follow the links below to helpful information for the most popular browsers:
+                                                        </div>
+                                                        <div className="mt-4">
+                                                            Apple Safari
+                                                            <hr className="border-0" />
+                                                            Google Chrome
+                                                            <hr className="border-0" />
+                                                            Microsoft Edge
+                                                            <hr className="border-0" />
+                                                            Microsoft Internet Explorer
+                                                            <hr className="border-0" />
+                                                            Mozilla Firefox
+                                                            <hr className="border-0" />
+                                                            Opera
+                                                        </div>
                                                     </p>
                                                 </details>
 
@@ -616,29 +601,26 @@ export default function Footer() {
 
 
                                                 <details className="w-full  bg-white cursor-pointer mb-3">
-                                                    <summary className="bg-white text-dark flex justify-between px-4 py-3 after:content-['+'] mt-3 font-bold">How can you contact us with questions?</summary>
+                                                    <summary className="bg-white text-dark flex justify-between px-4 py-3 after:content-['+'] mt-3 font-bold">5. Amendments to this Cookie Policy</summary>
                                                     <hr className="border-1 border-gray-400 mt-3" />
                                                     <p className="px-4 py-3  mt-3">
-                                                        The Covid Detection Foundation (“Virufy”, “we”, “us” or “our”), a California nonprofit corporation located at 4546, El Camino Real, B10 #614, Los Altos, código postal 94022, United States of America respects your privacy and is committed to processing your personal information in accordance with the law. This Cookie Policy (“Policy”) explains how Virufy uses cookies and similar technologies to process your personal information that you provide to us when you visit our website (www.virufy.org) (“Website”) or participate in our research survey for the compilation of a dataset needed for the development of artificial intelligence (AI) algorithms for device-based COVID-19 detection.
-                                                        For users located in Europe:
-                                                        - This cookie policy will be treated under Recital 30 of the European General Data Protection Regulation 2016/679 (the “GDPR”)
-                                                        For users located in Spain:
-                                                        - This cookie policy will be treated under Recital 30 of the European General Data Protection Regulation 2016/679 (the “GDPR”) and under Article 22 of Law 34/2002, of July 11, on information society services and electronic commerce (LSSICE).
-                                                        For users located in Argentina:
-                                                        - This cookie policy will be treated under Argentinian Law 25.326 on Protection of Personal Data.
-                                                        For users located in Brazil:
-                                                        - This cookie policy will be treated under the General Personal Data Protection Law, number 13.709 / 2018 of Brazil (the “LGPD”).
-                                                        For users located in Colombia:
-                                                        - This cookie policy will be treated under Colombian law 1581 of 2012.
-                                                        For users located in the United Mexican States:
-                                                        - This cookie policy will be considered part of the Virufy Privacy Notice and will be treated under the Federal Law on Protection of Personal Data Held by Private Parties. Whenever reference is made to in the present, the term  is understood interchangeably.
-                                                        For users located in Bolivia:
-                                                        - This cookie policy will be treated under Bolivian Law
-                                                        For users located in Peru:
-                                                        - This cookie policy will be treated under Peruvian Law.
-                                                        Virufy is the “data controller” of, and responsible for, your personal information collected in accordance with this Cookie Policy. For further information about how we use, store, disclose and process personal data that we obtain through or in connection with the use of our Website, please visit our Privacy Policy.
-                                                        When you first access our Website, you will receive a message advising you that cookies and similar technologies are in use. By clicking “Use necessary cookies only” or “Allow all cookies”, you signify that you understand and agree to the use of these technologies, as described in this Cookie Policy
-                                                        If you have any inquiries or complaints regarding our Cookie Policy, please contact us by email at study@virufy.org Our team will reply you within 30 business days upon receipt of your request.
+                                                        We may update this Cookie Policy from time to time in order to reflect, for example, changes to the cookies we use or for other operational, legal or regulatory reasons. Since we do not collect personal data such as your IP address, email or any other form of contact, thus having no means to reach you for your safety, please therefore re-visit this Cookie Policy regularly to stay informed about our use of cookies and related technologies.
+                                                        <div className="mt-4">
+                                                            The date at the top of this Cookie Policy indicates when it was last updated.
+                                                        </div>
+                                                    </p>
+                                                </details>
+
+                                                <hr className="border-1 border-gray-400" />
+
+
+                                                <details className="w-full  bg-white cursor-pointer mb-3">
+                                                    <summary className="bg-white text-dark flex justify-between px-4 py-3 after:content-['+'] mt-3 font-bold">6. How can you contact us with questions?</summary>
+                                                    <hr className="border-1 border-gray-400 mt-3" />
+                                                    <p className="px-4 py-3  mt-3">
+                                                        If you have any concerns relating to our use of cookies or other technologies, please contact us at
+                                                        <hr className="border-0" />
+                                                        study@virufy.org
                                                     </p>
                                                 </details>
 
@@ -656,7 +638,7 @@ export default function Footer() {
                         <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
                     </>
                 ) : null}
-            </div>
+            </div >
 
 
 

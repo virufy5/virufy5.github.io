@@ -5,8 +5,6 @@ import Button from '~/components/atoms/button/Button'
 import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal"
 import LeaveAComment from "~/components/organisms/LeaveAComment/LeaveAComment"
 import Text from "~/components/atoms/Text/Text";
-import Date from "~/components/Date/Date";
-import Link from "next/link"
 import { FacebookShareButton, FacebookIcon, TwitterShareButton, TwitterIcon, LinkedinShareButton, LinkedinIcon } from 'next-share'
 
 const IdBlog = () => {
@@ -152,8 +150,8 @@ const IdBlog = () => {
               TitleClassProps={"w-[97%] lg:mb-3 text-start "}
             />
             <div className="text-[#3074DC] text-[1.125rem] leading-[1.75rem] md:text-[1.3rem] md:leading-[1.70rem] lg:text-[1.6rem] lg:leading-[1.80rem] xl:text-[1.8rem] xl:leading-[1.90rem] flex gap-2 items-center">
-              <Date
-                dateString={data.publishedDate} />
+              {/* <Date
+                dateString={data.publishedDate} /> */}
               <p className="text-[2rem]">|</p>
               <Text
                 Text={data.slug}
