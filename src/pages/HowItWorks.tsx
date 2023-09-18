@@ -7,8 +7,12 @@ import howItWorks1 from "~/assets/static/images/howItWorks/1.jpg"
 import howItWorksStep1 from "~/assets/static/images/howItWorks/step1.jpg"
 import howItWorksStep2 from "~/assets/static/images/howItWorks/step2.jpg"
 import howItWorksStep3 from "~/assets/static/images/howItWorks/step3.jpg"
+import { useI18n } from "~/i18n"
 
 export default function HowItWorks() {
+  const {
+    home: { title, subtitle },
+  } = useI18n();
 
   const buttons = ["SHARE YOUR COUGH"]
 
@@ -19,7 +23,7 @@ export default function HowItWorks() {
           <Section1
             //TitleText
             TitleSize="h1"
-            TitleLabel="Share your cough"
+            TitleLabel="Share your cough" // {subtitle}
             TextSize="normal"
             TextLabel={"Your cough helps us improve our predictive model, thus being crucial in the fight against COVID-19. Contribute to the progress we are making by sharing your cough!"}
             ContainerTitleProps
