@@ -21,7 +21,7 @@ export default function OurTechnology() {
           <Section1
             //TitleText
             TitleSize="h1"
-            TitleLabel="The science behind Virufy."
+            TitleLabel="The science behind Virufy"
             TextSize="normal"
             TextLabel={"Artificial intelligence (AI) is capable of detecting minute differences in vocal patterns to detect disease presence."}
             ContainerTitleProps={""}
