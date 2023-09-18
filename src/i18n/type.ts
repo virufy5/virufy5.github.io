@@ -4,15 +4,15 @@ export type I18nData = {
     title: string;
     subtitle: string;
   };
-  howItWorks: HowItWorks;
-  dashboard: {
+  howItWorks?: HowItWorks;
+  dashboard?: {
     tittle: string;
     tittleInfo: string;
     advertisement: string;
   };
-  jobDescription: JobDescription;
-  ourPublications: OurPublications;
-  ourTechnology: OurTechnology;
+  jobDescription?: JobDescription;
+  ourPublications?: OurPublications;
+  ourTechnology?: OurTechnology;
 };
 
 // ---- How It Works ----
