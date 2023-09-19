@@ -13,6 +13,7 @@ export default function SectionJoinOurTeam({
     ContainerTextProps,
     border,
     alt,
+    TextProps
 }) {
 
     const [showModalBecome, setShowModalBecome] = React.useState(false);
@@ -32,7 +33,7 @@ export default function SectionJoinOurTeam({
                                     <div className="flex w-full border-b border-solid border-slate-200 rounded-t">
                                         <Title
                                             H="h5Modals"
-                                            Text="Become a Partner"
+                                            Text={TextProps.title4}
                                             TitleClassProps={"mt-[30px] mx-auto mb-[30px]"}
                                         />
                                         <div className="absolute p-6 flex flex-col items-end w-full">
@@ -50,7 +51,7 @@ export default function SectionJoinOurTeam({
                                         <p className="text-lg leading-relaxed">
                                             <Text
                                                 Style="small"
-                                                Text="Your help is important to us, please fill in your data and we will contact you as soon possible."
+                                                Text={TextProps.text4_1}
                                                 TextClassProps="mx-[20px] mt-[20px] mb-4 text-center lg:mt-5"
                                             />
                                         </p>
@@ -87,9 +88,9 @@ export default function SectionJoinOurTeam({
                     <TitleText
                         //TitleText
                         TitleSize="h1"
-                        TitleLabel="Join our team"
+                        TitleLabel={TextProps.title2}
                         TextSize="subtitulo"
-                        TextLabel={"Whether you're a humanitarian, an expert, or simply want to take part in Virufy's mission, there are so many ways to help!"}
+                        TextLabel={TextProps.text2}
                         ContainerTextProps="items-start"
                         TextClassProps=""
                         TitleClassProps=""
@@ -104,7 +105,7 @@ export default function SectionJoinOurTeam({
                                 <TitleText
                                     //TitleText
                                     TitleSize="h2"
-                                    TitleLabel="Careers"
+                                    TitleLabel={TextProps.title3}
                                     ContainerTextProps="items-start"
                                     TextClassProps=""
                                     TitleClassProps=""
@@ -126,7 +127,7 @@ export default function SectionJoinOurTeam({
                                 <div className="w-full items-center flex flex-col gap-7 text-gray-700">
                                     <TitleText
                                         TextSize="subtitulo"
-                                        TextLabel="Join our fast-paced, mission-driven team combining unique skills to curb the spread of the pandemic globally."
+                                        TextLabel={TextProps.text3}
                                         ContainerTitleProps={ContainerTitleProps}
                                         ContainerTextProps={ContainerTextProps}
                                         TextClassProps=""
@@ -135,7 +136,7 @@ export default function SectionJoinOurTeam({
                                         TitleSize=""
                                     />
                                     <div className="flex-col justify-center mb-14">
-                                        <Button size="medium" type="primary" path="/JobListing" label="View available roles" />
+                                        <Button size="medium" type="primary" path="/JobListing" label={TextProps.button2} />
                                     </div>
                                 </div>
                             </div>
@@ -147,7 +148,7 @@ export default function SectionJoinOurTeam({
                                 <TitleText
                                     //TitleText
                                     TitleSize="h2"
-                                    TitleLabel="Become a partner"
+                                    TitleLabel={TextProps.title4}
                                     ContainerTextProps="items-start"
                                     TextClassProps=""
                                     TitleClassProps=""
@@ -169,7 +170,7 @@ export default function SectionJoinOurTeam({
                                 <div className="w-full items-center flex flex-col gap-7 text-gray-700">
                                     <TitleText
                                         TextSize="subtitulo"
-                                        TextLabel="We work with established medical, technology, and government organizations across the globe to shape Virufy’s mission."
+                                        TextLabel={TextProps.text4}
                                         ContainerTitleProps={ContainerTitleProps}
                                         ContainerTextProps={ContainerTextProps}
                                         TextClassProps=""
@@ -179,7 +180,7 @@ export default function SectionJoinOurTeam({
                                     />
                                     <div className="flex-col justify-center mb-14">
                                         <Link onClick={() => setShowModalBecome(true)} href="">
-                                            <Button size="medium" type="primary" path="#" label="Become a partner" />
+                                            <Button size="medium" type="primary" path="#" label={TextProps.button3} />
                                         </Link>
                                     </div>
                                 </div>

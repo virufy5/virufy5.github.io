@@ -1,5 +1,5 @@
 import TextinsImg from "~/components/molecules/TextinsImg/TextinsImg"
-
+import { useI18n } from "~/i18n"
 
 //Assets
 import AboutUsImage from "~/assets/static/images/textInImage/AboutUs.jpg"
@@ -16,10 +16,24 @@ import Title from "~/components/atoms/Title/Title"
 
 export default function AboutUs() {
 
-  const CardsData = [
+  const {
+    AboutUs: {
+      titleImage,
+      title1,
+      text1,
+      title2,
+      text2,
+      title3,
+      CardsData,
+      title4,
+      text4, },
+  } = useI18n();
+
+
+  const Cards_Data = [
     {
       route: Card1,
-      name: "Transformation",
+      name: "{CardsData.name1}",
       text: "We aim to transform expensive healthcare systems by using technology to drive necessary changes.",
     },
     {
@@ -56,28 +70,25 @@ export default function AboutUs() {
         borderImg="none"
         src={AboutUsImage}
         altImg="Imagen cabezera"
-        Text="Transforming the world’s health, one cough at a time."
+        Text={titleImage}
       />
 
-<div className="flex flex-col justify-center items-center">
-      <div className="flex flex-col justify-center items-center max-w-[1440px] ">
+      <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center max-w-[1440px] ">
           <Section5
             StylePropsSection="text-center w-[100%] mt-[80px]"
             TitleSize1="h1"
-            TitleLabel1="Our Mission"
+            TitleLabel1={title1}
             TextSize1="normal"
-            TextLabel1="Our innovative approach aims to offer superior COVID pre-screening for patients, clinicians and governments, especially in low-income countries. 
-        We aspire to be the leading nonprofit organization for technology - enabled disease identification, transforming global healthcare and inspiring others to support and invest in this mission with us."
+            TextLabel1={text1}
             ContainerTitleProps1="mb-5 mr-[15vw]"
             ContainerTextProps1="mb-4 mr-[15vw] text-left"
             TitleClassProps1="ml-[15vw]"
             TextClassProps1="ml-[15vw]"
             TitleSize2="h1"
-            TitleLabel2="Our Story"
+            TitleLabel2={title2}
             TextSize2="normal"
-            TextLabel2="When the pandemic hit, Virufy’s founder, Amil Khanzada, knew smartphones were omnipresent and that COVID impacted the nose, throat, and lungs. 
-        He hypothesized that breathing and cough sounds could be analyzed with machine learning to detect COVID patterns. 
-        Wanting to make a positive impact, he orchestrated a clinical study with 362 patients in an esteemed university hospital. The original team of Virufy, beginning with Stanford graduate AI students, expanded to volunteers from universities globally."
+            TextLabel2={text2}
             ContainerTitleProps2="mb-5 mr-[15vw] mt-[80px]"
             ContainerTextProps2="mb-4 mr-[15vw] text-left"
             TitleClassProps2="ml-[15vw]"
@@ -85,19 +96,19 @@ export default function AboutUs() {
           />
           <Title
             H="h1"
-            Text="Our Values"
+            Text={title3}
             TitleClassProps="text-center mt-[100px] mb-[60px]"
           />
           <Card
-            CardsData={CardsData}
+            CardsData={Cards_Data}
             CardClassProps="flex flex-col text-center items-center w-[348px] sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-4 mt-4 rounded-[20px] m-[5px] h-[350px] shadow-xl"
           />
           <Section5
             StylePropsSection="text-center w-[100%] mt-[160px] mb-[160px]"
             TitleSize1="h1"
-            TitleLabel1="Our Commitment to Privacy"
+            TitleLabel1={title4}
             TextSize1="normal"
-            TextLabel1="Virufy takes the privacy and protection of your personal information seriously. Our legal team has prepared a detailed Privacy Policy and Cookie Policy to protect the personal information you share with us through use of our website."
+            TextLabel1={text4}
             ContainerTitleProps1="mb-5 mr-[15vw]"
             ContainerTextProps1="mb-4 mr-[15vw] text-center"
             TitleClassProps1="ml-[15vw]"

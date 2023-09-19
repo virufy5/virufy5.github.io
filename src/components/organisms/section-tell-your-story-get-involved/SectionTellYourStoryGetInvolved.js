@@ -6,6 +6,7 @@ import Image from "~/assets/static/images/SectionTellYourStoryGetInvolved/Sectio
 export default function SectionTellYourStoryGetInvolved({
     border,
     alt,
+    TextProps
 }) {
     return (
         <div className="text-center flex flex-col md:mb-[120px]">
@@ -14,9 +15,9 @@ export default function SectionTellYourStoryGetInvolved({
                     <TitleText
                         //TitleText
                         TitleSize="h1"
-                        TitleLabel="Tell your story"
+                        TitleLabel={TextProps.title5}
                         TextSize="subtitulo"
-                        TextLabel={"Many people will find motivation in your story."}
+                        TextLabel={TextProps.text5}
                         ContainerTextProps="items-start"
                         TextClassProps=""
                         TitleClassProps=""
@@ -28,7 +29,7 @@ export default function SectionTellYourStoryGetInvolved({
                     <TitleText
                         //TitleText
                         TextSize="subtitulo"
-                        TextLabel={"Share how COVID-19 has affected you or your loved ones, and how you have been able to overcome the disease."}
+                        TextLabel={TextProps.text5_1}
                         ContainerTextProps="items-start"
                         TextClassProps=""
                         TitleClassProps=""
@@ -39,7 +40,7 @@ export default function SectionTellYourStoryGetInvolved({
                 </div>
             </div>
             <div className="flex-col justify-center mb-14">
-                <Button size="medium" type="primary" path="/TellYourStory" label="Tell us your story" />
+                <Button size="medium" type="primary" path="/TellYourStory" label={TextProps.button4} />
             </div>
             <div className="w-full md:hidden flex items-center justify-end">
                 <ImageAtomLocal

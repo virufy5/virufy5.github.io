@@ -14,6 +14,7 @@ export default function SectionDonate({
     ContainerTextProps,
     border,
     alt,
+    TextProps
 }) {
 
 const [showModal, setShowModal] = React.useState(false);
@@ -93,9 +94,9 @@ const [showModal, setShowModal] = React.useState(false);
                     <div className="w-full items-center md:items-start md:text-left flex flex-col gap-5">
                         <TitleText
                             TitleSize="h2"
-                            TitleLabel="Donate"
+                            TitleLabel={TextProps.title1}
                             TextSize="normal"
-                            TextLabel="We need your contribution to be able to continue helping millions of people in the fight against Covid-19"
+                            TextLabel={TextProps.text1}
                             ContainerTitleProps={ContainerTitleProps}
                             ContainerTextProps={ContainerTextProps}
                             TextClassProps=""
@@ -110,9 +111,9 @@ const [showModal, setShowModal] = React.useState(false);
                     <div className="w-full items-center md:items-start md:text-left flex flex-col gap-5">
                         <TitleText
                             TitleSize="h2"
-                            TitleLabel="Donate"
+                            TitleLabel={TextProps.title1}
                             TextSize="subtitulo"
-                            TextLabel="We need your contribution to be able to continue helping millions of people in the fight against Covid-19"
+                            TextLabel={TextProps.text1}
                             ContainerTitleProps={ContainerTitleProps}
                             ContainerTextProps={ContainerTextProps}
                             TextClassProps=""
@@ -120,7 +121,7 @@ const [showModal, setShowModal] = React.useState(false);
                         />
                         <div className="hidden md:flex flex-col justify-center">
                             <Link onClick={() => setShowModal(true)} href="#">
-                                <Button size="medium" type="primary" path="#" label="DONATE" />
+                                <Button size="medium" type="primary" path="#" label={TextProps.button1} />
                             </Link>
                         </div>
                     </div>
