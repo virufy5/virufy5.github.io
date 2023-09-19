@@ -4,10 +4,10 @@ import { home } from "./home";
 import { AboutUs } from "./AboutUs";
 import { GetInvolved_ } from "./GetInvolved";
 import { howItWorks } from "./HowItWorks";
-import { dashboard } from "./dashboard";
-import { jobDescription } from "./jobDescription";
-import { ourPublications } from "./ourPublications";
-import { ourTechnology } from "./ourTecnology";
+import { dashboard } from "./Dashboard";
+import { jobDescription } from "./JobDescription";
+import { ourPublications } from "./OurPublications";
+import { ourTechnology } from "./OurTecnology";
 export const data: I18nData = {
   locale: 'en',
   home,
