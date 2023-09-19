@@ -94,16 +94,16 @@ const [showModal, setShowModal] = React.useState(false);
                     <div className="w-full items-center md:items-start md:text-left flex flex-col gap-5">
                         <TitleText
                             TitleSize="h2"
-                            TitleLabel={TextProps.title1}
+                            TitleLabel={TextProps?.title}
                             TextSize="normal"
-                            TextLabel={TextProps.text1}
+                            TextLabel={TextProps?.textLabel}
                             ContainerTitleProps={ContainerTitleProps}
                             ContainerTextProps={ContainerTextProps}
                             TextClassProps=""
                             TitleClassProps=""
                         />
                         <div className="flex md:hidden flex-col justify-center">
-                            <Button size="medium" type="primary" path="#" label="DONATE" />
+                            <Button size="medium" type="primary" path="#" label={TextProps?.button} />
                         </div>
                     </div>
                 </div>
@@ -111,9 +111,9 @@ const [showModal, setShowModal] = React.useState(false);
                     <div className="w-full items-center md:items-start md:text-left flex flex-col gap-5">
                         <TitleText
                             TitleSize="h2"
-                            TitleLabel={TextProps.title1}
+                            TitleLabel={TextProps?.title}
                             TextSize="subtitulo"
-                            TextLabel={TextProps.text1}
+                            TextLabel={TextProps?.textLabel}
                             ContainerTitleProps={ContainerTitleProps}
                             ContainerTextProps={ContainerTextProps}
                             TextClassProps=""
@@ -121,7 +121,7 @@ const [showModal, setShowModal] = React.useState(false);
                         />
                         <div className="hidden md:flex flex-col justify-center">
                             <Link onClick={() => setShowModal(true)} href="#">
-                                <Button size="medium" type="primary" path="#" label={TextProps.button1} />
+                                <Button size="medium" type="primary" path="#" label={TextProps?.button} />
                             </Link>
                         </div>
                     </div>

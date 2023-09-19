@@ -4,35 +4,8 @@ export type I18nData = {
     title: string;
     subtitle: string;
   };
-  AboutUs: {
-    titleImage: string;
-    title1: string;
-    text1: string;
-    title2: string;
-    text2: string;
-    title3: string;
-    CardsData: any;
-    title4: string;
-    text4: string;
-  };
-  GetInvolved_: {
-    title1: string;
-    text1: string;
-    button1: string;
-    title2: string;
-    text2: string;
-    title3: string;
-    text3: string;
-    button2: string;
-    title4: string;
-    text4: string;
-    text4_1: string;
-    button3: string;
-    title5: string;
-    text5: string;
-    text5_1: string;
-    button4: string;
-  };
+  AboutUs?: AboutUs;
+  GetInvolved_?: GetInvolved;
   howItWorks?: HowItWorks;
   dashboard?: {
     tittle: string;
@@ -120,3 +93,72 @@ export interface OurTechnology {
   collectedDataText: string;
   dashboardButtonLabel: string;
 }
+
+// ---- Get Involved ----
+export interface GetInvolved {
+  sectionDonate: sectionDonate;
+  sectionJoinOurTeam: sectionJoinOurTeam;
+  sectionTellYouStory: sectionTellYouStory;
+}
+
+export interface sectionDonate {
+  title: string;
+  textLabel: string;
+  button: string;
+}
+export interface sectionJoinOurTeam {
+  titleJoinOurTeam: string;
+  textJoinOurTeam: string;
+  titleCareers: string;
+  textCareers: string;
+  buttonCareers: string;
+  titleBecomeAPartner: string;
+  textBecomeAPartner: string;
+  text2BecomeAPartner: string;
+  buttonBecomeAPartner: string;
+}
+
+export interface sectionTellYouStory {
+  titleTellYourStory: string;
+  textTellYourStory: string;
+  text2TellYourStory: string;
+  buttonTellYourStory: string;
+}
+// ---- | ----
+
+// ---- About Us ---
+export interface AboutUs {
+  titleImage: string;
+  sectionOurMissionStory: sectionOurMissionStory;
+  sectionOurValues: sectionOurValues;
+  sectionOurCommitmentPrivacy: sectionOurCommitmentPrivacy;
+}
+
+export interface sectionOurMissionStory {
+  titleMission: string;
+  textMission: string;
+  titleStory: string;
+  textStory: string;
+}
+
+export interface sectionOurValues {
+  title: string;
+  Transformation: string;
+  textTransformation: string;
+  Collaboration: string;
+  textCollaboration: string;
+  Health: string;
+  textHealth: string;
+  Affordability: string;
+  textAffordability: string;
+  Efficiency: string;
+  textEfficiency: string;
+  Innovation: string;
+  textInnovation: string;
+}
+
+export interface sectionOurCommitmentPrivacy {
+  title: string;
+  text: string;
+}
+//---- | ----

@@ -17,23 +17,14 @@ import Title from "~/components/atoms/Title/Title"
 export default function AboutUs() {
 
   const {
-    AboutUs: {
-      titleImage,
-      title1,
-      text1,
-      title2,
-      text2,
-      title3,
-      CardsData,
-      title4,
-      text4, },
+    AboutUs: { titleImage, sectionOurMissionStory, sectionOurValues, sectionOurCommitmentPrivacy },
   } = useI18n();
 
 
   const Cards_Data = [
     {
       route: Card1,
-      name: "{CardsData.name1}",
+      name: "Transformation",
       text: "We aim to transform expensive healthcare systems by using technology to drive necessary changes.",
     },
     {
@@ -78,17 +69,17 @@ export default function AboutUs() {
           <Section5
             StylePropsSection="text-center w-[100%] mt-[80px]"
             TitleSize1="h1"
-            TitleLabel1={title1}
+            TitleLabel1={sectionOurMissionStory?.titleMission}
             TextSize1="normal"
-            TextLabel1={text1}
+            TextLabel1={sectionOurMissionStory?.textMission}
             ContainerTitleProps1="mb-5 mr-[15vw]"
             ContainerTextProps1="mb-4 mr-[15vw] text-left"
             TitleClassProps1="ml-[15vw]"
             TextClassProps1="ml-[15vw]"
             TitleSize2="h1"
-            TitleLabel2={title2}
+            TitleLabel2={sectionOurMissionStory?.titleStory}
             TextSize2="normal"
-            TextLabel2={text2}
+            TextLabel2={sectionOurMissionStory?.textStory}
             ContainerTitleProps2="mb-5 mr-[15vw] mt-[80px]"
             ContainerTextProps2="mb-4 mr-[15vw] text-left"
             TitleClassProps2="ml-[15vw]"
@@ -96,7 +87,7 @@ export default function AboutUs() {
           />
           <Title
             H="h1"
-            Text={title3}
+            Text={sectionOurValues?.title}
             TitleClassProps="text-center mt-[100px] mb-[60px]"
           />
           <Card
@@ -106,9 +97,9 @@ export default function AboutUs() {
           <Section5
             StylePropsSection="text-center w-[100%] mt-[160px] mb-[160px]"
             TitleSize1="h1"
-            TitleLabel1={title4}
+            TitleLabel1={sectionOurCommitmentPrivacy?.title}
             TextSize1="normal"
-            TextLabel1={text4}
+            TextLabel1={sectionOurCommitmentPrivacy?.text}
             ContainerTitleProps1="mb-5 mr-[15vw]"
             ContainerTextProps1="mb-4 mr-[15vw] text-center"
             TitleClassProps1="ml-[15vw]"

@@ -15,9 +15,9 @@ export default function SectionTellYourStoryGetInvolved({
                     <TitleText
                         //TitleText
                         TitleSize="h1"
-                        TitleLabel={TextProps.title5}
+                        TitleLabel={TextProps?.titleTellYourStory}
                         TextSize="subtitulo"
-                        TextLabel={TextProps.text5}
+                        TextLabel={TextProps?.textTellYourStory}
                         ContainerTextProps="items-start"
                         TextClassProps=""
                         TitleClassProps=""
@@ -29,7 +29,7 @@ export default function SectionTellYourStoryGetInvolved({
                     <TitleText
                         //TitleText
                         TextSize="subtitulo"
-                        TextLabel={TextProps.text5_1}
+                        TextLabel={TextProps?.text2TellYourStory}
                         ContainerTextProps="items-start"
                         TextClassProps=""
                         TitleClassProps=""
@@ -40,7 +40,7 @@ export default function SectionTellYourStoryGetInvolved({
                 </div>
             </div>
             <div className="flex-col justify-center mb-14">
-                <Button size="medium" type="primary" path="/TellYourStory" label={TextProps.button4} />
+                <Button size="medium" type="primary" path="/TellYourStory" label={TextProps?.buttonTellYourStory} />
             </div>
             <div className="w-full md:hidden flex items-center justify-end">
                 <ImageAtomLocal
