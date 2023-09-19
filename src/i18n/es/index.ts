@@ -23,7 +23,7 @@ export const data: I18nData = {
   ourPublications,
   ourTechnology,
   OurPeople1,
-  OurPeople2,,
+  OurPeople2,
   ourResearch,
   tellYourStory
 };
