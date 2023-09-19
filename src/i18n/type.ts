@@ -15,6 +15,8 @@ export type I18nData = {
   jobDescription?: JobDescription
   ourPublications?: OurPublications
   ourTechnology?: OurTechnology
+  OurPeople1?: OurPeople1;
+  OurPeople2?: OurPeople2;
 }
 
 // ---- How It Works ----
@@ -180,4 +182,40 @@ export interface sectionOurCommitmentPrivacy {
   title: string;
   text: string;
 }
+//---- | ----
+
+// ---- OurPeople1 ---
+export interface OurPeople1 {
+  titleImage: string;
+  sectionMeetOurFounder: sectionMeetOurFounder;
+  sectionAdvisors: sectionAdvisors;
+}
+
+export interface sectionMeetOurFounder {
+ titleMeetOurFounder: string;
+ titleAmil: string;
+ textAmil: string;
+ button: string;
+}
+
+export interface sectionAdvisors {
+  title: string;
+}
+
+//---- | ----
+
+// ---- OurPeople2 ---
+
+export interface OurPeople2 {
+  titleImage: string;
+  sectionAmil: sectionAmil;
+}
+
+export interface sectionAmil {
+ titleAmil: string;
+ textAmil: any;
+ titlePublications: string;
+ listPublications: any;
+}
+
 //---- | ----

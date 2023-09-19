@@ -2,10 +2,10 @@
 //Organismo
 import Section1 from "~/components/organisms/section-1/Section1"
 
-//Prueba
 import TextinsImg from "~/components/molecules/TextinsImg/TextinsImg"
 import Card from "~/components/molecules/Card/Card"
 import Title from "~/components/atoms/Title/Title"
+import { useI18n } from "~/i18n";
 
 import Card1 from "~/assets/static/images/ourPeople/card1.jpg"
 import Card2 from "~/assets/static/images/ourPeople/card2.jpg"
@@ -36,7 +36,9 @@ import Section4 from "~/components/organisms/section-4/Section4"
 
 export default function OurPeople1() {
 
-  const buttons = ["Read more"]
+  const {
+    OurPeople1: { titleImage, sectionMeetOurFounder, sectionAdvisors },
+  } = useI18n();
 
   const CardsData = [
     {
@@ -186,7 +188,7 @@ export default function OurPeople1() {
         borderImg="none"
         src={ImageinsText}
         altImg="Imagen cabezera"
-        Text="We unite from across the world to defeat COVID-19 one cough at a time."
+        Text={titleImage}
       />
     <div className="flex flex-col justify-center items-center">
       <div className="flex flex-col justify-center items-center max-w-[1440px] ">
@@ -194,10 +196,10 @@ export default function OurPeople1() {
           <Section4
             TitleSize1="h1"
             TitleSize2="h3"
-            TitleLabel1="Meet Our Founder"
-            TitleLabel2="Amil Khanzada"
-            TextLabel="MBA Candidate, Haas School of Business Master of Engineering Candidate, Department of Electrical Engineering and Computer Sciences"
-            labelButton="read more"
+            TitleLabel1={sectionMeetOurFounder.titleMeetOurFounder}
+            TitleLabel2={sectionMeetOurFounder.titleAmil}
+            TextLabel={sectionMeetOurFounder.textAmil}
+            labelButton={sectionMeetOurFounder.button}
             buttonRoute="/OurPeople2"
             ContainerTitleProps
             ContainerTextProps
@@ -207,7 +209,7 @@ export default function OurPeople1() {
 
           <Title
             H="h1"
-            Text="Advisors"
+            Text={sectionAdvisors.title}
             TitleClassProps="text-center m-[5vw]"
           />
 
