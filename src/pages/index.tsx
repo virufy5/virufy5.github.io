@@ -1,4 +1,5 @@
-import LocaleSelector from "~/components/LocaleSelector";
+// import LocaleSelector from "~/components/LocaleSelector";
+import LocaleSelector from "~/components/atoms/Select/LocaleSelector";
 import { useI18n } from "~/i18n";
 
 export default function Home() {
