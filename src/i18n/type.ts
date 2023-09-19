@@ -14,7 +14,9 @@ export type I18nData = {
   }
   jobDescription?: JobDescription
   ourPublications?: OurPublications
-  ourTechnology?: OurTechnology
+  ourTechnology?: OurTechnology,
+  ourResearch?: OurResearch,
+  tellYourStory: TellYourStory
   OurPeople1?: OurPeople1;
   OurPeople2?: OurPeople2;
 }
@@ -218,4 +220,52 @@ export interface sectionAmil {
  listPublications: any;
 }
 
+//---- | ----
+
+// ---- OurResearch ----
+export interface OurResearch {
+  firstCard:       Card;
+  secondCard:      Card;
+  thirdCard:       Card;
+  fourthCard:      Card;
+  sectionScience:  SectionScience;
+  sectionResearch: SectionResearch;
+}
+
+export interface Card {
+  universityTitle: string;
+  description:     string;
+}
+
+export interface SectionResearch {
+  titleResearch:    string;
+  titleWantToLearn: string;
+  button:           string;
+}
+
+export interface SectionScience {
+  title:     string;
+  textLabel: string;
+}
+//---- | ----
+
+// ---- Tell Your Story ----
+export interface TellYourStory {
+  sectionTellYourStory: SectionTellYourStory;
+  form:                 Form;
+}
+
+export interface Form {
+  name:        string;
+  email:       string;
+  message:     string;
+  uploadPhoto: string;
+  titleFiles:  string;
+  button:      string;
+}
+
+export interface SectionTellYourStory {
+  title: string;
+  text:  string;
+}
 //---- | ----
