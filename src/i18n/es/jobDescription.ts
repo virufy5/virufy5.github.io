@@ -1,25 +1,41 @@
 export const jobDescription = {
-  title: "Gerente de Proyecto",
-  textInfo:
-    "Buscamos a una persona que contribuya en una base de voluntariado a tiempo parcial y colabore estrechamente con el equipo de desarrollo de Virufy, defina la hoja de ruta del producto, gestione el progreso del desarrollo y se alinee con las partes interesadas.",
-  responsibilities: "Responsabilidades",
-  li1: "Definir la hoja de ruta del producto y gestionar el backlog del producto",
-  li2: "Analizar las necesidades de los usuarios y las condiciones del mercado",
-  li3: "Comunicar los requisitos del producto al equipo de desarrollo",
-  li4: "Priorizar tareas y asegurarse de que se completen con éxito",
-  li5: "Desarrollar, implementar y mantener la línea de tiempo de producción",
-  li6: "Trabajar en colaboración con el equipo de desarrollo, UI/UX y empresas colaboradoras",
-  minimumQualifications: "Requisitos Mínimos",
-  li7: "Tener 18 años o más",
-  li8: "Estar legalmente autorizado para trabajar en los Estados Unidos (No patrocinamos visas)",
-  li9: "Graduado de la escuela secundaria o con título universitario",
-  li10: "Identificación con foto válida (Licencia de conducir o pasaporte)",
-  li11: "Debe ser políglota (inglés, español y portugués)",
-  desiredSkills: "Habilidades Deseadas",
-  li12: "Experiencia previa en gestión de productos (puede incluir investigación o pasantías)",
-  li13: "Organizado, colaborativo y orientado a los detalles",
-  li14: "Habilidades excepcionales de comunicación",
-  li15: "Fuerte sentido de responsabilidad",
-  questions: "¿Preguntas?",
-  li16: "Comuníquese con vivek.krishnani@virufy.org y le responderemos con prontitud.",
-};
+  jobTitle: 'Administrador de Proyecto',
+  jobDescription:
+    'Estamos buscando a alguien para contribuir en una base de voluntariado a tiempo parcial y colaborar estrechamente con el equipo de desarrollo de Virufy, definir la hoja de ruta del producto, gestionar el progreso del desarrollo y alinearse con las partes interesadas.',
+  responsibilitiesSection: {
+    responsibilities: 'Responsabilidades',
+    responsibilityDefine:
+      'Definir la hoja de ruta del producto y gestionar el backlog',
+    responsibilityAnalize:
+      'Analizar las necesidades de los usuarios y las condiciones del mercado',
+    responsibilityRequest:
+      'Comunicar los requisitos del producto al equipo de desarrollo',
+    responsibilityTask: 'Priorizar tareas y garantizar su ejecución exitosa',
+    responsibilityDevelop:
+      'Desarrollar, implementar y mantener el cronograma de producción',
+    responsibilityJob:
+      'Trabajar en colaboración con el equipo de desarrollo, UI/UX y empresas asociadas',
+  },
+  qualificationsSection: {
+    minimumQualifications: 'Calificaciones Mínimas',
+    qualificationOld: 'Ser mayor de 18 años',
+    qualificationWork:
+      'Estar legalmente autorizado para trabajar en los Estados Unidos (No patrocinamos visas)',
+    qualificationTittle:
+      'Ser graduado de la escuela secundaria o tener un título universitario',
+    qualificationPhoto:
+      'Contar con una identificación con foto válida (licencia de conducir o pasaporte)',
+    qualificationLanguage: 'Debe ser multilingüe (inglés, español y portugués)',
+  },
+  skillsSection: {
+    desiredSkills: 'Habilidades Deseadas',
+    skillExperience:
+      'Experiencia previa en gestión de productos (puede incluir investigación o pasantías)',
+    skillDetail: 'Ser organizado, colaborativo y detallista',
+    skillComunication: 'Tener habilidades excepcionales de comunicación',
+    skillResponsability: 'Tener un fuerte sentido de responsabilidad',
+  },
+  questions: '¿Preguntas?',
+  contactEmail:
+    'Comunícate con vivek.krishnani@virufy.org y te responderemos rápidamente.',
+}

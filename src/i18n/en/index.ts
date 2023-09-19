@@ -1,4 +1,4 @@
-import { type I18nData } from "../type";
+import { type I18nData } from '../type'
 
 import { home } from "./home";
 import { AboutUs } from "./AboutUs";
@@ -9,7 +9,7 @@ import { jobDescription } from "./jobDescription";
 import { ourPublications } from "./ourPublications";
 import { ourTechnology } from "./ourTecnology";
 export const data: I18nData = {
-  locale: "en",
+  locale: 'en',
   home,
   AboutUs,
   GetInvolved_,
@@ -17,5 +17,5 @@ export const data: I18nData = {
   dashboard,
   jobDescription,
   ourPublications,
-  ourTechnology
-};
+  ourTechnology,
+}

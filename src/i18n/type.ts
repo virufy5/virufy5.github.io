@@ -1,5 +1,5 @@
 export type I18nData = {
-  locale: string;
+  locale: string
   home: {
     title: string;
     subtitle: string;
@@ -8,90 +8,109 @@ export type I18nData = {
   GetInvolved_?: GetInvolved;
   howItWorks?: HowItWorks;
   dashboard?: {
-    tittle: string;
-    tittleInfo: string;
-    advertisement: string;
-  };
-  jobDescription?: JobDescription;
-  ourPublications?: OurPublications;
-  ourTechnology?: OurTechnology;
-};
+    tittle: string
+    tittleInfo: string
+    advertisement: string
+  }
+  jobDescription?: JobDescription
+  ourPublications?: OurPublications
+  ourTechnology?: OurTechnology
+}
 
 // ---- How It Works ----
 export interface HowItWorks {
-  sectionShareCougt: SectionShareCougt;
-  sectiontCovidTestExplanation: SectiontCovidTestExplanation;
+  sectionShareCougt: SectionShareCougt
+  sectiontCovidTestExplanation: SectiontCovidTestExplanation
 }
 
 export interface SectionShareCougt {
-  title: string;
-  textLabel: string;
-  buttons: string;
+  title: string
+  textLabel: string
+  buttons: string
 }
 export interface SectiontCovidTestExplanation {
-  title: string;
-  titleLabelRecording: string;
-  titleLabelProcessing: string;
-  titleLabelResults: string;
-  textLabelRecording: string;
-  textLabelProcessing: string;
-  textLabelResults: string;
+  title: string
+  titleLabelRecording: string
+  titleLabelProcessing: string
+  titleLabelResults: string
+  textLabelRecording: string
+  textLabelProcessing: string
+  textLabelResults: string
 }
 // ---- | ----
 
 // ---- Job Description ----
+export interface ResponsibilitiesSection {
+  responsibilities: string
+  responsibilityDefine: string
+  responsibilityAnalize: string
+  responsibilityRequest: string
+  responsibilityTask: string
+  responsibilityDevelop: string
+  responsibilityJob: string
+}
+
+export interface QualificationsSection {
+  minimumQualifications: string
+  qualificationOld: string
+  qualificationWork: string
+  qualificationTittle: string
+  qualificationPhoto: string
+  qualificationLanguage: string
+}
+
+export interface SkillsSection {
+  desiredSkills: string
+  skillExperience: string
+  skillDetail: string
+  skillComunication: string
+  skillResponsability: string
+}
+
 export interface JobDescription {
-  title: string;
-  textInfo: string;
-  responsibilities: string;
-  li1: string;
-  li2: string;
-  li3: string;
-  li4: string;
-  li5: string;
-  li6: string;
-  minimumQualifications: string;
-  li7: string;
-  li8: string;
-  li9: string;
-  li10: string;
-  li11: string;
-  desiredSkills: string;
-  li12: string;
-  li13: string;
-  li14: string;
-  li15: string;
-  questions: string;
-  li16: string;
+  jobTitle: string
+  jobDescription: string
+  responsibilitiesSection: ResponsibilitiesSection
+  qualificationsSection: QualificationsSection
+  skillsSection: SkillsSection
+  questions: string
+  contactEmail: string
 }
 // ---- | ----
 
 // ---- Our Publications ---
 export interface OurPublications {
-  title: string;
-  card1Text: string;
-  card2Text: string;
-  card3Text: string;
-  card4Text: string;
-  helpText: string;
-  buttonText: string;
+  publicationCarts: PublicationCards
+  helpText: string
+  buttonText: string
+}
+export interface PublicationCards {
+  title: string
+  cardStudy: string
+  cardVoice: string
+  cardSensibility: string
+  cardInvestigation: string
 }
 //---- | ----
 
 // ---- Our Technology ---
+export interface AboutVirufySection {
+  title: string
+  recordingYourCough: string
+  recordingDescription: string
+  processingYourCough: string
+  processingDescription: string
+  resultsYourCough: string
+  resultDescription: string
+}
+
 export interface OurTechnology {
-  section1Title: string;
-  section1Text: string;
-  section8Title: string;
-  recordingYourCough: string;
-  section8Text1: string;
-  processing: string;
-  section8Text2: string;
-  results: string;
-  section8Text3: string;
-  collectedDataTitle: string;
-  collectedDataText: string;
-  dashboardButtonLabel: string;
+  title: string
+  titileDescription: string
+  aboutVirufySection: AboutVirufySection
+  collectedDataTitle: string
+  collectedDataText: string
+  dashboardButtonLabel: string
 }
 
 // ---- Get Involved ----

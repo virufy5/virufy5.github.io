@@ -1,25 +1,41 @@
 export const jobDescription = {
-  title: "Project Manager",
-  textInfo:
-    "Seeking an individual to contribute on a part-time volunteer basis and collaborate closely with the Virufy development team, define the product roadmap, manage development progress and align with stakeholders.",
-  responsibilities: "Responsibilities",
-  li1: "Define product roadmap and manage product backlog",
-  li2: "Analyze user needs and market conditions",
-  li3: "Communicate product requirements to the development team",
-  li4: "Prioritize tasks and ensure they are successfully achieved",
-  li5: "Develop, implement, and maintain production timeline",
-  li6: "Work collaboratively with development team, UI/UX, and partner companies",
-  minimumQualifications: "Minimum Qualifications",
-  li7: "Age 18 or over",
-  li8: "Legally authorized to work in the United States (We do not sponsor Visas)",
-  li9: "High School Graduate or College Degree",
-  li10: "Valid Photo ID (Drivers License or Passport)",
-  li11: "Must Be Multi-Lingual (English, Spanish & Portuguese)",
-  desiredSkills: "Desired Skills",
-  li12: "Previous experience in product management (may include research or internship)",
-  li13: "Organized, collaborative, and detail-oriented",
-  li14: "Exceptional communication skills",
-  li15: "Strong sense of responsibility",
-  questions: "Questions?",
-  li16: "Reach out to vivek.krishnani@virufy.org and we will get back to you promptly.",
-};
+  jobTitle: 'Project Manager',
+  jobDescription:
+    'We are looking for someone to contribute on a part-time volunteer basis and collaborate closely with the Virufy development team, define the product roadmap, manage development progress, and align with stakeholders.',
+  responsibilitiesSection: {
+    responsibilities: 'Responsibilities',
+    responsibilityDefine:
+      'Define the product roadmap and manage the backlog',
+    responsibilityAnalize:
+      'Analyze user needs and market conditions',
+    responsibilityRequest:
+      'Communicate product requirements to the development team',
+    responsibilityTask: 'Prioritize tasks and ensure their successful execution',
+    responsibilityDevelop:
+      'Develop, implement, and maintain the production timeline',
+    responsibilityJob:
+      'Work collaboratively with the development team, UI/UX, and partner companies',
+  },
+  qualificationsSection: {
+    minimumQualifications: 'Minimum Qualifications',
+    qualificationOld: 'Age 18 or over',
+    qualificationWork:
+      'Legally authorized to work in the United States (We do not sponsor Visas)',
+    qualificationTittle:
+      'High School Graduate or College Degree',
+    qualificationPhoto:
+      'Valid Photo ID (Drivers License or Passport)',
+      qualificationLanguage: 'Must Be Multi-Lingual (English, Spanish & Portuguese)',
+  },
+  skillsSection: {
+    desiredSkills: 'Desired Skills',
+    skillExperience:
+      'Previous experience in product management (may include research or internship)',
+    skillDetail: 'Organized, collaborative, and detail-oriented',
+    skillComunication: 'Exceptional communication skills',
+    skillResponsability: 'Strong sense of responsibility',
+  },
+  questions: 'Questions?',
+  contactEmail:
+    'Reach out to vivek.krishnani@virufy.org and we will get back to you promptly.',
+}

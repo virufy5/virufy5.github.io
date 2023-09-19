@@ -9,11 +9,7 @@ import { useI18n } from "~/i18n";
 export default function OurPublications() {
   const {
     ourPublications: {
-      title,
-      card1Text,
-      card2Text,
-      card3Text,
-      card4Text,
+      publicationCarts,
       helpText,
       buttonText,
     },
@@ -22,19 +18,19 @@ export default function OurPublications() {
   const CardsData = [
     {
       route: notebook,
-      text: card1Text,
+      text: publicationCarts?.cardStudy,
     },
     {
       route: notebook,
-      text: card2Text,
+      text: publicationCarts?.cardVoice,
     },
     {
       route: notebook,
-      text: card3Text,
+      text: publicationCarts?.cardSensibility,
     },
     {
       route: notebook,
-      text: card4Text,
+      text: publicationCarts?.cardInvestigation,
     },
   ];
 
@@ -48,7 +44,7 @@ export default function OurPublications() {
     "
           >
             <Title
-              Text={title}
+              Text={publicationCarts?.title}
               H="h1"
               TitleClassProps="mt-12 mb-12"
             />
