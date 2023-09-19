@@ -1,6 +1,7 @@
 import TitleText from "~/components/molecules/TitleText/TitleText"
 import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal"
 import Image from "~/assets/static/images/TellYourStoryTop/Image.jpg"
+import { useI18n } from "~/i18n"
 
 export default function TellYourStoryTop({
     ContainerTitleProps,
@@ -8,6 +9,7 @@ export default function TellYourStoryTop({
     border,
     alt
 }) {
+    const { tellYourStory: { sectionTellYourStory } } = useI18n()
     return (
         <div className="text-center md:mt-[70px] md:mb-[70px] mb-[40px] flex flex-col md:ml-[5vw] md:mr-[5vw]">
             <div className="flex flex-col md:flex-row-reverse items-center flex-1">
@@ -24,9 +26,9 @@ export default function TellYourStoryTop({
                     <div className="w-full items-center md:items-start md:text-left flex flex-col gap-5">
                         <TitleText
                             TitleSize="h2"
-                            TitleLabel="Tell your story"
+                            TitleLabel={sectionTellYourStory.title}
                             TextSize="normal"
-                            TextLabel="Tell us how COVID 19 has affected you or your family and how you have been able to overcome the disease, many people will find motivation in your story."
+                            TextLabel={sectionTellYourStory.text}
                             ContainerTitleProps={ContainerTitleProps}
                             ContainerTextProps={ContainerTextProps}
                             TextClassProps=""
@@ -38,9 +40,9 @@ export default function TellYourStoryTop({
                     <div className="w-full items-center md:items-start md:text-left flex flex-col gap-5">
                         <TitleText
                             TitleSize="h2"
-                            TitleLabel="Tell your story"
+                            TitleLabel={sectionTellYourStory.title}
                             TextSize="subtitulo"
-                            TextLabel="Tell us how COVID 19 has affected you or your family and how you have been able to overcome the disease, many people will find motivation in your story."
+                            TextLabel={sectionTellYourStory.text}
                             ContainerTitleProps={ContainerTitleProps}
                             ContainerTextProps={ContainerTextProps}
                             TextClassProps=""

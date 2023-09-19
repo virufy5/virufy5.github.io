@@ -9,6 +9,7 @@ import { jobDescription } from "./JobDescription";
 import { ourPublications } from "./OurPublications";
 import { ourTechnology } from "./OurTecnology";
 import { ourResearch } from './OurResearch';
+import { tellYourStory } from './TellYourStory';
 export const data: I18nData = {
   locale: 'en',
   home,
@@ -19,5 +20,6 @@ export const data: I18nData = {
   jobDescription,
   ourPublications,
   ourTechnology,
-  ourResearch
+  ourResearch,
+  tellYourStory
 }
