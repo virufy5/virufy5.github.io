@@ -108,10 +108,10 @@ export interface JobDescription {
 // ---- Our Publications ---
 export interface OurPublications {
   title: string;
-  card1Text: string;
-  card2Text: string;
-  card3Text: string;
-  card4Text: string;
+  cardStudy: string;
+  cardVoice: string;
+  cardSensibility: string;
+  cardInvestigation: string;
   helpText: string;
   buttonText: string;
 }

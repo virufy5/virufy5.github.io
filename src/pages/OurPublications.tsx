@@ -10,10 +10,10 @@ export default function OurPublications() {
   const {
     ourPublications: {
       title,
-      card1Text,
-      card2Text,
-      card3Text,
-      card4Text,
+      cardStudy,
+      cardVoice,
+      cardSensibility,
+      cardInvestigation,
       helpText,
       buttonText,
     },
@@ -22,19 +22,19 @@ export default function OurPublications() {
   const CardsData = [
     {
       route: notebook,
-      text: card1Text,
+      text: cardStudy,
     },
     {
       route: notebook,
-      text: card2Text,
+      text: cardVoice,
     },
     {
       route: notebook,
-      text: card3Text,
+      text: cardSensibility,
     },
     {
       route: notebook,
-      text: card4Text,
+      text: cardInvestigation,
     },
   ];
 
