@@ -67,29 +67,41 @@ export interface SectiontCovidTestExplanation {
 // ---- | ----
 
 // ---- Job Description ----
-export interface JobDescription {
-  title: string;
-  textInfo: string;
+export interface ResponsibilitiesSection {
   responsibilities: string;
-  li1: string;
-  li2: string;
-  li3: string;
-  li4: string;
-  li5: string;
-  li6: string;
+  responsibilityDefine: string;
+  responsibilityAnalize: string;
+  responsibilityRequest: string;
+  responsibilityTask: string;
+  responsibilityDevelop: string;
+  responsibilityJob: string;
+}
+
+export interface QualificationsSection {
   minimumQualifications: string;
-  li7: string;
-  li8: string;
-  li9: string;
-  li10: string;
-  li11: string;
+  qualificationOld: string;
+  qualificationWork: string;
+  qualificationTittle: string;
+  qualificationPhoto: string;
+  qualificationLanguage: string;
+}
+
+export interface SkillsSection {
   desiredSkills: string;
-  li12: string;
-  li13: string;
-  li14: string;
-  li15: string;
+  skillExperience: string;
+  skillDetail: string;
+  skillComunication: string;
+  skillResponsability: string;
+}
+
+export interface JobDescription {
+  jobTitle: string;
+  jobDescription: string;
+  responsibilitiesSection: ResponsibilitiesSection;
+  qualificationsSection: QualificationsSection;
+  skillsSection: SkillsSection;
   questions: string;
-  li16: string;
+  contactEmail: string;
 }
 // ---- | ----
 
