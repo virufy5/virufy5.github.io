@@ -121,16 +121,20 @@ export interface PublicationCards {
 //---- | ----
 
 // ---- Our Technology ---
-export interface OurTechnology {
-  section1Title: string
-  section1Text: string
-  section8Title: string
+export interface AboutVirufySection {
+  title: string
   recordingYourCough: string
-  section8Text1: string
-  processing: string
-  section8Text2: string
-  results: string
-  section8Text3: string
+  recordingDescription: string
+  processingYourCough: string
+  processingDescription: string
+  resultsYourCough: string
+  resultDescription: string
+}
+
+export interface OurTechnology {
+  title: string
+  titileDescription: string
+  aboutVirufySection: AboutVirufySection
   collectedDataTitle: string
   collectedDataText: string
   dashboardButtonLabel: string

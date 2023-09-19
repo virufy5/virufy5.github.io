@@ -14,15 +14,9 @@ import { useI18n } from "~/i18n";
 export default function OurTechnology() {
   const {
     ourTechnology: {
-      section1Title,
-      section1Text,
-      section8Title,
-      recordingYourCough,
-      section8Text1,
-      processing,
-      section8Text2,
-      results,
-      section8Text3,
+      title,
+      titileDescription,
+      aboutVirufySection,
       collectedDataTitle,
       collectedDataText,
       dashboardButtonLabel,
@@ -34,9 +28,9 @@ export default function OurTechnology() {
         <div className="flex flex-col justify-center items-center max-w-[1440px]">
           <Section1
             TitleSize="h1"
-            TitleLabel={section1Title}
+            TitleLabel={title}
             TextSize="normal"
-            TextLabel={section1Text}
+            TextLabel={titileDescription}
             ContainerTitleProps={""}
             ContainerTextProps="items-start h-[100%] mr-4"
             sizeImg="pr90"
@@ -49,7 +43,7 @@ export default function OurTechnology() {
           />
 
           <Section8
-            TitleLabel={section8Title}
+            TitleLabel={aboutVirufySection?.title}
             TitleSize="h1"
             ContainerTitleProps="text-center ml-[5vw] mr-[5vw]"
             sizeImg="pr90"
@@ -59,13 +53,13 @@ export default function OurTechnology() {
             route3={howItWorksStep3}
             alt="Section 7"
             TitleSize1="h3"
-            TitleLabel1={recordingYourCough}
-            TitleLabel2={processing}
-            TitleLabel3={results}
+            TitleLabel1={aboutVirufySection?.recordingYourCough}
+            TitleLabel2={aboutVirufySection?.processingYourCough}
+            TitleLabel3={aboutVirufySection?.resultsYourCough}
             TextSize="normal"
-            TextLabel1={section8Text1}
-            TextLabel2={section8Text2}
-            TextLabel3={section8Text3}
+            TextLabel1={aboutVirufySection?.recordingDescription}
+            TextLabel2={aboutVirufySection?.processingDescription}
+            TextLabel3={aboutVirufySection?.resultDescription}
             ContainerTextProps=""
           />
 
