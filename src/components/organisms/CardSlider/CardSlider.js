@@ -83,13 +83,13 @@ export default function CardSlider() {
               }
               disabled={
                 currentSlide ===
-                instanceRef.current.track.details.slides.length - 1
+                instanceRef.current.track.details?.slides.length - 1
               }
             />
             {loaded && instanceRef.current && (
               <div className="dots">
                 {[
-                  ...Array(instanceRef.current.track.details.slides.length).keys(),
+                  ...Array(instanceRef.current.track?.details?.slides.length).keys(),
                 ].map((idx) => {
                   return (
                     <button

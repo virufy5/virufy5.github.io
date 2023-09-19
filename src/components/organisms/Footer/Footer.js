@@ -133,7 +133,7 @@ export default function Footer() {
                                                 <details className="w-full  bg-white cursor-pointer mb-3">
                                                     <summary className="bg-white text-dark flex justify-between px-4 py-3 after:content-['+'] mt-3 font-bold">Bolivia</summary>
                                                     <hr className="border-1 border-gray-400 mt-3" />
-                                                    <a href=" https://drive.google.com/file/d/1ZSrRivk4YJyyDioqYeAsz0fgNAP3UwVn/view">
+                                                    <a href="https://drive.google.com/file/d/1ZSrRivk4YJyyDioqYeAsz0fgNAP3UwVn/view">
                                                         <p className="px-4 py-3  mt-3">
                                                             Política de Privacidad
                                                         </p>
@@ -575,22 +575,22 @@ export default function Footer() {
                             <LinkAtom Routes={links1} Style="linkFooter" />
                         </li>
                         <li className="flex w-full items-center justify-center my-1 underline">
-                            <Link onClick={() => setShowModalCookiesPolicy(true)} href="">
+                            <div onClick={() => setShowModalCookiesPolicy(true)}>
                                 <LinkAtom Routes={links2} Style="linkFooter" />
-                            </Link>
+                            </div>
                         </li>
                         <li className="flex w-full items-center justify-center my-1 underline">
                             <LinkAtom Routes={links3} Style="linkFooter" />
                         </li>
                         <li className="flex w-full items-center justify-center my-1 underline">
-                            <Link onClick={() => setShowModalPrivacyPolicy(true)} href="">
+                            <div onClick={() => setShowModalPrivacyPolicy(true)}>
                                 <LinkAtom Routes={links4} Style="linkFooter" />
-                            </Link>
+                            </div>
                         </li>
                         <li className="flex w-full items-center justify-center my-1 underline">
-                            <Link onClick={() => setShowModalMyInformation(true)} href="">
+                            <div onClick={() => setShowModalMyInformation(true)}>
                                 <LinkAtom Routes={links5} Style="linkFooter" />
-                            </Link>
+                            </div>
                         </li>
                         <li className="flex w-full items-center justify-center my-1 underline">
 
@@ -604,16 +604,16 @@ export default function Footer() {
                         </li>
 
                         <li className="flex w-full items-center justify-center my-6 underline">
-                            <Link onClick={() => setShowModalCookiesPolicy(true)} href="">
+                            <div onClick={() => setShowModalCookiesPolicy(true)}>
                                 <LinkAtom Routes={links2} Style="linkFooter" />
-                            </Link>
-                            <Link onClick={() => setShowModalPrivacyPolicy(true)} href="">
+                            </div>
+                            <div onClick={() => setShowModalPrivacyPolicy(true)}>
                                 <LinkAtom Routes={links4} Style="linkFooter" />
-                            </Link>
+                            </div>
 
-                            <Link onClick={() => setShowModalMyInformation(true)} href="">
+                            <div onClick={() => setShowModalMyInformation(true)}>
                                 <LinkAtom Routes={links5} Style="linkFooter" />
-                            </Link>
+                            </div>
 
                             <LinkAtom Routes={links6} Style="linkFooter" />
                         </li>

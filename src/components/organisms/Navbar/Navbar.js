@@ -17,6 +17,8 @@ import ENG from "~/assets/static/icons/navbar/flags/Eng.png"
 import SPA from "~/assets/static/icons/navbar/flags/Spa.png"
 import JPN from "~/assets/static/icons/navbar/flags/Jpn.png"
 import POR from "~/assets/static/icons/navbar/flags/Por.png"
+import LocaleSelector from "~/components/atoms/Select/LocaleSelector";
+
 
 export default function Navbar() {
 
@@ -28,10 +30,11 @@ export default function Navbar() {
     ];
 
     const optionsIcons = {
-        1: ENG,
-        2: SPA,
-        3: JPN,
-        4: POR,
+        "en": ENG,
+        "es": SPA,
+        // TODO: Ajustar 
+        "pt": JPN,
+        "jp": POR
     }
 
     const [navbar, setNavbar] = useState(false);
@@ -68,6 +71,7 @@ export default function Navbar() {
                                     <div className="relative p-6 flex flex-col items-center">
                                         <p className=" mt-2 mb-6 text-lg leading-relaxed">
                                             <Title
+                                                as="span"
                                                 Text={"Donate Options"}
                                                 H={"h5tepsHome"}
                                                 TitleClassProps={"text-center color-black"}
@@ -172,13 +176,14 @@ export default function Navbar() {
                             </li>
 
                             <li className="text-[#393939]">
-                                <Select Text="" Options={options} optionsIcons={optionsIcons} />
+                                {/* <Select Text="" Options={options} optionsIcons={optionsIcons} /> */}
+                                <LocaleSelector optionsIcons={optionsIcons}></LocaleSelector>
                             </li>
                             <li className="text-[#393939] hidden lg:flex">
                                 <Button size="small" type="secondary" path="/JobListing" label="Join us" />
                             </li>
                             <li className="text-[#393939]">
-                                <a onClick={() => setShowModal(true)} ><Button size="small" type="primary" path="#" label="Donate" /></a>
+                                <Button onClick={() => setShowModal(true)} size="small" type="primary" path="#" label="Donate" />
                             </li>
                         </ul>
                     </div>
