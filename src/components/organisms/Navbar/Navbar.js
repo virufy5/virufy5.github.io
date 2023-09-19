@@ -68,6 +68,7 @@ export default function Navbar() {
                                     <div className="relative p-6 flex flex-col items-center">
                                         <p className=" mt-2 mb-6 text-lg leading-relaxed">
                                             <Title
+                                                as="span"
                                                 Text={"Donate Options"}
                                                 H={"h5tepsHome"}
                                                 TitleClassProps={"text-center color-black"}
@@ -178,7 +179,7 @@ export default function Navbar() {
                                 <Button size="small" type="secondary" path="/JobListing" label="Join us" />
                             </li>
                             <li className="text-[#393939]">
-                                <a onClick={() => setShowModal(true)} ><Button size="small" type="primary" path="#" label="Donate" /></a>
+                                <Button onClick={() => setShowModal(true)} size="small" type="primary" path="#" label="Donate" />
                             </li>
                         </ul>
                     </div>

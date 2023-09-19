@@ -64,7 +64,7 @@ export interface JobDescription {
 }
 // ---- | ----
 
-// Our Publications
+// ---- Our Publications ---
 export interface OurPublications {
   title: string;
   card1Text: string;
@@ -76,6 +76,7 @@ export interface OurPublications {
 }
 //---- | ----
 
+// ---- Our Technology ---
 export interface OurTechnology {
   section1Title: string;
   section1Text: string;
