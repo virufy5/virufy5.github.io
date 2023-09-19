@@ -8,6 +8,7 @@ import { jobDescription } from "./jobDescription";
 import { ourPublications } from "./ourPublications";
 import { ourTechnology } from "./ourTecnology";
 import { howItWorks } from "./HowItWorks";
+import { ourResearch } from "./OurResearch";
 export const data: I18nData = {
   locale: "es",
   home,
@@ -17,5 +18,6 @@ export const data: I18nData = {
   dashboard,
   jobDescription,
   ourPublications,
-  ourTechnology
+  ourTechnology,
+  ourResearch
 };

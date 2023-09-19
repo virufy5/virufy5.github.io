@@ -14,7 +14,8 @@ export type I18nData = {
   }
   jobDescription?: JobDescription
   ourPublications?: OurPublications
-  ourTechnology?: OurTechnology
+  ourTechnology?: OurTechnology,
+  ourResearch?: OurResearch
 }
 
 // ---- How It Works ----
@@ -179,5 +180,32 @@ export interface sectionOurValues {
 export interface sectionOurCommitmentPrivacy {
   title: string;
   text: string;
+}
+//---- | ----
+
+// ---- OurResearch ----
+export interface OurResearch {
+  firstCard:       Card;
+  secondCard:      Card;
+  thirdCard:       Card;
+  fourthCard:      Card;
+  sectionScience:  SectionScience;
+  sectionResearch: SectionResearch;
+}
+
+export interface Card {
+  universityTitle: string;
+  description:     string;
+}
+
+export interface SectionResearch {
+  titleResearch:    string;
+  titleWantToLearn: string;
+  button:           string;
+}
+
+export interface SectionScience {
+  title:     string;
+  textLabel: string;
 }
 //---- | ----
