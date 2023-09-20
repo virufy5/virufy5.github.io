@@ -1,4 +1,4 @@
-import { StaticImageData } from "next/image"
+import { StaticImageData } from 'next/image'
 
 export type I18nData = {
   locale: string
@@ -19,13 +19,14 @@ export type I18nData = {
   };
   jobDescription?: JobDescription;
   ourPublications?: OurPublications
-  ourTechnology?: OurTechnology,
-  ourResearch?: OurResearch,
+  ourTechnology?: OurTechnology
+  ourResearch?: OurResearch
   tellYourStory: TellYourStory
   OurPeople1?: OurPeople1;
   OurPeople2?: OurPeople2;
   OurSupporters?: OurSupporters;
   blogListing?: BlogListing;
+  blogDetails?: BlogDetails
 }
 
 // ---- How It Works ----
@@ -195,20 +196,20 @@ export interface sectionOurCommitmentPrivacy {
 
 // ---- OurPeople1 ---
 export interface OurPeople1 {
-  titleImage: string;
-  sectionMeetOurFounder: sectionMeetOurFounder;
-  sectionAdvisors: sectionAdvisors;
+  titleImage: string
+  sectionMeetOurFounder: sectionMeetOurFounder
+  sectionAdvisors: sectionAdvisors
 }
 
 export interface sectionMeetOurFounder {
- titleMeetOurFounder: string;
- titleAmil: string;
- textAmil: string;
- button: string;
+  titleMeetOurFounder: string
+  titleAmil: string
+  textAmil: string
+  button: string
 }
 
 export interface sectionAdvisors {
-  title: string;
+  title: string
 }
 
 //---- | ----
@@ -216,15 +217,15 @@ export interface sectionAdvisors {
 // ---- OurPeople2 ---
 
 export interface OurPeople2 {
-  titleImage: string;
-  sectionAmil: sectionAmil;
+  titleImage: string
+  sectionAmil: sectionAmil
 }
 
 export interface sectionAmil {
- titleAmil: string;
- textAmil: string[];
- titlePublications: string;
- listPublications: string[];
+  titleAmil: string
+  textAmil: string[]
+  titlePublications: string
+  listPublications: string[]
 }
 
 //---- | ----
@@ -359,6 +360,7 @@ export interface sectionTeamLeads {
 }
 //---- | ----
 // ---- BlogListing ---
+
 export interface BlogObjects {
   id: number
   category: string
@@ -368,4 +370,20 @@ export interface BlogObjects {
 }
 export interface BlogListing {
   cardItem: BlogObjects[]
+}
+//---- | ----
+// ---- BlogDetail ---
+
+export interface BlogDetailsObject {
+  id: number
+  title: string
+  category: string
+  date: string
+  autor: string
+  image: string | StaticImageData
+  description: string
+}
+
+export interface BlogDetails {
+  itemSelected: BlogDetailsObject[]
 }
