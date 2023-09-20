@@ -5,8 +5,10 @@ import Video from "../../atoms/videoAtom/Video"
 import Step1 from "../../../assets/static/images/section2/step1.jpg"
 import Step2 from "../../../assets/static/images/section2/step2.jpg"
 import Step3 from "../../../assets/static/images/section2/step3.jpg"
+import { useI18n } from "~/i18n"
 
 export default function Section2() {
+    const { home: { sectionTestExplain } } = useI18n()
     return (
         <div className="flex"
             style={{
@@ -22,7 +24,7 @@ export default function Section2() {
                 }}>
                     <TitleText
                         TitleSize="h1"
-                        TitleLabel="How our online Covid-19 test works"
+                        TitleLabel={sectionTestExplain.title}
                         TextSize=""
                         TextLabel=""
                         ContainerTextProps=""
@@ -36,7 +38,7 @@ export default function Section2() {
                         <TitleTextImg
                             Order={["Image", "Title"]}
                             TitleSize="h6"
-                            TitleLabel="1. Record your cough"
+                            TitleLabel={sectionTestExplain.firstStep}
                             ImgRoute={Step1}
                             ImgBorder="circular"
                             ImgAlt="1. Record your cough"
@@ -49,7 +51,7 @@ export default function Section2() {
                         <TitleTextImg
                             Order={["Image", "Title"]}
                             TitleSize="h6"
-                            TitleLabel="2. AI analyzed for COVID patterns"
+                            TitleLabel={sectionTestExplain.secondStep}
                             ImgRoute={Step2}
                             ImgBorder="circular"
                             ImgAlt="2. AI analyzed for COVID patterns"
@@ -62,7 +64,7 @@ export default function Section2() {
                         <TitleTextImg
                             Order={["Image", "Title"]}
                             TitleSize="h6"
-                            TitleLabel="3. COVID risk status reported"
+                            TitleLabel={sectionTestExplain.stepThree}
                             ImgRoute={Step3}
                             ImgBorder="circular"
                             ImgAlt="3. COVID risk status reported"
@@ -77,7 +79,7 @@ export default function Section2() {
                         <TitleTextImg
                             Order={["Image", "Title"]}
                             TitleSize="h6"
-                            TitleLabel="1. Record your cough"
+                            TitleLabel={sectionTestExplain.firstStep}
                             ImgRoute={Step1}
                             ImgBorder="circular"
                             ImgAlt="1. Record your cough"
@@ -90,7 +92,7 @@ export default function Section2() {
                         <TitleTextImg
                             Order={["Image", "Title"]}
                             TitleSize="h6"
-                            TitleLabel="2. AI analyzed for COVID patterns"
+                            TitleLabel={sectionTestExplain.secondStep}
                             ImgRoute={Step2}
                             ImgBorder="circular"
                             ImgAlt="2. AI analyzed for COVID patterns"
@@ -103,7 +105,7 @@ export default function Section2() {
                         <TitleTextImg
                             Order={["Image", "Title"]}
                             TitleSize="h6"
-                            TitleLabel="3. COVID risk status reported"
+                            TitleLabel={sectionTestExplain.stepThree}
                             ImgRoute={Step3}
                             ImgBorder="circular"
                             ImgAlt="3. COVID risk status reported"
@@ -118,7 +120,7 @@ export default function Section2() {
                         <TitleTextImg
                             Order={["Image", "Title"]}
                             TitleSize="h5tepsHome"
-                            TitleLabel="1. Record your cough"
+                            TitleLabel={sectionTestExplain.firstStep}
                             ImgRoute={Step1}
                             ImgBorder="circular"
                             ImgAlt="1. Record your cough"
@@ -131,7 +133,7 @@ export default function Section2() {
                         <TitleTextImg
                             Order={["Image", "Title"]}
                             TitleSize="h5tepsHome"
-                            TitleLabel="2. AI analyzed for COVID patterns"
+                            TitleLabel={sectionTestExplain.secondStep}
                             ImgRoute={Step2}
                             ImgBorder="circular"
                             ImgAlt="2. AI analyzed for COVID patterns"
@@ -144,7 +146,7 @@ export default function Section2() {
                         <TitleTextImg
                             Order={["Image", "Title"]}
                             TitleSize="h5tepsHome"
-                            TitleLabel="3. COVID risk status reported"
+                            TitleLabel={sectionTestExplain.stepThree}
                             ImgRoute={Step3}
                             ImgBorder="circular"
                             ImgAlt="3. COVID risk status reported"

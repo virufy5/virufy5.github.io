@@ -1,11 +1,9 @@
 import { StaticImageData } from 'next/image'
+import { Home } from './types/Home'
 
 export type I18nData = {
   locale: string
-  home: {
-    title: string
-    subtitle: string
-  }
+  home: Home
   AboutUs?: AboutUs
   GetInvolved_?: GetInvolved
   howItWorks?: HowItWorks
@@ -19,9 +17,9 @@ export type I18nData = {
   ourTechnology?: OurTechnology
   ourResearch?: OurResearch
   tellYourStory: TellYourStory
-  OurPeople1?: OurPeople1;
-  OurPeople2?: OurPeople2;
-  OurSupporters?: OurSupporters;
+  OurPeople1?: OurPeople1
+  OurPeople2?: OurPeople2
+  OurSupporters?: OurSupporters
   blogListing?: BlogListing
   blogDetails?: BlogDetails
 }
@@ -277,83 +275,83 @@ export interface SectionTellYourStory {
 
 // ---- Our Supporters ----
 export interface OurSupporters {
-  titleImage: string;
-  sectionSupporters: sectionSupporters;
-  sectionOneYoungWorld: sectionOneYoungWorld;
-  sectionVolunterStories: sectionVolunterStories;
-  sectionTeamLeads: sectionTeamLeads;
+  titleImage: string
+  sectionSupporters: sectionSupporters
+  sectionOneYoungWorld: sectionOneYoungWorld
+  sectionVolunterStories: sectionVolunterStories
+  sectionTeamLeads: sectionTeamLeads
 }
 
 export interface sectionSupporters {
-  title: string;
-  Transformers: string;
-  Innovators: string;
-  Creators: string;
-  Collaborators: string;
-  Drivers: string;
-  Boosters: string;
+  title: string
+  Transformers: string
+  Innovators: string
+  Creators: string
+  Collaborators: string
+  Drivers: string
+  Boosters: string
 }
 
 export interface sectionOneYoungWorld {
-  title: string;
-  subTitle: string;
-  text: string;
-  text2: string;
-  titleQuestion: string;
-  cardTitles: string[];
-  cardTexts: string[];
+  title: string
+  subTitle: string
+  text: string
+  text2: string
+  titleQuestion: string
+  cardTitles: string[]
+  cardTexts: string[]
 }
 
 export interface sectionVolunterStories {
-  title: string;
-  text: string;
+  title: string
+  text: string
 }
 
 export interface sectionTeamLeads {
-  title: string;
-  names: string[];
-  texts: string[];
+  title: string
+  names: string[]
+  texts: string[]
 }
 //---- | ----
 
 // ---- Our Supporters ----
 export interface OurSupporters {
-  titleImage: string;
-  sectionSupporters: sectionSupporters;
-  sectionOneYoungWorld: sectionOneYoungWorld;
-  sectionVolunterStories: sectionVolunterStories;
-  sectionTeamLeads: sectionTeamLeads;
+  titleImage: string
+  sectionSupporters: sectionSupporters
+  sectionOneYoungWorld: sectionOneYoungWorld
+  sectionVolunterStories: sectionVolunterStories
+  sectionTeamLeads: sectionTeamLeads
 }
 
 export interface sectionSupporters {
-  title: string;
-  Transformers: string;
-  Innovators: string;
-  Creators: string;
-  Collaborators: string;
-  Drivers: string;
-  Boosters: string;
+  title: string
+  Transformers: string
+  Innovators: string
+  Creators: string
+  Collaborators: string
+  Drivers: string
+  Boosters: string
 }
 
 export interface sectionOneYoungWorld {
-  title: string;
-  subTitle: string;
-  text: string;
-  text2: string;
-  titleQuestion: string;
-  cardTitles: string[];
-  cardTexts: string[];
+  title: string
+  subTitle: string
+  text: string
+  text2: string
+  titleQuestion: string
+  cardTitles: string[]
+  cardTexts: string[]
 }
 
 export interface sectionVolunterStories {
-  title: string;
-  text: string;
+  title: string
+  text: string
 }
 
 export interface sectionTeamLeads {
-  title: string;
-  names: string[];
-  texts: string[];
+  title: string
+  names: string[]
+  texts: string[]
 }
 //---- | ----
 // ---- BlogListing ---

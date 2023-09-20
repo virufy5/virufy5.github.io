@@ -5,8 +5,10 @@ import Button from "~/components/atoms/button/Button"
 
 //Assets
 import ImageSection6 from "~/assets/static/images/section6/1.png"
+import { useI18n } from "~/i18n"
 
 export default function Section6() {
+  const {home: {sectionOurSupporters}} = useI18n()
   return (
     <div className="mt-20"
     style={{
@@ -16,7 +18,7 @@ export default function Section6() {
       <div className="mr-[5vw]">
       <Title
         H="h1"
-        Text="Our Supporters"
+        Text={sectionOurSupporters.title}
         TitleClassProps="ml-[5vw]"      
       />
       </div>
@@ -28,7 +30,7 @@ export default function Section6() {
         alt={""}
         ImageStyleProps={""}
       />
-      <Button size="large" type="primary" path="/GetInvolved" label="Become  a supporter" />
+      <Button size="large" type="primary" path="/GetInvolved" label={sectionOurSupporters.button} />
       </div>
     </div>
   )
