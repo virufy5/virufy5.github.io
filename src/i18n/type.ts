@@ -215,9 +215,9 @@ export interface OurPeople2 {
 
 export interface sectionAmil {
  titleAmil: string;
- textAmil: any;
+ textAmil: string[];
  titlePublications: string;
- listPublications: any;
+ listPublications: string[];
 }
 
 //---- | ----

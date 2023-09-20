@@ -16,9 +16,6 @@ export default function OurPeople2() {
     OurPeople2: { titleImage, sectionAmil },
   } = useI18n();
 
-  const sectionAmilText: Array<string> = sectionAmil.textAmil
-  const sectionAmilPublications: Array<string> = sectionAmil.listPublications
-
   return (
     <>
       <TextinsImg
@@ -66,47 +63,47 @@ export default function OurPeople2() {
         ">
               <Text
                 Style="normal"
-                Text={sectionAmilText[0]}
+                Text={sectionAmil.textAmil[0]}
                 TextClassProps=""
               />
 
               <Text
                 Style="normal"
-                Text={sectionAmilText[1]}
+                Text={sectionAmil.textAmil[1]}
                 TextClassProps="mt-4"
               />
 
               <Text
                 Style="normal"
-                Text={sectionAmilText[2]}
+                Text={sectionAmil.textAmil[2]}
                 TextClassProps="mt-4"
               />
             </div>
             <div className="flex sm:flex ml-2 mr-[5vw]">
               <Text
                 Style="normal"
-                Text={sectionAmilText[3]}
+                Text={sectionAmil.textAmil[3]}
                 TextClassProps="mt-4"
               />
             </div>
             <div className="flex sm:flex ml-2 mr-[5vw]">
               <Text
                 Style="normal"
-                Text={sectionAmilText[4]}
+                Text={sectionAmil.textAmil[4]}
                 TextClassProps="mt-4"
               />
             </div>
             <div className="flex sm:flex ml-2 mr-[5vw]">
               <Text
                 Style="normal"
-                Text={sectionAmilText[5]}
+                Text={sectionAmil.textAmil[5]}
                 TextClassProps="mt-4"
               />
             </div>
             <div className="flex sm:flex ml-2 mr-[5vw]">
               <Text
                 Style="normal"
-                Text={sectionAmilText[6]}
+                Text={sectionAmil.textAmil[6]}
                 TextClassProps="mt-4"
               />
             </div>
@@ -119,27 +116,27 @@ export default function OurPeople2() {
             />
             <Text
               Style="normal"
-              Text={sectionAmilPublications[0]}
+              Text={sectionAmil.listPublications[0]}
               TextClassProps="mt-[60px]"
             />
             <Text
               Style="normal"
-              Text={sectionAmilPublications[1]}
+              Text={sectionAmil.listPublications[1]}
               TextClassProps="mt-3 mb-3"
             />
             <Text
               Style="normal"
-              Text={sectionAmilPublications[2]}
+              Text={sectionAmil.listPublications[2]}
               TextClassProps="mt-3 mb-3"
             />
             <Text
               Style="normal"
-              Text={sectionAmilPublications[3]}
+              Text={sectionAmil.listPublications[3]}
               TextClassProps="mt-3 mb-3"
             />
             <Text
               Style="normal"
-              Text={sectionAmilPublications[4]}
+              Text={sectionAmil.listPublications[4]}
               TextClassProps="mt-3 mb-[80px]"
             />
           </div>
