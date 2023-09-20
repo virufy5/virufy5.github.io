@@ -13,7 +13,7 @@ import { OurPeople2 } from "./OurPeople2";
 import { ourResearch } from './OurResearch';
 import { tellYourStory } from './TellYourStory';
 import { OurSupporters } from "./OurSupporters";
-
+import { JobListing } from './JobListing';
 import { blogListing } from './BlogListing';
 
 export const data: I18nData = {
@@ -23,6 +23,7 @@ export const data: I18nData = {
   GetInvolved_,
   howItWorks,
   dashboard,
+  JobListing,
   jobDescription,
   ourPublications,
   ourTechnology,

@@ -13,8 +13,9 @@ import { OurPeople2 } from "./OurPeople2";
 import { ourResearch } from "./OurResearch";
 import { tellYourStory } from "./TellYourStory";
 import { OurSupporters } from "./OurSupporters";
-
 import { blogListing } from "./BlogListing";
+import { JobListing } from "./JobListing";
+
 
 export const data: I18nData = {
   locale: "es",
@@ -23,6 +24,7 @@ export const data: I18nData = {
   GetInvolved_,
   howItWorks,
   dashboard,
+  JobListing,
   jobDescription,
   ourPublications,
   ourTechnology,

@@ -14,7 +14,10 @@ export type I18nData = {
     tittleInfo: string
     advertisement: string
   }
-  jobDescription?: JobDescription
+  JobListing: {
+    JobList: object[] | any[]
+  };
+  jobDescription?: JobDescription;
   ourPublications?: OurPublications
   ourTechnology?: OurTechnology,
   ourResearch?: OurResearch,
@@ -22,7 +25,7 @@ export type I18nData = {
   OurPeople1?: OurPeople1;
   OurPeople2?: OurPeople2;
   OurSupporters?: OurSupporters;
-  blogListing?: BlogListing
+  blogListing?: BlogListing;
 }
 
 // ---- How It Works ----
@@ -48,6 +51,16 @@ export interface SectiontCovidTestExplanation {
 // ---- | ----
 
 // ---- Job Description ----
+export interface JobDescription {
+  jobTitle: string
+  jobDescription: string
+  responsibilitiesSection: ResponsibilitiesSection
+  qualificationsSection: QualificationsSection
+  skillsSection: SkillsSection
+  questions: string
+  contactEmail: string
+}
+
 export interface ResponsibilitiesSection {
   responsibilities: string
   responsibilityDefine: string
@@ -73,16 +86,6 @@ export interface SkillsSection {
   skillDetail: string
   skillComunication: string
   skillResponsability: string
-}
-
-export interface JobDescription {
-  jobTitle: string
-  jobDescription: string
-  responsibilitiesSection: ResponsibilitiesSection
-  qualificationsSection: QualificationsSection
-  skillsSection: SkillsSection
-  questions: string
-  contactEmail: string
 }
 // ---- | ----
 
