@@ -19,6 +19,7 @@ export type I18nData = {
   tellYourStory: TellYourStory
   OurPeople1?: OurPeople1;
   OurPeople2?: OurPeople2;
+  OurSupporters?: OurSupporters;
 }
 
 // ---- How It Works ----
@@ -267,5 +268,46 @@ export interface Form {
 export interface SectionTellYourStory {
   title: string;
   text:  string;
+}
+//---- | ----
+
+// ---- Our Supporters ----
+export interface OurSupporters {
+  titleImage: string;
+  sectionSupporters: sectionSupporters;
+  sectionOneYoungWorld: sectionOneYoungWorld;
+  sectionVolunterStories: sectionVolunterStories;
+  sectionTeamLeads: sectionTeamLeads;
+}
+
+export interface sectionSupporters {
+  title: string;
+  Transformers: string;
+  Innovators: string;
+  Creators: string;
+  Collaborators: string;
+  Drivers: string;
+  Boosters: string;
+}
+
+export interface sectionOneYoungWorld {
+  title: string;
+  subTitle: string;
+  text: string;
+  text2: string;
+  titleQuestion: string;
+  cardTitles: string[];
+  cardTexts: string[];
+}
+
+export interface sectionVolunterStories {
+  title: string;
+  text: string;
+}
+
+export interface sectionTeamLeads {
+  title: string;
+  names: string[];
+  texts: string[];
 }
 //---- | ----

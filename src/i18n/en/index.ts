@@ -12,6 +12,8 @@ import { OurPeople1 } from "./OurPeople1";
 import { OurPeople2 } from "./OurPeople2";
 import { ourResearch } from './OurResearch';
 import { tellYourStory } from './TellYourStory';
+import { OurSupporters } from "./OurSupporters";
+
 export const data: I18nData = {
   locale: 'en',
   home,
@@ -25,5 +27,6 @@ export const data: I18nData = {
   OurPeople1,
   OurPeople2,
   ourResearch,
-  tellYourStory
+  tellYourStory,
+  OurSupporters
 }

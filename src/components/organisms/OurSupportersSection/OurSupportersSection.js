@@ -20,7 +20,9 @@ import logo17 from "~/assets/static/images/OurSupportersLogos/logo17.png"
 import logo18 from "~/assets/static/images/OurSupportersLogos/logo18.png"
 import logo19 from "~/assets/static/images/OurSupportersLogos/logo19.png"
 
-export default function OurSupportersSection() {
+export default function OurSupportersSection({
+  TextProps
+}) {
 
   return (
     <>
@@ -28,14 +30,14 @@ export default function OurSupportersSection() {
         <div className="mb-40">
           <Title
             H="h1"
-            Text="Our Supporters"
+            Text={TextProps.title}
             TitleClassProps="text-center mt-16 mb-4"
           />
         </div>
         <div>
           <Title
             H="h3"
-            Text="Transformers ($1M +)"
+            Text={TextProps.Transformers}
             TitleClassProps="text-center mt-16 mb-4"
           />
           <div className="w-full flex justify-center my-14" >
@@ -51,7 +53,7 @@ export default function OurSupportersSection() {
         <div>
           <Title
             H="h3"
-            Text="Innovators ($500K +)"
+            Text={TextProps.Innovators}
             TitleClassProps="text-center mt-16 mb-4"
           />
           <div className="w-full flex justify-center my-14" >
@@ -64,7 +66,7 @@ export default function OurSupportersSection() {
         <div>
           <Title
             H="h3"
-            Text="Creators ($100K +)"
+            Text={TextProps.Creators}
             TitleClassProps="text-center mt-16 mb-4"
           />
           <div className="w-full flex justify-center my-14" >
@@ -80,7 +82,7 @@ export default function OurSupportersSection() {
         <div>
           <Title
             H="h3"
-            Text="Collaborators ($50K +)"
+            Text={TextProps.Collaborators}
             TitleClassProps="text-center mt-16 mb-4"
           />
           <div className="w-full flex justify-center my-14" >
@@ -102,7 +104,7 @@ export default function OurSupportersSection() {
         <div>
           <Title
             H="h3"
-            Text="Drivers ($10K +)"
+            Text={TextProps.Drivers}
             TitleClassProps="text-center mt-16 mb-4"
           />
           <div className="w-full flex justify-center my-14" >
@@ -126,7 +128,7 @@ export default function OurSupportersSection() {
         <div>
           <Title
             H="h3"
-            Text="Boosters (< $10K)"
+            Text={TextProps.Boosters}
             TitleClassProps="text-center mt-16 mb-4"
           />
           <div className="w-full flex justify-center my-14" >
@@ -169,14 +171,14 @@ export default function OurSupportersSection() {
         <div className="mb-40">
           <Title
             H="h1"
-            Text="Our Supporters"
+            Text={TextProps.title}
             TitleClassProps="text-center mt-16 mb-4"
           />
         </div>
         <div>
           <Title
             H="h3"
-            Text="Transformers ($1M +)"
+            Text={TextProps.Transformers}
             TitleClassProps="text-center mt-16 mb-4"
           />
           <div className="w-full flex justify-center my-14" >
@@ -192,7 +194,7 @@ export default function OurSupportersSection() {
         <div>
           <Title
             H="h3"
-            Text="Innovators ($500K +)"
+            Text={TextProps.Innovators}
             TitleClassProps="text-center mt-16 mb-4"
           />
           <div className="w-full flex justify-center my-14" >
@@ -205,7 +207,7 @@ export default function OurSupportersSection() {
         <div>
           <Title
             H="h3"
-            Text="Creators ($100K +)"
+            Text={TextProps.Creators}
             TitleClassProps="text-center mt-16 mb-4"
           />
           <div className="w-full flex justify-center my-14" >
@@ -221,7 +223,7 @@ export default function OurSupportersSection() {
         <div>
           <Title
             H="h3"
-            Text="Collaborators ($50K +)"
+            Text={TextProps.Collaborators}
             TitleClassProps="text-center mt-16 mb-4"
           />
           <div className="w-full flex justify-center my-14" >
@@ -240,7 +242,7 @@ export default function OurSupportersSection() {
         <div>
           <Title
             H="h3"
-            Text="Drivers ($10K +)"
+            Text={TextProps.Drivers}
             TitleClassProps="text-center mt-16 mb-4"
           />
           <div className="w-full flex justify-center my-14" >
@@ -262,7 +264,7 @@ export default function OurSupportersSection() {
         <div>
           <Title
             H="h3"
-            Text="Boosters (< $10K)"
+            Text={TextProps.Boosters}
             TitleClassProps="text-center mt-16 mb-4"
           />
           <div className="w-full flex justify-center my-14" >

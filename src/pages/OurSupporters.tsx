@@ -2,6 +2,8 @@ import TextinsImg from "~/components/molecules/TextinsImg/TextinsImg"
 import ImageinsText from "~/assets/static/images/ourSupporters/ImageinsText.png"
 import CardLarge from "~/components/organisms/section-9/CardLarge"
 
+import { useI18n } from "~/i18n";
+
 import Card1 from "~/assets/static/images/ourSupporters/card1.jpg"
 import Card2 from "~/assets/static/images/ourSupporters/card2.jpg"
 import Card3 from "~/assets/static/images/ourSupporters/card3.jpg"
@@ -39,124 +41,129 @@ import OurSupportersSection from "~/components/organisms/OurSupportersSection/Ou
 
 export default function OurSupporters() {
 
+  const {
+    OurSupporters: { titleImage, sectionSupporters, sectionOneYoungWorld, sectionVolunterStories ,sectionTeamLeads },
+  } = useI18n();
+  
+
   const CardsData = [
     {
       route: Card1,
-      name: "Ambassador driven",
-      text: "Our organization structure matches One Young World with youth ambassadors leading operations in each country, with regional coordinating ambassadors.",
+      name: sectionOneYoungWorld.cardTitles[0],
+      text: sectionOneYoungWorld.cardTexts[0],
     },
     {
       route: Card2,
-      name: "Youth led",
-      text: "Our growing team is led by youth from over a dozen countries and are advised by global leaders.",
+      name: sectionOneYoungWorld.cardTitles[1],
+      text: sectionOneYoungWorld.cardTexts[1],
     },
     {
       route: Card3,
-      name: "Focused on global impact",
-      text: "Former CMO - Adobe Board Member - CommonSpirit HealthCollect data and provide equitable solutions for people in developing countries across the world.",
+      name: sectionOneYoungWorld.cardTitles[2],
+      text: sectionOneYoungWorld.cardTexts[2],
     },
     {
       route: Card4,
-      name: "Diverse representation",
-      text: "Our team has representation from over 25 universities and 15 countries and includes more than 10 One Young World ambassadors.",
+      name: sectionOneYoungWorld.cardTitles[3],
+      text: sectionOneYoungWorld.cardTexts[3],
     },
   ]
 
   const CardsDataTL = [
     {
       route: Card1TL,
-      name: "Amil Khanzada",
-      text: "OYW Ambassador, Japan       Virufy Founder & Leader",
+      name: sectionTeamLeads.names[0],
+      text: sectionTeamLeads.texts[0],
     },
     {
       route: Card2TL,
-      name: "Madhav Datt",
-      text: "OYW Ambassador, India         Virufy Advisor",
+      name: sectionTeamLeads.names[1],
+      text: sectionTeamLeads.names[1],
     },
     {
       route: Card3TL,
-      name: "Marcos Deza",
-      text: "OYW Ambassador, Argentina  Virufy Digital Communications",
+      name: sectionTeamLeads.names[2],
+      text: sectionTeamLeads.names[2],
     },
     {
       route: Card4TL,
-      name: "Yulie Qiao",
-      text: "2021 OYW bp Delegate, USA Virufy Operations",
+      name: sectionTeamLeads.names[3],
+      text: sectionTeamLeads.names[3],
     },
     {
       route: Card5TL,
-      name: "Ayomide Owoyemi, MD",
-      text: "2021 OYW Novartis Delegate, Nigeria                                      Virufy Machine Learning Clinical Statistics",
+      name: sectionTeamLeads.names[4],
+      text: sectionTeamLeads.names[4],
     },
     {
       route: Card6TL,
-      name: "Shreya Sreeram, MD",
-      text: "2021 Virufy Delegate, India    Virufy Clinical Research",
+      name: sectionTeamLeads.names[5],
+      text: sectionTeamLeads.names[5],
     },
     {
       route: Card7TL,
-      name: "Laura Velasquez",
-      text: "2021 OYW Johnson & Johnson Delegate, Colombia            Arkangel AI Co-founder and President & Virufy Partner",
+      name: sectionTeamLeads.names[6],
+      text: sectionTeamLeads.names[6],
     },
     {
       route: Card8TL,
-      name: "Nathan Thomas",
-      text: "OYW Coordinating Ambassador, USA",
+      name: sectionTeamLeads.names[7],
+      text: sectionTeamLeads.names[7],
     },
     {
       route: Card9TL,
-      name: "Jason Pareja Jauregui",
-      text: "OYW Coordinating Ambassador LATAM, Peru",
+      name: sectionTeamLeads.names[8],
+      text: sectionTeamLeads.names[8],
     },
     {
       route: Card10TL,
-      name: "Katherine Thalia Ortiz León",
-      text: "OYW Ambassador, Peru",
+      name: sectionTeamLeads.names[9],
+      text: sectionTeamLeads.names[9],
     },
     {
       route: Card11TL,
-      name: "Gonzalo Roiffe",
-      text: "OYW Ambassador, Argentina",
+      name: sectionTeamLeads.names[10],
+      text: sectionTeamLeads.names[10],
     },
     {
       route: Card12TL,
-      name: "Annelisse Torrez Daza",
-      text: "OYW Ambassador, Bolivia",
+      name: sectionTeamLeads.names[11],
+      text: sectionTeamLeads.names[11],
     },
     {
       route: Card13TL,
-      name: "Verónica Guzmán Quilaqueo",
-      text: "OYW Ambassador, Chile",
+      name: sectionTeamLeads.names[12],
+      text: sectionTeamLeads.names[12],
     },
     {
       route: Card14TL,
-      name: "Sebastian Pedraza",
-      text: "OYW Ambassador, Colombia",
+      name: sectionTeamLeads.names[13],
+      text: sectionTeamLeads.names[13],
     },
     {
       route: Card15TL,
-      name: "Kenmaru Suedomi",
-      text: "OYW Ambassador, Japan",
+      name: sectionTeamLeads.names[14],
+      text: sectionTeamLeads.names[14],
     },
     {
       route: Card16TL,
-      name: "Kapil Narain, MD",
-      text: "OYW Ambassador, South Africa",
+      name: sectionTeamLeads.names[15],
+      text: sectionTeamLeads.names[15],
     },
     {
       route: Card17TL,
-      name: "Leonard Burhz",
-      text: "OYW Ambassador, Ireland",
+      name: sectionTeamLeads.names[16],
+      text: sectionTeamLeads.names[16],
     },
     {
       route: Card18TL,
-      name: "Allana Doyle",
-      text: "Embajador OYW, EE.UU",
+      name: sectionTeamLeads.names[17],
+      text: sectionTeamLeads.names[17],
     },
     {
       route: Card19TL,
-      name: "Kavya Madhavan",
-      text: "Embajador OYW, EE.UU",
+      name: sectionTeamLeads.names[18],
+      text: sectionTeamLeads.names[18],
     },
   ]
 
@@ -182,21 +189,21 @@ export default function OurSupporters() {
         borderImg="none"
         src={ImageinsText}
         altImg="Imagen cabezera"
-        Text="Companies and organizations support us from their extensive knowledge and provide us with security and certainty in what we do."
+        Text={titleImage}
       />
 
       <div className="flex flex-col justify-center items-center">
 
         <div className="flex flex-col justify-center items-center max-w-[1440px] ">
-          <OurSupportersSection />
+          <OurSupportersSection TextProps={sectionSupporters} />
         </div>
         <div className="flex flex-col justify-center items-center w-[100%] bg-[#F9FAFB]">
         <div className="flex flex-col justify-center items-center max-w-[1440px] bg-[#F9FAFB] mt-[190px] pb-[362px]">
-          <SectionOneYoungWorld />
+          <SectionOneYoungWorld TextProps={sectionOneYoungWorld} />
 
           <Title
             H="h2"
-            Text="Why One Young World?"
+            Text={sectionOneYoungWorld.titleQuestion}
             TitleClassProps="text-center mt-4 mb-[48px]"
           />
           <CardLarge
@@ -206,10 +213,10 @@ export default function OurSupporters() {
 
           <TitleText
             TitleSize={"h2"}
-            TitleLabel={"Volunteer Stories"}
+            TitleLabel={sectionVolunterStories.title}
             TitleClassProps={"text-center mt-32 "}
             TextSize={"normal"}
-            TextLabel={"Our organization structure matches One Young World with youth ambassadors leading operations in each country, with regional coordinating ambassadors."}
+            TextLabel={sectionVolunterStories.text}
             TextClassProps={"m-10 "}
             ContainerTitleProps
             ContainerTextProps="max-w-[800px] mb-[80px]"
@@ -222,7 +229,7 @@ export default function OurSupporters() {
         <div className="flex flex-col justify-center items-center max-w-[1440px] my-[80px]">
           <Title
             H="h2"
-            Text="Team Leads"
+            Text={sectionTeamLeads.title}
             TitleClassProps="text-center mt-[80px]"
           />
           <Card

@@ -1,7 +1,9 @@
 import TitleText from "~/components/molecules/TitleText/TitleText"
 import Video from "../../atoms/videoAtom/Video"
 
-export default function SectionTellYourStoryGetInvolved() {
+export default function SectionTellYourStoryGetInvolved({
+    TextProps
+}) {
     return (
         <div className="text-center flex flex-col md:mb-[70px] md:mt-[70px]">
             <div className="flex items-center flex-col max-w-[1200px] w-[100vw]">
@@ -9,9 +11,9 @@ export default function SectionTellYourStoryGetInvolved() {
                     <TitleText
                         //TitleText
                         TitleSize="h1"
-                        TitleLabel="One Young World"
+                        TitleLabel={TextProps.title}
                         TextSize="subtitle"
-                        TextLabel={"Virufy & One Young World"}
+                        TextLabel={TextProps.subtitle}
                         ContainerTextProps="items-start"
                         TextClassProps=""
                         TitleClassProps=""
@@ -23,7 +25,7 @@ export default function SectionTellYourStoryGetInvolved() {
                     <TitleText
                         //TitleText
                         TextSize="normal"
-                        TextLabel={"Our world needs great leadership. The new generation is one of the most informed, educated and well connected generations in world history. One Young World identifies, promotes and connects the most impactful young leaders across the globe to create a better world: a world with more responsible and effective leadership."}
+                        TextLabel={TextProps.text}
                         ContainerTextProps="text-start"
                         TextClassProps=""
                         TitleClassProps=""
@@ -34,7 +36,7 @@ export default function SectionTellYourStoryGetInvolved() {
                     <TitleText
                         //TitleText
                         TextSize="normal"
-                        TextLabel={"Virufy has been featured on various OYW platforms, including in the Americas and Japan, ambassadors in action , and ambassadors on the frontline for COVID-19 response . We are also collaborating with OYW coordinating ambassadors across various regions for outreach efforts."}
+                        TextLabel={TextProps.text2}
                         ContainerTextProps="text-start"
                         TextClassProps=""
                         TitleClassProps=""
