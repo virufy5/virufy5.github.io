@@ -1,12 +1,14 @@
+import { StaticImageData } from "next/image"
+
 export type I18nData = {
   locale: string
   home: {
-    title: string;
-    subtitle: string;
-  };
-  AboutUs?: AboutUs;
-  GetInvolved_?: GetInvolved;
-  howItWorks?: HowItWorks;
+    title: string
+    subtitle: string
+  }
+  AboutUs?: AboutUs
+  GetInvolved_?: GetInvolved
+  howItWorks?: HowItWorks
   dashboard?: {
     tittle: string
     tittleInfo: string
@@ -19,6 +21,7 @@ export type I18nData = {
   tellYourStory: TellYourStory
   OurPeople1?: OurPeople1;
   OurPeople2?: OurPeople2;
+  blogListing?: BlogListing
 }
 
 // ---- How It Works ----
@@ -119,70 +122,70 @@ export interface OurTechnology {
 
 // ---- Get Involved ----
 export interface GetInvolved {
-  sectionDonate: sectionDonate;
-  sectionJoinOurTeam: sectionJoinOurTeam;
-  sectionTellYouStory: sectionTellYouStory;
+  sectionDonate: sectionDonate
+  sectionJoinOurTeam: sectionJoinOurTeam
+  sectionTellYouStory: sectionTellYouStory
 }
 
 export interface sectionDonate {
-  title: string;
-  textLabel: string;
-  button: string;
+  title: string
+  textLabel: string
+  button: string
 }
 export interface sectionJoinOurTeam {
-  titleJoinOurTeam: string;
-  textJoinOurTeam: string;
-  titleCareers: string;
-  textCareers: string;
-  buttonCareers: string;
-  titleBecomeAPartner: string;
-  textBecomeAPartner: string;
-  text2BecomeAPartner: string;
-  buttonBecomeAPartner: string;
+  titleJoinOurTeam: string
+  textJoinOurTeam: string
+  titleCareers: string
+  textCareers: string
+  buttonCareers: string
+  titleBecomeAPartner: string
+  textBecomeAPartner: string
+  text2BecomeAPartner: string
+  buttonBecomeAPartner: string
 }
 
 export interface sectionTellYouStory {
-  titleTellYourStory: string;
-  textTellYourStory: string;
-  text2TellYourStory: string;
-  buttonTellYourStory: string;
+  titleTellYourStory: string
+  textTellYourStory: string
+  text2TellYourStory: string
+  buttonTellYourStory: string
 }
 // ---- | ----
 
 // ---- About Us ---
 export interface AboutUs {
-  titleImage: string;
-  sectionOurMissionStory: sectionOurMissionStory;
-  sectionOurValues: sectionOurValues;
-  sectionOurCommitmentPrivacy: sectionOurCommitmentPrivacy;
+  titleImage: string
+  sectionOurMissionStory: sectionOurMissionStory
+  sectionOurValues: sectionOurValues
+  sectionOurCommitmentPrivacy: sectionOurCommitmentPrivacy
 }
 
 export interface sectionOurMissionStory {
-  titleMission: string;
-  textMission: string;
-  titleStory: string;
-  textStory: string;
+  titleMission: string
+  textMission: string
+  titleStory: string
+  textStory: string
 }
 
 export interface sectionOurValues {
-  title: string;
-  Transformation: string;
-  textTransformation: string;
-  Collaboration: string;
-  textCollaboration: string;
-  Health: string;
-  textHealth: string;
-  Affordability: string;
-  textAffordability: string;
-  Efficiency: string;
-  textEfficiency: string;
-  Innovation: string;
-  textInnovation: string;
+  title: string
+  Transformation: string
+  textTransformation: string
+  Collaboration: string
+  textCollaboration: string
+  Health: string
+  textHealth: string
+  Affordability: string
+  textAffordability: string
+  Efficiency: string
+  textEfficiency: string
+  Innovation: string
+  textInnovation: string
 }
 
 export interface sectionOurCommitmentPrivacy {
-  title: string;
-  text: string;
+  title: string
+  text: string
 }
 //---- | ----
 
@@ -224,48 +227,59 @@ export interface sectionAmil {
 
 // ---- OurResearch ----
 export interface OurResearch {
-  firstCard:       Card;
-  secondCard:      Card;
-  thirdCard:       Card;
-  fourthCard:      Card;
-  sectionScience:  SectionScience;
-  sectionResearch: SectionResearch;
+  firstCard: Card
+  secondCard: Card
+  thirdCard: Card
+  fourthCard: Card
+  sectionScience: SectionScience
+  sectionResearch: SectionResearch
 }
 
 export interface Card {
-  universityTitle: string;
-  description:     string;
+  universityTitle: string
+  description: string
 }
 
 export interface SectionResearch {
-  titleResearch:    string;
-  titleWantToLearn: string;
-  button:           string;
+  titleResearch: string
+  titleWantToLearn: string
+  button: string
 }
 
 export interface SectionScience {
-  title:     string;
-  textLabel: string;
+  title: string
+  textLabel: string
 }
 //---- | ----
 
 // ---- Tell Your Story ----
 export interface TellYourStory {
-  sectionTellYourStory: SectionTellYourStory;
-  form:                 Form;
+  sectionTellYourStory: SectionTellYourStory
+  form: Form
 }
 
 export interface Form {
-  name:        string;
-  email:       string;
-  message:     string;
-  uploadPhoto: string;
-  titleFiles:  string;
-  button:      string;
+  name: string
+  email: string
+  message: string
+  uploadPhoto: string
+  titleFiles: string
+  button: string
 }
 
 export interface SectionTellYourStory {
-  title: string;
-  text:  string;
+  title: string
+  text: string
 }
 //---- | ----
+// ---- BlogListing ---
+export interface BlogObjects {
+  id: number
+  category: string
+  title: string
+  image: string | StaticImageData
+  description: string
+}
+export interface BlogListing {
+  cardItem: BlogObjects[]
+}
