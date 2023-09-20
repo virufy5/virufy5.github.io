@@ -14,6 +14,8 @@ import { ourResearch } from './OurResearch';
 import { tellYourStory } from './TellYourStory';
 import { OurSupporters } from "./OurSupporters";
 
+import { blogListing } from './BlogListing';
+
 export const data: I18nData = {
   locale: 'en',
   home,
@@ -28,5 +30,6 @@ export const data: I18nData = {
   OurPeople2,
   ourResearch,
   tellYourStory,
-  OurSupporters
+  OurSupporters,
+  blogListing,
 }
