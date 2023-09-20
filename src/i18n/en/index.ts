@@ -1,22 +1,21 @@
 import { type I18nData } from '../type'
 
-import { home } from "./home";
-import { AboutUs } from "./AboutUs";
-import { GetInvolved_ } from "./GetInvolved";
-import { howItWorks } from "./HowItWorks";
-import { dashboard } from "./Dashboard";
-import { jobDescription } from "./JobDescription";
-import { ourPublications } from "./OurPublications";
-import { ourTechnology } from "./OurTecnology";
-import { OurPeople1 } from "./OurPeople1";
-import { OurPeople2 } from "./OurPeople2";
-import { ourResearch } from './OurResearch';
-import { tellYourStory } from './TellYourStory';
-import { OurSupporters } from "./OurSupporters";
+import { home } from './Home'
+import { AboutUs } from './AboutUs'
+import { GetInvolved_ } from './GetInvolved'
+import { howItWorks } from './HowItWorks'
+import { dashboard } from './Dashboard'
+import { jobDescription } from './JobDescription'
+import { ourPublications } from './OurPublications'
+import { ourTechnology } from './OurTecnology'
+import { OurPeople1 } from './OurPeople1'
+import { OurPeople2 } from './OurPeople2'
+import { ourResearch } from './OurResearch'
+import { tellYourStory } from './TellYourStory'
+import { OurSupporters } from './OurSupporters'
 import { JobListing } from './JobListing';
-import { blogListing } from './BlogListing';
+import { blogListing } from './BlogListing'
 import { blogDetails } from './BlogDetail';
-
 export const data: I18nData = {
   locale: 'en',
   home,
