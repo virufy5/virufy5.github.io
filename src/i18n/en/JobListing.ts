@@ -1,30 +1,39 @@
 export const JobListing = {
-    JobList: [
+  JobList: [
+    {
+      category: 'Management',
+      positions: [
         {
-            category: 'Engineering',
-            positions: [
-              {
-                title: 'Software engineer',
-                id: 1,
-              },
-              {
-                title: 'DevOps Engineer',
-                id: 2,
-              },
-            ],
-          },
-          {
-            category: 'Design',
-            positions: [
-              {
-                title: 'Product Designer',
-                id: 3,
-              },
-              {
-                title: 'Designer UX/UI',
-                id: 4,
-              },
-            ],
-          },
-    ]
+          title: 'Project Manager',
+          id: 1,
+        },
+      ],
+    },
+    {
+      category: 'Engineering',
+      positions: [
+        {
+          title: 'Software engineer',
+          id: 2,
+        },
+        {
+          title: 'DevOps Engineer',
+          id: 3,
+        },
+      ],
+    },
+    {
+      category: 'Design',
+      positions: [
+        {
+          title: 'Product Designer',
+          id: 4,
+        },
+        {
+          title: 'Designer UX/UI',
+          id: 5,
+        },
+      ],
+    },
+  ],
 }

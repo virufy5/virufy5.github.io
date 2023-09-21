@@ -16,7 +16,9 @@ export type I18nData = {
   JobListing: {
     JobList: object[] | any[]
   }
-  jobDescription?: JobDescription
+  JobDescription?: {
+    JobID: object[] | any[]
+  }
   ourPublications?: OurPublications
   ourTechnology?: OurTechnology
   ourResearch?: OurResearch
