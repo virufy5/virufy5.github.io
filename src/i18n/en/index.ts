@@ -16,6 +16,8 @@ import { OurSupporters } from './OurSupporters'
 import { JobListing } from './JobListing';
 import { blogListing } from './BlogListing'
 import { blogDetails } from './BlogDetail';
+import { faq } from './FAQ'
+
 export const data: I18nData = {
   locale: 'en',
   home,
@@ -33,5 +35,6 @@ export const data: I18nData = {
   tellYourStory,
   OurSupporters,
   blogListing,
-  blogDetails
+  blogDetails,
+  faq
 }

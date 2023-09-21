@@ -1,14 +1,11 @@
 import { type I18nData } from '../type'
-
 import { home } from './Home'
-
 import { AboutUs } from './AboutUs'
 import { GetInvolved_ } from './GetInvolved'
 import { dashboard } from './dashboard'
 import { jobDescription } from './jobDescription'
 import { ourPublications } from './ourPublications'
 import { ourTechnology } from './ourTecnology'
-
 import { howItWorks } from './HowItWorks'
 import { OurPeople1 } from './OurPeople1'
 import { OurPeople2 } from './OurPeople2'
@@ -18,7 +15,7 @@ import { OurSupporters } from './OurSupporters'
 import { blogListing } from './BlogListing'
 import { JobListing } from './JobListing'
 import { blogDetails } from './BlogDetails'
-
+import { faq } from './FAQ'
 export const data: I18nData = {
   locale: 'es',
   home,
@@ -37,4 +34,5 @@ export const data: I18nData = {
   OurSupporters,
   blogListing,
   blogDetails,
+  faq
 }

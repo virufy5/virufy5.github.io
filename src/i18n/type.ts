@@ -1,5 +1,6 @@
 import { StaticImageData } from 'next/image'
 import { Home } from './types/Home'
+import { FAQ } from './types/FAQ'
 
 export type I18nData = {
   locale: string
@@ -14,8 +15,8 @@ export type I18nData = {
   }
   JobListing: {
     JobList: object[] | any[]
-  };
-  jobDescription?: JobDescription;
+  }
+  jobDescription?: JobDescription
   ourPublications?: OurPublications
   ourTechnology?: OurTechnology
   ourResearch?: OurResearch
@@ -23,8 +24,9 @@ export type I18nData = {
   OurPeople1?: OurPeople1
   OurPeople2?: OurPeople2
   OurSupporters?: OurSupporters
-  blogListing?: BlogListing;
+  blogListing?: BlogListing
   blogDetails?: BlogDetails
+  faq: FAQ
 }
 
 // ---- How It Works ----
