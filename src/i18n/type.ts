@@ -1,6 +1,7 @@
 import { StaticImageData } from 'next/image'
 import { Home } from './types/Home'
 import { FAQ } from './types/FAQ'
+import { NavbarType } from './types/NavbarType'
 
 export type I18nData = {
   locale: string
@@ -29,6 +30,7 @@ export type I18nData = {
   blogListing?: BlogListing
   blogDetails?: BlogDetails
   faq: FAQ
+  navbar?: NavbarType
 }
 
 // ---- How It Works ----

@@ -16,6 +16,7 @@ import { blogListing } from './BlogListing'
 import { JobListing } from './JobListing'
 import { blogDetails } from './BlogDetails'
 import { faq } from './FAQ'
+import { navbar } from './Navbar'
 export const data: I18nData = {
   locale: 'es',
   home,
@@ -34,5 +35,6 @@ export const data: I18nData = {
   OurSupporters,
   blogListing,
   blogDetails,
-  faq
+  faq,
+  navbar
 }

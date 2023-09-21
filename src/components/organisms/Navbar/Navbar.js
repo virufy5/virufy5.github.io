@@ -11,6 +11,7 @@ import CloseMenu from "~/assets/static/icons/navbar/closeIconMenu.svg";
 import Select from "~/components/atoms/Select/Select";
 import Button from "~/components/atoms/button/Button";
 import { useState } from 'react';
+import { useI18n } from "~/i18n";
 
 //Flags
 import ENG from "~/assets/static/icons/navbar/flags/Eng.png"
@@ -36,7 +37,14 @@ export default function Navbar() {
         "pt": JPN,
         "jp": POR
     }
-
+    const { navbar:
+        { ourTecnology,
+            getInvolved,
+            aboutUs,
+            faq,
+            joinUs,
+            donate }
+    } = useI18n()
     const [navbar, setNavbar] = useState(false);
 
     const [showModal, setShowModal] = React.useState(false);
@@ -139,39 +147,39 @@ export default function Navbar() {
                         <ul className="items-center justify-center space-y-8 lg:flex lg:space-x-5 xl:space-x-9 lg:space-y-0">
                             <li className="text-[#393939]">
                                 <div>
-                                    <Link className="peer py-2 text-[#393939]" href="/OurTechnology">Our Technology</Link>
+                                    <Link className="peer py-2 text-[#393939]" href="/OurTechnology">{ourTecnology?.section}</Link>
                                     <div className="hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg fixed">
-                                        <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/HowItWorks">How It Works</Link>
-                                        <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="https://virufy.org/study/welcome">Share Your Cough</Link>
-                                        <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/Dashboard">Our Data</Link>
-                                        <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/OurResearch">Our Research</Link>
+                                        <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/HowItWorks">{ourTecnology?.howItWorks}</Link>
+                                        <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="https://virufy.org/study/welcome">{ourTecnology?.shareYourCough}</Link>
+                                        <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/Dashboard">{ourTecnology?.OurData}</Link>
+                                        <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/OurResearch">{ourTecnology?.OurResearch}</Link>
                                     </div>
                                 </div>
                             </li>
                             <li className="text-[#393939]">
                                 <div>
-                                    <Link className="peer py-2 text-[#393939]" href="/GetInvolved">Get Involved</Link>
+                                    <Link className="peer py-2 text-[#393939]" href="/GetInvolved">{getInvolved?.section}</Link>
                                     <div className="hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg fixed">
-                                        <Link onClick={() => setShowModal(true)} className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="#">Donate</Link>
-                                        <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/JobListing">Join Our Team</Link>
-                                        <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/TellYourStory">Tell Your Story</Link>
+                                        <Link onClick={() => setShowModal(true)} className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="#">{getInvolved?.donate}</Link>
+                                        <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/JobListing">{getInvolved?.joinOurTeam}</Link>
+                                        <Link className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/TellYourStory">{getInvolved?.tellYourStory}</Link>
                                     </div>
                                 </div>
                             </li>
                             <li className="text-[#393939]">
                                 <div>
-                                    <a className="peer py-2 text-[#393939]" href="/es/AboutUs">About Us</a>
+                                    <a className="peer py-2 text-[#393939]" href="/es/AboutUs">{aboutUs?.section}</a>
                                     <div className="hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg fixed">
-                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/OurPeople1">Our people</a>
-                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/OurSupporters">Our Supporters</a>
-                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/Blog">Blog</a>
-                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/OurPublications">Publications</a>
+                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/OurPeople1">{aboutUs?.ourPeople}</a>
+                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/OurSupporters">{aboutUs?.ourSopporters}</a>
+                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/Blog">{aboutUs?.blog}</a>
+                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/OurPublications">{aboutUs?.publications}</a>
                                     </div>
                                 </div>
                             </li>
                             <li className="text-[#393939]">
                                 <div>
-                                    <a className="peer py-2 text-[#393939]" href="/es/FAQ">FAQ</a>
+                                    <a className="peer py-2 text-[#393939]" href="/es/FAQ">{faq}</a>
                                 </div>
                             </li>
 
@@ -180,10 +188,10 @@ export default function Navbar() {
                                 <LocaleSelector optionsIcons={optionsIcons}></LocaleSelector>
                             </li>
                             <li className="text-[#393939] hidden lg:flex">
-                                <Button size="small" type="secondary" path="/JobListing" label="Join us" />
+                                <Button size="small" type="secondary" path="/JobListing" label={joinUs} />
                             </li>
                             <li className="text-[#393939]">
-                                <Button onClick={() => setShowModal(true)} size="small" type="primary" path="#" label="Donate" />
+                                <Button onClick={() => setShowModal(true)} size="small" type="primary" path="#" label={donate} />
                             </li>
                         </ul>
                     </div>
