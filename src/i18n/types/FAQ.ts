@@ -1,4 +1,4 @@
-import { StaticImageData } from "next/image"
+import { StaticImageData } from 'next/image'
 
 interface Card {
   route: StaticImageData
@@ -16,4 +16,17 @@ export interface FAQ {
     title: string
     cards: Card[]
   }
+  frequentQuestions: FrequentQuestion[]
+}
+
+export interface FrequentQuestion {
+  id: number
+  category: string
+  faqs: Question[]
+}
+
+export interface Question {
+  id: number
+  title: string
+  text: string
 }
