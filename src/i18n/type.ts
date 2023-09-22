@@ -2,6 +2,8 @@ import { StaticImageData } from 'next/image'
 import { Home } from './types/Home'
 import { FAQ } from './types/FAQ'
 import { NavbarType } from './types/NavbarType'
+import { BlogListing } from './types/BlogListingType'
+import { BlogDetails } from './types/BlogDetailsType'
 
 export type I18nData = {
   locale: string
@@ -362,32 +364,4 @@ export interface sectionTeamLeads {
   names: string[]
   texts: string[]
 }
-//---- | ----
-// ---- BlogListing ---
 
-export interface BlogObjects {
-  id: number
-  category: string
-  title: string
-  image: string | StaticImageData
-  description: string
-}
-export interface BlogListing {
-  cardItem: BlogObjects[]
-}
-//---- | ----
-// ---- BlogDetail ---
-
-export interface BlogDetailsObject {
-  id: number
-  title: string
-  category: string
-  date: string
-  autor: string
-  image: string | StaticImageData
-  description: string
-}
-
-export interface BlogDetails {
-  itemSelected: BlogDetailsObject[]
-}

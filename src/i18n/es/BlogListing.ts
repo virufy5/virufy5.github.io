@@ -1,4 +1,4 @@
-import { BlogListing } from '../type'
+import { BlogListing } from '../types/BlogListingType'
 import card1 from '~/assets/static/images/Blog Cards Images/card1.jpg'
 import card2 from '~/assets/static/images/Blog Cards Images/card2.jpg'
 import card3 from '~/assets/static/images/Blog Cards Images/card3.jpg'
