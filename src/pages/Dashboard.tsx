@@ -1,13 +1,13 @@
 //Organismo
-import TitleText from "~/components/molecules/TitleText/TitleText";
-import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal";
-import Map from "~/assets/static/images/dashboard/map.jpg";
-import Section7 from "~/components/organisms/section-7/Section7";
-import { useI18n } from "~/i18n";
+import TitleText from '~/components/molecules/TitleText/TitleText'
+import Section7 from '~/components/organisms/section-7/Section7'
+import { useI18n } from '~/i18n'
 export default function Dashboard() {
   const {
-    dashboard: { tittle, tittleInfo, advertisement },
-  } = useI18n();
+    locale,
+    dashboard: { tittle, tittleInfo, advertisement, shareYourCough, learnMore },
+  } = useI18n()
+  
 
   return (
     <div>
@@ -24,24 +24,19 @@ export default function Dashboard() {
           ContainerTitleProps=""
         />
       </div>
-      <div className="100vw mx-[auto] flex max-w-[1440px] flex-col">
-        <div>
-          <ImageAtomLocal
-            src={Map}
-            imagesize=""
-            ImageStyleProps=""
-            alt=""
-            border=""
-          />
-        </div>
+      <div>
+        <iframe
+          src={`https://virufy-dashboard.vercel.app/${locale}`}
+          className="min-h-screen w-full border-none"
+        />
         <Section7
           TitleLabel={advertisement}
-          Label1="share your cough"
-          Label2="learn more"
+          Label1={shareYourCough}
+          Label2={learnMore}
           Url1="https://virufy.org/study/welcome"
           Url2="/OurTechnology"
         />
       </div>
     </div>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import { BlogDetails } from '../type'
+import { BlogDetails } from "../types/BlogDetailsType"
 
 export const blogDetails: BlogDetails = {
   itemSelected: [

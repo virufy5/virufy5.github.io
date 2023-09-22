@@ -10,6 +10,10 @@ export default function Home() {
   return (
     <>
       <LocaleSelector />
+      <iframe
+        src={`https://virufy-dashboard.vercel.app/`}
+        className="w-full min-h-screen border-none"
+      />
       {/* <h1>{title} </h1>
       <p>{subtitle}</p> */}
     </>

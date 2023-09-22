@@ -1,3 +1,6 @@
+import advisor1 from '~/assets/static/images/cards/advisor1.jpg'
+import advisor2 from '~/assets/static/images/cards/advisor2.jpg'
+import advisor3 from '~/assets/static/images/cards/advisor3.jpg'
 export const home = {
   sectionTestOnline: {
     title: 'Es posible realizar una prueba Covid-19 en línea',
@@ -40,4 +43,27 @@ export const home = {
     buttonShare: 'comparte tu tos',
     buttonLearn: 'saber más',
   },
+  cardsTestimonials: [
+    {
+      id: 1,
+      name: 'Francisco Perez',
+      testimonial:
+        'Enseñar la forma más eficaz de apoyar a las personas que amamos',
+      picture: advisor2
+    },
+    {
+      id: 2,
+      name: 'Rosa Frank',
+      testimonial:
+        'Enseñar la forma más eficaz de apoyar a las personas que amamos',
+      picture: advisor1
+    },
+    {
+      id: 3,
+      name: 'Clara Diaz',
+      testimonial:
+        'Enseñar la forma más eficaz de apoyar a las personas que amamos',
+      picture: advisor3
+    },
+  ],
 }

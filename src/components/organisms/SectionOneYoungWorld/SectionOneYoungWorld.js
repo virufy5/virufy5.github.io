@@ -46,13 +46,13 @@ export default function SectionTellYourStoryGetInvolved({
                     />
                 </div>
                 <div className="flex md:hidden mt-[40px] align-center justify-center">
-                    <Video width="370px" height="208px" url="https://youtu.be/hvJgwPNYnZo" />
+                    <Video width="370px" height="208px" url="https://www.youtube.com/watch?v=hvJgwPNYnZo" />
                 </div>
                 <div className="hidden md:flex xl:hidden mt-[40px] align-center justify-center">
-                    <Video width="800px" height="450px" url="https://youtu.be/hvJgwPNYnZo" />
+                    <Video width="800px" height="450px" url="https://www.youtube.com/watch?v=hvJgwPNYnZo" />
                 </div>
                 <div className="hidden xl:flex mt-[40px] align-center justify-center">
-                    <Video width="1280px" height="720px" url="https://youtu.be/hvJgwPNYnZo" />
+                    <Video width="1280px" height="720px" url="https://www.youtube.com/watch?v=hvJgwPNYnZo" />
                 </div>
             </div>
             

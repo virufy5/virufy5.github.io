@@ -2,6 +2,8 @@ import { StaticImageData } from 'next/image'
 import { Home } from './types/Home'
 import { FAQ } from './types/FAQ'
 import { NavbarType } from './types/NavbarType'
+import { BlogListing } from './types/BlogListingType'
+import { BlogDetails } from './types/BlogDetailsType'
 
 export type I18nData = {
   locale: string
@@ -9,11 +11,7 @@ export type I18nData = {
   AboutUs?: AboutUs
   GetInvolved_?: GetInvolved
   howItWorks?: HowItWorks
-  dashboard?: {
-    tittle: string
-    tittleInfo: string
-    advertisement: string
-  }
+  dashboard?:DashBoard
   JobListing: {
     JobList: object[] | any[]
   }
@@ -362,32 +360,14 @@ export interface sectionTeamLeads {
   names: string[]
   texts: string[]
 }
-//---- | ----
-// ---- BlogListing ---
+// ---- DashBoard ----
 
-export interface BlogObjects {
-  id: number
-  category: string
-  title: string
-  image: string | StaticImageData
-  description: string
-}
-export interface BlogListing {
-  cardItem: BlogObjects[]
-}
-//---- | ----
-// ---- BlogDetail ---
-
-export interface BlogDetailsObject {
-  id: number
-  title: string
-  category: string
-  date: string
-  autor: string
-  image: string | StaticImageData
-  description: string
-}
-
-export interface BlogDetails {
-  itemSelected: BlogDetailsObject[]
+export interface DashBoard {
+  
+    tittle: string
+    tittleInfo: string
+    advertisement: string
+    shareYourCough: string
+    learnMore: string
+  
 }

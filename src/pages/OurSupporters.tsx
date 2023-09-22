@@ -1,50 +1,53 @@
-import TextinsImg from "~/components/molecules/TextinsImg/TextinsImg"
-import ImageinsText from "~/assets/static/images/ourSupporters/ImageinsText.png"
-import CardLarge from "~/components/organisms/section-9/CardLarge"
+import TextinsImg from '~/components/molecules/TextinsImg/TextinsImg'
+import ImageinsText from '~/assets/static/images/ourSupporters/ImageinsText.png'
+import CardLarge from '~/components/organisms/section-9/CardLarge'
 
-import { useI18n } from "~/i18n";
+import { useI18n } from '~/i18n'
 
-import Card1 from "~/assets/static/images/ourSupporters/card1.jpg"
-import Card2 from "~/assets/static/images/ourSupporters/card2.jpg"
-import Card3 from "~/assets/static/images/ourSupporters/card3.jpg"
-import Card4 from "~/assets/static/images/ourSupporters/card4.jpg"
-import Title from "~/components/atoms/Title/Title"
-import Card1TL from "~/assets/static/images/ourSupporters/card1.png"
-import Card2TL from "~/assets/static/images/ourSupporters/card2.png"
-import Card3TL from "~/assets/static/images/ourSupporters/card3.png"
-import Card4TL from "~/assets/static/images/ourSupporters/card4.png"
-import Card5TL from "~/assets/static/images/ourSupporters/card5.png"
-import Card6TL from "~/assets/static/images/ourSupporters/card6.png"
-import Card7TL from "~/assets/static/images/ourSupporters/card7.png"
-import Card8TL from "~/assets/static/images/ourSupporters/card8.png"
-import Card9TL from "~/assets/static/images/ourSupporters/card9.png"
-import Card10TL from "~/assets/static/images/ourSupporters/card10.png"
-import Card11TL from "~/assets/static/images/ourSupporters/card11.png"
-import Card12TL from "~/assets/static/images/ourSupporters/card12.png"
-import Card13TL from "~/assets/static/images/ourSupporters/card13.png"
-import Card14TL from "~/assets/static/images/ourSupporters/card14.png"
-import Card15TL from "~/assets/static/images/ourSupporters/card15.png"
-import Card16TL from "~/assets/static/images/ourSupporters/card16.png"
-import Card17TL from "~/assets/static/images/ourSupporters/card17.png"
-import Card18TL from "~/assets/static/images/ourSupporters/card18.png"
-import Card19TL from "~/assets/static/images/ourSupporters/card19.png"
-import Card from "~/components/molecules/Card/Card"
+import Card1 from '~/assets/static/images/ourSupporters/card1.jpg'
+import Card2 from '~/assets/static/images/ourSupporters/card2.jpg'
+import Card3 from '~/assets/static/images/ourSupporters/card3.jpg'
+import Card4 from '~/assets/static/images/ourSupporters/card4.jpg'
+import Title from '~/components/atoms/Title/Title'
+import Card1TL from '~/assets/static/images/ourSupporters/card1.png'
+import Card2TL from '~/assets/static/images/ourSupporters/card2.png'
+import Card3TL from '~/assets/static/images/ourSupporters/card3.png'
+import Card4TL from '~/assets/static/images/ourSupporters/card4.png'
+import Card5TL from '~/assets/static/images/ourSupporters/card5.png'
+import Card6TL from '~/assets/static/images/ourSupporters/card6.png'
+import Card7TL from '~/assets/static/images/ourSupporters/card7.png'
+import Card8TL from '~/assets/static/images/ourSupporters/card8.png'
+import Card9TL from '~/assets/static/images/ourSupporters/card9.png'
+import Card10TL from '~/assets/static/images/ourSupporters/card10.png'
+import Card11TL from '~/assets/static/images/ourSupporters/card11.png'
+import Card12TL from '~/assets/static/images/ourSupporters/card12.png'
+import Card13TL from '~/assets/static/images/ourSupporters/card13.png'
+import Card14TL from '~/assets/static/images/ourSupporters/card14.png'
+import Card15TL from '~/assets/static/images/ourSupporters/card15.png'
+import Card16TL from '~/assets/static/images/ourSupporters/card16.png'
+import Card17TL from '~/assets/static/images/ourSupporters/card17.png'
+import Card18TL from '~/assets/static/images/ourSupporters/card18.png'
+import Card19TL from '~/assets/static/images/ourSupporters/card19.png'
+import Card from '~/components/molecules/Card/Card'
 
 /* import Card1VH from "~/assets/static/images/ourSupporters/card1-VH.png"
 import Card2VH from "~/assets/static/images/ourSupporters/card2-VH.png" */
 
-import SectionOneYoungWorld from "~/components/organisms/SectionOneYoungWorld/SectionOneYoungWorld"
-import TitleText from "~/components/molecules/TitleText/TitleText"
-import CardSliderTall from "~/components/organisms/CardSlider/CardSliderTall"
-import OurSupportersSection from "~/components/organisms/OurSupportersSection/OurSupportersSection"
-
+import SectionOneYoungWorld from '~/components/organisms/SectionOneYoungWorld/SectionOneYoungWorld'
+import TitleText from '~/components/molecules/TitleText/TitleText'
+import CardSliderTall from '~/components/organisms/CardSlider/CardSliderTall'
+import OurSupportersSection from '~/components/organisms/OurSupportersSection/OurSupportersSection'
 
 export default function OurSupporters() {
-
   const {
-    OurSupporters: { titleImage, sectionSupporters, sectionOneYoungWorld, sectionVolunterStories ,sectionTeamLeads },
-  } = useI18n();
-  
+    OurSupporters: {
+      titleImage,
+      sectionSupporters,
+      sectionOneYoungWorld,
+      sectionVolunterStories,
+      sectionTeamLeads,
+    },
+  } = useI18n()
 
   const CardsData = [
     {
@@ -192,41 +195,40 @@ export default function OurSupporters() {
         Text={titleImage}
       />
 
-      <div className="flex flex-col justify-center items-center">
-
-        <div className="flex flex-col justify-center items-center max-w-[1440px] ">
+      <div className="flex flex-col items-center justify-center">
+        <div className="flex max-w-[1440px] flex-col items-center justify-center ">
           <OurSupportersSection TextProps={sectionSupporters} />
         </div>
-        <div className="flex flex-col justify-center items-center w-[100%] bg-[#F9FAFB]">
-        <div className="flex flex-col justify-center items-center max-w-[1440px] bg-[#F9FAFB] mt-[190px] pb-[362px]">
-          <SectionOneYoungWorld TextProps={sectionOneYoungWorld} />
+        <div className="flex w-[100%] flex-col items-center justify-center bg-[#F9FAFB]">
+          <div className="mt-[190px] flex max-w-[1440px] flex-col items-center justify-center bg-[#F9FAFB] pb-[362px]">
+            <SectionOneYoungWorld TextProps={sectionOneYoungWorld} />
 
-          <Title
-            H="h2"
-            Text={sectionOneYoungWorld.titleQuestion}
-            TitleClassProps="text-center mt-4 mb-[48px]"
-          />
-          <CardLarge
-            CardsData={CardsData}
-            CardClassProps="flex flex-row text-center items-center justify-center sm:w-1/1 md:w-1/2 lg:w-1/2 xl:w-1/2 mb-4 mt-4"
-          />
+            <Title
+              H="h2"
+              Text={sectionOneYoungWorld.titleQuestion}
+              TitleClassProps="text-center mt-4 mb-[48px]"
+            />
+            <CardLarge
+              CardsData={CardsData}
+              CardClassProps="flex flex-row text-center items-center justify-center sm:w-1/1 md:w-1/2 lg:w-1/2 xl:w-1/2 mb-4 mt-4"
+            />
 
-          <TitleText
-            TitleSize={"h2"}
-            TitleLabel={sectionVolunterStories.title}
-            TitleClassProps={"text-center mt-32 "}
-            TextSize={"normal"}
-            TextLabel={sectionVolunterStories.text}
-            TextClassProps={"m-10 "}
-            ContainerTitleProps
-            ContainerTextProps="max-w-[800px] mb-[80px]"
-          />
+            <TitleText
+              TitleSize={'h2'}
+              TitleLabel={sectionVolunterStories.title}
+              TitleClassProps={'text-center mt-32 '}
+              TextSize={'normal'}
+              TextLabel={sectionVolunterStories.text}
+              TextClassProps={'m-10 '}
+              ContainerTitleProps
+              ContainerTextProps="max-w-[800px] mb-[80px]"
+            />
 
-          {/* DESCOMENTAR CUANDO FUNCIONE EL CMS ////////////////////////////*/}{/* <CardSliderTall /> */}
-
+            {/* DESCOMENTAR CUANDO FUNCIONE EL CMS ////////////////////////////*/}
+            {/* <CardSliderTall /> */}
+          </div>
         </div>
-        </div>
-        <div className="flex flex-col justify-center items-center max-w-[1440px] my-[80px]">
+        <div className="my-[80px] flex max-w-[1440px] flex-col items-center justify-center">
           <Title
             H="h2"
             Text={sectionTeamLeads.title}

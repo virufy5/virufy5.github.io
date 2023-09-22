@@ -1,3 +1,7 @@
+import advisor1 from '~/assets/static/images/cards/advisor1.jpg'
+import advisor2 from '~/assets/static/images/cards/advisor2.jpg'
+import advisor3 from '~/assets/static/images/cards/advisor3.jpg'
+
 export const home = {
   sectionTestOnline: {
     title: 'An online Covid-19 test is possible',
@@ -20,7 +24,7 @@ export const home = {
     nameFounder: 'Amil Khanzada',
     description:
       'MBA Candidate, Haas School of Business Master of Engineering Candidate, Department of Electrical Engineering and Computer Sciences',
-    button: "read more",
+    button: 'read more',
   },
   sectionVirufyCommunity: {
     title: 'The Virufy Community',
@@ -35,9 +39,32 @@ export const home = {
     title: 'Our Supporters',
     button: 'Become  a supporter',
   },
-  sectionMissionStatement:{
-    title:"Let’s help the world and save many lives by recording your cough",
-    buttonShare: "share your cough",
-    buttonLearn: "learn more"
-  }
+  sectionMissionStatement: {
+    title: 'Let’s help the world and save many lives by recording your cough',
+    buttonShare: 'share your cough',
+    buttonLearn: 'learn more',
+  },
+  cardsTestimonials: [
+    {
+      id: 1,
+      name: 'Francisco Perez',
+      testimonial:
+        'To teach the most effective way to support the people we love.',
+      picture: advisor2,
+    },
+    {
+      id: 2,
+      name: 'Rosa Frank',
+      testimonial:
+        'To teach the most effective way to support the people we love.',
+      picture: advisor1,
+    },
+    {
+      id: 3,
+      name: 'Clara Diaz',
+      testimonial:
+        'To teach the most effective way to support the people we love.',
+      picture: advisor3,
+    },
+  ],
 }

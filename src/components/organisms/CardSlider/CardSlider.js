@@ -3,6 +3,7 @@ import CardHome from "../../molecules/CardHome/CardHome";
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 import { useEffect, useState } from "react";
+import { useI18n } from "~/i18n";
 
 export default function CardSlider() {
 
@@ -25,6 +26,7 @@ export default function CardSlider() {
     },
     slides: { perView: 1 },
   })
+  const {home: {cardsTestimonials}}= useI18n()
 
   useEffect(() => {
     setLoading(true);
@@ -47,13 +49,13 @@ export default function CardSlider() {
       <div className="navigation-wrapper mt-0 h-80 max-w-[1300px] w-[100vw]">
         <div ref={sliderRef} className="keen-slider h-72 ">
 
-        {isLoading ? <p className="text-center text-2xl">Loading...</p> : null}
-        {!data ? <p>No data</p> : null}
+        {/* {isLoading ? <p className="text-center text-2xl">Loading...</p> : null}
+        {!data ? <p>No data</p> : null} */}
 
-          {data.map(({ name, testimonial, id, picture }, index) =>
+          {cardsTestimonials.map(({ name, testimonial, id, picture }, index) =>
             <div key={id} className={`keen-slider__slide max-w-[348px] number-slideTall${index+1}`}>
               <CardHome
-                src={picture.url}
+                src={picture}
                 alt={name}
                 TitleSize="h6"
                 TitleLabel={name}  
