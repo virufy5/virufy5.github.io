@@ -5,6 +5,18 @@ import card3 from '~/assets/static/images/Blog Cards Images/card3.jpg'
 import card4 from '~/assets/static/images/Blog Cards Images/card4.jpg'
 
 export const blogListing: BlogListing = {
+  healthBlog: {
+    title: "Blog de salud Virufy",
+    categorySelector: {
+      optionSelect: [
+        { label: "Selecciona una categoría", value: 1 },
+        { label: "Impacto global", value: 2 },
+        { label: "Tecnología", value: 3 },
+        { label: "Historias de voluntarios", value: 4 },
+      ],
+    },
+    "selectCategory": "Selecciona una categoría del menú desplegable",
+  },
   cardItem: [
     {
       id: 1,
