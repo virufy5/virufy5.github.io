@@ -11,11 +11,7 @@ export type I18nData = {
   AboutUs?: AboutUs
   GetInvolved_?: GetInvolved
   howItWorks?: HowItWorks
-  dashboard?: {
-    tittle: string
-    tittleInfo: string
-    advertisement: string
-  }
+  dashboard?:DashBoard
   JobListing: {
     JobList: object[] | any[]
   }
@@ -364,4 +360,14 @@ export interface sectionTeamLeads {
   names: string[]
   texts: string[]
 }
+// ---- DashBoard ----
 
+export interface DashBoard {
+  
+    tittle: string
+    tittleInfo: string
+    advertisement: string
+    shareYourCough: string
+    learnMore: string
+  
+}
