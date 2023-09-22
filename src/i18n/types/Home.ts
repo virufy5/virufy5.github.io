@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export interface Home {
     sectionTestOnline:       SectionTestOnline;
     sectionTestExplain:      SectionTestExplain;
@@ -6,6 +8,7 @@ export interface Home {
     sectionVirufyCommunity:  SectionVirufyCommunity;
     sectionOurSupporters:    SectionOurSupporters;
     sectionMissionStatement: SectionMissionStatement;
+    cardsTestimonials: CardsTestimonial[]
 }
 
 export interface SectionCovidMap {
@@ -50,4 +53,10 @@ export interface SectionVirufyCommunity {
     descriptionVirufy:          string;
     titleBeliefStatement:       string;
     descriptionBeliefStatement: string;
+}
+export interface CardsTestimonial {
+    id:          number;
+    name:  string;
+    testimonial: string;
+    picture: StaticImageData
 }
