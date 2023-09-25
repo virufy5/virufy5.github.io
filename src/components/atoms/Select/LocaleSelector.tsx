@@ -6,7 +6,7 @@ import ENG from '~/assets/static/icons/navbar/flags/Eng.png'
 import ImageAtomLocal from '../imageAtom/ImageAtomLocal'
 import styles from './Select.module.css'
 import { StaticImageData } from 'next/image'
-export default function LocaleSelector({ optionsIcons }) {
+export default function LocaleSelector({ optionsIcons = {} }) {
   const { locale } = useI18n()
   const router = useRouter()
   const [icon, setIcon] = useState(ENG)
