@@ -24,6 +24,8 @@ export default function Prueba() {
       <div className="flex max-w-[1440px] flex-col items-center justify-center ">
         <Section1
           //TitleText
+          shareButtonLabel={buttons?.[0]}
+          learnMoreButtonLabel={buttons?.[1]}
           TitleSize="h1"
           TitleLabel={sectionTestOnline?.title}
           TextSize="normal"

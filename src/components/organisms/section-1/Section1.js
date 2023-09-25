@@ -15,7 +15,10 @@ export default function Section1({
   alt,
   buttons,
   buttonTechnology,
-  ImageStyleProps
+  ImageStyleProps,
+  shareButtonLabel = '',
+  learnMoreButtonLabel = '',
+  researchButtonLabel = ''
 }) {
   return (
     <div className="
@@ -63,8 +66,8 @@ export default function Section1({
           <div
             className="ml-[5vw] mt-3 flex items-center flex-col lg:flex-row gap-3 lg:text-left text-center"
           >
-            <Button size="medium" type="primary" path="https://virufy.org/study/welcome" label="share your cough" />
-            <Button size="medium" type="secondary" path="/ourTechnology" label="learn more" />
+            <Button size="medium" type="primary" path="https://virufy.org/study/welcome" label={shareButtonLabel} />
+            <Button size="medium" type="secondary" path="/ourTechnology" label={learnMoreButtonLabel} />
 
           </div> : null
         }
@@ -73,7 +76,7 @@ export default function Section1({
           <div
             className="ml-[5vw] mt-3 flex items-center flex-col lg:flex-row gap-3 lg:text-left text-center"
           >
-            <Button size="medium" type="primary" path="/OurResearch" label="SEE OUR RESEARCH" />
+            <Button size="medium" type="primary" path="/OurResearch" label={researchButtonLabel} />
 
           </div> : null
         }        

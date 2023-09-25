@@ -20,6 +20,7 @@ export default function OurTechnology() {
       collectedDataTitle,
       collectedDataText,
       dashboardButtonLabel,
+      buttonResearchLabel
     },
   } = useI18n();
   return (
@@ -37,6 +38,7 @@ export default function OurTechnology() {
             border="none"
             route={imageOurResearch}
             alt="imagen de algo"
+           researchButtonLabel={buttonResearchLabel}
             buttons={false}
             ImageStyleProps={""}
             buttonTechnology={true}
@@ -61,6 +63,7 @@ export default function OurTechnology() {
             TextLabel2={aboutVirufySection?.processingDescription}
             TextLabel3={aboutVirufySection?.resultDescription}
             ContainerTextProps=""
+            buttonLabel={aboutVirufySection.button}
           />
 
           <div className='flex flex-col mx-[5vw] mt-[80px]'>

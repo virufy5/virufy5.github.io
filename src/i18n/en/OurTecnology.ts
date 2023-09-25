@@ -2,6 +2,7 @@ export const ourTechnology = {
   title: 'The Science Behind Virufy',
   titileDescription:
     'Artificial intelligence (AI) is capable of detecting minute differences in vocal patterns to detect disease presence.',
+  buttonResearchLabel: 'see our research',
   aboutVirufySection: {
     title: 'How Our Online Covid-19 Test Works',
     recordingYourCough: 'Recording your cough',
@@ -13,6 +14,7 @@ export const ourTechnology = {
     resultsYourCough: 'Results',
     resultDescription:
       'Within minutes, our Artificial intelligence algorithm is able to accurately predict your test results through the app.',
+    button:"Share your cough"
   },
   collectedDataTitle: 'Collected Data',
   collectedDataText:

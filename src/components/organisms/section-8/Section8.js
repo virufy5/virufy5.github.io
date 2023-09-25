@@ -21,7 +21,7 @@ export default function Section8({
   route2,
   route3,
   alt,
-
+  buttonLabel
 }) {
   return (
     <div className="mt-[80px] mb-[80px] flex flex-col">
@@ -98,7 +98,7 @@ export default function Section8({
         <Button
           size="medium"
           type="primary"
-          label="Share your cough"
+          label={buttonLabel}
           path="https://virufy.org/study/welcome"
         />
       </div>

@@ -1,19 +1,19 @@
 //Organismo
-import Section1 from "~/components/organisms/section-1/Section1";
-import Section8 from "~/components/organisms/section-8/Section8";
+import Section1 from '~/components/organisms/section-1/Section1'
+import Section8 from '~/components/organisms/section-8/Section8'
 
-import howItWorks1 from "~/assets/static/images/howItWorks/1.jpg";
-import howItWorksStep1 from "~/assets/static/images/howItWorks/step1.jpg";
-import howItWorksStep2 from "~/assets/static/images/howItWorks/step2.jpg";
-import howItWorksStep3 from "~/assets/static/images/howItWorks/step3.jpg";
-import { useI18n } from "~/i18n";
+import howItWorks1 from '~/assets/static/images/howItWorks/1.jpg'
+import howItWorksStep1 from '~/assets/static/images/howItWorks/step1.jpg'
+import howItWorksStep2 from '~/assets/static/images/howItWorks/step2.jpg'
+import howItWorksStep3 from '~/assets/static/images/howItWorks/step3.jpg'
+import { useI18n } from '~/i18n'
 
 export default function HowItWorks() {
   const {
     howItWorks: { sectionShareCougt, sectiontCovidTestExplanation },
-  } = useI18n();
+  } = useI18n()
 
-  const buttons = [sectionShareCougt?.buttons];
+  const buttons = sectionShareCougt?.buttons
 
   return (
     <>
@@ -34,8 +34,10 @@ export default function HowItWorks() {
             sizeImg
             //Buttons
             buttons={buttons}
-            ImageStyleProps={""}
+            ImageStyleProps={''}
             buttonTechnology={false}
+            shareButtonLabel={buttons?.[0]}
+            learnMoreButtonLabel={buttons?.[1]}
           />
 
           {/* 			<p className="tex		t-gray-300">Section - 8</p> */}
@@ -60,9 +62,10 @@ export default function HowItWorks() {
             TextLabel2={sectiontCovidTestExplanation?.textLabelProcessing}
             TextLabel3={sectiontCovidTestExplanation?.textLabelResults}
             ContainerTextProps=""
+            buttonLabel={sectiontCovidTestExplanation.button}
           />
         </div>
       </div>
     </>
-  );
+  )
 }

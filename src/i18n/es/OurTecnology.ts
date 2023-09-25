@@ -2,6 +2,7 @@ export const ourTechnology = {
   title: 'La Ciencia Detrás de Virufy',
   titileDescription:
     'La inteligencia artificial (IA) es capaz de detectar diferencias minúsculas en los patrones vocales para detectar la presencia de enfermedades.',
+  buttonResearchLabel: 'ver nuestra investigación',
   aboutVirufySection: {
     title: 'Cómo Funciona Nuestra Prueba en Línea de COVID-19',
     recordingYourCough: 'Grabación de tu tos',
@@ -13,6 +14,7 @@ export const ourTechnology = {
     resultsYourCough: 'Resultados',
     resultDescription:
       'En cuestión de minutos, nuestro algoritmo de inteligencia artificial es capaz de predecir con precisión tus resultados de la prueba a través de la aplicación.',
+    button: 'comparte tu tos',
   },
   collectedDataTitle: 'Datos Recopilados',
   collectedDataText:

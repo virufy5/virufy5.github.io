@@ -17,6 +17,7 @@ export default function Section4({
   buttonRoute
 }) 
 { console.log(buttonRoute)
+  console.log(labelButton);
   return (
     <div className="text-center mt-[100px] mb-[40px] flex flex-col space-y-4 space-x-4 ml-[5vw] mr-[5vw]">
       <TitleText

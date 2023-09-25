@@ -11,7 +11,7 @@ export type I18nData = {
   AboutUs?: AboutUs
   GetInvolved_?: GetInvolved
   howItWorks?: HowItWorks
-  dashboard?:DashBoard
+  dashboard?: DashBoard
   JobListing: {
     JobList: object[] | any[]
   }
@@ -40,7 +40,7 @@ export interface HowItWorks {
 export interface SectionShareCougt {
   title: string
   textLabel: string
-  buttons: string
+  buttons: string[]
 }
 export interface SectiontCovidTestExplanation {
   title: string
@@ -50,6 +50,7 @@ export interface SectiontCovidTestExplanation {
   textLabelRecording: string
   textLabelProcessing: string
   textLabelResults: string
+  button: string
 }
 // ---- | ----
 
@@ -116,11 +117,13 @@ export interface AboutVirufySection {
   processingDescription: string
   resultsYourCough: string
   resultDescription: string
+  button: string
 }
 
 export interface OurTechnology {
   title: string
   titileDescription: string
+  buttonResearchLabel: string
   aboutVirufySection: AboutVirufySection
   collectedDataTitle: string
   collectedDataText: string
@@ -363,11 +366,9 @@ export interface sectionTeamLeads {
 // ---- DashBoard ----
 
 export interface DashBoard {
-  
-    tittle: string
-    tittleInfo: string
-    advertisement: string
-    shareYourCough: string
-    learnMore: string
-  
+  tittle: string
+  tittleInfo: string
+  advertisement: string
+  shareYourCough: string
+  learnMore: string
 }

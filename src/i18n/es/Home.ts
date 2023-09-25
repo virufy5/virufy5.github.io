@@ -23,7 +23,7 @@ export const home = {
     nameFounder: 'Amil Khanzada',
     description:
       'Candidato a MBA, Haas School of Business Candidato a Master en Ingeniería, Departamento de Ingeniería Eléctrica e Informática',
-    button: 'read more',
+    button: 'saber más',
   },
   sectionVirufyCommunity: {
     title: 'Comunidad Virufy',
