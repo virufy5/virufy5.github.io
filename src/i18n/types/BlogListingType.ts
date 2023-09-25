@@ -9,6 +9,7 @@ export interface BlogObjects {
   title: string
   image: string | StaticImageData
   description: string
+  readMore: string
 }
 export interface BlogListing {
   healthBlog: HealthBlog
