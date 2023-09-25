@@ -8,10 +8,9 @@ import { useI18n } from "~/i18n";
 export default function JobList() {
 
   const {
-    JobListing: { JobList },
+    JobListing: { JobList, modal },
   } = useI18n();
   
-  const [isLoading, setLoading] = useState(false)
   const [showModalConfirmation, setShowModalConfirmation] = React.useState(true)
 
   return (
@@ -27,7 +26,7 @@ export default function JobList() {
                   <div className="flex w-full rounded-t border-b border-solid border-slate-200">
                     <Title
                       H="h5Modals2"
-                      Text="Do you understand these are all unpaid, volunteer positions?"
+                      Text={modal?.text}
                       TitleClassProps={'mt-[30px] mx-auto mb-[30px]'}
                     />
                   </div>
@@ -40,14 +39,14 @@ export default function JobList() {
                       href="#"
                       onClick={() => setShowModalConfirmation(false)}
                     >
-                      Yes
+                      {modal?.yes}
                     </Link>
                     <Link
                       className="flex  w-[50px] justify-center rounded border border-blue-500 bg-gray-200 px-6 py-2 outline-none transition-all duration-150 ease-linear hover:bg-gray-300"
                       type="button"
                       href="/home"
                     >
-                      No
+                      {modal?.no}
                     </Link>
                   </div>
                   {/*footer*/}
@@ -62,7 +61,6 @@ export default function JobList() {
       {/* _____________________ */}
 
       <div className="my-12 mx-8 w-11/12">
-        {isLoading ? <p className="text-center text-2xl">Loading...</p> : null}
         {!JobList ? <p>No data</p> : null}
 
         {JobList.map(({ category, positions, id }) => (

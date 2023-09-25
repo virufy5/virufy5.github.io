@@ -12,9 +12,7 @@ export type I18nData = {
   GetInvolved_?: GetInvolved
   howItWorks?: HowItWorks
   dashboard?: DashBoard
-  JobListing: {
-    JobList: object[] | any[]
-  }
+  JobListing: JobListing
   JobDescription?: {
     JobID: object[] | any[]
   }
@@ -51,6 +49,20 @@ export interface SectiontCovidTestExplanation {
   textLabelProcessing: string
   textLabelResults: string
   button: string
+}
+// ---- | ----
+
+// ---- Job Listing ----
+export interface JobListing {
+  JobList: object[] | any[]
+  titleImage: string;
+  title: string;
+  text: string;
+  modal: { 
+    text: string;
+    yes: string;
+    no: string;
+   }
 }
 // ---- | ----
 

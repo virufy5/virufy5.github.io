@@ -21,6 +21,8 @@ const IdBlog = () => {
     }
   }, [itemSelected])
 
+console.log(detailSelected);
+
   return (
     <>
       {isLoading ? <p className="text-center text-2xl">Loading...</p> : null}
@@ -113,8 +115,8 @@ const IdBlog = () => {
           H={"h3"}
           TitleClassProps={"w-[100%] mt-8 text-center "}
         />
-        <LeaveAComment />
 
+        <LeaveAComment idBlog={`${detailSelected.id} - ${detailSelected.title}`} />
 
         <div className="w-full flex flex-col items-center bg-[#EEEEEE]">
           <div className="max-w-[1300px] w-[100vw] mt-14 xl:mt-0 flex flex-col xl:flex-row items-center xl:justify-between">

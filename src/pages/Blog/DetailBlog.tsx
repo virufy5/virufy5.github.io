@@ -74,7 +74,7 @@ export default function DetailBlog() {
         H={'h3'}
         TitleClassProps={'w-[100%] mt-8 text-center '}
       />
-      <LeaveAComment />
+      <LeaveAComment idBlog="" />
 
       <div className="flex flex-col items-center bg-[#EEEEEE]">
         <div className="mt-14 flex w-[100vw] max-w-[1300px] flex-col items-center xl:mt-0 xl:flex-row xl:justify-between">
