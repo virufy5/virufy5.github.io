@@ -4,6 +4,7 @@ import { FAQ } from './types/FAQ'
 import { NavbarType } from './types/NavbarType'
 import { BlogListing } from './types/BlogListingType'
 import { BlogDetails } from './types/BlogDetailsType'
+import { Footer } from './types/Footer'
 
 export type I18nData = {
   locale: string
@@ -27,6 +28,7 @@ export type I18nData = {
   blogDetails?: BlogDetails
   faq: FAQ
   navbar?: NavbarType
+  footer: Footer
 }
 
 // ---- How It Works ----

@@ -18,7 +18,7 @@ import { blogListing } from './BlogListing'
 import { blogDetails } from './BlogDetail';
 import { faq } from './FAQ'
 import { navbar } from './Navbar'
-
+import { footer } from './Footer'
 export const data: I18nData = {
   locale: 'en',
   home,
@@ -38,5 +38,6 @@ export const data: I18nData = {
   blogListing,
   blogDetails,
   faq,
-  navbar
+  navbar,
+  footer
 }
