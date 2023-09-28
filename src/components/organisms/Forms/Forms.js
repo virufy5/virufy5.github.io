@@ -8,16 +8,10 @@ import { formIDs } from '~/forms/TellYourStory'
 import { useI18n } from '~/i18n'
 
 export default function Forms({}) {
-  const { acceptedFiles, getRootProps, getInputProps } = useDropzone()
   const {
     tellYourStory: { form },
   } = useI18n()
 
-  const files = acceptedFiles.map((file) => (
-    <li key={__filename}>
-      {__filename} - {file.size} bytes
-    </li>
-  ))
 
   return (
     <>
@@ -72,45 +66,7 @@ export default function Forms({}) {
             required
           ></textarea>
         </div>
-        <div>
-          <label
-            htmlFor="user_photo"
-            className="mb-2 block text-sm font-medium text-gray-900"
-          >
-            {form.uploadPhoto}
-          </label>
-          <div className="flex w-full flex-col items-center justify-center">
-            <label
-              htmlFor="dropzone-file"
-              className="containerflex flex h-24 w-full cursor-pointer flex-col items-center justify-center border border-gray-400"
-            >
-              <div
-                className="flex flex-col items-center justify-center pt-5 pb-6"
-                {...getRootProps({ className: 'dropzone' })}
-              >
-                <input {...getInputProps()} />
-                <ImageAtomLocal
-                  src={iconDrop}
-                  imagesize="px50"
-                  ImageStyleProps=""
-                  alt="drop"
-                  border=""
-                />
-              </div>
-            </label>
-            <div className="mt-5 mb-10 flex w-full flex-col items-start">
-              <TitleText
-                TitleSize="h4"
-                TitleLabel={form.titleFiles}
-                TextSize="normal"
-                TextLabel={files}
-                ContainerTextProps=""
-                ContainerTitleProps=""
-                TitleClassProps=""
-                TextClassProps=""
-              />
-            </div>
-          </div>
+        <div>    
           <div className="mb-20 flex flex-col items-center justify-center">
             <Button size="medium" type="primary" path="#" label={form.button} />
           </div>
