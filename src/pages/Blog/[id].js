@@ -12,16 +12,14 @@ const IdBlog = () => {
   const [isLoading, setLoading] = useState(false);
   const router = useRouter()
   const { id } = router.query
-  const idDetail = Number(id)
+  const idBlog = id ?? '1'
   const { blogDetails: { itemSelected } } = useI18n()
-  const detailSelected = itemSelected.find((item) => item.id === idDetail)
+  const detailSelected = itemSelected?.find((item) => item?.id === idBlog)
   useEffect(() => {
     if (!Array.isArray(itemSelected)) {
       setLoading(true)
     }
   }, [itemSelected])
-
-console.log(detailSelected);
 
   return (
     <>
@@ -70,14 +68,14 @@ console.log(detailSelected);
 
         <div className="flex flex-col lg:flex-row items-center justify-center max-w-[1440px] w-[100vw] mt-12 mb-8">
           <div className="w-full flex items-center justify-end lg:mb-[20px]">
-            
-              <Image
-                src={detailSelected?.image}
-                alt=""
-                width={800}
-                height={600}
-                style={{ display: 'block', margin: '0 auto' }}
-              />
+
+            <Image
+              src={detailSelected?.image}
+              alt=""
+              width={800}
+              height={600}
+              style={{ display: 'block', margin: '0 auto' }}
+            />
           </div>
         </div>
         <div className="flex flex-col ml-2 max-w-[1440px] mb-[30px]">
@@ -111,7 +109,7 @@ console.log(detailSelected);
 
 
         <Title
-          Text="Leave a comment"
+          Text={detailSelected?.leaveAComment}
           H={"h3"}
           TitleClassProps={"w-[100%] mt-8 text-center "}
         />

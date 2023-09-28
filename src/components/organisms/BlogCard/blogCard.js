@@ -22,7 +22,7 @@ export default function BlogCard() {
         <div className="flex flex-col items-center">
             {isLoading ? <p className="text-center text-2xl">Loading...</p> : null}
             {!cardItem ? <p>No data</p> : null}
-            {cardItem.map(({ id, title, image, description, readMore }) => (
+            {cardItem?.map(({ id, title, image, description, readMore }) => (
                 <div key={id} className="flex flex-col lg:flex-row items-center justify-center max-w-[1300px] w-[100vw] mt-12 mb-8">
                     <div className="w-full lg:w-1/2 flex items-center justify-end mb-[20px]">
                         <ImageAtomLocal
