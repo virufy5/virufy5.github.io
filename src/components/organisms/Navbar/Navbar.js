@@ -168,12 +168,12 @@ export default function Navbar() {
                             </li>
                             <li className="text-[#393939]">
                                 <div>
-                                    <a className="peer py-2 text-[#393939]" href="/es/AboutUs">{aboutUs?.section}</a>
+                                    <a className="peer py-2 text-[#393939]" href="/en/AboutUs">{aboutUs?.section}</a>
                                     <div className="hidden peer-hover:flex hover:flex w-[200px] flex-col bg-white drop-shadow-lg fixed">
-                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/OurPeople1">{aboutUs?.ourPeople}</a>
-                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/OurSupporters">{aboutUs?.ourSopporters}</a>
-                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/Blog">{aboutUs?.blog}</a>
-                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/es/OurPublications">{aboutUs?.publications}</a>
+                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/en/OurPeople1">{aboutUs?.ourPeople}</a>
+                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/en/OurSupporters">{aboutUs?.ourSopporters}</a>
+                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/en/Blog">{aboutUs?.blog}</a>
+                                        <a className="px-5 py-3 hover:bg-gray-200 text-[#393939]" href="/en/OurPublications">{aboutUs?.publications}</a>
                                     </div>
                                 </div>
                             </li>
