@@ -179,7 +179,7 @@ export default function Navbar() {
                             </li>
                             <li className="text-[#393939]">
                                 <div>
-                                    <a className="peer py-2 text-[#393939]" href="/es/FAQ">{faq}</a>
+                                    <Link className="peer py-2 text-[#393939]" href="/FAQ">{faq}</Link>
                                 </div>
                             </li>
 
