@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import Card from '~/components/molecules/Card/CardButton'
 
@@ -18,11 +18,17 @@ export default function FAQ() {
   const [Category, setCategory] = useState<string>('')
   const [text, setText] = useState<string>('')
 
+  useEffect(() => {
+    setCategory('');
+    // setText('');
+  },[useI18n()])
+
   const {
     faq: {
       sectionCardsQuestionsTopics: { cards, title },
     },
   } = useI18n()
+
   function sendCategory(event: string) {
     //console.log('Child did:', event);
     setCategory(event)
@@ -32,6 +38,18 @@ export default function FAQ() {
     //console.log('Child did:', event);
     setText(event)
     setCategory('')
+  }
+
+  function acordeon() {
+    if (Category === '') return (
+      <>
+        <br>
+        </br>
+      </>
+    );
+    else return (
+      <AcordeonQuestions Category={Category} TextSearch={text} />
+    )
   }
 
   return (
@@ -62,7 +80,8 @@ export default function FAQ() {
           TitleClassProps={"w-[100%] mt-8 ml-[20px] sm:w-auto md:w-auto lg:w-auto xl:w-[100%]"}
         /> */}
 
-        <AcordeonQuestions Category={Category} TextSearch={text} />
+        {/* <AcordeonQuestions Category={Category} TextSearch={text} /> */}
+        {acordeon()}
       </div>
     </div>
   )
