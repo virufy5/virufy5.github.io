@@ -81,7 +81,7 @@ export default function FAQ() {
         /> */}
 
         {/* <AcordeonQuestions Category={Category} TextSearch={text} /> */}
-        {acordeon()}
+        {acordeon()} 
       </div>
     </div>
   )
