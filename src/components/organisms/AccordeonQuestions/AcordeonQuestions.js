@@ -88,7 +88,7 @@ export default function AcordeonQuestions({ Category, TextSearch }) {
     //Cargar datos de FAQ
     setData(frequentQuestions)
     setObjects(frequentQuestions)
-  }, [])
+  }, [useI18n()])
   return (
     <div className="mb-32">
       {isLoading ? <p className="text-center text-2xl">Loading...</p> : null}
