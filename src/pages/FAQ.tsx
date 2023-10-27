@@ -15,11 +15,11 @@ import Input from '~/components/atoms/Title/InputText'
 import { useI18n } from '~/i18n'
 
 export default function FAQ() {
-  const [Category, setCategory] = useState<string>('')
+  const [Category, setCategory] = useState<string>('none')
   const [text, setText] = useState<string>('')
 
   useEffect(() => {
-    setCategory('');
+    setCategory('none');
     // setText('');
   },[useI18n()])
 
@@ -41,7 +41,7 @@ export default function FAQ() {
   }
 
   function acordeon() {
-    if (Category === '') return (
+    if (Category === 'none') return (
       <>
         <br>
         </br>
