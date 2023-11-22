@@ -18,11 +18,6 @@ export default function FAQ() {
   const [Category, setCategory] = useState<string>('')
   const [text, setText] = useState<string>('')
 
-  // useEffect(() => {
-  //   setCategory('none');
-  //   // setText('');
-  // },[useI18n()])
-
   const {
     faq: {
       sectionCardsQuestionsTopics: { cards, title },
@@ -74,14 +69,8 @@ export default function FAQ() {
           handleAction={sendCategory}
           Category={Category}
         />
-        {/* <Title
-          Text={Category}
-          H={"h1"}
-          TitleClassProps={"w-[100%] mt-8 ml-[20px] sm:w-auto md:w-auto lg:w-auto xl:w-[100%]"}
-        /> */}
 
         <AcordeonQuestions Category={Category} TextSearch={text} />
-        {/* {acordeon()}  */}
       </div>
     </div>
   )
