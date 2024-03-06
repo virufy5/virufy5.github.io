@@ -125,10 +125,10 @@ export default function Navbar() {
           </>
         ) : null}
       </div>
-      <div className="lg:max-w-8lg justify-between px-3 lg:mx-4 lg:flex lg:items-center lg:px-2 2xl:mx-9">
+      <div className="justify-between px-3 xl:mx-4 xl:flex xl:items-center xl:px-2 2xl:mx-9">
         <div>
-          <div className="flex items-center justify-between py-3 lg:block lg:py-5">
-            <Link href="/home" className="flex lg:hidden">
+          <div className="flex items-center justify-between py-3 xl:block xl:py-5">
+            <Link href="/home" className="flex xl:min-[1140px]:hidden">
               <ImageAtomLocal
                 imagesize="px100x48"
                 border="none"
@@ -137,7 +137,7 @@ export default function Navbar() {
                 ImageStyleProps=""
               />
             </Link>
-            <Link href="/home" className="hidden lg:flex">
+            <Link href="/home" className="hidden xl:min-[1140px]:flex">
               <ImageAtomLocal
                 imagesize="px160"
                 border="none"
@@ -146,10 +146,10 @@ export default function Navbar() {
                 ImageStyleProps=""
               />
             </Link>
-            <li className="flex text-[#393939] lg:hidden">
+            <li className="flex text-[#393939] xl:hidden">
               <Button size="small" type="primary" path="#" label="Join us" />
             </li>
-            <div className="lg:hidden">
+            <div className="xl:hidden">
               <button
                 className="rounded-lg p-2 text-gray-700 outline-none focus:border focus:border-gray-400"
                 onClick={() => setNavbar(!navbar)}
@@ -177,15 +177,15 @@ export default function Navbar() {
         </div>
         <div>
           <div
-            className={`mt-8 flex-1 justify-self-center pb-3 lg:mt-0 lg:block lg:pb-0 ${
+            className={`mt-8 flex-1 justify-self-center pb-3 xl:mt-0 xl:block xl:pb-0 ${
               navbar ? 'block' : 'hidden'
             }`}
           >
-            <ul className="items-center justify-center space-y-8 lg:flex lg:space-x-5 lg:space-y-0 2xl:space-x-9">
+            <ul className="items-center justify-center space-y-8 xl:flex xl:space-x-5 xl:space-y-0 2xl:space-x-9">
               <li className="text-[#393939]">
                 <div>
                   <Link
-                    className="peer py-2 text-[#393939]"
+                    className="peer whitespace-nowrap py-2 text-[#393939]"
                     href="/OurTechnology"
                   >
                     {ourTechnology?.section}
@@ -221,7 +221,7 @@ export default function Navbar() {
               <li className="text-[#393939]">
                 <div>
                   <Link
-                    className="peer py-2 text-[#393939]"
+                    className="peer whitespace-nowrap py-2 text-[#393939]"
                     href="/GetInvolved"
                   >
                     {getInvolved?.section}
@@ -251,7 +251,10 @@ export default function Navbar() {
               </li>
               <li className="text-[#393939]">
                 <div>
-                  <Link className="peer py-2 text-[#393939]" href="/AboutUs">
+                  <Link
+                    className="peer whitespace-nowrap py-2 text-[#393939]"
+                    href="/AboutUs"
+                  >
                     {aboutUs?.section}
                   </Link>
                   <div className="fixed hidden w-[200px] flex-col bg-white drop-shadow-lg hover:flex peer-hover:flex">
@@ -284,7 +287,10 @@ export default function Navbar() {
               </li>
               <li className="text-[#393939]">
                 <div>
-                  <Link className="peer py-2 text-[#393939]" href="/FAQ">
+                  <Link
+                    className="peer whitespace-nowrap py-2 text-[#393939]"
+                    href="/FAQ"
+                  >
                     {faq}
                   </Link>
                 </div>

@@ -26,7 +26,7 @@ export default function LocaleSelector({ optionsIcons = {} }) {
     }
   }, [locale])
   return (
-    <div className="flex content-center items-center lg:ml-9">
+    <div className="flex content-center items-center xl:ml-2 2xl:ml-9">
       <ImageAtomLocal
         src={icon}
         alt="icon"
