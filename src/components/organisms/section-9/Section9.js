@@ -1,8 +1,8 @@
-import Button from "~/components/atoms/button/Button"
-import Title from "~/components/atoms/Title/Title"
-import TitleText from "~/components/molecules/TitleText/TitleText"
-import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal"
-import microscope from "~/assets/static/images/OurResearch/microscope.png"
+import Button from '~/components/atoms/button/Button'
+import Title from '~/components/atoms/Title/Title'
+import TitleText from '~/components/molecules/TitleText/TitleText'
+import ImageAtomLocal from '~/components/atoms/imageAtom/ImageAtomLocal'
+import microscope from '~/assets/static/images/OurResearch/microscope.png'
 
 export default function Section9({
   TitleSize,
@@ -17,39 +17,42 @@ export default function Section9({
   pathBtn,
 }) {
   return (
-    <div className="
-    w-[100%] text-center items-center mb-5
-    ">
-      <Title
-        Text="Research"
-        H="h1"
-        TitleClassProps="mt-4"
-      />
+    <div
+      className="
+    mb-5 w-[100%] items-center text-center
+    "
+    >
+      <Title Text="Research" H="h1" TitleClassProps="mt-4" />
 
-      <div className="
+      <div
+        className="
+        mt-3
         flex
-        flex-wrap
         w-[100%]
-        mt-3 
+        flex-wrap 
         justify-center
-      ">
-        <div className="
-          flex 
-          flex-col
-          mr-[2vw] ml-[5vw]
+      "
+      >
+        <div
+          className="
           sm:w-1/1 
+          mr-[2vw]
+          ml-[5vw] flex
+          flex-col 
           md:w-1/3
           lg:w-1/3
-          xl:w-1/3
-        ">
+          2xl:w-1/3
+        "
+        >
           <div className="flex justify-center">
             <ImageAtomLocal
               src={microscope}
               alt="microscope"
-              imagesize={""}
-              ImageStyleProps={""}
-              border={""}
-            /></div>
+              imagesize={''}
+              ImageStyleProps={''}
+              border={''}
+            />
+          </div>
 
           <TitleText
             TitleSize={TitleSize}
@@ -61,26 +64,28 @@ export default function Section9({
             TitleClassProps="text-left"
             TextClassProps="mt-2 text-left"
           />
-
         </div>
-        <div className="
-          flex
-          flex-col
+        <div
+          className="
+          sm:w-1/1
           ml-[2vw]
           mr-[2.5vw]
-          sm:w-1/1 sm:ml-[5vw]
+          flex
+          flex-col sm:ml-[5vw]
           md:w-1/3
           lg:w-1/3
-          xl:w-1/3
-        ">
+          2xl:w-1/3
+        "
+        >
           <div className="flex justify-center">
             <ImageAtomLocal
               src={microscope}
               alt="microscope"
-              imagesize={""}
-              ImageStyleProps={""}
-              border={""}
-            /></div>
+              imagesize={''}
+              ImageStyleProps={''}
+              border={''}
+            />
+          </div>
           <TitleText
             TitleSize={TitleSize}
             TitleLabel={TitleLabel[1]}
@@ -91,33 +96,38 @@ export default function Section9({
             TitleClassProps="text-left"
             TextClassProps="mt-2 text-left"
           />
-
         </div>
       </div>
 
-      <div className="
+      <div
+        className="
+        mt-3
         flex
-        flex-wrap
         w-[100%]
-        mt-3 
+        flex-wrap 
         justify-center
-      ">
-        <div className="
-          flex 
-          flex-col
-          mr-[2vw] ml-[5vw]
+      "
+      >
+        <div
+          className="
           sm:w-1/1 
+          mr-[2vw]
+          ml-[5vw] flex
+          flex-col 
           md:w-1/3
           lg:w-1/3
-          xl:w-1/3
-        "><div className="flex justify-center">
+          2xl:w-1/3
+        "
+        >
+          <div className="flex justify-center">
             <ImageAtomLocal
               src={microscope}
               alt="microscope"
-              imagesize={""}
-              border={""}
-              ImageStyleProps={""}
-            /></div>
+              imagesize={''}
+              border={''}
+              ImageStyleProps={''}
+            />
+          </div>
           <TitleText
             TitleSize={TitleSize}
             TitleLabel={TitleLabel[2]}
@@ -129,24 +139,27 @@ export default function Section9({
             TextClassProps="mt-2 text-left"
           />
         </div>
-        <div className="
-          flex
-          flex-col
+        <div
+          className="
+          sm:w-1/1
           ml-[2vw]
           mr-[2vw]
-          sm:w-1/1 sm:ml-[5vw]
+          flex
+          flex-col sm:ml-[5vw]
           md:w-1/3
           lg:w-1/3
-          xl:w-1/3
-        ">
+          2xl:w-1/3
+        "
+        >
           <div className="flex justify-center">
             <ImageAtomLocal
               src={microscope}
               alt="microscope"
-              imagesize={""}
-              ImageStyleProps={""}
-              border={""}
-            /></div>
+              imagesize={''}
+              ImageStyleProps={''}
+              border={''}
+            />
+          </div>
           <TitleText
             TitleSize={TitleSize}
             TitleLabel={TitleLabel[3]}
@@ -159,17 +172,8 @@ export default function Section9({
           />
         </div>
       </div>
-      <Title
-        Text="Want to learn more?"
-        H="h2"
-        TitleClassProps="mt-4 mb-14"
-      />
-      <Button
-        size={sizeBtn}
-        type={typeBtn}
-        label={labelBtn}
-        path={pathBtn}
-      />
+      <Title Text="Want to learn more?" H="h2" TitleClassProps="mt-4 mb-14" />
+      <Button size={sizeBtn} type={typeBtn} label={labelBtn} path={pathBtn} />
     </div>
   )
 }

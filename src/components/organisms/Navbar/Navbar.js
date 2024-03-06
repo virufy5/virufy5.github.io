@@ -125,7 +125,7 @@ export default function Navbar() {
           </>
         ) : null}
       </div>
-      <div className="lg:max-w-8lg justify-between px-3 lg:mx-4 lg:flex lg:items-center lg:px-2 xl:mx-9">
+      <div className="lg:max-w-8lg justify-between px-3 lg:mx-4 lg:flex lg:items-center lg:px-2 2xl:mx-9">
         <div>
           <div className="flex items-center justify-between py-3 lg:block lg:py-5">
             <Link href="/home" className="flex lg:hidden">
@@ -181,7 +181,7 @@ export default function Navbar() {
               navbar ? 'block' : 'hidden'
             }`}
           >
-            <ul className="items-center justify-center space-y-8 lg:flex lg:space-x-5 lg:space-y-0 xl:space-x-9">
+            <ul className="items-center justify-center space-y-8 lg:flex lg:space-x-5 lg:space-y-0 2xl:space-x-9">
               <li className="text-[#393939]">
                 <div>
                   <Link

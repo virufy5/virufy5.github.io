@@ -25,7 +25,7 @@ export default function JobListing() {
             TitleClassProps={''}
             TitleLabel={title}
             ContainerTitleProps={
-              'mt-[40px] w-[100%] text-center xl:text-left xl:ml-12'
+              'mt-[40px] w-[100%] text-center 2xl:text-left 2xl:ml-12'
             }
             TextSize={'normal'}
             TextClassProps={''}

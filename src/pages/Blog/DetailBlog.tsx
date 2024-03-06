@@ -77,22 +77,22 @@ export default function DetailBlog() {
       <LeaveAComment idBlog="" />
 
       <div className="flex flex-col items-center bg-[#EEEEEE]">
-        <div className="mt-14 flex w-[100vw] max-w-[1300px] flex-col items-center xl:mt-0 xl:flex-row xl:justify-between">
-          <div className="flex xl:hidden">
+        <div className="mt-14 flex w-[100vw] max-w-[1300px] flex-col items-center 2xl:mt-0 2xl:flex-row 2xl:justify-between">
+          <div className="flex 2xl:hidden">
             <Title
               H="h6"
               Text="How Do We Ensure that Healthcare AI is Useful?"
               TitleClassProps="text-center"
             />
           </div>
-          <div className="hidden xl:flex">
+          <div className="hidden 2xl:flex">
             <Title
               H="h5tepsHome"
               Text="Get the latest in Virufy’s Health Blog"
               TitleClassProps="text-center"
             />
           </div>
-          <div className="mb-8 mt-7 w-full max-w-[1000px] px-7 xl:w-1/3">
+          <div className="mb-8 mt-7 w-full max-w-[1000px] px-7 2xl:w-1/3">
             <input
               type="name"
               id="name"
@@ -100,7 +100,7 @@ export default function DetailBlog() {
               required
             ></input>
           </div>
-          <div className="mb-14 flex flex-col items-center justify-center xl:mb-0">
+          <div className="mb-14 flex flex-col items-center justify-center 2xl:mb-0">
             <Button size="medium" type="primary" path="#" label="Sign Up" />
           </div>
         </div>

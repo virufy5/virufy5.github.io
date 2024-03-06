@@ -210,7 +210,7 @@ export default function OurSupporters() {
             />
             <CardLarge
               CardsData={CardsData}
-              CardClassProps="flex flex-row text-center items-center justify-center sm:w-1/1 md:w-1/2 lg:w-1/2 xl:w-1/2 mb-4 mt-4"
+              CardClassProps="flex flex-row text-center items-center justify-center sm:w-1/1 md:w-1/2 lg:w-1/2 2xl:w-1/2 mb-4 mt-4"
             />
 
             <TitleText
@@ -236,7 +236,7 @@ export default function OurSupporters() {
           />
           <Card
             CardsData={CardsDataTL}
-            CardClassProps="flex flex-col text-center items-center w-[348px] sm:w-1/1 md:w-1/3 lg:w-1/4 xl:w-1/4 mb-4 mt-4 rounded-[20px] m-[15px] h-[350px] shadow-xl"
+            CardClassProps="flex flex-col text-center items-center w-[348px] sm:w-1/1 md:w-1/3 lg:w-1/4 2xl:w-1/4 mb-4 mt-4 rounded-[20px] m-[15px] h-[350px] shadow-xl"
           />
         </div>
       </div>
