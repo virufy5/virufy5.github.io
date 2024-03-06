@@ -1,7 +1,7 @@
 import { NavbarType } from '../types/NavbarType'
 
 export const navbar: NavbarType = {
-  ourTecnology: {
+  ourTechnology: {
     section: 'Our Technology',
     howItWorks: 'How It Works',
     shareYourCough: 'Share Your Cough',

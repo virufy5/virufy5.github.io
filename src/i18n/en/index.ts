@@ -7,15 +7,15 @@ import { howItWorks } from './HowItWorks'
 import { dashboard } from './Dashboard'
 import { JobDescription } from './JobDescription'
 import { ourPublications } from './OurPublications'
-import { ourTechnology } from './OurTecnology'
+import { ourTechnology } from './OurTechnology'
 import { OurPeople1 } from './OurPeople1'
 import { OurPeople2 } from './OurPeople2'
 import { ourResearch } from './OurResearch'
 import { tellYourStory } from './TellYourStory'
 import { OurSupporters } from './OurSupporters'
-import { JobListing } from './JobListing';
+import { JobListing } from './JobListing'
 import { blogListing } from './BlogListing'
-import { blogDetails } from './BlogDetail';
+import { blogDetails } from './BlogDetail'
 import { faq } from './FAQ'
 import { navbar } from './Navbar'
 import { footer } from './Footer'
@@ -39,5 +39,5 @@ export const data: I18nData = {
   blogDetails,
   faq,
   navbar,
-  footer
+  footer,
 }

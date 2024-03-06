@@ -1,10 +1,9 @@
-import { StaticImageData } from 'next/image'
-import { Home } from './types/Home'
-import { FAQ } from './types/FAQ'
-import { NavbarType } from './types/NavbarType'
-import { BlogListing } from './types/BlogListingType'
-import { BlogDetails } from './types/BlogDetailsType'
-import { Footer } from './types/Footer'
+import { type Home } from './types/Home'
+import { type FAQ } from './types/FAQ'
+import { type NavbarType } from './types/NavbarType'
+import { type BlogListing } from './types/BlogListingType'
+import { type BlogDetails } from './types/BlogDetailsType'
+import { type Footer } from './types/Footer'
 
 export type I18nData = {
   locale: string
@@ -57,14 +56,14 @@ export interface SectiontCovidTestExplanation {
 // ---- Job Listing ----
 export interface JobListing {
   JobList: object[] | any[]
-  titleImage: string;
-  title: string;
-  text: string;
-  modal: { 
-    text: string;
-    yes: string;
-    no: string;
-   }
+  titleImage: string
+  title: string
+  text: string
+  modal: {
+    text: string
+    yes: string
+    no: string
+  }
 }
 // ---- | ----
 
