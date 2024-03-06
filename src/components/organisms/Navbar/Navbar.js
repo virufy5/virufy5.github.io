@@ -147,7 +147,12 @@ export default function Navbar() {
               />
             </Link>
             <li className="flex text-[#393939] xl:hidden">
-              <Button size="small" type="primary" path="#" label="Join us" />
+              <Button
+                size="small"
+                type="primary"
+                path="/JobListing"
+                label={joinUs}
+              />
             </li>
             <div className="xl:hidden">
               <button
@@ -300,7 +305,7 @@ export default function Navbar() {
                 {/* <Select Text="" Options={options} optionsIcons={optionsIcons} /> */}
                 <LocaleSelector optionsIcons={optionsIcons}></LocaleSelector>
               </li>
-              <li className="hidden text-[#393939] lg:flex">
+              <li className="hidden text-[#393939] xl:flex">
                 <Button
                   size="small"
                   type="secondary"
