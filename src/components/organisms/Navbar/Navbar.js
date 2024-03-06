@@ -5,7 +5,7 @@ import ImageAtomLocal from '~/components/atoms/imageAtom/ImageAtomLocal'
 import VirufyLogo from '~/assets/static/images/logo/virufy.svg'
 import DonateModalImg from '~/assets/static/images/Modals/DonateHero.png'
 import Paypal from '~/assets/static/images/Modals/Paypal.png'
-import Gofoundme from '~/assets/static/images/Modals/Gofoundme.png'
+import GoFundMe from '~/assets/static/images/Modals/GoFundMe.png'
 import BarsMenu from '~/assets/static/icons/navbar/barsIconMenu.svg'
 import CloseMenu from '~/assets/static/icons/navbar/closeIconMenu.svg'
 import Select from '~/components/atoms/Select/Select'
@@ -110,7 +110,7 @@ export default function Navbar() {
                         <ImageAtomLocal
                           imagesize="px103x30"
                           border="none"
-                          src={Gofoundme}
+                          src={GoFundMe}
                           alt="Logo Virufy"
                           ImageStyleProps=""
                         />
@@ -268,7 +268,7 @@ export default function Navbar() {
                       className="px-5 py-3 text-[#393939] hover:bg-gray-200"
                       href="/OurSupporters"
                     >
-                      {aboutUs?.ourSopporters}
+                      {aboutUs?.ourSupporters}
                     </Link>
                     <Link
                       className="px-5 py-3 text-[#393939] hover:bg-gray-200"

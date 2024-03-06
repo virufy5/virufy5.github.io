@@ -25,7 +25,7 @@ export interface GetInvolved {
 export interface AboutUs {
   section: string
   ourPeople: string
-  ourSopporters: string
+  ourSupporters: string
   blog: string
   publications: string
 }
