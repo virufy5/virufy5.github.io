@@ -1,6 +1,6 @@
-import Button from "~/components/atoms/button/Button"
-import ImageAtomLocal from "~/components/atoms/imageAtom/ImageAtomLocal"
-import TitleText from "~/components/molecules/TitleText/TitleText"
+import Button from '~/components/atoms/button/Button'
+import ImageAtomLocal from '~/components/atoms/imageAtom/ImageAtomLocal'
+import TitleText from '~/components/molecules/TitleText/TitleText'
 
 export default function Section8({
   TitleLabel,
@@ -21,76 +21,76 @@ export default function Section8({
   route2,
   route3,
   alt,
-  buttonLabel
+  buttonLabel,
 }) {
   return (
     <div className="mt-[80px] mb-[80px] flex flex-col">
       <TitleText
         TitleSize={TitleSize}
         TitleLabel={TitleLabel}
-        TextSize={""}
-        TextLabel={""}
+        TextSize={''}
+        TextLabel={''}
         ContainerTitleProps={ContainerTitleProps}
-        ContainerTextProps={""}
-        TitleClassProps={""}
-        TextClassProps={""}
+        ContainerTextProps={''}
+        TitleClassProps={''}
+        TextClassProps={''}
       />
-      <div className="flex flex-col xl:flex-row mb-4 text-center xl:items-start items-center w-[100%] justify-center mt-[80px] w-100">
-        <div className="flex flex-col text-center items-center w-[250px] sm:w-[250px] md:w-[250px] lg:w-[447px] xl:w-[447px] mt-0">
+      <div className="w-100 mb-4 mt-[80px] flex w-[100%] flex-col items-center justify-center text-center 2xl:flex-row 2xl:items-start">
+        <div className="mt-0 flex w-[250px] flex-col items-center text-center sm:w-[250px] md:w-[250px] lg:w-[447px] 2xl:w-[447px]">
           <ImageAtomLocal
             imagesize={sizeImg}
             border={border}
             src={route1}
             alt={alt}
-            ImageStyleProps={""}
+            ImageStyleProps={''}
           />
           <TitleText
             TitleSize={TitleSize1}
             TitleLabel={TitleLabel1}
             TextSize={TextSize}
             TextLabel={TextLabel1}
-            ContainerTitleProps={"mt-[32px]"}
+            ContainerTitleProps={'mt-[32px]'}
             ContainerTextProps={`mt-[16px] mb-[40px] ${ContainerTextProps}`}
-            TitleClassProps={""}
-            TextClassProps={"text-[#6D7280]"}            
+            TitleClassProps={''}
+            TextClassProps={'text-[#6D7280]'}
           />
         </div>
-        <div className="flex flex-col text-center items-center w-[250px] sm:w-[250px] md:w-[250px] lg:w-[447px] xl:w-[447px] mb-4 mt-0 ml-3 mr-3">
+        <div className="mb-4 mt-0 ml-3 mr-3 flex w-[250px] flex-col items-center text-center sm:w-[250px] md:w-[250px] lg:w-[447px] 2xl:w-[447px]">
           <ImageAtomLocal
             imagesize={sizeImg}
             border={border}
             src={route2}
             alt={alt}
-            ImageStyleProps={""}
+            ImageStyleProps={''}
           />
           <TitleText
             TitleSize={TitleSize1}
             TitleLabel={TitleLabel2}
             TextSize={TextSize}
             TextLabel={TextLabel2}
-            ContainerTitleProps={"mt-[32px]"}
+            ContainerTitleProps={'mt-[32px]'}
             ContainerTextProps={` mt-[16px] mb-[40px] ${ContainerTextProps}`}
-            TitleClassProps={""}
-            TextClassProps={"text-[#6D7280]"}
+            TitleClassProps={''}
+            TextClassProps={'text-[#6D7280]'}
           />
         </div>
-        <div className="flex flex-col text-center items-center w-[250px] sm:w-[250px] md:w-[250px] lg:w-[447px] xl:w-[447px] mb-4 mt-0">
+        <div className="mb-4 mt-0 flex w-[250px] flex-col items-center text-center sm:w-[250px] md:w-[250px] lg:w-[447px] 2xl:w-[447px]">
           <ImageAtomLocal
             imagesize={sizeImg}
             border={border}
             src={route3}
             alt={alt}
-            ImageStyleProps={""}
+            ImageStyleProps={''}
           />
           <TitleText
             TitleSize={TitleSize1}
             TitleLabel={TitleLabel3}
             TextSize={TextSize}
             TextLabel={TextLabel3}
-            ContainerTitleProps={"mt-[32px]"}
+            ContainerTitleProps={'mt-[32px]'}
             ContainerTextProps={`mt-[16px] mb-[40px] ${ContainerTextProps}`}
-            TitleClassProps={""}
-            TextClassProps={"text-[#6D7280]"}
+            TitleClassProps={''}
+            TextClassProps={'text-[#6D7280]'}
           />
         </div>
       </div>

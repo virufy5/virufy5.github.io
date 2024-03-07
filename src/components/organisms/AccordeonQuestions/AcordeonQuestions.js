@@ -106,7 +106,7 @@ export default function AcordeonQuestions({ Category, TextSearch }) {
               {faqs.map(({ title, text, id }) => (
                 <div key={id}>
                   <details className="mb-3 w-full max-w-[1440px] cursor-pointer bg-white">
-                    <summary className="text-dark mt-3 flex w-[300px] justify-between bg-white px-4 py-3 font-bold after:content-['+'] md:w-[700px] xl:w-[1200px]">
+                    <summary className="text-dark mt-3 flex w-[300px] justify-between bg-white px-4 py-3 font-bold after:content-['+'] md:w-[700px] 2xl:w-[1200px]">
                       {title}
                     </summary>
                     <hr className="border-1 mt-3 border-gray-400" />
